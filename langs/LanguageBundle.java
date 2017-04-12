@@ -192,7 +192,7 @@ public class LanguageBundle extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " move <channel>\n\t"
-                    + "<channel> - The name of the channel you wish to move my announcements to (MUST include the #)"
+                    + "<channel> - The name of the channel you wish to move my announcements to (MUST include the #)\n"
                     + "This option is deprecated and may not work as you think.  Please see the Twitch command."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " move #discordchannel" + "```"},
             {"moveSuccess", " :ok_hand: I'll announce over there!"},

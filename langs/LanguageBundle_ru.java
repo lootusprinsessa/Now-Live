@@ -191,7 +191,8 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " move <channel>\n\t"
-                    + "<channel> - Название канала, на который вы хотите переместить мои объявления: (MUST include the #)"
+                    + "<channel> - Название канала, на который вы хотите переместить мои объявления: (MUST include the #)\n"
+                    + "Этот параметр устарел и может работать не так, как вы думаете. Пожалуйста смотрите Twitch команды."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " move #discordchannel" + "```"},
             {"moveSuccess", " :ok_hand: Я объявлю там!"},
             {"needOneManager", "Если вы удалите этого менеджера, кто будет управлять мной?"},
