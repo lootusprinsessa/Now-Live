@@ -85,9 +85,10 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <volba>"
-                    + "\n\ton  - Zapne kompaktní mód"
-                    + "\n\toff - Vypne kompaktní mód"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact on" + "```"},
+                    + "\n\tnoEmbed     - Removes the large embed and only uses a short sentence."
+                    + "\n\tsmallEmbed  - Announces with an embed with no large banner image."
+                    + "\n\tfullEmbed   - The full announcement with large banner image."
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
             {"compactOff", " :compression: Kompaktní mód byl vypnut."},
             {"compactOn", " :compression: Kompaktní mód byl zapnut."},
             {"devMessage", "*Zpráva od " + Const.BOT_NAME + " vývojářů:*\n\n\t"},

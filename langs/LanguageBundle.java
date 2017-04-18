@@ -87,11 +87,13 @@ public class LanguageBundle extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
-                    + "\n\ton  - Turns on Compact Mode"
-                    + "\n\toff - Turns off Compact Mode"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact on" + "```"},
-            {"compactOff", " :compression: Compact mode has been turned off."},
-            {"compactOn", " :compression: Compact mode has been turned on."},
+                    + "\n\tnoEmbed     - Removes the large embed and only uses a short sentence."
+                    + "\n\tsmallEmbed  - Announces with an embed with no large banner image."
+                    + "\n\tfullEmbed   - The full announcement with large banner image."
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
+            {"compactFullEmbed", " :compression: You will get the full announcement from now on."},
+            {"compactSmallEmbed", " :compression: You will get an announcement with a small embed from now on."},
+            {"compactNoEmbed", " :compression: Your announcements will only be a short sentence from now on."},
             {"devMessage", "*Message from the " + Const.BOT_NAME + " developers:*\n\n\t"},
             {"discordChannelNoExist", "That text channel doesn't exist on your server."},
             {"discordUserNoExist", "That person isn't a Discord user!  Try again!"},

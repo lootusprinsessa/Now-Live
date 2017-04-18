@@ -85,9 +85,10 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
-                    + "\n\ton - Slår på Compact Mode"
-                    + "\n\toff - Stänger av Compact Mode"
-                    + "\n\n## EXEMPEL:" + Const.COMMAND_PREFIX + Const.COMMAND + "kompakt på" + "```"},
+                    + "\n\tnoEmbed     - Removes the large embed and only uses a short sentence."
+                    + "\n\tsmallEmbed  - Announces with an embed with no large banner image."
+                    + "\n\tfullEmbed   - The full announcement with large banner image."
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
             {"compactOff", "komprimering. Kompakt läge har stängts av"},
             {"compactOn", "komprimering. Kompakt läge har slagits på"},
             {"devMessage", "*Meddelande från" + Const.BOT_NAME + "utvecklare:*\n\n\t"},

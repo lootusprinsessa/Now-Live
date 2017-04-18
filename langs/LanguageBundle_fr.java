@@ -87,9 +87,10 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
-                    + "\n\ton - Activer le mode compact"
-                    + "\n\toff - Désactiver le mode compact"
-                    + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + "compact on" + "```"},
+                    + "\n\tnoEmbed     - Removes the large embed and only uses a short sentence."
+                    + "\n\tsmallEmbed  - Announces with an embed with no large banner image."
+                    + "\n\tfullEmbed   - The full announcement with large banner image."
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
             {"compactOff", " :compression: Le mode compact a bien été désactivé."},
             {"compactOn", " :compression: Le mode compact vient d'être activé."},
             {"devMessage", "*Message des développeurs " + Const.BOT_NAME + " :*\n\n\t"},

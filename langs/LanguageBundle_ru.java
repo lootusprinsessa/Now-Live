@@ -87,9 +87,10 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
-                    + "\n\ton  - Turns on Compact Mode"
-                    + "\n\toff - Turns off Compact Mode"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact on" + "```"},
+                    + "\n\tnoEmbed     - Removes the large embed and only uses a short sentence."
+                    + "\n\tsmallEmbed  - Announces with an embed with no large banner image."
+                    + "\n\tfullEmbed   - The full announcement with large banner image."
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
             {"compactOff", " :compression: Компактный режим отключен."},
             {"compactOn", " :compression: Компактный режим включен."},
             {"devMessage", "*Message from the " + Const.BOT_NAME + " developers:*\n\n\t"},
