@@ -77,7 +77,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + " cleanup <option>"
                     + "\n\tnone   - Я ничего не буду менять в своих объявлениях! (default)"
                     + "\n\tedit   - Я отредактирую свои объявления, чтобы сказать \"OFFLINE\" , когда стрим окончен"
-                    + "\n\tdelete - Я просто удалю объявление, когда стрим окончен"
+                    + "\n\tdelete - Я удалю объявление, когда стрим окончен"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " cleanup edit" + "```"},
             {"cleanupSuccessDelete", "Как скажете!  Теперь я буду удалять все мои объявления, если трансляция окончена!"},
             {"cleanupSuccessEdit", "Я буду редактировать мои объявления, если трансляция началась или окончена."},
@@ -87,9 +87,9 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
-                    + "\n\tnoEmbed     - Removes the large embed and only uses a short sentence."
-                    + "\n\tsmallEmbed  - Announces with an embed with no large banner image."
-                    + "\n\tfullEmbed   - The full announcement with large banner image."
+                    + "\n\tnoEmbed     - Использует только короткое объявление."
+                    + "\n\tsmallEmbed  - Объявление, без большого изображения."
+                    + "\n\tfullEmbed   - Полное объявление, с больщим изображением."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
             {"compactFullEmbed", " :compression: You will get the full announcement from now on."},
             {"compactSmallEmbed", " :compression: You will get an announcement with a small embed from now on."},
@@ -104,12 +104,12 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"emptyArgs", "Кажется вы забыли какую-то команду.  Изучите команды помощи для получения дополнительной информации.."},
             {"emptyCommand", "В следующий раз, когда ты меня разбудишь, пожалуйста отправьте также команду."},
             {"followersEmbed", "Подписчиков"},
-            {"guildJoinSuccess", "Всем привет!  Я Now Live. Я объявлю если стримеры начинают трансляции!  Type `" +
+            {"guildJoinSuccess", "Всем привет!  Я Now Live. Я объявлю, если стримеры начинают трансляции!  Type `" +
                     Const.COMMAND_PREFIX + Const.COMMAND +
                     " help` для списка моих команд.\n\nIf вам нужна помощь в настройке, приходите " +
                     "присоединяйтесь к моему Discord на " + Const.DISCORD_URL + " и ознакомьтесь с инструкциями по настройке и списком команд " +
                     "каналы для всей информации!\n\nНе забудь поздороваться!"},
-            {"helpPm", "Привет всем, %s! Итак, я слышал, ты ищешь помощи? Ниже приведен список моих команд.\n\n" +
+            {"helpPm", "Привет %s! Итак, я слышал, что ты ищешь помощи? Ниже приведен список моих команд.\n\n" +
                     "```Markdown\n" +
                     "# ADD\n" +
                     "* Для получения дополнительной информации введите: " +
@@ -151,7 +151,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " streams help\n\n" +
                     "# TWITCH\n" +
-                    "* Добавmnе и удалите связанные с Twitch.tv вещи. Для получения дополнительной информации введите: " +
+                    "* Добавление и удаление связанных с Twitch.tv вещей. Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n" +
                     "# PATREON/DONATE\n" +
                     "Дает ссылку на patreon бота. Команды :\n"+
@@ -303,11 +303,11 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "## Twitch Каналы\n"
                     + "Добавление канала объявлений, игр и фильтров заголовков необязательно."
                     + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Twitch Сообщества (Объявлет ВСЕХ трансляций сообщества)\n"
+                    + "## Twitch Сообщества (Объявлет ВСЕ трансляции сообщества)\n"
                     + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community communityName #announcementChannel\n\n"
-                    + "## Twitch Игры (Объявлет ВСЕХ трансляций игры)\n"
+                    + "## Twitch Игры (Объявлет ВСЕ трансляции игры)\n"
                     + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game gameName #announcementChannel\n\n"
-                    + "## Twitch Команды (Объявлет ВСЕХ трансляций команды)\n"
+                    + "## Twitch Команды (Объявлет ВСЕ трансляции команды)\n"
                     + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team teamName #announcementChannel\n\n"
                     + "## Twitch Игровые фильтры (Глобальный)\n"
                     + "* Примечание: Это влияет на все потоковые объявления для Twitch\n"
@@ -317,7 +317,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter gameName #announcementChannel\n\n"
                     + "* Примеры:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
+                    + "Warcraft} (добавляет twitch канал в заданный канал Discord с игровыми фильтрами)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (добавляет игру с глобальным канал объявлений)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (добавляет сообщество с заданный канал объявлений)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (добавляет команду с заданным каналом объявлений.)\n\n"
