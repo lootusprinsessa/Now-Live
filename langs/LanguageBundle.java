@@ -28,6 +28,7 @@ import java.util.ListResourceBundle;
  */
 public class LanguageBundle extends ListResourceBundle {
 
+    // Commenting this out for demonstration purposes
     private Object[][] contents = {
             {"added", "Added "},
             {"addFail", "Failed to add "},
