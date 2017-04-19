@@ -91,10 +91,14 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "\n\tsmallEmbed  - Announces with an embed with no large banner image."
                     + "\n\tfullEmbed   - The full announcement with large banner image."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
-            {"compactOff", " :compression: Компактный режим отключен."},
-            {"compactOn", " :compression: Компактный режим включен."},
+            {"compactFullEmbed", " :compression: You will get the full announcement from now on."},
+            {"compactSmallEmbed", " :compression: You will get an announcement with a small embed from now on."},
+            {"compactNoEmbed", " :compression: Your announcements will only be a short sentence from now on."},
             {"devMessage", "*Message from the " + Const.BOT_NAME + " developers:*\n\n\t"},
             {"discordChannelNoExist", "Данный текстовый канал отсутствует на вашем сервере.."},
+            {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
+                    "having problems! Click this link:\n" + Const.DISCORD_URL},
+            {"discordLinkHelp", "Display's the link to join the Now Live Discord server."},
             {"discordUserNoExist", "Данного пользователя Discord не существует! Попробуй еще раз!"},
             {"doesNotExist", "Это никогда не добавлялось в мою базу данных."},
             {"emptyArgs", "Кажется вы забыли какую-то команду.  Изучите команды помощи для получения дополнительной информации.."},
@@ -170,10 +174,10 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list *option*"
                     + "\n\ttwitchChannel   - Перечисляет Twitch каналы, которые вы назначали"
                     + "\n\ttwitchCommunity - Список Twitch сообществ, которые вы назначали"
-                    + "\n\tgamefilter      - Список всех, установленных вами, игровых фильтров"
+                    + "\n\tgfilter         - Список всех, установленных вами, игровых фильтров"
                     + "\n\ttwitchGame      - Список всех условий ваших игровых фильтров"
                     + "\n\tmanager         - Список менеджеров на этом сервере"
-                    + "\n\ttitlefilter     - Выводит список всех фильтров заголовков, которые вы создали"
+                    + "\n\ttfilter         - Выводит список всех фильтров заголовков, которые вы создали"
                     + "\n\ttwitchTeam      - Перечисляет Twitch team, которые вы назначали"
                     + "\n\tsetting         - Список общих настроек бота"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel" + "```"},
@@ -241,6 +245,8 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "\n\tmanager - @ Упоминание пользователя об удалении в качестве менеджера"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
             {"servers", "Servers"},
+            {"shardsThis", "Shard Number"},
+            {"shardsTotal", "Number Shards"},
             {"statusHelp", "```Markdown\n# STATUS\n* Показывает различную статистику бота.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},
             {"streamlangHelp", "```Markdown\n# STREAMLANG\n* Позволяет фильтровать потоки по тому языку, который транслируется " +

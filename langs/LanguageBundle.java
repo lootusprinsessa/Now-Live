@@ -28,7 +28,6 @@ import java.util.ListResourceBundle;
  */
 public class LanguageBundle extends ListResourceBundle {
 
-    // Commenting this out for demonstration purposes
     private Object[][] contents = {
             {"added", "Added "},
             {"addFail", "Failed to add "},
@@ -84,7 +83,7 @@ public class LanguageBundle extends ListResourceBundle {
             {"cleanupSuccessEdit", "Editing my announcements, it is."},
             {"cleanupSuccessNone", " :ok_hand: I won't do anything to my announcements."},
             {"compactFail", "Um, something went wrong.  My compact mode is unchanged."},
-            {"compactHelp", "```Markdown\n# COMPACT\n* Switch my announcements to a shorter version.\n\n## USAGE:  "
+            {"compactHelp", "```Markdown\n# COMPACT\n* Switch my announcements to a shorter version.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
@@ -97,6 +96,9 @@ public class LanguageBundle extends ListResourceBundle {
             {"compactNoEmbed", " :compression: Your announcements will only be a short sentence from now on."},
             {"devMessage", "*Message from the " + Const.BOT_NAME + " developers:*\n\n\t"},
             {"discordChannelNoExist", "That text channel doesn't exist on your server."},
+            {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
+                    "having problems! Click this link:\n" + Const.DISCORD_URL},
+            {"discordLinkHelp", "Display's the link to join the Now Live Discord server."},
             {"discordUserNoExist", "That person isn't a Discord user!  Try again!"},
             {"doesNotExist", "That was never added to my database."},
             {"emptyArgs", "I think you forgot some of the command.  Check the help command for more info."},
@@ -263,9 +265,9 @@ public class LanguageBundle extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " streams```"},
+            {"totalViewsEmbed", "Total Views"},
             {"trello", "To report bugs or to request features to be added to the bot please use our Trello. https://trello.com/b/kcWshbIU"},
             {"trelloHelp", "Returns the link to the Trello for the bot"},
-            {"totalViewsEmbed", "Total Views"},
             {"twitchCommunities", "Twitch Communities"},
             {"twitchAnnounceUpdate", "\n# Updated the Twitch announcement channel for %s to: %s."},
             {"twitchAnnounceUpdateFail", "\n! Failed to change the Twitch announce channel for %s to: %s."},

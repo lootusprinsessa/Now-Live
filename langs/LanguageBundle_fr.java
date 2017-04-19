@@ -91,10 +91,14 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "\n\tsmallEmbed  - Announces with an embed with no large banner image."
                     + "\n\tfullEmbed   - The full announcement with large banner image."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
-            {"compactOff", " :compression: Le mode compact a bien été désactivé."},
-            {"compactOn", " :compression: Le mode compact vient d'être activé."},
+            {"compactFullEmbed", " :compression: You will get the full announcement from now on."},
+            {"compactSmallEmbed", " :compression: You will get an announcement with a small embed from now on."},
+            {"compactNoEmbed", " :compression: Your announcements will only be a short sentence from now on."},
             {"devMessage", "*Message des développeurs " + Const.BOT_NAME + " :*\n\n\t"},
             {"discordChannelNoExist", "Ce canal n'existe pas sur ton serveur."},
+            {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
+                    "having problems! Click this link:\n" + Const.DISCORD_URL},
+            {"discordLinkHelp", "Display's the link to join the Now Live Discord server."},
             {"discordUserNoExist", "Cette personne n'existe pas ! Essaie encore !"},
             {"doesNotExist", "Cela n'a jamais été ajouté à ma base de données."},
             {"emptyArgs", "Je crois que tu as oublié une partie de la commande. Regarde la commande \"help\" pour plus d'infos."},
@@ -193,6 +197,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + Const.COMMAND
                     + " move <canal>\n\t"
                     + "<canal> - Le nom du canal dans lequel tu veux que j'annonce (inclure ABSOLUMENT le #)"
+                    + "This option is deprecated and may not work as you think.  Please see the Twitch command."
                     + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " move #discordchannel" + "```"},
             {"moveSuccess", " :ok_hand: J'annoncerai là-bas ! :arrow_right: "},
             {"needOneManager", "Si tu supprimes celui-là, qui va me gérer ?"},
@@ -240,6 +245,8 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "\n\tmanager - Le @ de l'utilisateur à enlever de la liste des managers"
                     + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
             {"servers", "Serveurs"},
+            {"shardsThis", "Shard Number"},
+            {"shardsTotal", "Number Shards"},
             {"statusHelp", "```Markdown\n# STATUS\n* Affiche diverses statistiques du bot.\n\n## UTILISATION :  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},
             {"streamlangHelp", "```Markdown\n# STREAMLANG\n* Permet de filtrer les streams par la langue dans laquelle ils sont " +
@@ -267,6 +274,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"twitchChannelAddFail", "\n# Echec de l'ajout des chaînes suivantes : %s."},
             {"twitchChannelAnnounce", "\n# Elles seront annoncées dans : #%s."},
             {"twitchChannelGameFilter", "\n# Elles ne seront annoncées uniquement lorsqu'elles joueront à : %s."},
+            {"twitchChannelNotFound", "\n# Channel(s) not found on Twitch: %s."},
             {"twitchChannelRemove", "\n# Chaîne(s) supprimée(s) : %s."},
             {"twitchChannelRemoveFail", "\n! Echec de la suppression des chaînes suivantes : %s."},
             {"twitchChannelTitleFilter", "\n# Elles ne seront annoncées uniquement lorsque les mots suivants seront présents dans le titre : %s."},

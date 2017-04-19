@@ -94,6 +94,9 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"compactNoEmbed", " :compression: Deine Benachrichtigungen sind ab nun nurnoch ein kurzer Satz."},
             {"devMessage", "*Nachricht der " + Const.BOT_NAME + " Developer:*\n\n\t"},
             {"discordChannelNoExist", "Dieser Textchannel existiert auf diesem Server nicht."},
+            {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
+                    "having problems! Click this link:\n" + Const.DISCORD_URL},
+            {"discordLinkHelp", "Display's the link to join the Now Live Discord server."},
             {"discordUserNoExist", "Diese Person ist kein Discord Benutzer!  Versuche es nochmal!"},
             {"doesNotExist", "Das wurde nie meiner Datenbank hinzugefügt."},
             {"emptyArgs", "Ich glaube du hast da einen Teil des Befehls vergessen.  Mit der Option *help* erkläre ich dir den Befehl gerne."},
