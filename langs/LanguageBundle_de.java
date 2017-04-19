@@ -85,12 +85,13 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
-                    + "\n\tnoEmbed     - Removes the large embed and only uses a short sentence."
-                    + "\n\tsmallEmbed  - Announces with an embed with no large banner image."
-                    + "\n\tfullEmbed   - The full announcement with large banner image."
+                    + "\n\tnoEmbed     - Entfernt das Embed und benutzt nur einen kurzen Satz."
+                    + "\n\tsmallEmbed  - Benutzt ein Embed ohne große Banner-Bilder."
+                    + "\n\tfullEmbed   - Benutzt das komplette Embed."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
-            {"compactOff", " :compression: Compact Mode wurde deaktiviert."},
-            {"compactOn", " :compression: Compact Mode wurde aktiviert."},
+            {"compactFullEmbed", " :compression: Du bekommst nun die komplette Benachrichtigung."},
+            {"compactSmallEmbed", " :compression: Du bekommst nun das kleinere Embed."},
+            {"compactNoEmbed", " :compression: Deine Benachrichtigungen sind ab nun nurnoch ein kurzer Satz."},
             {"devMessage", "*Nachricht der " + Const.BOT_NAME + " Developer:*\n\n\t"},
             {"discordChannelNoExist", "Dieser Textchannel existiert auf diesem Server nicht."},
             {"discordUserNoExist", "Diese Person ist kein Discord Benutzer!  Versuche es nochmal!"},
