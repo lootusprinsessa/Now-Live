@@ -85,9 +85,9 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
-                    + "\n\tnoEmbed     - Entfernt das Embed und benutzt nur einen kurzen Satz."
-                    + "\n\tsmallEmbed  - Benutzt ein Embed ohne große Banner-Bilder."
-                    + "\n\tfullEmbed   - Benutzt das komplette Embed."
+                    + "\n\tnoEmbed     - Entfernt die Einbettung und benutzt nur einen kurzen Satz."
+                    + "\n\tsmallEmbed  - Benutzt eine Einbettung ohne große Banner-Bilder."
+                    + "\n\tfullEmbed   - Benutzt die komplette Einbettung."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
             {"compactFullEmbed", " :compression: Du bekommst nun die komplette Benachrichtigung."},
             {"compactSmallEmbed", " :compression: Du bekommst nun das kleinere Embed."},
