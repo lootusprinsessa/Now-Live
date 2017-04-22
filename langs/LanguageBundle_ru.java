@@ -88,17 +88,17 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND
                     + " compact <option>"
                     + "\n\tnoEmbed     - Использует только короткое объявление."
-                    + "\n\tsmallEmbed  - Объявление, без большого изображения."
+                    + "\n\tsmallEmbed  - Объявление с маленьким изображением."
                     + "\n\tfullEmbed   - Полное объявление, с больщим изображением."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
-            {"compactFullEmbed", " :compression: You will get the full announcement from now on."},
-            {"compactSmallEmbed", " :compression: You will get an announcement with a small embed from now on."},
-            {"compactNoEmbed", " :compression: Your announcements will only be a short sentence from now on."},
-            {"devMessage", "*Message from the " + Const.BOT_NAME + " developers:*\n\n\t"},
+            {"compactFullEmbed", " :compression: С этого момента вы будете получать полные объявления."},
+            {"compactSmallEmbed", " :compression: С этого момента вы будете получать объявления с маленькими изображениями."},
+            {"compactNoEmbed", " :compression: Теперь ваши объявления будут только короткими предложениеми."},
+            {"devMessage", "*Сообщение от " + Const.BOT_NAME + " разработчиков:*\n\n\t"},
             {"discordChannelNoExist", "Данный текстовый канал отсутствует на вашем сервере.."},
-            {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
-                    "having problems! Click this link:\n" + Const.DISCORD_URL},
-            {"discordLinkHelp", "Display's the link to join the Now Live Discord server."},
+            {"discordLink", "Хотите присоединиться к серверу Now Live Discord? Если у вас возникли проблемы, то там есть много " +
+                    "тех, кто поможет! Перейдите по ссылке:\n" + Const.DISCORD_URL},
+            {"discordLinkHelp", "Показывает ссылку для подключения к серверу Now Live Discord."},
             {"discordUserNoExist", "Данного пользователя Discord не существует! Попробуй еще раз!"},
             {"doesNotExist", "Это никогда не добавлялось в мою базу данных."},
             {"emptyArgs", "Кажется вы забыли какую-то команду.  Изучите команды помощи для получения дополнительной информации.."},
