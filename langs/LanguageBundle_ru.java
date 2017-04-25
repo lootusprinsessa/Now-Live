@@ -160,8 +160,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "Команды для просмотра ссылки на наш Trello, который используется для сообщений об ошибках и для запроса функций:\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" + Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" + Const.COMMAND_PREFIX + Const.COMMAND + " request\n\n```\n"+
                     "\n~~" + Const.BOT_NAME + "\n\n" +
-                    "Если вам нужна дополнительная помощь, присоединяйтесь к моему серверу в Discord.  Там много пользователей, которые будут полезны вам:  " + Const.DISCORD_URL + "\n\n" +
-                    "***P.S. Я не проверяю личных сообщений, поэтому не отправляйте их***"},
+                    "Если вам нужна дополнительная помощь, присоединяйтесь к моему серверу в Discord.  Там много пользователей, которые будут полезны вам:  " + Const.DISCORD_URL},
             {"incorrectArgs", "Вы передали мне неверные или отсутствующие значения.  Проверьте команду help для получения дополнительной информации.."},
             {"invite", "Привет %s! Вы можете пригласить меня на свой сервер!\n\n\t"
                     + "**Кликабельно:** https://discordapp.com/oauth2/authorize?&client_id="

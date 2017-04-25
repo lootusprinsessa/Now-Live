@@ -155,8 +155,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "* Hinzufügen und Entfernen von Twitch.tv-Inhalten. Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n```\n" +
                     "Ague arbeitet immernoch viel daran neue Dinge, die ich für dich machen kann, zu perfektionieren.\n\n~~" + Const.BOT_NAME + "\n\n" +
-                    "Solltest du Hilfe benötigen, tritt meinem Discordserver bei.  Dort gibt es sehr viele hilfsbereite Leute:  " + Const.DISCORD_URL + "\n\n" +
-                    "***P.S. Ich schaue nicht in die privaten Nachrichten, also schreibe mir hier bitte keine Nachrichten***"},
+                    "Solltest du Hilfe benötigen, tritt meinem Discordserver bei.  Dort gibt es sehr viele hilfsbereite Leute:  " + Const.DISCORD_URL},
             {"incorrectArgs", "Argument(e) fehlen oder sind fehlerhaft.  Benutze die *help* Option für mehr Details."},
             {"invite", "Hey %s! Lade mich zu deinem Server ein!\n\n\t"
                     + "**Klicke hier:** https://discordapp.com/oauth2/authorize?&client_id="

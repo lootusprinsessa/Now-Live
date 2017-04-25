@@ -160,8 +160,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     "Retourne le lien vers notre Trello qui est utilisé pour les rapports de bug et les suggestions de fonctionnalités. Les commandes sont :\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" + Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" + Const.COMMAND_PREFIX + Const.COMMAND + " request```\n" +
                     "\n~~" + Const.BOT_NAME + "\n\n" +
-                    "Si tu as encore besoin d'aide, rejoins mon serveur Discord.  Il y a plein de gens utiles là-bas :  " + Const.DISCORD_URL + "\n\n" +
-                    "***P.S. Je ne regarde pas cette boîte de réception, alors merci de ne pas m'envoyer de messages ici.***"},
+                    "Si tu as encore besoin d'aide, rejoins mon serveur Discord.  Il y a plein de gens utiles là-bas :  " + Const.DISCORD_URL},
             {"incorrectArgs", "Tu m'as transmis des arguments incorrects ou il en manque.  Regarde la commande d'aide pour plus d'infos."},
             {"invite", "Hey %s ! Invite-moi dans ton serveur !\n\n\t"
                     + "**Clique ici :** https://discordapp.com/oauth2/authorize?&client_id="

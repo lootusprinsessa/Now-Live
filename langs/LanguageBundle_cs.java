@@ -155,8 +155,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "Pošle ti odkaz na náše Trello, kde můžeš nahlašovat chyby/bugy. Příkazy jsou :\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" + Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" + Const.COMMAND_PREFIX + Const.COMMAND + " request```"+
                     "\n\n~~" + Const.BOT_NAME + "\n\n" +
-                    "Pokud potřebuješ další pomoc, připoj se na můj Discord server.  Je tam mnoho lidí co ti rádi pomůžou:  " + Const.DISCORD_URL + "\n\n" +
-                    "***P.S. Nesleduji tuto schránku, proto mi prosím neposílej nic přes PM!***"},
+                    "Pokud potřebuješ další pomoc, připoj se na můj Discord server.  Je tam mnoho lidí co ti rádi pomůžou:  " + Const.DISCORD_URL},
             {"incorrectArgs", "Předal jsi mi nesprávné argumenty.  Zkoukni help pro více informací." +
                     '.'},
             {"invite", "Hej kamaráde! Pozvy mě na svůj server!\n\n\t"

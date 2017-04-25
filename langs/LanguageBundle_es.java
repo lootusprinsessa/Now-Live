@@ -162,8 +162,7 @@ public class LanguageBundle_es extends ListResourceBundle {
                     "Da el enlace a Trello que se usa para reportar bugs y para recomendar características. Los comandos son:\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" + Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" + Const.COMMAND_PREFIX + Const.COMMAND + " request```"+
                     "\n\n~~" + Const.BOT_NAME + "\n\n" +
-                    "Si necesitas más ayuda, únete a mi server de Discord.  Hay mucha gente dispuesta a ayudar:  " + Const.DISCORD_URL + "\n\n" +
-                    "***P.D. No leo los mensajes privados, por favor, no mandes mensajes privados***"},
+                    "Si necesitas más ayuda, únete a mi server de Discord.  Hay mucha gente dispuesta a ayudar:  " + Const.DISCORD_URL},
             {"incorrectArgs", "Has escrito algo mal.  Revisa la ayuda para más información" +
                     '.'},
             {"invite", "Hola amigo! Invitame a tu server!\n\n\t"
