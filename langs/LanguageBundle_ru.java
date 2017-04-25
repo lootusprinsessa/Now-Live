@@ -31,22 +31,22 @@ public class LanguageBundle_ru extends ListResourceBundle {
     private Object[][] contents = {
             {"added", "Добавить "},
             {"addFail", "Не удалось добавить "},
-            {"addHelp", "```Markdown\n# ADD\n* Используется для добавления менеджеров для вашего сервера.\n\n## USAGE:  "
+            {"addHelp", "```Markdown\n# ДОБАВЛЕНИЕ\n* Используется для добавления менеджеров для вашего сервера.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " add <option> <content>"
                     + "\n\t<option> <content>"
-                    + "\n\tmanager - @ Упоминание пользователя о добавлении в качестве менеджера"
-                    + "\n\n## ПРИМЕР: " + Const.COMMAND_PREFIX + Const.COMMAND + " добавить менеджера @Ague```"},
+                    + "\n\tmanager - @ Упомяните пользователя для добавлении в качестве менеджера"
+                    + "\n\n## ПРИМЕР: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague```"},
             {"adminOverride", "*Разрешение этой команды было отменено разработчиком.*"},
             {"alreadyExists", "Похоже, вы уже добавили это в мою базу данных.. ¯\\_(ツ)_/¯"},
             {"alreadyManager", "Кажется, я уже установил этого пользователя в качестве менеджера."},
-            {"announceHelp", "```Markdown\n# ANNOUNCE\n* Тсс... Я секрет...\n\n## USAGE:  "
+            {"announceHelp", "```Markdown\n# ОБЪЯВЛЕНИЕ\n* Тсс... Я секрет...\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <content>\n\tЭта команда доступна только для разработчиков.```"},
             {"announcementMessageText", "Привет!  %s начал(а) трансляцию! Смотрите стрим здесь: %s"},
-            {"beamHelp", "```Markdown\n# BEAM\n* Добавление и удаление данных связанных с Beam.pro.\n\n## USAGE:  "
+            {"beamHelp", "```Markdown\n# BEAM\n* Добавление и удаление данных связанных с Beam.pro.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " beam <sub-command> <option> <argument>\n"
                     + "\t<sub-command> <option> <argument>\n"
                     + "\tadd           channel  <channelname>\n"
@@ -54,46 +54,46 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " beam add channel Ague" + "```"},
             {"beamUserNoExist", "Указанного пользователя Beam не существует! Проверьте правильность написания и повторите попытку!"},
             {"botLangFail", "Что-то пошло не так. Мой язык все тот же."},
-            {"botLangHelp", "```Markdown\n# BOTLANG\n* Используется для изменения языка моих ответов.\n\n## USAGE: "
+            {"botLangHelp", "```Markdown\n# ЯЗЫКБОТА\n* Используется для изменения языка моих ответов.\n\n## ПРИМЕНЕНИЕ: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " Язык бота"
-                    + "\n\tВведите либо английское правописание, либо родное написание языка, который вы хотите установить."
+                    + "\n\tИспользуйте Английское, либо родное написание языка, который вы хотите установить."
                     + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish"
-                    + "\n\tЕсли вам нужна дополнительная помощь с этой командой или не нашли ответа и хотите задать вопросы на языке, в настоящее время связанным "
-                    + "с ботом, пожалуйста, не стесняйтесь обратиться к переводчикам на нашем сервере для получения помощи. Discord is at " + Const.COMMAND_PREFIX + Const.COMMAND + " discord```"},
+                    + "\n\tВам нужна дополнительная помощь с этой командой? Не нашли ответа и хотите задать вопросы на языке, в настоящее время связанным "
+                    + "с ботом? Пожалуйста, не стесняйтесь обратиться к переводчикам на нашем сервере для получения помощи. Discord is at " + Const.COMMAND_PREFIX + Const.COMMAND + " discord```"},
             {"botLangSuccess", "Вы успешно изменили мой язык."},
             {"botLangUnsupported", "Этот язык в настоящее время не поддерживается."},
             {"botStatistics", "%s Статистика"},
             {"broadcasterLangAllSuccess", " :ok_hand: Я буду искать трансляции на всех языках."},
-            {"broadcasterLangFail", "Что-то пошло не так, и я по-прежнему ищу все языки."},
+            {"broadcasterLangFail", "Что-то пошло не так, и я по-прежнему ищу трансляции на всех языках."},
             {"broadcasterLangSuccess", " :ok_hand: Я буду искать только те трансляции, которые находятся на этом языке!"},
             {"canNotRemoveOwner", "Глупо. Вы не можете удалить владельца сервера из списка менеджеров. :laughing: " +
                     ":laughing:"},
             {"cleanupFail", "Хм... Что-то пошло не так... Лучше попробуйте это еще раз."},
-            {"cleanupHelp", "```Markdown\n# CLEANUP\n*  Изменение способа очистки моих объявлений трансляций.\n\n## USAGE:"
+            {"cleanupHelp", "```Markdown\n# ОЧИСТКА\n*  Изменение способа очистки моих уведомлений о трансляциях.\n\n## ПРИМЕНЕНИЕ:"
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " cleanup <option>"
-                    + "\n\tnone   - Я ничего не буду менять в своих объявлениях! (default)"
+                    + "\n\tnone   - Я ничего не буду менять в своих объявлениях! (по умолчанию)"
                     + "\n\tedit   - Я отредактирую свои объявления, чтобы сказать \"OFFLINE\" , когда стрим окончен"
                     + "\n\tdelete - Я удалю объявление, когда стрим окончен"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " cleanup edit" + "```"},
-            {"cleanupSuccessDelete", "Как скажете!  Теперь я буду удалять все мои объявления, если трансляция окончена!"},
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " cleanup edit" + "```"},
+            {"cleanupSuccessDelete", "Как скажете!  Теперь я буду удалять мои объявления, если трансляция окончена!"},
             {"cleanupSuccessEdit", "Я буду редактировать мои объявления, если трансляция началась или окончена."},
             {"cleanupSuccessNone", " :ok_hand: Я ничего не буду делать с моими объявлениями."},
             {"compactFail", "Эм... что-то пошло не так. Мой компактный режим не изменился."},
-            {"compactHelp", "```Markdown\n# COMPACT\n* Мои объявления изменены на более компактную версию.\n\n## USAGE:  "
+            {"compactHelp", "```Markdown\n# КОМПАКТНОСТЬ\n* Мои объявления возможно изменить на более компактную версию.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
-                    + "\n\tnoEmbed     - Использует только короткое объявление."
+                    + "\n\tnoEmbed     - Использование короткого объявления."
                     + "\n\tsmallEmbed  - Объявление с маленьким изображением."
                     + "\n\tfullEmbed   - Полное объявление, с больщим изображением."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
             {"compactFullEmbed", " :compression: С этого момента вы будете получать полные объявления."},
             {"compactSmallEmbed", " :compression: С этого момента вы будете получать объявления с маленькими изображениями."},
-            {"compactNoEmbed", " :compression: Теперь ваши объявления будут только короткими предложениеми."},
+            {"compactNoEmbed", " :compression: Теперь ваши объявления будут в виде коротких предложений."},
             {"devMessage", "*Сообщение от " + Const.BOT_NAME + " разработчиков:*\n\n\t"},
             {"discordChannelNoExist", "Данный текстовый канал отсутствует на вашем сервере.."},
             {"discordLink", "Хотите присоединиться к серверу Now Live Discord? Если у вас возникли проблемы, то там есть много " +
@@ -104,73 +104,73 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"emptyArgs", "Кажется вы забыли какую-то команду.  Изучите команды помощи для получения дополнительной информации.."},
             {"emptyCommand", "В следующий раз, когда ты меня разбудишь, пожалуйста отправьте также команду."},
             {"followersEmbed", "Подписчиков"},
-            {"guildJoinSuccess", "Всем привет!  Я Now Live. Я объявлю, если стримеры начинают трансляции!  Type `" +
+            {"guildJoinSuccess", "Всем привет!  Я Now Live. Я объявлю, если стример(ы) начинают трансляцию(и)!  Type `" +
                     Const.COMMAND_PREFIX + Const.COMMAND +
-                    " help` для списка моих команд.\n\nIf вам нужна помощь в настройке, приходите " +
+                    " help` для списка моих команд.\n\nЕсли вам нужна помощь в настройке, приходите " +
                     "присоединяйтесь к моему Discord на " + Const.DISCORD_URL + " и ознакомьтесь с инструкциями по настройке и списком команд " +
-                    "каналы для всей информации!\n\nНе забудь поздороваться!"},
-            {"helpPm", "Привет %s! Итак, я слышал, что ты ищешь помощи? Ниже приведен список моих команд.\n\n" +
+                    "каналы для всей информации!\n\nНе забудьте поздороваться!"},
+            {"helpPm", "Привет %s! Итак, я слышал, что вам нужна помощь? Ниже приведен список моих команд.\n\n" +
                     "```Markdown\n" +
-                    "# ADD\n" +
+                    "# ДОБАВЛЕНИЕ\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " add help\n\n" +
                     "# BEAM\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " beam help\n\n" +
-                    "# BOTLANG\n" +
+                    "# ЯЗЫКБОТА\n" +
                     "* Поддерживаемые языки: Английский, Чешский, Германский, Французский, Русский" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " botlang help\n\n" +
-                    "# CLEANUP\n" +
+                    "# УДАЛЕНИЕ\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " cleanup help\n\n" +
-                    "# COMPACT\n" +
+                    "# КОМПАКТНОСТЬ\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " compact help\n\n" +
-                    "# INVITE\n" +
+                    "# ПРИГЛАШЕНИЕ\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " invite help\n\n" +
-                    "# LIST\n" +
+                    "# СПИСОК\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " list help\n\n" +
-                    "# MOVE\n" +
+                    "# ПЕРЕНАПРАВЛЕНИЕ\n" +
                     "*Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " move help\n\n" +
-                    "# NOTIFY\n" +
+                    "# УВЕДОМЛЕНИЕ\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
-                    "# PING\n" +
+                    "# ПИНГ\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
-                    "# REMOVE\n" +
+                    "# УДАЛЕНИЕ\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " remove help\n\n" +
-                    "# STREAMLANG\n" +
+                    "# ЯЗЫКТРАНСЛЯЦИИ\n" +
                     "* Для получения дополнительной информации введите: " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang help\n\n" +
-                    "# STREAMS\n" +
+                    "# ТРАНСЛЯЦИИ\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " streams help\n\n" +
                     "# TWITCH\n" +
                     "* Добавление и удаление связанных с Twitch.tv вещей. Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n" +
-                    "# PATREON/DONATE\n" +
-                    "Дает ссылку на patreon бота. Команды :\n"+
+                    "# PATREON/ПОЖЕРТВОВАНИЕ\n" +
+                    "Команды для просмотра ссылки на Patreon бота:\n"+
                     Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" + Const.COMMAND_PREFIX + Const.COMMAND + " donate\n\n" +
-                    "# TRELLO/BUG/REQUEST\n" +
-                    "Дает ссылку на наш Trello, который используется для сообщений об ошибках и для запроса функций. Команды :\n" +
+                    "# TRELLO/ОШИБКА/ЗАПРОС\n" +
+                    "Команды для просмотра ссылки на наш Trello, который используется для сообщений об ошибках и для запроса функций:\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" + Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" + Const.COMMAND_PREFIX + Const.COMMAND + " request\n\n```\n"+
                     "\n~~" + Const.BOT_NAME + "\n\n" +
                     "Если вам нужна дополнительная помощь, присоединяйтесь к моему серверу в Discord.  Там много пользователей, которые будут полезны вам:  " + Const.DISCORD_URL + "\n\n" +
                     "***P.S. Я не проверяю личных сообщений, поэтому не отправляйте их***"},
             {"incorrectArgs", "Вы передали мне неверные или отсутствующие значения.  Проверьте команду help для получения дополнительной информации.."},
-            {"invite", "Привет %s! Пригласите меня на свой сервер!\n\n\t"
+            {"invite", "Привет %s! Вы можете пригласить меня на свой сервер!\n\n\t"
                     + "**Кликабельно:** https://discordapp.com/oauth2/authorize?&client_id="
                     + Config.DISCORD_CLIENT_ID.token() + "&scope=bot&permissions=8"},
-            {"inviteHelp", "```Markdown\n# INVITE\n* Используется для показа моей ссылки приглашения.\n\n## USAGE:  "
+            {"inviteHelp", "```Markdown\n# ПРИГЛАШЕНИЕ\n* Используется для показа моей ссылки приглашения.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " invite\n\tПриглашение бота NowLive на ваш сервер Discord.```"},
-            {"listHelp", "```Markdown\n# LIST\n* Эта команда показывает базу данных.\n\n## USAGE:  "
+            {"listHelp", "```Markdown\n# СПИСОК\n* Эта команда показывает базу данных.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list *option*"
                     + "\n\ttwitchChannel   - Перечисляет Twitch каналы, которые вы назначали"
                     + "\n\ttwitchCommunity - Список Twitch сообществ, которые вы назначали"
@@ -180,11 +180,11 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "\n\ttfilter         - Выводит список всех фильтров заголовков, которые вы создали"
                     + "\n\ttwitchTeam      - Перечисляет Twitch team, которые вы назначали"
                     + "\n\tsetting         - Список общих настроек бота"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel" + "```"},
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel" + "```"},
             {"listSettings", "```Markdown\n" +
                     "# Параметры бота на вашем сервере" +
-                    "\n* Компактный режим %s:" +
-                    "\n* Уведомление настроено на %s:" +
+                    "\n* Компактный режим: %s:" +
+                    "\n* Уведомление настроено для %s:" +
                     "\n* Очистка установлена на %s." +
                     "\n* Язык объявлений о стриме: %s." +
                     "\n* Язык бота: %s.```"},
@@ -192,14 +192,14 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "сервере!"},
             {"moveFail", " :no_entry: Кажется, я не могу отправлять объявления.  Удостоверьтесь, что у меня есть соответствующие разрешения " +
                     "на этом канале."},
-            {"moveHelp", "```Markdown\n# MOVE\n* Изменить, где я делаю свои объявления.\n\n## USAGE:  "
+            {"moveHelp", "```Markdown\n# ПЕРЕНАПРАВЛЕНИЕ\n* Изменить канал, в котором я делаю свои объявления.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " move <channel>\n\t"
-                    + "<channel> - Название канала, на который вы хотите переместить мои объявления: (MUST include the #)\n"
+                    + "<channel> - Название канала, на который вы хотите переместить мои объявления: (ОБЯЗАТЕЛЬНО используйте символ #)\n"
                     + "Этот параметр устарел и может работать не так, как вы думаете. Пожалуйста смотрите Twitch команды."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " move #discordchannel" + "```"},
-            {"moveSuccess", " :ok_hand: Я объявлю там!"},
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " move #discordchannel" + "```"},
+            {"moveSuccess", " :ok_hand: Я буду делать объявления в данном канале!"},
             {"needOneManager", "Если вы удалите этого менеджера, кто будет управлять мной?"},
             {"noBotManager", "Это противоречит Уставу Союза Discord Бота, чтобы боты управляли мной. Извините, попробуйте найти " +
                     "подходящего человека для работы. :thumbsup:"},
@@ -207,19 +207,19 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"notAManager", "Извините, но только мои руководители могут это сделать. Type `" + Const.COMMAND_PREFIX + Const.COMMAND +
                     " list manager` для списка людей, которые могут."},
             {"notAnAdmin", "К кому это может относиться: я твой слуга, но ты не мой господин."},
-            {"notifyEveryone", ":tada: ВАУ!!  **EVERYONE** на сервере уведомляется, когда я " +
-                    "объявляю о трансляции!  *(Ты уверен?  Я не рекомендую это для больших серверов...  Это может " +
+            {"notifyEveryone", ":tada: ВАУ!!  **ВСЕ** на сервере уведомляются, когда я " +
+                    "объявляю о трансляциях!  *(Ты уверен?  Я не рекомендую это для больших серверов...  Это может " +
                     "рассердить людей.)*"},
-            {"notifyHelp", "```Markdown\n# NOTIFY\n* Используется для изменения опции глобального уведомления для этого сервера.\n\n## USAGE:  "
+            {"notifyHelp", "```Markdown\n# УВЕДОМЛЕНИЕ\n* Используется для изменения опции глобального уведомления для этого сервера.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " notify <option>"
                     + "\n\tnone     - Нет @ упоминаний любого вида (по умолчанию)"
                     + "\n\there     - Я буду уведомлять только тех людей, которые находятся в сети, когда я делаю объявление"
                     + "\n\teveryone - Я сообщу ВСЕМ!!  Ахаха!!  (Я не рекомендую это на больших серверах)"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " notify everyone" + "```"},
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " notify everyone" + "```"},
             {"notifyHere", " :bellhop_bell: Все, кто онлайн, получат упоминание, когда я анонсирую трансляции."},
             {"notifyNone", " :ok_hand: Я не буду упоминать никого в моих объявлениях."},
             {"nowLive", "НАЧАЛ(А) ТРАНСЛЯЦИЮ!\\\n"},
-            {"nowPlayingEmbed", "Сейчас Играет в"},
+            {"nowPlayingEmbed", "Сейчас играет в"},
             {"nowPlayingLower", " сейчас играет в "},
             {"nowStreamingEmbed", " сейчас в сети!"},
             {"numUniqueMembers", "Количество Уникальных Участников"},
@@ -229,38 +229,38 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"onlineStreamPm1", "Всем привет!  Сейчас есть "},
             {"onlineStreamPm2", " трансляция(и) онлайн, которая(ые) могут вас заинтересовать!  Переходите по ссылке(ам), чтобы проверить " +
                     "их: \n\n"},
-            {"oops", "Проблемка!  Что-то пошло не так. Ничего не изменилось! Попробуем снова."},
+            {"oops", "Упс!  Что-то пошло не так. Ничего не изменилось! Попробуем снова."},
             {"patreon", "Если вы желаете пожертвовать для бота, перейдите в Patreon. https://www.patreon.com/nowlive"},
             {"patreonHelp" , "Дает ссылку на нашу страницу patreon."},
             {"ping", "Когда я был в Китае от Американской сборной по пинг-понгу ,  я очень любил играть моей " +
                     "Flexolite ракеткой."},
-            {"pingHelp", "```Markdown\n# PING\n* Используйте для проверки моего времени отклика. Если я правильно работаю, я пришлю вам pong.\n\n## USAGE: "
+            {"pingHelp", "```Markdown\n# ПИНГ\n* Используйте для проверки моего времени отклика. Если я правильно работаю, я пришлю вам pong.\n\n## ПРИМЕНЕНИЕ: "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ping```"},
             {"privateMessageReply", "Я извиняюсь, но бот, которого вы пытаетесь достать, имеет автоответчик, который " +
                     "еще не настроен. Повторите попытку позже.."},
-            {"removed", "Removed %s %s."},
+            {"removed", "Удалено %s %s."},
             {"removeManagerFail", "Я не могу удалить %s , так как их нет в моей базе данных."},
-            {"removeHelp", "```Markdown\n# REMOVE\n* Используется для удаления менеджеров из моей базы данных.\n\n## USAGE:  "
+            {"removeHelp", "```Markdown\n# УДАЛЕНИЕ\n* Используется для удаления менеджеров из моей базы данных.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @userName"
-                    + "\n\tmanager - @ Упоминание пользователя об удалении в качестве менеджера"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
-            {"servers", "Servers"},
-            {"shardsThis", "Shard Number"},
-            {"shardsTotal", "Number Shards"},
-            {"statusHelp", "```Markdown\n# STATUS\n* Показывает различную статистику бота.\n\n## USAGE:  "
+                    + "\n\tmanager - @ Упомяните пользователя для удалении из менеджеров"
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
+            {"servers", "Сервера"},
+            {"shardsThis", "Shard Номер"},
+            {"shardsTotal", "Количество Shards"},
+            {"statusHelp", "```Markdown\n# СТАТУС\n* Показывает различную статистику бота.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},
-            {"streamlangHelp", "```Markdown\n# STREAMLANG\n* Позволяет фильтровать потоки по тому языку, который транслируется " +
+            {"streamlangHelp", "```Markdown\n# ЯЗЫКТРАНСЛЯЦИИ\n* Позволяет фильтровать потоки по тому языку, который транслируется " +
                     "in.  Это поддерживает английское правописание языка, или родное правописание. Должен быть поддержан " +
-                    "язык на Twitch, указынный в профиле.\n\n## USAGE: "
+                    "язык на Twitch, указынный в профиле.\n\n## ПРИМЕНЕНИЕ: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND +
                     " streamlang <language>\n" +
-                    "* Вы можете использовать написание либо на родном, либо на Английском."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang german```"},
+                    "* Вы можете ввести слово на Английском, либо на родном языке."
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang german```"},
             {"streamTitleEmbed", "Описание"},
-            {"streamsHelp", "```Markdown\n# STREAMS\n* Я вышлю вам список активных трансляций в личные сообщения.\n* (ПРИМЕЧАНИЕ: вы скорее всего " +
+            {"streamsHelp", "```Markdown\n# ТРАНСЛЯЦИИ\n* Я вышлю вам список активных трансляций в личные сообщения.\n* (ПРИМЕЧАНИЕ: вы скорее всего " +
                     "получите несколько личных сообщений, используя эту команду, в зависимости от того, сколько трансляций " +
-                    "отслеживается!)\n\n## USAGE:  "
+                    "отслеживается!)\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " streams```"},
@@ -336,7 +336,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"typeOnce", "Вам нужно всего лишь ввести эту часть."},
             {"uniqueChannels", "Уникальные каналы %s"},
             {"uniqueGames", "Уникальные игры %s"},
-            {"usePlatform", "Ой! Это старый способ! Используйте команду для конкретной платформы!  Введите `" +
+            {"usePlatform", "Это старый способ! Используйте команду для конкретной платформы!  Введите `" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` для получения дополнительной информации."},
             {"watchThemHere", "Подробнее: "},
             {"wrongCommand", " :thinking: Я не знаю эту команду."}
