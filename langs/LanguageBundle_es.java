@@ -31,17 +31,17 @@ public class LanguageBundle_es extends ListResourceBundle {
     private Object[][] contents = {
             {"added", "Añadido "},
             {"addFail", "No se pudo añadir "},
-            {"addHelp", "```Markdown\n# ADD\n* Used to add managers for your server.\n\n## USAGE:  "
+            {"addHelp", "```Markdown\n# ADD\n* Se usa para añadir gestores al servidor.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " add <option> <content>"
                     + "\n\t<option> <content>"
-                    + "\n\tmanager - The @ mention of the user to add as a manager"
-                    + "\n\n## EXAMPLE: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague```"},
+                    + "\n\tmanager - Menciona con un @ para añadir al gerente"
+                    + "\n\n## Ejemplo: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague```"},
             {"adminOverride", "*El permiso de este comando se ha reemplazado por un desarollador del bot.*"},
             {"alreadyExists", "Parece que esto ya estaba en mi base de datos. ¯\\_(?)_/¯"},
             {"alreadyManager", "Parece que ese usuario ya es gerente. Encuentra más humanos! "},
-            {"announcementMessageText", "Hey!  %s has just gone live! Watch their stream here: %s"},
+            {"announcementMessageText", "Hey!  %s está en directo! Mira el stream aquí!: %s"},
             {"announceHelp", "```Markdown\nANNOUNCE:  Shhh...  Soy un secreto...\nUSAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
@@ -59,12 +59,12 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " botlang language"
-                    + "\n\tEnter either the English spelling or the native spelling of the language you wish to set."
+                    + "\n\tIntroduce la otrografía correcta o la nativa del idioma del idioma que quieras."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish" + "```"
-                    + "\n\tIf you need further help with this command or others outside of what our help commands do and you wish to ask questions in a language currently associated "
-                    + "with the bot please feel free to reach out to our translators in our Discord for assistance. Discord is at " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
-            {"botLangSuccess", "You've successfully changed my language."},
-            {"botLangUnsupported", "That language is currently not supported."},
+                    + "\n\tSi necesitas ayuda con este comandos u otros fuera de lo que estes mensajes de ayuda y quieres preguntar en un leguaje asociado"
+                    + "a este bot, tómate la libertad de hablarle a nuestros traductores en nuestro servidor de Discord . El servidor está en " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
+            {"botLangSuccess", "Has cambiado mi idioma correctamente!."},
+            {"botLangUnsupported", "No soportamos ese lenguaje."},
             {"botStatistics", "%s Statistics"},
             {"broadcasterLangAllSuccess", " :ok_hand: Solo buscaré streamers en todos los idiomas!"},
             {"broadcasterLangFail", "Algo ha salido mal, seguiré buscando en todos los idiomas."},
@@ -89,28 +89,28 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + Const.COMMAND
                     + " compact <opción>"
                     + "\n<opción>"
-                    + "\n\tnoEmbed     - Removes the large embed and only uses a short sentence."
-                    + "\n\tsmallEmbed  - Announces with an embed with no large banner image."
-                    + "\n\tfullEmbed   - The full announcement with large banner image."
+                    + "\n\tnoEmbed     - Cambia los mensajes largos por los cortos."
+                    + "\n\tsmallEmbed  - Anuncia los mensajes SIN el banner del canal.."
+                    + "\n\tfullEmbed   - Anuncia el stream CON el banner del canal."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
-            {"compactFullEmbed", " :compression: You will get the full announcement from now on."},
-            {"compactSmallEmbed", " :compression: You will get an announcement with a small embed from now on."},
-            {"compactNoEmbed", " :compression: Your announcements will only be a short sentence from now on."},
+            {"compactFullEmbed", " :compression: Las notificaciones serán enteros a partir de ahora."},
+            {"compactSmallEmbed", " :compression: Tendrás las notificaciones un pequeño embed."},
+            {"compactNoEmbed", " :compression: A partir de ahora las notificaciones serán una pequeña frase."},
             {"devMessage", "*Mensaje de los desarrolladores de:" + Const.BOT_NAME + "\n\n\t"},
-            {"discordChannelNoExist", "That text channel doesn't exist on your server."},
-            {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
-                    "having problems! Click this link:\n" + Const.DISCORD_URL},
-            {"discordLinkHelp", "Display's the link to join the Now Live Discord server."},
+            {"discordChannelNoExist", "Este canal de texto no existe en el servidor."},
+            {"discordLink", "Quieres unnirte al servidor de Now Live? Hay mucha gente dispuesta a ayudar " +
+                    "si tienes problemas! Clica este enlace:\n" + Const.DISCORD_URL},
+            {"discordLinkHelp", "Aparece el enlace para unirte al servidor de Now Live."},
             {"discordUserNoExist", "Esta persona no es usuario de discord!  Intentalo de nuevo!"},
-            {"doesNotExist", "Eso nunca estuvo en mi base de datos."},
+            {"doesNotExist", "Eso nunca estuvo en mi base de datos :thinking:."},
             {"emptyArgs", "Creo que te has olvidado de algún comando. Revisa la ayuda para más info."},
             {"emptyCommand", "La próxima vez que me despiertes, pon un comando."},
             {"followersEmbed", "Seguidores"},
-            {"guildJoinSuccess", "Hola!  Soy Now Live, el bot notificador de streams! Escribe `" + Const.COMMAND_PREFIX
+            {"guildJoinSuccess", "Hola!  Soy Now Live, el bot  de streams! Escribe `" + Const.COMMAND_PREFIX
                     + Const.COMMAND + " help` para una lista de comandos.\n\nSi necesitas ayuda configurandome, ven, " +
                     "únete a mi discord " + Const.DISCORD_URL + " y revisa how-to-setup y commands-list " +
                     "para toda la info!\n\nNo olvides saludar!"},
-            {"helpPm", "Hey there, %s! So I hear you're looking for some help? Here is a list of my commands.\n\n" +
+            {"helpPm", "Hey there, %s! He escuchado por ahí que buscas ayuda eh? Aquí tienes una lista de comandos!.\n\n" +
                     "```Markdown\n" +
                     "# ADD\n" +
                     "* Para obtener más información, escriba: " +
@@ -119,7 +119,7 @@ public class LanguageBundle_es extends ListResourceBundle {
                     "* Para obtener más información, escriba: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " beam help\n\n" +
                     "# BOTLANG\n" +
-                    "* Currently supported languages: English, Czech, German, French, Spanish\n" +
+                    "* Idiomas soportados: Inglés, Checo, Alemán, Frances, Español\n" +
                     "* Para obtener más información, escriba: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " botlang help\n\n" +
                     "# CLEANUP\n" +
@@ -156,14 +156,14 @@ public class LanguageBundle_es extends ListResourceBundle {
                     "* Para obtener más información, escriba: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
                     "# PATREON/DONATE\n" +
-                    "Gives the link to the bot's Patreon. Commands are :\n"+
+                    "Da el enlace para el Patreon del bot. Los comandos son:\n"+
                     Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" + Const.COMMAND_PREFIX + Const.COMMAND + " donate\n\n" +
                     "# TRELLO/BUG/REQUEST\n" +
-                    "Gives the link to our Trello which is used for bug reports and feature requests. Commands are :\n" +
+                    "Da el enlace a Trello que se usa para reportar bugs y para recomendar características. Los comandos son:\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" + Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" + Const.COMMAND_PREFIX + Const.COMMAND + " request```"+
                     "\n\n~~" + Const.BOT_NAME + "\n\n" +
-                    "If you need additional help, join my Discord.  Lots of helpful people there:  " + Const.DISCORD_URL + "\n\n" +
-                    "***P.S. I don't monitor this mailbox, so please don't send me any messages through PM***"},
+                    "Si necesitas más ayuda, únete a mi server de Discord.  Hay mucha gente dispuesta a ayudar:  " + Const.DISCORD_URL + "\n\n" +
+                    "***P.D. No leo los mensajes privados, por favor, no mandes mensajes privados***"},
             {"incorrectArgs", "Has escrito algo mal.  Revisa la ayuda para más información" +
                     '.'},
             {"invite", "Hola amigo! Invitame a tu server!\n\n\t"
@@ -173,34 +173,34 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " invite\n\tInvita a NowLive a tu servidor de Discord.```"},
-            {"listHelp", "```Markdown\n# LIST\n* This command lists things from the database.\n\n## USAGE:  "
+            {"listHelp", "```Markdown\n# LIST\n* Este comando lista cosas de la base de datos.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\ttwitchChannel   - Lists the Twitch Channels you follow"
-                    + "\n\ttwitchCommunity - List the Twitch Communities you follow"
-                    + "\n\tgfilter         - Lists all game filters you have set up"
-                    + "\n\ttwitchGame      - List the Twitch Games that I'm tracking for you"
-                    + "\n\tmanager         - Lists the managers on this server"
-                    + "\n\ttfilter         - Lists all title filters you have set up"
-                    + "\n\ttwitchTeam      - Lists the Twitch teams you follow"
-                    + "\n\tsetting         - Lists common bot settings"
+                    + "\n\ttwitchChannel   - Lista los canales de Twitch que sigues"
+                    + "\n\ttwitchCommunity - Lista las comunidades de Twitch que sigues"
+                    + "\n\tgfilter         - Lista los filtros que has configurados"
+                    + "\n\ttwitchGame      - Lista los juegos de twitch que has configurado"
+                    + "\n\tmanager         - Lista los gerentes de este servidor"
+                    + "\n\ttfilter         - Lista los filtros de título que tienes puesto"
+                    + "\n\ttwitchTeam      - Lista los equipos de Twitch que sigues."
+                    + "\n\tsetting         - Lista las configuraciones básicas del bot"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel" + "```"},
             {"listSettings", "```Markdown\n" +
-                    "# Bot Settings on Your Server" +
-                    "\n* Compact mode is %s." +
-                    "\n* Notification is set to %s." +
-                    "\n* Cleanup is set to %s." +
-                    "\n* Broadcaster language is set to %s." +
-                    "\n* Bot language is set to %s.```"},
+                    "# Configuraciones del bot en este server" +
+                    "\n* Modo compacto: %s." +
+                    "\n* Modo notificiaciones: %s." +
+                    "\n* Modo limpieza de notificaciones: %s." +
+                    "\n* Lenguaje del streamer: %s." +
+                    "\n* Lenguaje del bot: %s.```"},
             {"moveDoNotOwnChannel", " :no_entry: Ehm... no puedo anunciar en un canal que no existe en tu " +
                     "server!"},
             {"moveFail", " :no_entry: Parece que no puedo enviar notificaciones ahí. Revisa mis permisos. " +
                     "in that channel."},
-            {"moveHelp", "```Markdown\n# MOVE\n* Change where I make my announcements.\n\n## USAGE:  "
+            {"moveHelp", "```Markdown\n# MOVE\n* Cambia donde donde notifico los streams.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " move <channel>\n\t"
-                    + "<channel> - The name of the channel you wish to move my announcements to (MUST include the #)\n"
-                    + "This option is deprecated and may not work as you think.  Please see the Twitch command."
+                    + "<channel> - El nombre del canal en el que queras que anuncie los streams # (DEBE incluir la #)\n"
+                    + "Esta opción está inactiva y no funcionará como crees.  Por favor, usa el comando de Twitch."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " move #discordchannel" + "```"},
             {"moveSuccess", " :ok_hand: Anunciaré ahí! :arrow_right: "},
             {"needOneManager", "Si lo eliminas... Quien me mandará cosas?"},
@@ -232,113 +232,112 @@ public class LanguageBundle_es extends ListResourceBundle {
             {"onlineStreamPm1", "Hey!  Ahora hay "},
             {"onlineStreamPm2", " streamers en linea que te pueden interesar! Miralos y puede que te gusten! \n\n"},
             {"oops", "Oops!  Algo ha salido mal, pero no se ha cambiado nada!  intentemoslo de nuevo."},
-            {"patreon", "If you wish to donate to the bot consider using our Patreon. https://www.patreon.com/nowlive"},
-            {"patreonHelp" , "Gives the link to our patreon page."},
+            {"patreon", "Si quieres donar considera unirte a mi Patreon. https://www.patreon.com/nowlive"},
+            {"patreonHelp" , "Da el enlace a la página de Patreon."},
             {"ping", "Cuando estaba en china, en el equipo \"All-American Ping Pong\", me encantaba jugar al ping-pong con " +
-                    "raqueta Flexolite. Viejos tiempos."},
+                    "mi raqueta Flexolite. Viejos tiempos."},
             {"pingHelp", "```Ruby\nPING:  Se usa para pingearme. Si funciono bien, te enviaré un pong.\nUSAGE: "
                     + Const.COMMAND_PREFIX + "ping```"},
             {"privateMessageReply", "Lo siento, pero el bot al que estás intentando contactar no tiene el mailobx " +
                     "configurado aún.  Porfavor, intentelo más tarde."},
             {"removed", "Eliminado."},
-            {"removeManagerFail", "I can't remove %s because they are not in my database."},
-            {"removeHelp", "```Markdown\n# REMOVE\n* Used to remove managers from my database.\n\n## USAGE:  "
+            {"removeManagerFail", "No puedo eliminar %s porque no está en mi base de datos."},
+            {"removeHelp", "```Markdown\n# REMOVE\n* Se usa para eliminar gerentes.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @userName"
-                    + "\n\tmanager - The @ mention of the user to remove as a manager"
+                    + "\n\tmanager - Usa la mención ( @ ) para eliminar al gerente"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
-            {"servers", "Servers"},
-            {"shardsThis", "Shard Number"},
-            {"shardsTotal", "Number Shards"},
-            {"statusHelp", "```Markdown\n# STATUS\n* Shows various statistics of the bot.\n\n## USAGE:  "
+            {"servers", "Servidores"},
+            {"shardsThis", "Número de Shard"},
+            {"shardsTotal", "Numero total de Shards"},
+            {"statusHelp", "```Markdown\n# STATUS\n* Muestra varias estadisticas del bot.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},
-            {"streamlangHelp", "```Markdown\n# STREAMLANG\n* Allows you to filter streams by the language it is being broadcast " +
-                    "in.  This supports the English spelling of the language, or the native spelling.  Must be a supported " +
-                    "language on Twitch that is listed in the Dashboard.\n\n## USAGE: "
+            {"streamlangHelp", "```Markdown\n# STREAMLANG\n* Permite filtrar los streams por el lenguaje en el que se " +
+                    "emite.  Esto soporta el idioma deletreado en inglés o el idioma escrito de manera nativa. Además el idioma debe " +
+                    "estar soportado como Twitch indica en el Dashboard.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND +
                     " streamlang <language>\n" +
-                    "* You may use either the native spelling of the language or the English spelling of the language."
+                    "* Debes usar el deletreo nativo de este idioma o el deletreo en Inglés."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang german```"},
             {"streamTitleEmbed", "Stream Title"},
             {"streamsHelp", "```Ruby\nSTREAMS:  Te enviaré una lista de streams por privado. (NOTA: Recibirás " +
-                    "bastantes privados usando este comando, dependiendo cuantos streams estés" +
+                    "bastantes privados usando este comando, dependiendo de cuantos streams tengas" +
                     "monitorizando!)\nUSAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " streams```"},
-            {"trello", "To report bugs or to request features to be added to the bot please use our Trello. https://trello.com/b/kcWshbIU"},
-            {"trelloHelp", "Returns the link to the Trello for the bot"},
-            {"totalViewsEmbed", "Total Views"},
-            {"twitchCommunities", "Twitch Communities"},
-            {"twitchAnnounceUpdate", "\n# Updated the Twitch announcement channel for %s to: %s."},
-            {"twitchAnnounceUpdateFail", "\n! Failed to change the Twitch announce channel for %s to: %s."},
-            {"twitchChannelAdd", "\n# Added channel(s): %s."},
-            {"twitchChannelAddFail", "\n# Failed to add channels: %s."},
-            {"twitchChannelAnnounce", "\n# They will be announced in: #%s."},
-            {"twitchChannelGameFilter", "\n# They will only be announced when they are playing: %s."},
-            {"twitchChannelNotFound", "\n# Channel(s) not found on Twitch: %s."},
-            {"twitchChannelRemove", "\n# Removed channels: %s."},
-            {"twitchChannelRemoveFail", "\n! Failed to delete channels: %s."},
-            {"twitchChannelTitleFilter", "\n# They will only be announced when these words are in the title: %s."},
-            {"twitchCommunityAdd", "\n# Added community(s): %s."},
-            {"twitchCommunityAddFail", "\n# Failed to add community(s): %s."},
-            {"twitchCommunityAnnounce", "\n# The community(s) will announce in: #%s."},
-            {"twitchCommunityNotFound", "\n# Community(s) not found on Twitch: %s."},
-            {"twitchCommunityRemove", "\n# Removed community(s): %s."},
-            {"twitchCommunityRemoveFail", "\n# Failed to remove community(s): %s."},
-            {"twitchGameAdd", "\n# Added game(s): %s."},
-            {"twitchGameAddFail", "\n# Failed to add game(s): %s."},
-            {"twitchGameAnnounce", "\n# The game will announce in: #%s."},
-            {"twitchGameFilterAdd", "\n# Added game filter(s): %s."},
-            {"twitchGameFilterAddFail", "\n# Failed to add game filter(s): %s."},
-            {"twitchGameFilterRemove", "\n# Removed game filter(s): %s."},
-            {"twitchGameFilterRemoveFail", "\n# Failed to remove game filter(s): %s."},
-            {"twitchGameRemove", "\n# Removed game(s): %s."},
-            {"twitchGameRemoveFail", "\n# Failed to remove game(s): %s."},
-            {"twitchHelp", "```Markdown\n# TWITCH\n* Add and remove things that are Twitch.tv related.\n"
+            {"trello", "Para reportar bug o si tienes alguna caracteristica para añadir al bot usa nuestro Trello. https://trello.com/b/kcWshbIU"},
+            {"trelloHelp", "Da el link directo al Trello del bot"},
+            {"totalViewsEmbed", "Visitas totales "},
+            {"twitchCommunities", "Comunidades de Twitch "},
+            {"twitchAnnounceUpdate", "\n# Se cambió el canal de notificación de %s a: %s."},
+            {"twitchAnnounceUpdateFail", "\n! No se pudo cambiar el canal de %s a: %s."},
+            {"twitchChannelAdd", "\n# Se añadió(eron) canal(es): %s."},
+            {"twitchChannelAddFail", "\n# No se pudieron añadir el(los) canal(es): %s."},
+            {"twitchChannelAnnounce", "\n# Serán anunciados en: #%s."},
+            {"twitchChannelGameFilter", "\n# Solo serán anunciados mientras juegen: %s."},
+            {"twitchChannelNotFound", "\n# Canal(es) no encontrados: %s."},
+            {"twitchChannelRemove", "\n# Canales eliminados: %s."},
+            {"twitchChannelRemoveFail", "\n! No se pudieron eliminar los canales: %s."},
+            {"twitchChannelTitleFilter", "\n# Solo se anunciarán cuando estas palabras estén en el titulo: %s."},
+            {"twitchCommunityAdd", "\n# Añadida comunidad(es): %s."},
+            {"twitchCommunityAddFail", "\n# No se pudieron añadir la(s) comunidad(es): %s."},
+            {"twitchCommunityNotFound", "\n# Comunidad(es) no encontradas: %s."},
+            {"twitchCommunityRemove", "\n# Elimindada communidad(es): %s."},
+            {"twitchCommunityRemoveFail", "\n# No se pudieron eliminar las commundad(es): %s."},
+            {"twitchGameAdd", "\n# Juego(s) añadido(s): %s."},
+            {"twitchGameAddFail", "\n# No se pudieron añadir los juego(s): %s."},
+            {"twitchGameAnnounce", "\n# El juego se anunciará en: #%s."},
+            {"twitchGameFilterAdd", "\n# Se añadieron los filtros: %s."},
+            {"twitchGameFilterAddFail", "\n# No se pudieron añadir los filtros: %s."},
+            {"twitchGameFilterRemove", "\n# Eliminados los filtros: %s."},
+            {"twitchGameFilterRemoveFail", "\n# No se pudo eliminar el filtro: %s."},
+            {"twitchGameRemove", "\n# Eliminado(s) juego(s): %s."},
+            {"twitchGameRemoveFail", "\n# No se pudo eliminar el juego: %s."},
+            {"twitchHelp", "```Markdown\n# TWITCH\n* Añade y elimina cosas relaccionadas con Twitch.tv.\n"
                     + "* Notes:\n\t"
-                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Twitch URL. It will not work!! Use only the channel name (www.twitch.tv/channelName)\n\t"
-                    + "The Team name must be from the URL, not the display name of the team. (www.twitch.tv/team/teamName)\n\t"
-                    + "You may add multiple channels, teams, games, communities, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/communityName/teamName/gameName\n\n"
-                    + "## Twitch Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Twitch Communities (Announce ALL live streams in the community)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community communityName #announcementChannel\n\n"
-                    + "## Twitch Games (Announce ALL live streams for that game)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game gameName #announcementChannel\n\n"
-                    + "## Twitch Teams (Announce ALL live streams in the team)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team teamName #announcementChannel\n\n"
-                    + "## Twitch Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Twitch\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Twitch Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Twitch\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter gameName #announcementChannel\n\n"
+                    + "Para añadir filtros de juegos y de títulos,debes incluir los corchetes.\n\t"
+                    + "NO usar el enlace completo, no va a funcionar!!Usa solo el nombre del canal (www.twitch.tv/**__channelName__**)\n\t"
+                    + "El nombre del equipo debe ser la url completa, no el nombre del equipo. (www.twitch.tv/team/teamName)\n\t"
+                    + "Para añadir múltiples canales, equipos, juegos, comunidades y filtros de título y juegos usa el caracter | entre ellos.\n\t"
+                    + "Las unicas opciones son: channelName/communityName/teamName/gameName\n\n"
+                    + "## Canales de Twitch\n"
+                    + "Nota: añadir un canal de notificación, y filtros de título o juego es opcional."
+                    + "* Formato: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel channelName #canaldenotificacion {FiltroDeJuego} [FiltroDeTítulo]\n\n"
+                    + "## Comunidades de Twitch (Anuncia TODOS los streams en la comunidad)\n"
+                    + "* Formato: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community NombreComunidad #canaldenotificacion\n\n"
+                    + "## Juegos de Twitch (Anuncia TODOS los streams en ese juego)\n"
+                    + "* Formato: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game NombreJuego #canaldenotificacion\n\n"
+                    + "## Equipos de twitch (Anuncia TODOS los streams en ese equipo)\n"
+                    + "* Formato: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team NombreEquipo #canaldenotificacion\n\n"
+                    + "## Filtros de Juego (Global)\n"
+                    + "* NOTA: Esto afecta a todas las notificaciones de streams para twitch\n"
+                    + "* Formato: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gfilter {NombreJuego|NombreJuego} #canaldenotificacion\n\n"
+                    + "## Filtros de Título (Global)\n"
+                    + "* NOTA: Esto afecta a todas las notificaciones\n"
+                    + "* Formato: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter NombreJuego #canaldenotificación\n\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (adds a game to the global announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (adds the community with a specified announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (adds a team with a specific announcement channel)\n\n"
+                    + "Warcraft} (añade un canal para anunciar a traves de ciertos filtros)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (Añade un juego al canal de notificación)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (Añade una comunidad para anunciar en un canal específico)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (añade un equipo con un canal específico para anunciar)\n\n"
                     + "```"},
-            {"twitchTeamAdd", "\n# Added team(s): %s."},
-            {"twitchTeamAddFail", "\n# Failed to add team(s): %s."},
-            {"twitchTeamAnnounce", "\n# The team(s) will announce in: #%s."},
-            {"twitchTeamNotFound", "\n# Team(s) not found on Twitch: %s."},
-            {"twitchTeamRemove", "\n# Removed team(s): %s."},
-            {"twitchTeamRemoveFail", "\n# Failed to remove team(s): %s."},
-            {"twitchTeams", "Twitch Teams"},
-            {"twitchTitleFilterAdd", "\n# Added title filter(s): %s."},
-            {"twitchTitleFilterAddFail", "\n# Failed to add title filter(s): %s."},
-            {"twitchTitleFilterRemove", "\n# Removed title filter(s): %s."},
-            {"twitchTitleFilterRemoveFail", "\n# Failed to remove title filter(s): %s."},
+            {"twitchTeamAdd", "\n# Equipo añadido(s): %s."},
+            {"twitchTeamAddFail", "\n# No se pudo añadir el equipo: %s."},
+            {"twitchTeamAnnounce", "\n# El equipo se anunciará en: #%s."},
+            {"twitchTeamNotFound", "\n# Equipo no encontrado: %s."},
+            {"twitchTeamRemove", "\n# Equipo eliminado: %s."},
+            {"twitchTeamRemoveFail", "\n# No se pudo eliminar el equipo: %s."},
+            {"twitchTeams", "Equipo de Twitch"},
+            {"twitchTitleFilterAdd", "\n# Se añadieron los filtros: %s."},
+            {"twitchTitleFilterAddFail", "\n# No se pudieron añadir los títulos de filtro: %s."},
+            {"twitchTitleFilterRemove", "\n# Eliminado filtro(s) de título(s): %s."},
+            {"twitchTitleFilterRemoveFail", "\n# No se pudo eliminar el filtro: %s."},
             {"typeOnce", "Solo necesitas escribirlo una vez, tontito."},
-            {"uniqueChannels", "Unique Channels %s"},
-            {"uniqueGames", "Unique Games %s"},
-            {"usePlatform", "Oops!  Eso es como se hacía antes!  Usa el comando específico!  Escribe`" +
+            {"uniqueChannels", "Canales únicos %s"},
+            {"uniqueGames", "Juegos únicos %s"},
+            {"usePlatform", "Uups!  Eso es como se hacía antes!  Usa el comando específico!  Escribe`" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` para más info."},
             {"watchThemHere", "Miralos aquí: "},
             {"wrongCommand", " :thinking: No conozco ese comando."}
