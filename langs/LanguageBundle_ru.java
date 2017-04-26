@@ -103,11 +103,11 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "* setOnlineMessage - Настраиваемое online сообщение (используется во всех объявлениях)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
             {"defaultAnnounceMessage", "%CHANNEL% начал стрим! Подробнее здесь (кликабельно): %URL%"},
-            {"defaultOfflineHelp", "# КОНФИГУРАЦИЯ OFFLINE СООБЩЕНИЯ ОБЪЯВЛЕНИЯ ПО УМОЛЧАНИЮ\n* Сбрасывает моё offline сообщение до значения по умолчанию.\n\n" +
+            {"defaultOfflineHelp", "# КОНФИГУРАЦИЯ OFFLINE СООБЩЕНИЯ В ОБЪЯВЛЕНИИ ПО УМОЛЧАНИЮ\n* Сбрасывает моё offline сообщение до значения по умолчанию.\n\n" +
                     "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOfflineMessage"},
             {"defaultOfflineMessage", "%CHANNEL% закончил трансляцию!"},
-            {"defaultOnlineHelp", "# КОНФИГУРАЦИЯ ONLINE СООБЩЕНИЯ ОБЪЯВЛЕНИЯ ПО УМОЛЧАНИЮ\n* Сбросывает мое online сообщение до значения по умолчанию.\n\n" +
-                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOnlineMessage"},
+            {"defaultOnlineHelp", "# КОНФИГУРАЦИЯ ONLINE СООБЩЕНИЯ В ОБЪЯВЛЕНИИ ПО УМОЛЧАНИЮ\n* Сбросывает мое online сообщение до значения по умолчанию.\n\n" +
+                    "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOnlineMessage"},
             {"devMessage", "*Сообщение от " + Const.BOT_NAME + " разработчиков:*\n\n\t"},
             {"discordChannelNoExist", "Данный текстовый канал отсутствует на вашем сервере.."},
             {"discordLink", "Хотите присоединиться к серверу Now Live Discord? Если у вас возникли проблемы, то там есть много " +
@@ -210,8 +210,8 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "\n* Очистка установлена на %s." +
                     "\n* Язык объявлений о стриме: %s." +
                     "\n* Язык бота: %s." +
-                    "\n* Current online announcement message format is: %s." +
-                    "\n* Current offline announcement message format is: %s.```"},
+                    "\n* Текущий формат online сообщения в объявлении: %s." +
+                    "\n* Текущий формат offline сообщения в объявлении: %s.```"},
             {"moveDoNotOwnChannel", " :no_entry: Теперь, я не объявляю в канале которого нет на " +
                     "сервере!"},
             {"moveFail", " :no_entry: Кажется, я не могу отправлять объявления.  Удостоверьтесь, что у меня есть соответствующие разрешения " +
@@ -269,7 +269,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "\n\tmanager - @ Упомяните пользователя для удалении из менеджеров"
                     + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
             {"servers", "Сервера"},
-            {"setOfflineHelp", "# НАСТРОЙКА OFFLINE СООБЩЕНИЯ ОБЪЯВЛЕНИЯ\n* Детальная настройка offline сообщения для редактируемого offline объявления.\n\n" +
+            {"setOfflineHelp", "# НАСТРОЙКА OFFLINE СООБЩЕНИЯ В ОБЪЯВЛЕНИИ\n* Детальная настройка offline сообщения для редактируемого offline объявления.\n\n" +
                     "## Доступные значения для использования в вашем сообщении:\n" +
                     "\t* %CHANNEL%   - Название канала в Discord\n" +
                     "\t* %FOLLOWERS% - Общее количество подписчиков\n" +
@@ -277,10 +277,10 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "\t* %STATUS%    - Статус (описание) трансляции\n" +
                     "\t* %URL%       - Ссылка на стрим\n" +
                     "\t* %USER%      - Название Twitch канала\n" +
-                    "\t* %VIEWERS%   - Общее количество просмотров\n\n" +
+                    "\t* %VIEWERS%   - Количество текущих просмотров\n\n" +
                     "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOfflineMessage " +
                     "%CHANNEL% НЕ В СЕТИ."},// <--- Do not translate between the %
-            {"setOnlineHelp", "# НАСТРОЙКА ONLINE СООБЩЕНИЯ ОБЪЯВЛЕНИЯ\n* Детальная настройка online сообщения.\n\n" +
+            {"setOnlineHelp", "# НАСТРОЙКА ONLINE СООБЩЕНИЯ В ОБЪЯВЛЕНИИ\n* Детальная настройка online сообщения.\n\n" +
                     "## Доступные значения для использования в вашем сообщении:\n" +
                     "\t* %CHANNEL%   - Название канала в Discord\n" +
                     "\t* %FOLLOWERS% - Общее количество подписчиков\n" +
@@ -288,8 +288,8 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "\t* %STATUS%    - Статус (описание) трансляции\n" +
                     "\t* %URL%       - Ссылка на стрим\n" +
                     "\t* %USER%      - Название Twitch канала\n" +
-                    "\t* %VIEWERS%   - Общее количество просмотров\n\n" +
-                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOnlineMessage " +
+                    "\t* %VIEWERS%   - Количество текуших просмотров\n\n" +
+                    "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOnlineMessage " +
                     "%CHANNEL% начал стрим! Подробнее здесь (кликабельно): %URL%"},// <--- Do not translate between the %
             {"shardsThis", "Shard Номер"},
             {"shardsTotal", "Количество Shards"},
