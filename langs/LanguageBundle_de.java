@@ -45,7 +45,6 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <content>\n\tThis command is only available to the developers.```"},
-            {"announcementMessageText", "Hey!  %s ist jetzt live! Zum Stream geht\'s hier: %s"},
             {"beamHelp", "```Markdown\n# BEAM\n* Hinzufügen und Entfernen von Beam.pro Inhalten.\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " beam <unterbefehl> <option> <argument>\n"
                     + "\t<unterbefehl> <option> <argument>\n"
@@ -59,7 +58,9 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + Const.COMMAND
                     + " botlang language"
                     + "\n\tGebe den englischen oder nativen Namen der Sprache ein, die du einstellen möchtest."
-                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish" + "```"},
+                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish" + "```"
+                    + "\n\tIf you need further help with this command or others outside of what our help commands do and you wish to ask questions in a language currently associated "
+                    + "with the bot please feel free to reach out to our translators in our Discord for assistance. Discord is at " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
             {"botLangSuccess", "Du hast erfolgreich meine Sprache geändert."},
             {"botLangUnsupported", "Diese Sprache wird aktuell noch nicht unterstützt."},
             {"botStatistics", "%s Statistiken"},
@@ -92,6 +93,21 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"compactFullEmbed", " :compression: Du bekommst nun die komplette Benachrichtigung."},
             {"compactSmallEmbed", " :compression: Du bekommst nun das kleinere Embed."},
             {"compactNoEmbed", " :compression: Deine Benachrichtigungen sind ab nun nurnoch ein kurzer Satz."},
+            {"configHelp", "# CONFIG\n* The base command to set my various settings. Check each specific settings help for more info.\n\n" +
+                    "* defaultOfflineMessage - Returns the offline message to the default (used in edited announcements)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
+                    "* defaultOnlineMessage - Returns the announcement message to the default (used in all announcements)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
+                    "* setOfflineMessage - Set a custom offline message (used in edited announcements)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
+                    "* setOnlineMessage - Set a custom announcement message (used in all announcements)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
+            {"defaultAnnounceMessage", "%CHANNEL% has just gone live! Watch their stream here: %URL%"},
+            {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Reset my offline message to the default.\n\n" +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOfflineMessage"},
+            {"defaultOfflineMessage", "%CHANNEL% is no longer live!  Sorry, you missed them this time."},
+            {"defaultOnlineHelp", "# CONFIG DEFAULT ONLINE MESSAGE\n* Reset my online message to the default.\n\n" +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOnlineMessage"},
             {"devMessage", "*Nachricht der " + Const.BOT_NAME + " Developer:*\n\n\t"},
             {"discordChannelNoExist", "Dieser Textchannel existiert auf diesem Server nicht."},
             {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
@@ -99,6 +115,9 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"discordLinkHelp", "Display's the link to join the Now Live Discord server."},
             {"discordUserNoExist", "Diese Person ist kein Discord Benutzer!  Versuche es nochmal!"},
             {"doesNotExist", "Das wurde nie meiner Datenbank hinzugefügt."},
+            {"embedFull", "announcement with a full size embed"},
+            {"embedSmall", "announce with a small embed"},
+            {"embedNone", "announce with a just a small statement and no embed"},
             {"emptyArgs", "Ich glaube du hast da einen Teil des Befehls vergessen.  Mit der Option *help* erkläre ich dir den Befehl gerne."},
             {"emptyCommand", "Wenn du mich nächstes mal weckst, gib mir bitte auch etwas zu tun."},
             {"followersEmbed", "Follower"},
@@ -121,41 +140,51 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "* Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " botlang help\n\n" +
                     "# CLEANUP\n" +
-                    "* Ändert wie ich Stream Benachrichtigungen aufräume. Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " cleanup help\n\n" +
                     "# COMPACT\n" +
-                    "* Im Compact Mode sind meine Benachrichtigungen kompakter. Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " compact help\n\n" +
+                    "# CONFIG\n" +
+                    "* For more information, type: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config help\n\n" +
                     "# INVITE\n" +
-                    "* Postet meinen Einladelink. Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " invite help\n\n" +
                     "# LIST\n" +
-                    "* Erstellt eine Liste von Dingen in meiner Datenbank. Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " list help\n\n" +
                     "# MOVE\n" +
-                    "* Ändert wo ich Benachrichtigungen poste. Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " move help\n\n" +
                     "# NOTIFY\n" +
-                    "* Ändert die globablen Benachrichtigunseinstellungen. Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
                     "# PING\n" +
-                    "* Pingbefehl - wenn ich online bin, werde ich antworten. Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
                     "# REMOVE\n" +
-                    "* Befehl um Manager zu entfernen. Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " remove help\n\n" +
                     "# STREAMLANG\n" +
-                    "* Erlaubt das Filtern von Streams nach Sprache.\n" +
-                    "* Für mehr Informantionen, schreibe: " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang help\n\n" +
+                    "* Für mehr Informantionen, schreibe: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " streamlang help\n\n" +
                     "# STREAMS\n" +
-                    "* Ich schicke dir alle aktuell aktiven Streams als private Nachricht." +
                     "* Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " streams help\n\n" +
                     "# TWITCH\n" +
-                    "* Hinzufügen und Entfernen von Twitch.tv-Inhalten. Für mehr Informantionen, schreibe: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n```\n" +
-                    "Ague arbeitet immernoch viel daran neue Dinge, die ich für dich machen kann, zu perfektionieren.\n\n~~" + Const.BOT_NAME + "\n\n" +
-                    "Solltest du Hilfe benötigen, tritt meinem Discordserver bei.  Dort gibt es sehr viele hilfsbereite Leute:  " + Const.DISCORD_URL},
+                    "* Für mehr Informantionen, schreibe: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
+                    "# PATREON/DONATE\n" +
+                    "Gives the link to the bot's patreon. Commands are :\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " donate\n\n" +
+                    "# TRELLO/BUG/REQUEST\n" +
+                    "Gives the link to our Trello which is used for bug reports and feature requests. Commands are :\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " request```" +
+                    "If you need additional help, join my Discord.  Lots of helpful people there:  " + Const.DISCORD_URL},
             {"incorrectArgs", "Argument(e) fehlen oder sind fehlerhaft.  Benutze die *help* Option für mehr Details."},
             {"invite", "Hey %s! Lade mich zu deinem Server ein!\n\n\t"
                     + "**Klicke hier:** https://discordapp.com/oauth2/authorize?&client_id="
@@ -168,10 +197,10 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list *option*"
                     + "\n\ttwitchChannel   - Listet die Twitch Channels, denen du folgst"
                     + "\n\ttwitchCommunity - Listet die Twitch Communities, denen du folgst"
-                    + "\n\tgamefilter      - Listet alle Spieler Filter"
+                    + "\n\tgfilter         - Listet alle Spieler Filter"
                     + "\n\ttwitchGame      - Listet die Twitch Spiele, die ich für dich verfolge"
                     + "\n\tmanager         - Listet die Manager dieses Servers"
-                    + "\n\ttitlefilter     - Listet alle Titelfilter, die du erstellt hast"
+                    + "\n\ttfilter         - Listet alle Titelfilter, die du erstellt hast"
                     + "\n\ttwitchTeam      - Listet die Twitch Teams, denen du folgst"
                     + "\n\tsetting         - Listet diverse Bot-Einstellungen"
                     + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list channel" + "```"},
@@ -181,7 +210,9 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "\n* Benachrichtigungsmodus ist %s." +
                     "\n* Cleanup-Modus ist %s." +
                     "\n* Streamsprache ist %s." +
-                    "\n* Botsprache ist %s.```"},
+                    "\n* Botsprache ist %s." +
+                    "\n* Current online announcement message format is: %s." +
+                    "\n* Current offline announcement message format is: %s.```"},
             {"moveDoNotOwnChannel", " :no_entry: Ähm, Ich kann nichts in einem Channel posten, " +
                     "der auf deinem Server nicht existiert!"},
             {"moveFail", " :no_entry: Ich kann dort scheinbar keine Benachrichtigungen posten.  Stell sicher dass du in diesem Channel " +
@@ -224,6 +255,8 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"onlineStreamPm2", " aktive Streamer, die dich interessieren könnten! Folge ihren Links um sie " +
                     "auszuchecken: \n\n"},
             {"oops", "Ups! Irgendwas ist schiefgelaufen! Lass uns das nochmal versuchen."},
+            {"patreon", "If you wish to donate to the bot consider using our Patreon. https://www.patreon.com/nowlive"},
+            {"patreonHelp", "Gives the link to our patreon page."},
             {"ping", "Als ich in China war, war ich in einem amerikanischen Ping-Pongteam. Ich liebte es mit meinem " +
                     "Flexolite Ping-Pongsschläger zu spielen."},
             {"pingHelp", "```Markdown\n# PING\n* Pingbefehl - wenn ich online bin, werde ich antworten.\n\n## VERWENDUNG: "
@@ -237,6 +270,30 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "\n\tmanager - Der @ Name des Benutzers, den du als Manager hinzufügen möchtest"
                     + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
             {"servers", "Server"},
+            {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Set a custom offline message for edited offline announcements.\n\n" +
+                    "## Available tokens to use in your message:\n" +
+                    "\t* %CHANNEL%   - The name of the channel\n" +
+                    "\t* %FOLLOWERS% - The total number of followers\n" +
+                    "\t* %GAME%      - The name of the game being streamed\n" +
+                    "\t* %STATUS%    - The status (title) of the stream\n" +
+                    "\t* %URL%       - The URL for the stream\n" +
+                    "\t* %USER%      - The name of the channel\n" +
+                    "\t* %VIEWERS%   - The number of current viewers\n\n" +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOfflineMessage " +
+                    "%CHANNEL% is no longer live!  Sorry, you missed them this time."},// <--- Do not translate between the %
+            {"setOnlineHelp", "# CONFIG SET ONLINE MESSAGE\n* Set a custom announcement message.\n\n" +
+                    "## Available tokens to use in your message:\n" +
+                    "\t* %CHANNEL%   - The name of the channel\n" +
+                    "\t* %FOLLOWERS% - The total number of followers\n" +
+                    "\t* %GAME%      - The name of the game being streamed\n" +
+                    "\t* %STATUS%    - The status (title) of the stream\n" +
+                    "\t* %URL%       - The URL for the stream\n" +
+                    "\t* %USER%      - The name of the channel\n" +
+                    "\t* %VIEWERS%   - The number of current viewers\n\n" +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOnlineMessage " +
+                    "%CHANNEL% has just gone live! Watch their stream here: %URL%"},// <--- Do not translate between the %
+            {"shardsThis", "Shard Number"},
+            {"shardsTotal", "Number Shards"},
             {"statusHelp", "```Markdown\n# STATUS\n* Zeigt einige Statistiken über den Bot.\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},
             {"streamlangHelp", "```Markdown\n# STREAMLANG\n* Erlaubt das Filtern von Streams nach Sprache " +
@@ -255,6 +312,8 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + Const.COMMAND
                     + " streams```"},
             {"totalViewsEmbed", "Alle Aufrufe"},
+            {"trello", "To report bugs or to request features to be added to the bot please use our Trello. https://trello.com/b/kcWshbIU"},
+            {"trelloHelp", "Returns the link to the Trello for the bot"},
             {"twitchCommunities", "Twitch Communities"},
             {"twitchAnnounceUpdate", "\n# Standardankündigungskanal von %s zu %s geändert."},
             {"twitchAnnounceUpdateFail", "\n! Fehler beim Ändern des Standardankündigungskanal von %s zu %s."},
@@ -324,6 +383,10 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"typeOnce", "Das musst du nicht doppelt schreiben, Dussel."},
             {"uniqueChannels", "Verschiedene Kanäle %s"},
             {"uniqueGames", "Verschiedene Spiele %s"},
+            {"updateAnnounceMessageFail", "# Something went wrong and the announcement message was not changed."},
+            {"updateAnnounceMessageSuccess", "# You've updated the announcement message!  It now uses the format:\n\n* %s"},
+            {"updateOfflineMessageFail", "# Something went wrong and the offline message was not changed."},
+            {"updateOfflineMessageSuccess", "# You've updated the offline message!  It now uses the format:\n\n* %s"},
             {"usePlatform", "Ups!  Das ist der alte Befehl!  Benutze bitte die neuen plattformspezifischen Befehle!  Schreibe `" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` für weitere Informationen"},
             {"watchThemHere", "Jetzt zuschauen: "},

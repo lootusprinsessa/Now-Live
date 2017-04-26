@@ -91,6 +91,21 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"compactFullEmbed", " :compression: Od teď budeš dostávat celé upozornení."},
             {"compactSmallEmbed", " :compression: Od teď budeš dostávát upozornění s malým vložením."},
             {"compactNoEmbed", " :compression: Od teď bude tvoje oznámení jen krátká věta."},
+            {"configHelp", "# CONFIG\n* The base command to set my various settings. Check each specific settings help for more info.\n\n" +
+                    "* defaultOfflineMessage - Returns the offline message to the default (used in edited announcements)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
+                    "* defaultOnlineMessage - Returns the announcement message to the default (used in all announcements)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
+                    "* setOfflineMessage - Set a custom offline message (used in edited announcements)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
+                    "* setOnlineMessage - Set a custom announcement message (used in all announcements)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
+            {"defaultAnnounceMessage", "%CHANNEL% has just gone live! Watch their stream here: %URL%"},
+            {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Reset my offline message to the default.\n\n" +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOfflineMessage"},
+            {"defaultOfflineMessage", "%CHANNEL% is no longer live!  Sorry, you missed them this time."},
+            {"defaultOnlineHelp", "# CONFIG DEFAULT ONLINE MESSAGE\n* Reset my online message to the default.\n\n" +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOnlineMessage"},
             {"devMessage", "*Zpráva od " + Const.BOT_NAME + " vývojářů:*\n\n\t"},
             {"discordChannelNoExist", "Tento textový kanál na tvém serveru neexistuje."},
             {"discordLink", "Máš zájem se připojit na Now Live discord server? Je tam spoustu lidí kteří ti rádi pomohou " +
@@ -98,6 +113,9 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"discordLinkHelp", "Zobrazí odkaz na Now Live discord server."},
             {"discordUserNoExist", "Tato osoba není uživatlem Discordu!  Zkus to znovu!"},
             {"doesNotExist", "To nebylo nikdy přidáno do mé databáze."},
+            {"embedFull", "announcement with a full size embed"},
+            {"embedSmall", "announce with a small embed"},
+            {"embedNone", "announce with a just a small statement and no embed"},
             {"emptyArgs", "Myslím si že jsi zapoměl nějaký příkaz.  Ověř si to pomocí help příkazu a zkus to znovu."},
             {"emptyCommand", "Příště až mě probudíš, tak také použij nějaký příkaz."},
             {"followersEmbed", "Sledující"},
@@ -122,6 +140,9 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "# COMPACT\n" +
                     "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " compact help\n\n" +
+                    "# CONFIG\n" +
+                    "* For more information, type: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config help\n\n" +
                     "# INVITE\n" +
                     "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " invite help\n\n" +
@@ -150,11 +171,13 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
                     "# PATREON/DONATE\n" +
                     "Pošle ti odkaz na náš Patreon. Příkazy jsou :\n"+
-                    Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" + Const.COMMAND_PREFIX + Const.COMMAND + " donate\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " donate\n\n" +
                     "# TRELLO/BUG/REQUEST\n" +
                     "Pošle ti odkaz na náše Trello, kde můžeš nahlašovat chyby/bugy. Příkazy jsou :\n" +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" + Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" + Const.COMMAND_PREFIX + Const.COMMAND + " request```"+
-                    "\n\n~~" + Const.BOT_NAME + "\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " request```"+
                     "Pokud potřebuješ další pomoc, připoj se na můj Discord server.  Je tam mnoho lidí co ti rádi pomůžou:  " + Const.DISCORD_URL},
             {"incorrectArgs", "Předal jsi mi nesprávné argumenty.  Zkoukni help pro více informací." +
                     '.'},
@@ -181,7 +204,9 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "\n* Notifikace jsou nastaveny na %s." +
                     "\n* Cleanup je nastaven na %s." +
                     "\n* Jazyk vysílání je nastaven na %s." +
-                    "\n* Jazyk bota je nastaven na %s.```"},
+                    "\n* Jazyk bota je nastaven na %s." +
+                    "\n* Current online announcement message format is: %s." +
+                    "\n* Current offline announcement message format is: %s.```"},
             {"moveDoNotOwnChannel", " :no_entry: Hej, ale nemůžu oznamovat v kanálu který na tvém serveru " +
                     "neexistuje!"},
             {"moveFail", " :no_entry: Nedaří se mi tam odeslat oznámení.  Ujisti se že tam mám správná práva."},
@@ -190,6 +215,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + Const.COMMAND
                     + " move <kanál>\n\t"
                     + "<kanál> - Jmeno kanálu, kde chcete abych oznamoval (MUSÍ obsahovat #)"
+                    + "This option is deprecated and may not work as you think.  Please see the Twitch command."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " move #discordchannel" + "```"},
             {"moveSuccess", " :ok_hand: Budu oznamovat tam! :arrow_right: "},
             {"needOneManager", "Pokud ho odstraníš, kdo mě bude ovládat?"},
@@ -197,6 +223,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "vhodného člověka pro tuto práci. :thumbsup:"},
             {"noneOnline", "Promiň kámo, ale zrovna není nikdo koho sleduji online."},
             {"notAManager", "Promiň, mohlo by tě to znepokojit: Jsem tvůj služebník, ale ty nejsi můj mistr."},
+            {"notAnAdmin", "To whom it may concern:  I am your servant, but you are not my master."},
             {"notifyEveryone", ":tada: WHOA!!  **EVERYONE** to patří před oznámení které bude na tomto serveru " +
                     "oznamovat streamy!  *(Jsi si jistý?  Nedoporučuji toto na velkých serverech...  Může to lidi " +
                     "rozčílit.)*"},
@@ -212,6 +239,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"nowPlayingEmbed", "Nyní hraje"},
             {"nowPlayingLower", " nyní hraje "},
             {"nowStreamingEmbed", " nyní streamuje!"},
+            {"numUniqueMembers", "Number Unique Members"},
             {"offline", "OFFLINE!\n"},
             {"offlineEmbed", " přešel do režimu offline!"},
             {"on", " na "},
@@ -237,6 +265,28 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "\n\tmanager - Zmínka o uživateli znakem @ kterého chcete přidat jako manažera"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
             {"servers", "Servers"},
+            {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Set a custom offline message for edited offline announcements.\n\n" +
+                    "## Available tokens to use in your message:\n" +
+                    "\t* %CHANNEL%   - The name of the channel\n" +
+                    "\t* %FOLLOWERS% - The total number of followers\n" +
+                    "\t* %GAME%      - The name of the game being streamed\n" +
+                    "\t* %STATUS%    - The status (title) of the stream\n" +
+                    "\t* %URL%       - The URL for the stream\n" +
+                    "\t* %USER%      - The name of the channel\n" +
+                    "\t* %VIEWERS%   - The number of current viewers\n\n" +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOfflineMessage " +
+                    "%CHANNEL% is no longer live!  Sorry, you missed them this time."},// <--- Do not translate between the %
+            {"setOnlineHelp", "# CONFIG SET ONLINE MESSAGE\n* Set a custom announcement message.\n\n" +
+                    "## Available tokens to use in your message:\n" +
+                    "\t* %CHANNEL%   - The name of the channel\n" +
+                    "\t* %FOLLOWERS% - The total number of followers\n" +
+                    "\t* %GAME%      - The name of the game being streamed\n" +
+                    "\t* %STATUS%    - The status (title) of the stream\n" +
+                    "\t* %URL%       - The URL for the stream\n" +
+                    "\t* %USER%      - The name of the channel\n" +
+                    "\t* %VIEWERS%   - The number of current viewers\n\n" +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOnlineMessage " +
+                    "%CHANNEL% has just gone live! Watch their stream here: %URL%"},// <--- Do not translate between the %
             {"shardsThis", "Číslo střepu"},
             {"shardsTotal", "Počet střepů"},
             {"statusHelp", "```Markdown\n# STATUS\n* Zobrazí různé statistiky bota.\n\n## USAGE:  "
@@ -258,7 +308,6 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"totalViewsEmbed", "Počet zhlédnutí"},
             {"trello", "Pro nahlášení chyb nebo pro návrh na vylepšení bota použij prosím naše Trello. https://trello.com/b/kcWshbIU"},
             {"trelloHelp", "Vrací odkaz na naši Trello stránku"},
-            {"totalViewsEmbed", "Počet zhlédnutí"},
             {"twitchCommunities", "Twitch komunity"},
             {"twitchAnnounceUpdate", "\n# Změnil jsem kanál pro upozornění pro %s na: %s."},
             {"twitchAnnounceUpdateFail", "\n! Selhala změna kanálu pro %s na: %s."},
@@ -328,6 +377,10 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"typeOnce", "Stačí když tuto část napíšeš pouze jednou, hlupáku."},
             {"uniqueChannels", "Unikátní kanály %s"},
             {"uniqueGames", "Unikátní hry %s"},
+            {"updateAnnounceMessageFail", "# Something went wrong and the announcement message was not changed."},
+            {"updateAnnounceMessageSuccess", "# You've updated the announcement message!  It now uses the format:\n\n* %s"},
+            {"updateOfflineMessageFail", "# Something went wrong and the offline message was not changed."},
+            {"updateOfflineMessageSuccess", "# You've updated the offline message!  It now uses the format:\n\n* %s"},
             {"usePlatform", "Oops!  To je starý způsob, jak dělat věci!  Použij specifický příkaz pro danou platformu!  Napiš `" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` pro více informací."},
             {"watchThemHere", "Sledujte jej zde: "},

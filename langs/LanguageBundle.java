@@ -45,7 +45,6 @@ public class LanguageBundle extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <content>\n\tThis command is only available to the developers.```"},
-            {"announcementMessageText", "Hey!  %s has just gone live! Watch their stream here: %s"},
             {"beamHelp", "```Markdown\n# BEAM\n* Add and remove things that are Beam.pro related.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " beam <sub-command> <option> <argument>\n"
                     + "\t<sub-command> <option> <argument>\n"
@@ -94,13 +93,31 @@ public class LanguageBundle extends ListResourceBundle {
             {"compactFullEmbed", " :compression: You will get the full announcement from now on."},
             {"compactSmallEmbed", " :compression: You will get an announcement with a small embed from now on."},
             {"compactNoEmbed", " :compression: Your announcements will only be a short sentence from now on."},
+            {"configHelp", "# CONFIG\n* The base command to set my various settings. Check each specific settings help for more info.\n\n" +
+                    "* defaultOfflineMessage - Returns the offline message to the default (used in edited announcements)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
+                    "* defaultOnlineMessage - Returns the announcement message to the default (used in all announcements)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
+                    "* setOfflineMessage - Set a custom offline message (used in edited announcements)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
+                    "* setOnlineMessage - Set a custom announcement message (used in all announcements)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
+            {"defaultAnnounceMessage", "%CHANNEL% has just gone live! Watch their stream here: %URL%"},
+            {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Reset my offline message to the default.\n\n" +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOfflineMessage"},
+            {"defaultOfflineMessage", "%CHANNEL% is no longer live!  Sorry, you missed them this time."},
+            {"defaultOnlineHelp", "# CONFIG DEFAULT ONLINE MESSAGE\n* Reset my online message to the default.\n\n" +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOnlineMessage"},
             {"devMessage", "*Message from the " + Const.BOT_NAME + " developers:*\n\n\t"},
             {"discordChannelNoExist", "That text channel doesn't exist on your server."},
             {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
                     "having problems! Click this link:\n" + Const.DISCORD_URL},
-            {"discordLinkHelp", "Display's the link to join the Now Live Discord server."},
+            {"discordLinkHelp", "Displays the link to join the Now Live Discord server."},
             {"discordUserNoExist", "That person isn't a Discord user!  Try again!"},
             {"doesNotExist", "That was never added to my database."},
+            {"embedFull", "announcement with a full size embed"},
+            {"embedSmall", "announce with a small embed"},
+            {"embedNone", "announce with a just a small statement and no embed"},
             {"emptyArgs", "I think you forgot some of the command.  Check the help command for more info."},
             {"emptyCommand", "Next time you wake me up, please send a command as well."},
             {"followersEmbed", "Followers"},
@@ -127,6 +144,9 @@ public class LanguageBundle extends ListResourceBundle {
                     "# COMPACT\n" +
                     "* For more information, type: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " compact help\n\n" +
+                    "# CONFIG\n" +
+                    "* For more information, type: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config help\n\n" +
                     "# INVITE\n" +
                     "* For more information, type: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " invite help\n\n" +
@@ -156,11 +176,13 @@ public class LanguageBundle extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
                     "# PATREON/DONATE\n" +
                     "Gives the link to the bot's patreon. Commands are :\n" +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" + Const.COMMAND_PREFIX + Const.COMMAND + " donate\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " donate\n\n" +
                     "# TRELLO/BUG/REQUEST\n" +
                     "Gives the link to our Trello which is used for bug reports and feature requests. Commands are :\n" +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" + Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" + Const.COMMAND_PREFIX + Const.COMMAND + " request```" +
-                    "\n\n~~" + Const.BOT_NAME + "\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " request```" +
                     "If you need additional help, join my Discord.  Lots of helpful people there:  " + Const.DISCORD_URL},
             {"incorrectArgs", "You passed incorrect or missing arguments to me.  Check the help command for more info."},
             {"invite", "Hey %s! Invite me to your server!\n\n\t"
@@ -183,11 +205,13 @@ public class LanguageBundle extends ListResourceBundle {
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel" + "```"},
             {"listSettings", "```Markdown\n" +
                     "# Bot Settings on Your Server" +
-                    "\n* Compact mode is %s." +
-                    "\n* Notification is set to %s." +
-                    "\n* Cleanup is set to %s." +
-                    "\n* Broadcaster language is set to %s." +
-                    "\n* Bot language is set to %s.```"},
+                    "\n* Compact mode is set to: %s." +
+                    "\n* Notification is set to: %s." +
+                    "\n* Cleanup is set to: %s." +
+                    "\n* Broadcaster language is set to: %s." +
+                    "\n* Bot language is set to: %s." +
+                    "\n* Current online announcement message format is: %s." +
+                    "\n* Current offline announcement message format is: %s.```"},
             {"moveDoNotOwnChannel", " :no_entry: Hey now, I can't announce to a channel that doesn't exists on your " +
                     "server!"},
             {"moveFail", " :no_entry: I can't seem to send announcements there.  Make sure I have the proper permissions " +
@@ -245,6 +269,28 @@ public class LanguageBundle extends ListResourceBundle {
                     + "\n\tmanager - The @ mention of the user to remove as a manager"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
             {"servers", "Servers"},
+            {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Set a custom offline message for edited offline announcements.\n\n" +
+                    "## Available tokens to use in your message:\n" +
+                    "\t* %CHANNEL%   - The name of the channel\n" +
+                    "\t* %FOLLOWERS% - The total number of followers\n" +
+                    "\t* %GAME%      - The name of the game being streamed\n" +
+                    "\t* %STATUS%    - The status (title) of the stream\n" +
+                    "\t* %URL%       - The URL for the stream\n" +
+                    "\t* %USER%      - The name of the channel\n" +
+                    "\t* %VIEWERS%   - The number of current viewers\n\n" +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOfflineMessage " +
+                    "%CHANNEL% is no longer live!  Sorry, you missed them this time."},// <--- Do not translate between the %
+            {"setOnlineHelp", "# CONFIG SET ONLINE MESSAGE\n* Set a custom announcement message.\n\n" +
+                    "## Available tokens to use in your message:\n" +
+                    "\t* %CHANNEL%   - The name of the channel\n" +
+                    "\t* %FOLLOWERS% - The total number of followers\n" +
+                    "\t* %GAME%      - The name of the game being streamed\n" +
+                    "\t* %STATUS%    - The status (title) of the stream\n" +
+                    "\t* %URL%       - The URL for the stream\n" +
+                    "\t* %USER%      - The name of the channel\n" +
+                    "\t* %VIEWERS%   - The number of current viewers\n\n" +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOnlineMessage " +
+                    "%CHANNEL% has just gone live! Watch their stream here: %URL%"},// <--- Do not translate between the %
             {"shardsThis", "Shard Number"},
             {"shardsTotal", "Number Shards"},
             {"statusHelp", "```Markdown\n# STATUS\n* Shows various statistics of the bot.\n\n## USAGE:  "
@@ -336,6 +382,10 @@ public class LanguageBundle extends ListResourceBundle {
             {"typeOnce", "You only need to type that part once, silly."},
             {"uniqueChannels", "Unique Channels %s"},
             {"uniqueGames", "Unique Games %s"},
+            {"updateAnnounceMessageFail", "# Something went wrong and the announcement message was not changed."},
+            {"updateAnnounceMessageSuccess", "# You've updated the announcement message!  It now uses the format:\n\n* %s"},
+            {"updateOfflineMessageFail", "# Something went wrong and the offline message was not changed."},
+            {"updateOfflineMessageSuccess", "# You've updated the offline message!  It now uses the format:\n\n* %s"},
             {"usePlatform", "Oops!  That's the old way of doing things!  Use the platform specific command!  Type `" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` for more info."},
             {"watchThemHere", "Watch them here: "},
