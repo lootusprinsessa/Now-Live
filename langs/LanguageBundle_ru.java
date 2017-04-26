@@ -93,20 +93,20 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"compactFullEmbed", " :compression: С этого момента вы будете получать полные объявления."},
             {"compactSmallEmbed", " :compression: С этого момента вы будете получать объявления с маленькими изображениями."},
             {"compactNoEmbed", " :compression: Теперь ваши объявления будут в виде коротких предложений."},
-            {"configHelp", "# CONFIG\n* The base command to set my various settings. Check each specific settings help for more info.\n\n" +
-                    "* defaultOfflineMessage - Returns the offline message to the default (used in edited announcements)\n" +
+            {"configHelp", "# КОНФИГУРАЦИЯ\n* Базовая команда для установки моих различных параметров. Проверьте каждую специальную справку по настройкам для получения дополнительной информации.\n\n" +
+                    "* defaultOfflineMessage - Offline сообщение по умолчанию (используется в отредактированных объявлениях)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
-                    "* defaultOnlineMessage - Returns the announcement message to the default (used in all announcements)\n" +
+                    "* defaultOnlineMessage - Оnline сообщение по умолчанию (используется во всех объявлениях)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setOfflineMessage - Set a custom offline message (used in edited announcements)\n" +
+                    "* setOfflineMessage - Настраиваемое offline сообщение (используется в отредактированных объявлениях)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
-                    "* setOnlineMessage - Set a custom announcement message (used in all announcements)\n" +
+                    "* setOnlineMessage - Настраиваемое online сообщение (используется во всех объявлениях)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
-            {"defaultAnnounceMessage", "%CHANNEL% has just gone live! Watch their stream here: %URL%"},
-            {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Reset my offline message to the default.\n\n" +
-                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOfflineMessage"},
-            {"defaultOfflineMessage", "%CHANNEL% is no longer live!  Sorry, you missed them this time."},
-            {"defaultOnlineHelp", "# CONFIG DEFAULT ONLINE MESSAGE\n* Reset my online message to the default.\n\n" +
+            {"defaultAnnounceMessage", "%CHANNEL% начал стрим! Подробнее здесь (кликабельно): %URL%"},
+            {"defaultOfflineHelp", "# КОНФИГУРАЦИЯ OFFLINE СООБЩЕНИЯ ОБЪЯВЛЕНИЯ ПО УМОЛЧАНИЮ\n* Сбрасывает моё offline сообщение до значения по умолчанию.\n\n" +
+                    "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOfflineMessage"},
+            {"defaultOfflineMessage", "%CHANNEL% закончил трансляцию!"},
+            {"defaultOnlineHelp", "# КОНФИГУРАЦИЯ ONLINE СООБЩЕНИЯ ОБЪЯВЛЕНИЯ ПО УМОЛЧАНИЮ\n* Сбросывает мое online сообщение до значения по умолчанию.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOnlineMessage"},
             {"devMessage", "*Сообщение от " + Const.BOT_NAME + " разработчиков:*\n\n\t"},
             {"discordChannelNoExist", "Данный текстовый канал отсутствует на вашем сервере.."},
@@ -115,9 +115,9 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"discordLinkHelp", "Показывает ссылку для подключения к серверу Now Live Discord."},
             {"discordUserNoExist", "Данного пользователя Discord не существует! Попробуй еще раз!"},
             {"doesNotExist", "Это никогда не добавлялось в мою базу данных."},
-            {"embedFull", "announcement with a full size embed"},
-            {"embedSmall", "announce with a small embed"},
-            {"embedNone", "announce with a just a small statement and no embed"},
+            {"embedFull", "полноразмерное объявление"},
+            {"embedSmall", "объявление с маленьким изображением"},
+            {"embedNone", "краткое объявление, без изображений"},
             {"emptyArgs", "Кажется вы забыли какую-то команду.  Изучите команды помощи для получения дополнительной информации.."},
             {"emptyCommand", "В следующий раз, когда ты меня разбудишь, пожалуйста отправьте также команду."},
             {"followersEmbed", "Подписчиков"},
@@ -269,28 +269,28 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "\n\tmanager - @ Упомяните пользователя для удалении из менеджеров"
                     + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
             {"servers", "Сервера"},
-            {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Set a custom offline message for edited offline announcements.\n\n" +
-                    "## Available tokens to use in your message:\n" +
-                    "\t* %CHANNEL%   - The name of the channel\n" +
-                    "\t* %FOLLOWERS% - The total number of followers\n" +
-                    "\t* %GAME%      - The name of the game being streamed\n" +
-                    "\t* %STATUS%    - The status (title) of the stream\n" +
-                    "\t* %URL%       - The URL for the stream\n" +
-                    "\t* %USER%      - The name of the channel\n" +
-                    "\t* %VIEWERS%   - The number of current viewers\n\n" +
-                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOfflineMessage " +
-                    "%CHANNEL% is no longer live!  Sorry, you missed them this time."},// <--- Do not translate between the %
-            {"setOnlineHelp", "# CONFIG SET ONLINE MESSAGE\n* Set a custom announcement message.\n\n" +
-                    "## Available tokens to use in your message:\n" +
-                    "\t* %CHANNEL%   - The name of the channel\n" +
-                    "\t* %FOLLOWERS% - The total number of followers\n" +
-                    "\t* %GAME%      - The name of the game being streamed\n" +
-                    "\t* %STATUS%    - The status (title) of the stream\n" +
-                    "\t* %URL%       - The URL for the stream\n" +
-                    "\t* %USER%      - The name of the channel\n" +
-                    "\t* %VIEWERS%   - The number of current viewers\n\n" +
+            {"setOfflineHelp", "# НАСТРОЙКА OFFLINE СООБЩЕНИЯ ОБЪЯВЛЕНИЯ\n* Детальная настройка offline сообщения для редактируемого offline объявления.\n\n" +
+                    "## Доступные значения для использования в вашем сообщении:\n" +
+                    "\t* %CHANNEL%   - Название канала в Discord\n" +
+                    "\t* %FOLLOWERS% - Общее количество подписчиков\n" +
+                    "\t* %GAME%      - Название игры трансляции\n" +
+                    "\t* %STATUS%    - Статус (описание) трансляции\n" +
+                    "\t* %URL%       - Ссылка на стрим\n" +
+                    "\t* %USER%      - Название Twitch канала\n" +
+                    "\t* %VIEWERS%   - Общее количество просмотров\n\n" +
+                    "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOfflineMessage " +
+                    "%CHANNEL% НЕ В СЕТИ."},// <--- Do not translate between the %
+            {"setOnlineHelp", "# НАСТРОЙКА ONLINE СООБЩЕНИЯ ОБЪЯВЛЕНИЯ\n* Детальная настройка online сообщения.\n\n" +
+                    "## Доступные значения для использования в вашем сообщении:\n" +
+                    "\t* %CHANNEL%   - Название канала в Discord\n" +
+                    "\t* %FOLLOWERS% - Общее количество подписчиков\n" +
+                    "\t* %GAME%      - Название игры трансляции\n" +
+                    "\t* %STATUS%    - Статус (описание) трансляции\n" +
+                    "\t* %URL%       - Ссылка на стрим\n" +
+                    "\t* %USER%      - Название Twitch канала\n" +
+                    "\t* %VIEWERS%   - Общее количество просмотров\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOnlineMessage " +
-                    "%CHANNEL% has just gone live! Watch their stream here: %URL%"},// <--- Do not translate between the %
+                    "%CHANNEL% начал стрим! Подробнее здесь (кликабельно): %URL%"},// <--- Do not translate between the %
             {"shardsThis", "Shard Номер"},
             {"shardsTotal", "Количество Shards"},
             {"statusHelp", "```Markdown\n# СТАТУС\n* Показывает различную статистику бота.\n\n## ПРИМЕНЕНИЕ:  "
@@ -382,10 +382,10 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"typeOnce", "Вам нужно всего лишь ввести эту часть."},
             {"uniqueChannels", "Уникальные каналы %s"},
             {"uniqueGames", "Уникальные игры %s"},
-            {"updateAnnounceMessageFail", "# Something went wrong and the announcement message was not changed."},
-            {"updateAnnounceMessageSuccess", "# You've updated the announcement message!  It now uses the format:\n\n* %s"},
-            {"updateOfflineMessageFail", "# Something went wrong and the offline message was not changed."},
-            {"updateOfflineMessageSuccess", "# You've updated the offline message!  It now uses the format:\n\n* %s"},
+            {"updateAnnounceMessageFail", "# Что-то пошло не так. Сообщение в объявлении не было изменено."},
+            {"updateAnnounceMessageSuccess", "# Вы обновили объявление! Теперь используется формат:\n\n* %s"},
+            {"updateOfflineMessageFail", "# Что-то пошло не так. Offline сообщение не было изменено."},
+            {"updateOfflineMessageSuccess", "# Вы обновили offline сообщение!  Теперь используется формат:\n\n* %s"},
             {"usePlatform", "Это старый способ! Используйте команду для конкретной платформы!  Введите `" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` для получения дополнительной информации."},
             {"watchThemHere", "Подробнее: "},
