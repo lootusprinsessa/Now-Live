@@ -104,10 +104,10 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
             {"defaultAnnounceMessage", "%CHANNEL% ist gerade live! Siehe den Stream hier: %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Setzt die Offline-Nachricht zurück.\n\n" +
-                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOfflineMessage"},
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
             {"defaultOfflineMessage", "%CHANNEL% ist nicht länger live!  Sorry, du hast ihn diesmal wohl verpasst."},
             {"defaultOnlineHelp", "# CONFIG DEFAULT ONLINE MESSAGE\n* Setzt die Online-Nachricht zurück.\n\n" +
-                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " defaultOnlineMessage"},
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Nachricht der " + Const.BOT_NAME + " Developer:*\n\n\t"},
             {"discordChannelNoExist", "Dieser Textchannel existiert auf diesem Server nicht."},
             {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
