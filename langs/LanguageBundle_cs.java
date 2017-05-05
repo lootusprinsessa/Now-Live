@@ -91,20 +91,20 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"compactFullEmbed", " :compression: Od teď budeš dostávat celé upozornení."},
             {"compactSmallEmbed", " :compression: Od teď budeš dostávát upozornění s malým vložením."},
             {"compactNoEmbed", " :compression: Od teď bude tvoje oznámení jen krátká věta."},
-            {"configHelp", "# CONFIG\n* The base command to set my various settings. Check each specific settings help for more info.\n\n" +
-                    "* defaultOfflineMessage - Returns the offline message to the default (used in edited announcements)\n" +
+            {"configHelp", "# CONFIG\n* Základní příkaz pro upravení mých nastavení. Zkontroluj si nápovědu pro každé nastavení pro více informací.\n\n" +
+                    "* defaultOfflineMessage - Navrátí původní offline zprávu (použito v upravovaných oznámeních)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
-                    "* defaultOnlineMessage - Returns the announcement message to the default (used in all announcements)\n" +
+                    "* defaultOnlineMessage - Navrátí původní oznamovací zprávu (použito ve všech oznámeních)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setOfflineMessage - Set a custom offline message (used in edited announcements)\n" +
+                    "* setOfflineMessage - Nastaví vlastní offline zprávu (použito v upravovaných oznámeních)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
-                    "* setOnlineMessage - Set a custom announcement message (used in all announcements)\n" +
+                    "* setOnlineMessage - Nastaví vlastní oznamovací zprávu (použito ve všech oznámeních)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
-            {"defaultAnnounceMessage", "%CHANNEL% has just gone live! Watch their stream here: %URL%"},
-            {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Reset my offline message to the default.\n\n" +
+            {"defaultAnnounceMessage", "%CHANNEL% je nyní živě! Sledujte jeho stream zde: %URL%"},
+            {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Resetuje mojí offline zprávu na původní.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
-            {"defaultOfflineMessage", "%CHANNEL% is no longer live!  Sorry, you missed them this time."},
-            {"defaultOnlineHelp", "# CONFIG DEFAULT ONLINE MESSAGE\n* Reset my online message to the default.\n\n" +
+            {"defaultOfflineMessage", "%CHANNEL% už nestreamuje!  Promiň, tentokrát jsi to nestihl."},
+            {"defaultOnlineHelp", "# CONFIG DEFAULT ONLINE MESSAGE\n* Resetuje mojí online zprávu na původní.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Zpráva od " + Const.BOT_NAME + " vývojářů:*\n\n\t"},
             {"discordChannelNoExist", "Tento textový kanál na tvém serveru neexistuje."},
@@ -113,9 +113,9 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"discordLinkHelp", "Zobrazí odkaz na Now Live discord server."},
             {"discordUserNoExist", "Tato osoba není uživatlem Discordu!  Zkus to znovu!"},
             {"doesNotExist", "To nebylo nikdy přidáno do mé databáze."},
-            {"embedFull", "announcement with a full size embed"},
-            {"embedSmall", "announce with a small embed"},
-            {"embedNone", "announce with a just a small statement and no embed"},
+            {"embedFull", "oznámení s celým vložením"},
+            {"embedSmall", "oznámení s malým vložením"},
+            {"embedNone", "oznámení jenom malým prohlášením a bez vložení"},
             {"emptyArgs", "Myslím si že jsi zapoměl nějaký příkaz.  Ověř si to pomocí help příkazu a zkus to znovu."},
             {"emptyCommand", "Příště až mě probudíš, tak také použij nějaký příkaz."},
             {"followersEmbed", "Sledující"},
@@ -205,8 +205,8 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "\n* Cleanup je nastaven na %s." +
                     "\n* Jazyk vysílání je nastaven na %s." +
                     "\n* Jazyk bota je nastaven na %s." +
-                    "\n* Current online announcement message format is: %s." +
-                    "\n* Current offline announcement message format is: %s.```"},
+                    "\n* Momentální online oznamovací zpráva je: %s." +
+                    "\n* Momentální offline oznamovací zpráva je: %s.```"},
             {"moveDoNotOwnChannel", " :no_entry: Hej, ale nemůžu oznamovat v kanálu který na tvém serveru " +
                     "neexistuje!"},
             {"moveFail", " :no_entry: Nedaří se mi tam odeslat oznámení.  Ujisti se že tam mám správná práva."},
@@ -215,7 +215,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + Const.COMMAND
                     + " move <kanál>\n\t"
                     + "<kanál> - Jmeno kanálu, kde chcete abych oznamoval (MUSÍ obsahovat #)"
-                    + "This option is deprecated and may not work as you think.  Please see the Twitch command."
+                    + "Tato funkce je zastaralá a nemusí fungovat tak jak myslíte.  Prosím, zkoukni si Twitch příkaz."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " move #discordchannel" + "```"},
             {"moveSuccess", " :ok_hand: Budu oznamovat tam! :arrow_right: "},
             {"needOneManager", "Pokud ho odstraníš, kdo mě bude ovládat?"},
@@ -223,7 +223,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "vhodného člověka pro tuto práci. :thumbsup:"},
             {"noneOnline", "Promiň kámo, ale zrovna není nikdo koho sleduji online."},
             {"notAManager", "Promiň, mohlo by tě to znepokojit: Jsem tvůj služebník, ale ty nejsi můj mistr."},
-            {"notAnAdmin", "To whom it may concern:  I am your servant, but you are not my master."},
+            {"notAnAdmin", "Promiň, mohlo by tě to znepokojit: Jsem tvůj služebník, ale ty nejsi můj mistr."},
             {"notifyEveryone", ":tada: WHOA!!  **EVERYONE** to patří před oznámení které bude na tomto serveru " +
                     "oznamovat streamy!  *(Jsi si jistý?  Nedoporučuji toto na velkých serverech...  Může to lidi " +
                     "rozčílit.)*"},
@@ -239,7 +239,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"nowPlayingEmbed", "Nyní hraje"},
             {"nowPlayingLower", " nyní hraje "},
             {"nowStreamingEmbed", " nyní streamuje!"},
-            {"numUniqueMembers", "Number Unique Members"},
+            {"numUniqueMembers", "Počet unikátních členů"},
             {"offline", "OFFLINE!\n"},
             {"offlineEmbed", " přešel do režimu offline!"},
             {"on", " na "},
@@ -265,28 +265,28 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "\n\tmanager - Zmínka o uživateli znakem @ kterého chcete přidat jako manažera"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
             {"servers", "Servers"},
-            {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Set a custom offline message for edited offline announcements.\n\n" +
-                    "## Available tokens to use in your message:\n" +
-                    "\t* %CHANNEL%   - The name of the channel\n" +
-                    "\t* %FOLLOWERS% - The total number of followers\n" +
-                    "\t* %GAME%      - The name of the game being streamed\n" +
-                    "\t* %STATUS%    - The status (title) of the stream\n" +
-                    "\t* %URL%       - The URL for the stream\n" +
-                    "\t* %USER%      - The name of the channel\n" +
-                    "\t* %VIEWERS%   - The number of current viewers\n\n" +
+            {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Nastav vlastní offline zprávu pro offline oznamování.\n\n" +
+                    "## Dostupné žetony k použití ve vaší zprávě:\n" +
+                    "\t* %CHANNEL%   - Název kanálu\n" +
+                    "\t* %FOLLOWERS% - Počet followerů\n" +
+                    "\t* %GAME%      - Název vysílané hry\n" +
+                    "\t* %STATUS%    - Status (název) streamu\n" +
+                    "\t* %URL%       - Adresa na vysílání\n" +
+                    "\t* %USER%      - Název kanálu\n" +
+                    "\t* %VIEWERS%   - Počet momentálně sledujících\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOfflineMessage " +
-                    "%CHANNEL% is no longer live!  Sorry, you missed them this time."},// <--- Do not translate between the %
-            {"setOnlineHelp", "# CONFIG SET ONLINE MESSAGE\n* Set a custom announcement message.\n\n" +
-                    "## Available tokens to use in your message:\n" +
-                    "\t* %CHANNEL%   - The name of the channel\n" +
-                    "\t* %FOLLOWERS% - The total number of followers\n" +
-                    "\t* %GAME%      - The name of the game being streamed\n" +
-                    "\t* %STATUS%    - The status (title) of the stream\n" +
-                    "\t* %URL%       - The URL for the stream\n" +
-                    "\t* %USER%      - The name of the channel\n" +
-                    "\t* %VIEWERS%   - The number of current viewers\n\n" +
+                    "%CHANNEL% už nevysílá!  Promiň, tentokrát jsi to nestihl."},// <--- Do not translate between the %
+            {"setOnlineHelp", "# CONFIG SET ONLINE MESSAGE\n* Nastav vlastní oznamovací zprávu.\n\n" +
+                    "## Dostupné žetony k použití ve vaší zprávě:\n" +
+                    "\t* %CHANNEL%   - Název kanálu\n" +
+                    "\t* %FOLLOWERS% - Počet followerů\n" +
+                    "\t* %GAME%      - Název vysílané hry\n" +
+                    "\t* %STATUS%    - Status (název) streamu\n" +
+                    "\t* %URL%       - Adresa na vysílání\n" +
+                    "\t* %USER%      - Název kanálu\n" +
+                    "\t* %VIEWERS%   - Počet momentálně sledujících\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOnlineMessage " +
-                    "%CHANNEL% has just gone live! Watch their stream here: %URL%"},// <--- Do not translate between the %
+                    "%CHANNEL% je nyní živě! Sledujte jeho stream zde: %URL%"},// <--- Do not translate between the %
             {"shardsThis", "Číslo střepu"},
             {"shardsTotal", "Počet střepů"},
             {"statusHelp", "```Markdown\n# STATUS\n* Zobrazí různé statistiky bota.\n\n## USAGE:  "
@@ -377,10 +377,10 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"typeOnce", "Stačí když tuto část napíšeš pouze jednou, hlupáku."},
             {"uniqueChannels", "Unikátní kanály %s"},
             {"uniqueGames", "Unikátní hry %s"},
-            {"updateAnnounceMessageFail", "# Something went wrong and the announcement message was not changed."},
-            {"updateAnnounceMessageSuccess", "# You've updated the announcement message!  It now uses the format:\n\n* %s"},
-            {"updateOfflineMessageFail", "# Something went wrong and the offline message was not changed."},
-            {"updateOfflineMessageSuccess", "# You've updated the offline message!  It now uses the format:\n\n* %s"},
+            {"updateAnnounceMessageFail", "# Něco se nepovedlo a oznamovací zpráva nebyla změněna."},
+            {"updateAnnounceMessageSuccess", "# Změnil jsi oznamovací zprávu!  Momentální oznamovací zpráva:\n\n* %s"},
+            {"updateOfflineMessageFail", "# Něco se nepovedlo a offline zpráva nebyla změněna."},
+            {"updateOfflineMessageSuccess", "# Změnil jsi offline zprávu!  Momentální offline zpráva:\n\n* %s"},
             {"usePlatform", "Oops!  To je starý způsob, jak dělat věci!  Použij specifický příkaz pro danou platformu!  Napiš `" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` pro více informací."},
             {"watchThemHere", "Sledujte jej zde: "},
