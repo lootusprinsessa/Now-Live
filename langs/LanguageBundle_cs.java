@@ -96,6 +96,9 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "* defaultOnlineMessage - Navrátí původní oznamovací zprávu (použito ve všech oznámeních)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
+                    "* setDefaultAnnounceChannel help - Set the default announcement channel " +
+                    "(where it announces when you don't include a specific channel in the Twitch command)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
                     "* setOfflineMessage - Nastaví vlastní offline zprávu (použito v upravovaných oznámeních)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
                     "* setOnlineMessage - Nastaví vlastní oznamovací zprávu (použito ve všech oznámeních)\n" +
@@ -149,9 +152,6 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "# LIST\n" +
                     "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " list help\n\n" +
-                    "# MOVE\n" +
-                    "* Pro více informací, napiš: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " move help\n\n" +
                     "# NOTIFY\n" +
                     "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
@@ -207,17 +207,6 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "\n* Jazyk bota je nastaven na %s." +
                     "\n* Momentální online oznamovací zpráva je: %s." +
                     "\n* Momentální offline oznamovací zpráva je: %s.```"},
-            {"moveDoNotOwnChannel", " :no_entry: Hej, ale nemůžu oznamovat v kanálu který na tvém serveru " +
-                    "neexistuje!"},
-            {"moveFail", " :no_entry: Nedaří se mi tam odeslat oznámení.  Ujisti se že tam mám správná práva."},
-            {"moveHelp", "```Markdown\n# MOVE\n* Nastaví, kde budu oznamovat.\n\n## USAGE:  "
-                    + Const.COMMAND_PREFIX
-                    + Const.COMMAND
-                    + " move <kanál>\n\t"
-                    + "<kanál> - Jmeno kanálu, kde chcete abych oznamoval (MUSÍ obsahovat #)"
-                    + "Tato funkce je zastaralá a nemusí fungovat tak jak myslíte.  Prosím, zkoukni si Twitch příkaz."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " move #discordchannel" + "```"},
-            {"moveSuccess", " :ok_hand: Budu oznamovat tam! :arrow_right: "},
             {"needOneManager", "Pokud ho odstraníš, kdo mě bude ovládat?"},
             {"noBotManager", "Je proti mým Discord bot zákonům aby mě ovládal bot. Promiň, zkus najít " +
                     "vhodného člověka pro tuto práci. :thumbsup:"},
@@ -265,6 +254,17 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "\n\tmanager - Zmínka o uživateli znakem @ kterého chcete přidat jako manažera"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
             {"servers", "Servers"},
+            {"setDefaultAnnounceChannelDoNotOwnChannel", "# Hej, ale nemůžu oznamovat v kanálu který na tvém serveru " +
+                    "neexistuje!"},
+            {"setDefaultAnnounceChannelFail", "# Nedaří se mi tam odeslat oznámení.  Ujisti se že tam mám správná práva."},
+            {"setDefaultAnnounceChannelHelp", "# SET DEFAULT ANNOUNCE CHANNEL\n* Set the default announcement channel.\n\n## USAGE:  "
+                    + Const.COMMAND_PREFIX
+                    + Const.COMMAND
+                    + " config setDefaultAnnounceChannel <channel>\n\t"
+                    + "<channel> - The name of the channel you wish to be your default(MUST include the #)\n"
+                    + "This option only applies if you have not set a specific announce channel in the Twitch command."
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #discordchannel"},
+            {"setDefaultAnnounceChannelSuccess", "# Default announcement channel set to: %s."},
             {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Nastav vlastní offline zprávu pro offline oznamování.\n\n" +
                     "## Dostupné žetony k použití ve vaší zprávě:\n" +
                     "\t* %CHANNEL%   - Název kanálu\n" +
@@ -274,7 +274,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "\t* %URL%       - Adresa na vysílání\n" +
                     "\t* %USER%      - Název kanálu\n" +
                     "\t* %VIEWERS%   - Počet momentálně sledujících\n\n" +
-                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOfflineMessage " +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage " +
                     "%CHANNEL% už nevysílá!  Promiň, tentokrát jsi to nestihl."},// <--- Do not translate between the %
             {"setOnlineHelp", "# CONFIG SET ONLINE MESSAGE\n* Nastav vlastní oznamovací zprávu.\n\n" +
                     "## Dostupné žetony k použití ve vaší zprávě:\n" +
@@ -285,7 +285,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "\t* %URL%       - Adresa na vysílání\n" +
                     "\t* %USER%      - Název kanálu\n" +
                     "\t* %VIEWERS%   - Počet momentálně sledujících\n\n" +
-                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOnlineMessage " +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage " +
                     "%CHANNEL% je nyní živě! Sledujte jeho stream zde: %URL%"},// <--- Do not translate between the %
             {"shardsThis", "Číslo střepu"},
             {"shardsTotal", "Počet střepů"},

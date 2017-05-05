@@ -98,6 +98,9 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "* defaultOnlineMessage - Setzt die Einstellungen der Offline-Nachrichten zurück. (Für alle Benachrichtigungen zuständig.)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
+                    "* setDefaultAnnounceChannel help - Set the default announcement channel " +
+                    "(where it announces when you don't include a specific channel in the Twitch command)\n" +
+                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
                     "* setOfflineMessage - Lege eine eigene Offline-Nachricht fest. (Für bearbeitete Benachrichtigungen zuständig.)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
                     "* setOnlineMessage - Lege eine eigene Benachrichtigung fest. (Für alle Benachrichtigungen zuständig.)\n" +
@@ -154,9 +157,6 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "# LIST\n" +
                     "* Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " list help\n\n" +
-                    "# MOVE\n" +
-                    "* Für mehr Informantionen, schreibe: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " move help\n\n" +
                     "# NOTIFY\n" +
                     "* Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
@@ -213,18 +213,6 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "\n* Botsprache ist %s." +
                     "\n* Format der jetzigen Online-Benachrichtigung ist: %s." +
                     "\n* Format der jetzigen Offline-Benachrichtigung ist: %s.```"},
-            {"moveDoNotOwnChannel", " :no_entry: Ähm, Ich kann nichts in einem Channel posten, " +
-                    "der auf deinem Server nicht existiert!"},
-            {"moveFail", " :no_entry: Ich kann dort scheinbar keine Benachrichtigungen posten.  Stell sicher dass du in diesem Channel " +
-                    "mir Schreibrechte gegeben hast."},
-            {"moveHelp", "```Markdown\n# MOVE\n* Ändert wo ich Benachrichtigungen poste.\n\n## VERWENDUNG:  "
-                    + Const.COMMAND_PREFIX
-                    + Const.COMMAND
-                    + " move <channel>\n\t"
-                    + "<channel> - Der Name des Channels in dem ich Benachrichtigungen posten soll (MUSS mit # beginnen)\n"
-                    + "Diese Option ist veraltet und funktioniert wahrscheinlich nicht so wie du denkst.  Benutze bitte den Twitch-Befehl."
-                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " move #discordchannel" + "```"},
-            {"moveSuccess", " :ok_hand: Okay ich werde dort posten! :arrow_right: "},
             {"needOneManager", "Wenn du das tust, wer managet mich dann?"},
             {"noBotManager", "Bots als Manager hinzufügen verstößt gegen die Discord Bot Union By-Laws. Sorry, versuche einen " +
                     "geeignet Menschen für diesen Job zu finden. :thumbsup:"},
@@ -270,6 +258,18 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "\n\tmanager - Der @ Name des Benutzers, den du als Manager hinzufügen möchtest"
                     + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
             {"servers", "Server"},
+            {"setDefaultAnnounceChannelDoNotOwnChannel", "# Hey now, I can't announce to a channel that doesn't exists on your " +
+                    "server!"},
+            {"setDefaultAnnounceChannelFail", "# I can't seem to send announcements there.  Make sure I have the proper permissions " +
+                    "in that channel."},
+            {"setDefaultAnnounceChannelHelp", "# SET DEFAULT ANNOUNCE CHANNEL\n* Set the default announcement channel.\n\n## USAGE:  "
+                    + Const.COMMAND_PREFIX
+                    + Const.COMMAND
+                    + " config setDefaultAnnounceChannel <channel>\n\t"
+                    + "<channel> - The name of the channel you wish to be your default(MUST include the #)\n"
+                    + "This option only applies if you have not set a specific announce channel in the Twitch command."
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #discordchannel"},
+            {"setDefaultAnnounceChannelSuccess", "# Default announcement channel set to: %s."},
             {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Lege eine eigene Offline-Nachricht für bearbeitete Benachrichtigungen fest.\n\n" +
                     "## Verfügbare Tokens zum Benutzen in der Nachricht:\n" +
                     "\t* %CHANNEL%   - Der Name des Channels\n" +
@@ -279,7 +279,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "\t* %URL%       - Die URL des Streams\n" +
                     "\t* %USER%      - Der Name des Channels\n" +
                     "\t* %VIEWERS%   - Die Nummer der jetzigen Zuschauer\n\n" +
-                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOfflineMessage " +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage " +
                     "%CHANNEL% ist nicht länger online.  Sorry, du hast ihn diesmal wohl verpasst."},
             {"setOnlineHelp", "# CONFIG SET ONLINE MESSAGE\n* Lege eine eigene Benachrichtigung fest.\n\n" +
                     "## Verfügbare Tokens zum Benutzen in der Nachricht:\n" +
@@ -290,7 +290,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "\t* %URL%       - Die URL des Streams\n" +
                     "\t* %USER%      - Der Name des Channels\n" +
                     "\t* %VIEWERS%   - Die Nummer der jetzigen Zuschauer\n\n" +
-                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + "config setOnlineMessage " +
+                    "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage " +
                     "%CHANNEL% ist gerade live! Siehe den Stream hier: %URL%"},
             {"shardsThis", "Shard Nummer"},
             {"shardsTotal", "Nummer der Shards"},
