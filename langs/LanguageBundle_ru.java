@@ -98,8 +98,8 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "* defaultOnlineMessage - Оnline сообщение по умолчанию (используется во всех объявлениях)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Set the default announcement channel " +
-                    "(where it announces when you don't include a specific channel in the Twitch command)\n" +
+                    "* setDefaultAnnounceChannel help - Установка канала объявлений по умолчанию " +
+                    "(Канал для объявлений, когда вы не включаете определенный канал в команду Twitch)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
                     "* setOfflineMessage - Настраиваемое offline сообщение (используется в отредактированных объявлениях)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
@@ -147,8 +147,8 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "# КОМПАКТНОСТЬ\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " compact help\n\n" +
-                    "# CONFIG\n" +
-                    "* For more information, type: " +
+                    "# КОНФИГУРАЦИЯ\n" +
+                    "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config help\n\n" +
                     "# ПРИГЛАШЕНИЕ\n" +
                     "* Для получения дополнительной информации введите: " +
@@ -257,18 +257,18 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "\n\tmanager - @ Упомяните пользователя для удалении из менеджеров"
                     + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
             {"servers", "Сервера"},
-            {"setDefaultAnnounceChannelDoNotOwnChannel", "# Hey now, I can't announce to a channel that doesn't exists on your " +
-                    "server!"},
-            {"setDefaultAnnounceChannelFail", "# I can't seem to send announcements there.  Make sure I have the proper permissions " +
-                    "in that channel."},
-            {"setDefaultAnnounceChannelHelp", "# SET DEFAULT ANNOUNCE CHANNEL\n* Set the default announcement channel.\n\n## USAGE:  "
+            {"setDefaultAnnounceChannelDoNotOwnChannel", "# Я не могу объявить канал, которого нет на вашем " +
+                    "сервере!"},
+            {"setDefaultAnnounceChannelFail", "# Я не могу отправлять объявления там. Убедитесь, что у меня есть соответствующие разрешения " +
+                    "на указанном канале."},
+            {"setDefaultAnnounceChannelHelp", "# НАСТРОЙКА КАНАЛА ОБЪЯВЛЕНИЙ ПО УМОЛЧАНИЮ\n* Установка канала объявлений по умолчанию.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " config setDefaultAnnounceChannel <channel>\n\t"
-                    + "<channel> - The name of the channel you wish to be your default(MUST include the #)\n"
-                    + "This option only applies if you have not set a specific announce channel in the Twitch command."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #discordchannel"},
-            {"setDefaultAnnounceChannelSuccess", "# Default announcement channel set to: %s."},
+                    + "<channel> - Имя канала, который вы хотите использовать по умолчанию (перед имененм ДОЛЖЕН быть знак #)\n"
+                    + "Эта опция применяется, только если вы не установили определенный канал анонса в команде Twitch."
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #discordchannel"},
+            {"setDefaultAnnounceChannelSuccess", "# Канал объявления по умолчанию установлен на: %s."},
             {"setOfflineHelp", "# НАСТРОЙКА OFFLINE СООБЩЕНИЯ В ОБЪЯВЛЕНИИ\n* Детальная настройка offline сообщения для редактируемого offline объявления.\n\n" +
                     "## Доступные значения для использования в вашем сообщении:\n" +
                     "\t* %CHANNEL%   - Название канала в Discord\n" +
