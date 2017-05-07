@@ -265,7 +265,7 @@ public class LanguageBundle extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " config setDefaultAnnounceChannel <channel>\n\t"
-                    + "<channel> - The name of the channel you wish to be your default(MUST include the #)\n"
+                    + "<channel> - The name of the channel you wish to be your default (MUST include the #)\n"
                     + "This option only applies if you have not set a specific announce channel in the Twitch command."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #discordchannel"},
             {"setDefaultAnnounceChannelSuccess", "# Default announcement channel set to: %s."},
