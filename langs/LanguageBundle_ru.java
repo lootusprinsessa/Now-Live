@@ -31,36 +31,52 @@ public class LanguageBundle_ru extends ListResourceBundle {
     private Object[][] contents = {
             {"added", "Добавить "},
             {"addFail", "Не удалось добавить "},
-            {"addHelp", "```Markdown\n# ДОБАВЛЕНИЕ\n* Используется для добавления менеджеров для вашего сервера.\n\n## ПРИМЕНЕНИЕ:  "
+            {"addHelp", "# ДОБАВЛЕНИЕ\n* Используется для добавления менеджеров для вашего сервера.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " add <option> <content>"
                     + "\n\t<option> <content>"
                     + "\n\tmanager - @ Упомяните пользователя для добавлении в качестве менеджера"
-                    + "\n\n## ПРИМЕР: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague```"},
+                    + "\n\n## ПРИМЕР: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague"},
             {"adminOverride", "*Разрешение этой команды было отменено разработчиком.*"},
             {"alreadyExists", "Похоже, вы уже добавили это в мою базу данных.. ¯\\_(ツ)_/¯"},
             {"alreadyManager", "Кажется, я уже установил этого пользователя в качестве менеджера."},
-            {"announceHelp", "```Markdown\n# ОБЪЯВЛЕНИЕ\n* Тсс... Я секрет...\n\n## ПРИМЕНЕНИЕ:  "
+            {"announceHelp", "# ОБЪЯВЛЕНИЕ\n* Тсс... Я секрет...\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " announce <content>\n\tЭта команда доступна только для разработчиков.```"},
-            {"beamHelp", "```Markdown\n# BEAM\n* Добавление и удаление данных связанных с Beam.pro.\n\n## ПРИМЕНЕНИЕ:  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam <sub-command> <option> <argument>\n"
-                    + "\t<sub-command> <option> <argument>\n"
-                    + "\tadd           channel  <channelname>\n"
-                    + "\tremove        channel  <channel-name>\n\n"
-                    + "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " beam add channel Ague" + "```"},
+                    + " announce <content>\n\tЭта команда доступна только для разработчиков."},
+            {"beamChannelNotFound", "\n# Channel(s) not found on Beam: %s."},
+            {"beamHelp", "# BEAM\n* Add and remove things that are Beam.pro related.\n"
+                    + "* Notes:\n\t"
+                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
+                    + "Do NOT use the full Beam URL. It will not work!! Use only the channel name (www.beam.pro/channelName)\n\t"
+                    + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
+                    + "The only required options are: channelName/teamName\n\n"
+                    + "## Beam Channels\n"
+                    + "Note: Adding an announcement channel, game and title filters are optional."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
+                    + "## Beam Teams (Announce ALL live streams in the team)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team teamName #announcementChannel\n\n"
+                    + "## Beam Game Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {gameName|gameName} #announcementChannel\n\n"
+                    + "## Beam Title Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Examples:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
+                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
             {"beamUserNoExist", "Указанного пользователя Beam не существует! Проверьте правильность написания и повторите попытку!"},
             {"botLangFail", "Что-то пошло не так. Мой язык все тот же."},
-            {"botLangHelp", "```Markdown\n# ЯЗЫКБОТА\n* Используется для изменения языка моих ответов.\n\n## ПРИМЕНЕНИЕ: "
+            {"botLangHelp", "# ЯЗЫКБОТА\n* Используется для изменения языка моих ответов.\n\n## ПРИМЕНЕНИЕ: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " Язык бота"
                     + "\n\tИспользуйте Английское, либо родное написание языка, который вы хотите установить."
                     + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish"
                     + "\n\tВам нужна дополнительная помощь с этой командой? Не нашли ответа и хотите задать вопросы на языке, в настоящее время связанным "
-                    + "с ботом? Пожалуйста, не стесняйтесь обратиться к переводчикам на нашем сервере для получения помощи. Discord is at " + Const.COMMAND_PREFIX + Const.COMMAND + " discord```"},
+                    + "с ботом? Пожалуйста, не стесняйтесь обратиться к переводчикам на нашем сервере для получения помощи. Discord is at " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
             {"botLangSuccess", "Вы успешно изменили мой язык."},
             {"botLangUnsupported", "Этот язык в настоящее время не поддерживается."},
             {"botStatistics", "%s Статистика"},
@@ -248,6 +264,34 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "Flexolite ракеткой."},
             {"pingHelp", "```Markdown\n# ПИНГ\n* Используйте для проверки моего времени отклика. Если я правильно работаю, я пришлю вам pong.\n\n## ПРИМЕНЕНИЕ: "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ping```"},
+            {"platformAnnounceUpdate", "\n# Обновлен канал объявлений Twitch %s на: %s."},
+            {"platformAnnounceUpdateFail", "\n! Не удалось изменить канал объявления Twitch с %s на: %s."},
+            {"platformChannelAdd", "\n# Добавлен(ы) канал(ы): %s."},
+            {"platformChannelAddFail", "\n# Не удалось добавить канал(ы): %s."},
+            {"platformChannelAnnounce", "\n# Он(и) будут объявлен(ы) в: #%s."},
+            {"platformChannelGameFilter", "\n# Он(и) будут объявлен(ы) только тогда, когда они играют: %s."},
+            {"platformChannelRemove", "\n# Удален(ы) канал(ы): %s."},
+            {"platformChannelRemoveFail", "\n! Не удалось удалить канал(ы): %s."},
+            {"platformChannelTitleFilter", "\n# Он(и) будут объявлен(ы) только тогда, когда в названии есть слово(а): %s."},
+            {"platformGameAdd", "\n# Добавлена(ы) игра(ы): %s."},
+            {"platformGameAddFail", "\n# Не удалось добавить игру(ы): %s."},
+            {"platformGameAnnounce", "\n# Игра будет объявляться в: #%s."},
+            {"platformGameFilterAdd", "\n# Добавлен(ы) игровой(ые) фильтр(ы): %s."},
+            {"platformGameFilterAddFail", "\n# Не удалось добавить игровой(ые) фильтр(ы): %s."},
+            {"platformGameFilterRemove", "\n# Удален(ы) игровой(ые) фильтр(ы): %s."},
+            {"platformGameFilterRemoveFail", "\n# Не удалось удалить игровой(ые) фильтр(ы): %s."},
+            {"platformGameRemove", "\n# Удалена(ы) игра(ы): %s."},
+            {"platformGameRemoveFail", "\n# Не удалось удалить игру(ы): %s."},
+            {"platformTeamAdd", "\n# Команда(ы) добавлена(ы): %s."},
+            {"platformTeamAddFail", "\n# Не удалось добавить команду(ы): %s."},
+            {"platformTeamAnnounce", "\n# Команда(ы) будут объявляться в: #%s."},
+            {"platformTeamNotFound", "\n# Команда(ы) не найдена(ы) на Twitch: %s."},
+            {"platformTeamRemove", "\n# Команда(ы) удалена(ы): %s."},
+            {"platformTeamRemoveFail", "\n# Не удалось удалить команду(ы): %s."},
+            {"platformTitleFilterAdd", "\n# Добавлен(ы) фильтр(ы) описания: %s."},
+            {"platformTitleFilterAddFail", "\n# Не удалось добавить фильтр(ы)описания: %s."},
+            {"platformTitleFilterRemove", "\n# Фильтр(ы) описания удален(ы): %s."},
+            {"platformTitleFilterRemoveFail", "\n# Не удалось удалить фильтр(ы) описания: %s."},
             {"privateMessageReply", "Я извиняюсь, но бот, которого вы пытаетесь достать, имеет автоответчик, который " +
                     "еще не настроен. Повторите попытку позже.."},
             {"removed", "Удалено %s %s."},
@@ -313,32 +357,14 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"totalViewsEmbed", "Всего просмотров"},
             {"trello", "Чтобы сообщить об ошибке или запросить функции, которые будут добавлены к боту, пожалуйста, используйте наш Trello. https://trello.com/b/kcWshbIU"},
             {"trelloHelp", "Выдаёт ссылку на Trello для бота"},
-            {"twitchCommunities", "Twitch Сообщества"},
-            {"twitchAnnounceUpdate", "\n# Обновлен канал объявлений Twitch %s на: %s."},
-            {"twitchAnnounceUpdateFail", "\n! Не удалось изменить канал объявления Twitch с %s на: %s."},
-            {"twitchChannelAdd", "\n# Добавлен(ы) канал(ы): %s."},
-            {"twitchChannelAddFail", "\n# Не удалось добавить канал(ы): %s."},
-            {"twitchChannelAnnounce", "\n# Он(и) будут объявлен(ы) в: #%s."},
-            {"twitchChannelGameFilter", "\n# Он(и) будут объявлен(ы) только тогда, когда они играют: %s."},
             {"twitchChannelNotFound", "\n# Канал(ы) не найден(ы): %s"},
-            {"twitchChannelRemove", "\n# Удален(ы) канал(ы): %s."},
-            {"twitchChannelRemoveFail", "\n! Не удалось удалить канал(ы): %s."},
-            {"twitchChannelTitleFilter", "\n# Он(и) будут объявлен(ы) только тогда, когда в названии есть слово(а): %s."},
+            {"twitchCommunities", "Twitch Сообщества"},
             {"twitchCommunityAdd", "\n# Добавлена(ы) сообщество(а): %s."},
             {"twitchCommunityAddFail", "\n# Не удалось добавить сообщество(а): %s."},
             {"twitchCommunityAnnounce", "\n# Сообщество(а) будет(ут) объявляться в: #%s."},
             {"twitchCommunityNotFound", "\n# Сообщество(а) не найдены на Twitch: %s."},
             {"twitchCommunityRemove", "\n# Сообщество(а) удалено(ы): %s."},
             {"twitchCommunityRemoveFail", "\n# Добавлена(ы) сообщество(ва): %s."},
-            {"twitchGameAdd", "\n# Добавлена(ы) игра(ы): %s."},
-            {"twitchGameAddFail", "\n# Не удалось добавить игру(ы): %s."},
-            {"twitchGameAnnounce", "\n# Игра будет объявляться в: #%s."},
-            {"twitchGameFilterAdd", "\n# Добавлен(ы) игровой(ые) фильтр(ы): %s."},
-            {"twitchGameFilterAddFail", "\n# Не удалось добавить игровой(ые) фильтр(ы): %s."},
-            {"twitchGameFilterRemove", "\n# Удален(ы) игровой(ые) фильтр(ы): %s."},
-            {"twitchGameFilterRemoveFail", "\n# Не удалось удалить игровой(ые) фильтр(ы): %s."},
-            {"twitchGameRemove", "\n# Удалена(ы) игра(ы): %s."},
-            {"twitchGameRemoveFail", "\n# Не удалось удалить игру(ы): %s."},
             {"twitchHelp", "```Markdown\n# TWITCH\n* Добавление и удаление объектов, связанных с Twitch.tv.\n"
                     + "* Примечания:\n\t"
                     + "Чтобы добавить игровые фильтры и фильтры заголовков, вы ДОЛЖНЫ включить скобки.\n\t"
@@ -368,17 +394,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (добавляет сообщество с заданный канал объявлений)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (добавляет команду с заданным каналом объявлений).\n\n"
                     + "```"},
-            {"twitchTeamAdd", "\n# Команда(ы) добавлена(ы): %s."},
-            {"twitchTeamAddFail", "\n# Не удалось добавить команду(ы): %s."},
-            {"twitchTeamAnnounce", "\n# Команда(ы) будут объявляться в: #%s."},
-            {"twitchTeamNotFound", "\n# Команда(ы) не найдена(ы) на Twitch: %s."},
-            {"twitchTeamRemove", "\n# Команда(ы) удалена(ы): %s."},
-            {"twitchTeamRemoveFail", "\n# Не удалось удалить команду(ы): %s."},
             {"twitchTeams", "Twitch Команды"},
-            {"twitchTitleFilterAdd", "\n# Добавлен(ы) фильтр(ы) описания: %s."},
-            {"twitchTitleFilterAddFail", "\n# Не удалось добавить фильтр(ы)описания: %s."},
-            {"twitchTitleFilterRemove", "\n# Фильтр(ы) описания удален(ы): %s."},
-            {"twitchTitleFilterRemoveFail", "\n# Не удалось удалить фильтр(ы) описания: %s."},
             {"typeOnce", "Вам нужно всего лишь ввести эту часть."},
             {"uniqueChannels", "Уникальные каналы %s"},
             {"uniqueGames", "Уникальные игры %s"},

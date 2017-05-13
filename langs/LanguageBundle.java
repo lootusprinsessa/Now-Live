@@ -31,34 +31,50 @@ public class LanguageBundle extends ListResourceBundle {
     private Object[][] contents = {
             {"added", "Added "},
             {"addFail", "Failed to add "},
-            {"addHelp", "```Markdown\n# ADD\n* Used to add managers for your server.\n\n## USAGE:  "
+            {"addHelp", "# ADD\n* Used to add managers for your server.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " add <option> <content>"
                     + "\n\t<option> <content>"
                     + "\n\tmanager - The @ mention of the user to add as a manager"
-                    + "\n\n## EXAMPLE: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague```"},
+                    + "\n\n## EXAMPLE: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague"},
             {"adminOverride", "*Permission of this command have been overridden by a developer.*"},
             {"alreadyExists", "It looks like you already added that to my database. ¯\\_(ツ)_/¯"},
             {"alreadyManager", "It seems I've already hired that user as a manager.  Find moar humanz!"},
-            {"announceHelp", "```Markdown\n# ANNOUNCE\n* Shhh...  I'm a secret...\n\n## USAGE:  "
+            {"announceHelp", "# ANNOUNCE\n* Shhh...  I'm a secret...\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " announce <content>\n\tThis command is only available to the developers.```"},
-            {"beamHelp", "```Markdown\n# BEAM\n* Add and remove things that are Beam.pro related.\n\n## USAGE:  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam <sub-command> <option> <argument>\n"
-                    + "\t<sub-command> <option> <argument>\n"
-                    + "\tadd           channel  <channelname>\n"
-                    + "\tremove        channel  <channel-name>\n\n"
-                    + "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " beam add channel Ague" + "```"},
+                    + " announce <content>\n\tThis command is only available to the developers."},
+            {"beamChannelNotFound", "\n# Channel(s) not found on Beam: %s."},
+            {"beamHelp", "# BEAM\n* Add and remove things that are Beam.pro related.\n"
+                    + "* Notes:\n\t"
+                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
+                    + "Do NOT use the full Beam URL. It will not work!! Use only the channel name (www.beam.pro/channelName)\n\t"
+                    + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
+                    + "The only required options are: channelName/teamName\n\n"
+                    + "## Beam Channels\n"
+                    + "Note: Adding an announcement channel, game and title filters are optional."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
+                    + "## Beam Teams (Announce ALL live streams in the team)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team teamName #announcementChannel\n\n"
+                    + "## Beam Game Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {gameName|gameName} #announcementChannel\n\n"
+                    + "## Beam Title Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Examples:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
+                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
             {"beamUserNoExist", "That Beam user does not exist! Check your spelling and try again!"},
             {"botLangFail", "Something went wrong and my language is still the same."},
-            {"botLangHelp", "```Markdown\n# BOTLANG\n* Used to change the language of my responses.\n\n## USAGE: "
+            {"botLangHelp", "# BOTLANG\n* Used to change the language of my responses.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " botlang language"
                     + "\n\tEnter either the English spelling or the native spelling of the language you wish to set."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish" + "```"
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish"
                     + "\n\tIf you need further help with this command or others outside of what our help commands do and you wish to ask questions in a language currently associated "
                     + "with the bot please feel free to reach out to our translators in our Discord for assistance. Discord is at " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
             {"botLangSuccess", "You've successfully changed my language."},
@@ -98,8 +114,8 @@ public class LanguageBundle extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "* defaultOnlineMessage - Returns the announcement message to the default (used in all announcements)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Set the default announcement channel " +
-                    "(where it announces when you don't include a specific channel in the Twitch command)\n" +
+                    "* setDefaultAnnounceChannel help - Set the default announcement channel\n" +
+                    "\t(Where it announces when you don't include a specific channel in the Twitch command)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
                     "* setOfflineMessage - Set a custom offline message (used in edited announcements)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
@@ -248,6 +264,34 @@ public class LanguageBundle extends ListResourceBundle {
                     "Flexolite ping pong paddle."},
             {"pingHelp", "```Markdown\n# PING\n* Used to ping me. If I am working correctly, I'll send you a pong.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ping```"},
+            {"platformAnnounceUpdate", "\n# Updated the announcement channel for %s to: %s."},
+            {"platformAnnounceUpdateFail", "\n! Failed to change the announce channel for %s to: %s."},
+            {"platformChannelAdd", "\n# Added channel(s): %s."},
+            {"platformChannelAddFail", "\n# Failed to add channels: %s."},
+            {"platformChannelAnnounce", "\n# They will be announced in: #%s."},
+            {"platformChannelGameFilter", "\n# They will only be announced when they are playing: %s."},
+            {"platformChannelRemove", "\n# Removed channels: %s."},
+            {"platformChannelRemoveFail", "\n! Failed to delete channels: %s."},
+            {"platformChannelTitleFilter", "\n# They will only be announced when these words are in the title: %s."},
+            {"platformGameAdd", "\n# Added game(s): %s."},
+            {"platformGameAddFail", "\n# Failed to add game(s): %s."},
+            {"platformGameAnnounce", "\n# The game will announce in: #%s."},
+            {"platformGameFilterAdd", "\n# Added game filter(s): %s."},
+            {"platformGameFilterAddFail", "\n# Failed to add game filter(s): %s."},
+            {"platformGameFilterRemove", "\n# Removed game filter(s): %s."},
+            {"platformGameFilterRemoveFail", "\n# Failed to remove game filter(s): %s."},
+            {"platformGameRemove", "\n# Removed game(s): %s."},
+            {"platformGameRemoveFail", "\n# Failed to remove game(s): %s."},
+            {"platformTeamAdd", "\n# Added team(s): %s."},
+            {"platformTeamAddFail", "\n# Failed to add team(s): %s."},
+            {"platformTeamAnnounce", "\n# The team(s) will announce in: #%s."},
+            {"platformTeamNotFound", "\n# Team(s) not found: %s."},
+            {"platformTeamRemove", "\n# Removed team(s): %s."},
+            {"platformTeamRemoveFail", "\n# Failed to remove team(s): %s."},
+            {"platformTitleFilterAdd", "\n# Added title filter(s): %s."},
+            {"platformTitleFilterAddFail", "\n# Failed to add title filter(s): %s."},
+            {"platformTitleFilterRemove", "\n# Removed title filter(s): %s."},
+            {"platformTitleFilterRemoveFail", "\n# Failed to remove title filter(s): %s."},
             {"privateMessageReply", "I'm sorry, but the bot you are trying to reach has a voice mail box that has not " +
                     "been setup yet.  Please try your PM again later."},
             {"removed", "Removed %s %s."},
@@ -268,7 +312,7 @@ public class LanguageBundle extends ListResourceBundle {
                     + "<channel> - The name of the channel you wish to be your default(MUST include the #)\n"
                     + "This option only applies if you have not set a specific announce channel in the Twitch command."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #discordchannel"},
-            {"setDefaultAnnounceChannelSuccess", "# Default announcement channel set to: %s."},
+            {"setDefaultAnnounceChannelSuccess", "# Default announcement channel set to: #%s."},
             {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Set a custom offline message for edited offline announcements.\n\n" +
                     "## Available tokens to use in your message:\n" +
                     "\t* %CHANNEL%   - The name of the channel\n" +
@@ -313,32 +357,14 @@ public class LanguageBundle extends ListResourceBundle {
             {"totalViewsEmbed", "Total Views"},
             {"trello", "To report bugs or to request features to be added to the bot please use our Trello. https://trello.com/b/kcWshbIU"},
             {"trelloHelp", "Returns the link to the Trello for the bot"},
-            {"twitchCommunities", "Twitch Communities"},
-            {"twitchAnnounceUpdate", "\n# Updated the Twitch announcement channel for %s to: %s."},
-            {"twitchAnnounceUpdateFail", "\n! Failed to change the Twitch announce channel for %s to: %s."},
-            {"twitchChannelAdd", "\n# Added channel(s): %s."},
-            {"twitchChannelAddFail", "\n# Failed to add channels: %s."},
-            {"twitchChannelAnnounce", "\n# They will be announced in: #%s."},
-            {"twitchChannelGameFilter", "\n# They will only be announced when they are playing: %s."},
             {"twitchChannelNotFound", "\n# Channel(s) not found on Twitch: %s."},
-            {"twitchChannelRemove", "\n# Removed channels: %s."},
-            {"twitchChannelRemoveFail", "\n! Failed to delete channels: %s."},
-            {"twitchChannelTitleFilter", "\n# They will only be announced when these words are in the title: %s."},
+            {"twitchCommunities", "Twitch Communities"},
             {"twitchCommunityAdd", "\n# Added community(s): %s."},
             {"twitchCommunityAddFail", "\n# Failed to add community(s): %s."},
             {"twitchCommunityAnnounce", "\n# The community(s) will announce in: #%s."},
             {"twitchCommunityNotFound", "\n# Community(s) not found on Twitch: %s."},
             {"twitchCommunityRemove", "\n# Removed community(s): %s."},
             {"twitchCommunityRemoveFail", "\n# Failed to remove community(s): %s."},
-            {"twitchGameAdd", "\n# Added game(s): %s."},
-            {"twitchGameAddFail", "\n# Failed to add game(s): %s."},
-            {"twitchGameAnnounce", "\n# The game will announce in: #%s."},
-            {"twitchGameFilterAdd", "\n# Added game filter(s): %s."},
-            {"twitchGameFilterAddFail", "\n# Failed to add game filter(s): %s."},
-            {"twitchGameFilterRemove", "\n# Removed game filter(s): %s."},
-            {"twitchGameFilterRemoveFail", "\n# Failed to remove game filter(s): %s."},
-            {"twitchGameRemove", "\n# Removed game(s): %s."},
-            {"twitchGameRemoveFail", "\n# Failed to remove game(s): %s."},
             {"twitchHelp", "```Markdown\n# TWITCH\n* Add and remove things that are Twitch.tv related.\n"
                     + "* Notes:\n\t"
                     + "To add game filters and title filters, you MUST include the brackets.\n\t"
@@ -368,17 +394,7 @@ public class LanguageBundle extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (adds the community with a specified announcement channel)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (adds a team with a specific announcement channel)\n\n"
                     + "```"},
-            {"twitchTeamAdd", "\n# Added team(s): %s."},
-            {"twitchTeamAddFail", "\n# Failed to add team(s): %s."},
-            {"twitchTeamAnnounce", "\n# The team(s) will announce in: #%s."},
-            {"twitchTeamNotFound", "\n# Team(s) not found on Twitch: %s."},
-            {"twitchTeamRemove", "\n# Removed team(s): %s."},
-            {"twitchTeamRemoveFail", "\n# Failed to remove team(s): %s."},
             {"twitchTeams", "Twitch Teams"},
-            {"twitchTitleFilterAdd", "\n# Added title filter(s): %s."},
-            {"twitchTitleFilterAddFail", "\n# Failed to add title filter(s): %s."},
-            {"twitchTitleFilterRemove", "\n# Removed title filter(s): %s."},
-            {"twitchTitleFilterRemoveFail", "\n# Failed to remove title filter(s): %s."},
             {"typeOnce", "You only need to type that part once, silly."},
             {"uniqueChannels", "Unique Channels %s"},
             {"uniqueGames", "Unique Games %s"},
