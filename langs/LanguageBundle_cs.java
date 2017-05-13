@@ -45,28 +45,28 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <obsah>\n\tTento příkaz je pouze dostupný pro vývojáře."},
-            {"beamChannelNotFound", "\n# Channel(s) not found on Beam: %s."},
-            {"beamHelp", "# BEAM\n* Add and remove things that are Beam.pro related.\n"
-                    + "* Notes:\n\t"
-                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Beam URL. It will not work!! Use only the channel name (www.beam.pro/channelName)\n\t"
-                    + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/teamName\n\n"
-                    + "## Beam Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Beam Teams (Announce ALL live streams in the team)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team teamName #announcementChannel\n\n"
-                    + "## Beam Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Beam\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Beam Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Beam\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "* Examples:\n\t"
+            {"beamChannelNotFound", "\n# Kanály nenalezeny na Beamu: %s."},
+            {"beamHelp", "# BEAM\n* Přidává a odebírá věci pro Beam.pro.\n"
+                    + "* Poznámky:\n\t"
+                    + "Pokud chceš přidat filtry pro hry a názvy, MUSÍ obsahovat závorky.\n\t"
+                    + "Nepoužívej celý Beam odkaz. Nebude to fungovat!! Používej pouze název kanálu (www.beam.pro/channelName)\n\t"
+                    + "Můžeš přidávat více kanálů, teamů, her, a názvů pokud mezi ně dáš tento znak |.\n\t"
+                    + "Jediné požadované možnosti jsou: názevKanálu/názevTýmu\n\n"
+                    + "## Beam kanály\n"
+                    + "Poznámka: Přidání oznamovacího kanálu, filtrů her a názvů je volitelné."
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel názevKanálu #oznamovacíKanál {filtryHer} [filtryNázvu]\n\n"
+                    + "## Beam týmy (Oznamuje všechna živá vysílání z teamu)\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team názevTýmu #oznamovacíKanál\n\n"
+                    + "## Beam filtry her (Globální)\n"
+                    + "* Poznámka: Toto ovlivňuje všechna oznámení pro Beam\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {názevHry|názevHry} #oznamovacíKanál\n\n"
+                    + "## Beam filtry názvů (Globální)\n"
+                    + "* Poznámka: Toto ovlivňuje všechna oznámení pro Beam\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [slovo|jiná slova|více slov] #oznamovacíKanál\n\n"
+                    + "* Příklady:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
+                    + "Warcraft} (přidává kanál aby byl oznámen v #live-streams a také přidává filter her)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (přidává tým se specifickým oznamovacím kanálem)\n\n"},
             {"beamUserNoExist", "Tento uživatel Beamu neexistuje! Zkontroluj si pravopis a zkus to znovu."},
             {"botLangFail", "Něco se nepovedlo a můj jazyk je stále stejný."},
             {"botLangHelp", "# BOTLANG\n* Používá se se ke změně jazyku.\n\n## USAGE: "
@@ -112,8 +112,8 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "* defaultOnlineMessage - Navrátí původní oznamovací zprávu (použito ve všech oznámeních)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Set the default announcement channel\n" +
-                    "\t(Where it announces when you don't include a specific channel in the Twitch command)\n" +
+                    "* setDefaultAnnounceChannel help - Nastaví globální oznamovací kanál\n" +
+                    "\t(Kanál, do kterého budou posílány oznámení pokud neuvedeš jiný v příkazu)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
                     "* setOfflineMessage - Nastaví vlastní offline zprávu (použito v upravovaných oznámeních)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
@@ -369,7 +369,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "Jediné požadované možnosti jsou: názevKanálu/názevKomunity/názevTýmu/názevHry\n\n"
                     + "## Twtich kanály\n"
                     + "Poznámka: Přidání oznamovacího kanálu, filtrů her a názvů je volitelné."
-                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel názevKanálu #oznamovacíKanál {filtrHry} [filtrNázvu]\n\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel názevKanálu #oznamovacíKanál {filtryHer} [filtrNázvu]\n\n"
                     + "## Twitch komunity (Oznamuje VŠECHNA živá vysílání z komunity)\n"
                     + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community názevKomunity #oznamovacíKanál\n\n"
                     + "## Twitch hry (Oznamuje všechna živá vysílání z hry)\n"
