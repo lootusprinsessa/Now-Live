@@ -37,8 +37,8 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + " add <option> <inhalt>"
                     + "\n\t<option> <inhalt>"
                     + "\n\tmanager - Der @ Name des Benutzers, den du als Manager hinzufügen möchtest"
-                    + "\n\n## BEISPIEL: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague"},
-            {"adminOverride", "*Permission dieses Befehls wurden von einem Bot Developer überschrieben.*"},
+                    + "\n\n## BEISPIEL: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague```"},
+            {"adminOverride", "*Berechtigung dieses Befehls wurden von einem Bot Developer überschrieben.*"},
             {"alreadyExists", "Es scheint als wäre das bereits in meiner Datenbank. ¯\\_(ツ)_/¯"},
             {"alreadyManager", "Dieser Benutzer ist bereits ein Manager.  Find moar humanz!"},
             {"announceHelp", "# ANNOUNCE\n* Shhh...  I'm a secret...\n\n## VERWENDUNG:  "
@@ -67,6 +67,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
+
             {"beamUserNoExist", "Beam-benutzer konnte nicht gefunden werden!"},
             {"botLangFail", "Irgendwas ging schief und meine Sprache ist immernoch die selbe."},
             {"botLangHelp", "# BOTLANG\n* Befehl zum ändern der Sprache.\n\n## VERWENDUNG: "
@@ -74,9 +75,10 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + Const.COMMAND
                     + " botlang language"
                     + "\n\tGebe den englischen oder nativen Namen der Sprache ein, die du einstellen möchtest."
-                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish"
-                    + "\n\tIf you need further help with this command or others outside of what our help commands do and you wish to ask questions in a language currently associated "
-                    + "with the bot please feel free to reach out to our translators in our Discord for assistance. Discord is at " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
+
+                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish" + "```"
+                    + "\n\tWenn du Hilfe bei diesem Befehl brauchst oder andere Sachen zu den Help-Befehlen hast und fragen in deiner Sprache hast "
+                    + "welche mit dem BOt zutun haben, komm gern zu unseren Übersetzern in unserem Discord. Der Server " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
             {"botLangSuccess", "Du hast erfolgreich meine Sprache geändert."},
             {"botLangUnsupported", "Diese Sprache wird aktuell noch nicht unterstützt."},
             {"botStatistics", "%s Statistiken"},
@@ -85,7 +87,7 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"broadcasterLangSuccess", " :ok_hand: Ich werde nach Streams in dieser Sprache suchen!"},
             {"canNotRemoveOwner", "Haha, du kannst nicht den Serverbesitzer von der Managerliste löschen. :laughing: " +
                     ":laughing:"},
-            {"cleanupFail", "Ach, mensch...  Da hat was nicht funktioniert... am besten nochmal versuchen."},
+            {"cleanupFail", "Ach, Mensch...  Da hat was nicht funktioniert... am besten nochmal versuchen."},
             {"cleanupHelp", "```Markdown\n# CLEANUP\n*  Ändert wie ich Stream Benachrichtigungen aufräume.\n\n## VERWENDUNG:"
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
@@ -107,15 +109,15 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "\n\tfullEmbed   - Benutzt die komplette Einbettung."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
             {"compactFullEmbed", " :compression: Du bekommst nun die komplette Benachrichtigung."},
-            {"compactSmallEmbed", " :compression: Du bekommst nun das kleinere Embed."},
+            {"compactSmallEmbed", " :compression: Du bekommst nun die kleinere Einbettung."},
             {"compactNoEmbed", " :compression: Deine Benachrichtigungen sind ab nun nurnoch ein kurzer Satz."},
             {"configHelp", "# CONFIG\n* Der Grundbefehl um einiges meiner Einstellungen zu ändern. Für mehr Infos, prüfe jede spezifische Einstellungs-Help.\n\n" +
                     "* defaultOfflineMessage - Setzt die Einstellungen der Offline-Nachrichten zurück. (Für bearbeitete Benachrichtigungen zuständig.)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "* defaultOnlineMessage - Setzt die Einstellungen der Offline-Nachrichten zurück. (Für alle Benachrichtigungen zuständig.)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Set the default announcement channel\n" +
-                    "\t(Where it announces when you don't include a specific channel in the Twitch command)\n" +
+                    "* setDefaultAnnounceChannel help - Legt den Standardchannel für die Benachrichtigungen fest. " +
+                    "(wo es benachrichtigt wenn du keinen spezifischen Channel im Befehl angibst)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
                     "* setOfflineMessage - Lege eine eigene Offline-Nachricht fest. (Für bearbeitete Benachrichtigungen zuständig.)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
@@ -127,10 +129,10 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"defaultOfflineMessage", "%CHANNEL% ist nicht länger live!  Sorry, du hast ihn diesmal wohl verpasst."},
             {"defaultOnlineHelp", "# CONFIG DEFAULT ONLINE MESSAGE\n* Setzt die Online-Nachricht zurück.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
-            {"devMessage", "*Nachricht der " + Const.BOT_NAME + " Developer:*\n\n\t"},
+            {"devMessage", "*Nachricht der " + Const.BOT_NAME + " Entwickler:*\n\n\t"},
             {"discordChannelNoExist", "Dieser Textchannel existiert auf diesem Server nicht."},
-            {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
-                    "having problems! Click this link:\n" + Const.DISCORD_URL},
+            {"discordLink", "Interessiert unserem Server beizutreten? Dort gibt es eine menge hilfbereiter Menschen " +
+                    "wenn du Probleme hast! Klicke auf diesen Link:\n" + Const.DISCORD_URL},
             {"discordLinkHelp", "Zeigt den Link um den Now Live Discord Server beizutreten."},
             {"discordUserNoExist", "Diese Person ist kein Discord Benutzer!  Versuche es nochmal!"},
             {"doesNotExist", "Das wurde nie meiner Datenbank hinzugefügt."},
@@ -142,7 +144,7 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"followersEmbed", "Follower"},
             {"guildJoinSuccess", "Hi!  Ich bin Now Live, der Streambenachrichtigungsbot!  Schreibe `" + Const.COMMAND_PREFIX
                     + Const.COMMAND + " help` für eine Liste meiner Befehle.\n\nSolltest zu Hilfe beim Einrichten brauchen," +
-                    "tritt meinem Server (" + Const.DISCORD_URL + ") bei und sieh dir die how-to-setup und command-list " +
+                    "tritt meinem Server (" + Const.DISCORD_URL + ") bei und sieh dir die How-To-Setup und Command-List " +
                     "Channel für weitere Informationen an!\n\nNicht vergessen hallo zu sagen!"},
             {"helpPm", "Hey %s!\n\n" +
                     "Ich hab gehört du suchst Hilfe?  Hier ist eine Liste meiner Befehle.\n\n" +
@@ -243,7 +245,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " notify <option>"
                     + "\n\tnone     - Keine @ Mitteilungen (Standardeinstellung)"
                     + "\n\there - Ich benachrichtige alle, die online sind (via ``@here``)"
-                    + "\n\teveryone - Ich benachrichtige ALLE!!  Muhahaha!!  (Nicht für größere Server empfohlen)"
+                    + "\n\teveryone - Ich benachrichtige ALLE!!  Muhahaha!!  (Nicht für größere Server empfohlen!)"
                     + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " notify everyone" + "```"},
             {"notifyHere", " :bellhop_bell: Alle, die online sind, werden benachrichtigt."},
             {"notifyNone", " :ok_hand: Ich werde keine @ Mitteilungen mehr benutzen."},
@@ -251,16 +253,16 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"nowPlayingEmbed", "Spielt gerade"},
             {"nowPlayingLower", " spielt gerade "},
             {"nowStreamingEmbed", " streamt jetzt!"},
-            {"numUniqueMembers", "Number Unique Members"},
+            {"numUniqueMembers", "Nummer besonderer Mitglieder"},
             {"offline", "OFFLINE!\n"},
             {"offlineEmbed", " ist schon offline!"},
-            {"on", " auf "},
-            {"onlineStreamPm1", "Hey da!  Es gibt aktuell "},
+            {"on", " on "},
+            {"onlineStreamPm1", "Hey!  Es gibt aktuell "},
             {"onlineStreamPm2", " aktive Streamer, die dich interessieren könnten! Folge ihren Links um sie " +
                     "auszuchecken: \n\n"},
             {"oops", "Ups! Irgendwas ist schiefgelaufen! Lass uns das nochmal versuchen."},
-            {"patreon", "If you wish to donate to the bot consider using our Patreon. https://www.patreon.com/nowlive"},
-            {"patreonHelp", "Gives the link to our patreon page."},
+            {"patreon", "Wenn du dem Bot etwas spenden möchtest, beachte unser Patreon zu benutzen. https://www.patreon.com/nowlive"},
+            {"patreonHelp", "Gibt den Link zu unserer Patreon Seite."},
             {"ping", "Als ich in China war, war ich in einem amerikanischen Ping-Pongteam. Ich liebte es mit meinem " +
                     "Flexolite Ping-Pongsschläger zu spielen."},
             {"pingHelp", "```Markdown\n# PING\n* Pingbefehl - wenn ich online bin, werde ich antworten.\n\n## VERWENDUNG: "
@@ -302,18 +304,18 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "\n\tmanager - Der @ Name des Benutzers, den du als Manager hinzufügen möchtest"
                     + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
             {"servers", "Server"},
-            {"setDefaultAnnounceChannelDoNotOwnChannel", "# Hey now, I can't announce to a channel that doesn't exists on your " +
-                    "server!"},
-            {"setDefaultAnnounceChannelFail", "# I can't seem to send announcements there.  Make sure I have the proper permissions " +
-                    "in that channel."},
-            {"setDefaultAnnounceChannelHelp", "# SET DEFAULT ANNOUNCE CHANNEL\n* Set the default announcement channel.\n\n## USAGE:  "
+            {"setDefaultAnnounceChannelDoNotOwnChannel", "# Hey, nun ich kann nicht in einem Channel benachrichtigen, der nicht " +
+                    "deinem Server existiert!"},
+            {"setDefaultAnnounceChannelFail", "# Ich scheine dort nicht benachrichtigen zu können.  Sei dir sicher, dass ich die richtigen " +
+                    "Rechte habe für den Channel."},
+            {"setDefaultAnnounceChannelHelp", "# SET DEFAULT ANNOUNCE CHANNEL\n* Legt den Standardchannel für die Benachrichtigungen fest.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " config setDefaultAnnounceChannel <channel>\n\t"
-                    + "<channel> - The name of the channel you wish to be your default(MUST include the #)\n"
-                    + "This option only applies if you have not set a specific announce channel in the Twitch command."
+                    + " config setDefaultAnnounceChannel <Channel>\n\t"
+                    + "<channel> - Der Name des Standardchannels. (MUSS das # enthalten)\n"
+                    + "Diese Option wird nur übernommen, wenn du keinen spezifischen Channel in den Befehlen angibst."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #discordchannel"},
-            {"setDefaultAnnounceChannelSuccess", "# Default announcement channel set to: %s."},
+            {"setDefaultAnnounceChannelSuccess", "# Der Standard Benachrichtigungschannel ist nun: %s."},
             {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Lege eine eigene Offline-Nachricht für bearbeitete Benachrichtigungen fest.\n\n" +
                     "## Verfügbare Tokens zum Benutzen in der Nachricht:\n" +
                     "\t* %CHANNEL%   - Der Name des Channels\n" +
@@ -358,6 +360,13 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"totalViewsEmbed", "Alle Aufrufe"},
             {"trello", "Um Bugs zu reporten oder etwas zu requesten nutze bitte unseren Trello. https://trello.com/b/kcWshbIU"},
             {"trelloHelp", "Gibt den Link zum Trello des Bots"},
+            {"twitchCommunities", "Twitch Communities"},
+            {"twitchAnnounceUpdate", "\n# Standardbenachrichtigungskanal von %s zu %s geändert."},
+            {"twitchAnnounceUpdateFail", "\n! Fehler beim Ändern des Standardbenachrichtigungskanal von %s zu %s."},
+            {"twitchChannelAdd", "\n# Hinzugefügte Kanäle: %s."},
+            {"twitchChannelAddFail", "\n# Fehler beim Hinzufügen der Kanäle: %s."},
+            {"twitchChannelAnnounce", "\n# Sie werden in #%s angekündigt."},
+            {"twitchChannelGameFilter", "\n# Sie werden nur angekündigt, wenn sie %s spielen."},
             {"twitchChannelNotFound", "\n# Kanäle nicht auf Twitch gefunden: %s."},
             {"twitchCommunities", "Twitch Communities"},
             {"twitchCommunityAdd", "\n# Hinzugefügte Community(s): %s."},
@@ -374,26 +383,26 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "Du kannst mehrere Kanäle, Teams, Spiele, Communities, Spiel- und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
                     + "Die einzigen zwingend nötigen Optionen sind: kanalName/communityName/teamName/spielName\n\n"
                     + "## Twitch-Kanäle\n"
-                    + "Hinweis: Ankündigungskanal, Spiel- und Titelfilter sind optional.\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel kanalName #ankündigungsKanal {Spielfilter} [Titelfilter]\n\n"
+                    + "Hinweis: Benachrichtigungskanal, Spiel- und Titelfilter sind optional.\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel KanalName #BenachrichtigungsKanal {Spielfilter} [Titelfilter]\n\n"
                     + "## Twitch-Communities (Postet ALLE Streams dieser Community)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community communityName #ankündigungsKanal\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community CommunityName #BenachrichtigungsKanal\n\n"
                     + "## Twitchspiele (Postet ALLE Streams dieses Spiels)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game spielName #ankündigungsKanal\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game SpielName #BenachrichtigungsKanal\n\n"
                     + "## Twitchteams (Postet ALLE Streams in diesem Team)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team teamName #ankündigungsKanal\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team TeamName #BenachrichtigungsKanal\n\n"
                     + "## Twitch-Spielefilter (Global)\n"
-                    + "* HINWEIS: Gilt für alle Twitchankündigungen auf diesem Server\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch spielfilter {spielName|spielName} #ankündigungsKanal\n\n"
+                    + "* HINWEIS: Gilt für alle Twitchbenachrichtigungen auf diesem Server\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch spielfilter {SpielName|SpielName} #BenachrichtigungsKanal\n\n"
                     + "## Twitch-Titelfilter (Global)\n"
-                    + "* HINWEIS: Gilt für alle Twitchankündigungen auf diesem Server\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch titelfilter spielName #ankündigungsKanal\n\n"
+                    + "* HINWEIS: Gilt für alle Twitchbenachrichtigungen auf diesem Server\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch titelfilter SpielName #BenachrichtigungsKanal\n\n"
                     + "* Beispiel:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (Fügt einen Twitchkanal für einen bestimmten Kanal und Spielfilter hinzu)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (Fügt ein Spiel für den Standardankündigungskanal hinzu)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (Fügt eine Twitch-Community für einen bestimmten Ankündigungskanal hinzu)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (Fügt ein Twitchteam für einen bestimmten Ankündigungskanal hinzu)\n\n"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (Fügt ein Spiel für den Standardbenachrichtigungskanal hinzu)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (Fügt eine Twitch-Community für einen bestimmten Benachrichtigungskanal hinzu)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (Fügt ein Twitchteam für einen bestimmten Benachrichtigungskanal hinzu)\n\n"
                     + "```"},
             {"twitchTeams", "Twitchteams"},
             {"typeOnce", "Das musst du nicht doppelt schreiben, Dussel."},
