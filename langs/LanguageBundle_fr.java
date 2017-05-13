@@ -114,8 +114,8 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "* defaultOnlineMessage - Réinitialise le message d'annonce (utilisé dans toutes les annonces)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Set the default announcement channel\n" +
-                    "\t(Where it announces when you don't include a specific channel in the Twitch command)\n" +
+                    "* setDefaultAnnounceChannel help - Choisir un salon d'annonce par défaut " +
+                    "(où le bot annonce quand tu n'inclus pas un salon dans la commande Twitch)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
                     "* setOfflineMessage - Utiliser un message \"hors-ligne\" personnalisé (utilisé dans les annonce modifiées)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
@@ -128,7 +128,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"defaultOnlineHelp", "# CONFIG DEFAULT ONLINE MESSAGE\n* Réinitialiser mon message d'annonce.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Message des développeurs " + Const.BOT_NAME + " :*\n\n\t"},
-            {"discordChannelNoExist", "Ce canal n'existe pas sur ton serveur."},
+            {"discordChannelNoExist", "Ce salon n'existe pas sur ton serveur."},
             {"discordLink", "Tu souhaites rejoindre le serveur Discord Now Live ? Il est rempli de gens utiles si tu as " +
                     "besoin d'aide ! Clique ici :\n" + Const.DISCORD_URL},
             {"discordLinkHelp", "Afficher le lien d'invitation pour rejoindre le serveur Discord Now Live."},
@@ -300,18 +300,18 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "\n\tmanager - Le @ de l'utilisateur à enlever de la liste des managers"
                     + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
             {"servers", "Serveurs"},
-            {"setDefaultAnnounceChannelDoNotOwnChannel", "# Hey now, I can't announce to a channel that doesn't exists on your " +
-                    "server!"},
-            {"setDefaultAnnounceChannelFail", "# I can't seem to send announcements there.  Make sure I have the proper permissions " +
-                    "in that channel."},
-            {"setDefaultAnnounceChannelHelp", "# SET DEFAULT ANNOUNCE CHANNEL\n* Set the default announcement channel.\n\n## USAGE:  "
+            {"setDefaultAnnounceChannelDoNotOwnChannel", "# Hé, je ne peux pas annoncer dans un salon qui n'existe pas sur ton " +
+                    "serveur !"},
+            {"setDefaultAnnounceChannelFail", "# Il semblerait que je ne peux pas annoncer là-bas. Assure-toi que j'ai les bonnes permisssions " +
+                    "dans ce salon."},
+            {"setDefaultAnnounceChannelHelp", "# SET DEFAULT ANNOUNCE CHANNEL\n* Choisir un salon d'annonce par défaut.\n\n## UTILISATION :  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " config setDefaultAnnounceChannel <channel>\n\t"
-                    + "<channel> - The name of the channel you wish to be your default(MUST include the #)\n"
-                    + "This option only applies if you have not set a specific announce channel in the Twitch command."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #discordchannel"},
-            {"setDefaultAnnounceChannelSuccess", "# Default announcement channel set to: %s."},
+                    + "<channel> - Le nom du salon à utiliser par défaut (doit ABSOLUMENT inclure le #)\n"
+                    + "Cette option s'applique uniquement si vous n'avez pas mentionné de salon d'annonce dans la commande Twitch."
+                    + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #salondiscord"},
+            {"setDefaultAnnounceChannelSuccess", "# Salon d'annonce par défaut défini sur : %s."},
             {"setOfflineHelp", "# CONFIG SET OFFLINE MESSAGE\n* Utiliser un message hors-ligne personnalisé, pour les annonces modifiées.\n\n" +
                     "## Paramètres utilisables dans votre message :\n" +
                     "\t* %CHANNEL%   - Le nom de la chaîne\n" +
@@ -356,6 +356,13 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"totalViewsEmbed", "Vues Totales"},
             {"trello", "Pour rapporter des bugs ou suggérer des fonctionnalités, veuillez utiliser notre Trello. https://trello.com/b/kcWshbIU"},
             {"trelloHelp", "Retourne le lien vers le Trello du bot."},
+            {"twitchCommunities", "Communautés Twitch"},
+            {"twitchAnnounceUpdate", "\n# Le salon des annonces Twitch passe de %s à : %s."},
+            {"twitchAnnounceUpdateFail", "\n! Echec du changement du salon des annonces Twitch de %s à : %s."},
+            {"twitchChannelAdd", "\n# Chaîne(s) ajoutée(s) : %s."},
+            {"twitchChannelAddFail", "\n# Echec de l'ajout des chaînes suivantes : %s."},
+            {"twitchChannelAnnounce", "\n# Elles seront annoncées dans : #%s."},
+            {"twitchChannelGameFilter", "\n# Elles ne seront annoncées uniquement lorsqu'elles joueront à : %s."},
             {"twitchChannelNotFound", "\n# Chaîne introuvable sur Twitch : %s."},
             {"twitchCommunities", "Communautés Twitch"},
             {"twitchCommunityAdd", "\n# Communauté(s) ajoutée(s) : %s."},
@@ -372,26 +379,26 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "Vous pouvez ajouter plusieurs chaînes, équipes, jeux, communautés, filtres de jeu/titre en utilisant la barre verticale | entre eux.\n\t"
                     + "Les seules options requises sont nomChaine/nomCommunauté/nomEquipe/nomJeu \n\n"
                     + "## Twitch Channels\n"
-                    + "Note : En ajoutant un canal pour les annonces (canalAnnonce), les filtres de jeu/titre sont optionnels."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel nomChaine #canalAnnonce {filtreJeu} [filtreTitre]\n\n"
+                    + "Note : En ajoutant un salon pour les annonces (salonAnnonce), les filtres de jeu/titre sont optionnels."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel nomChaine #salonAnnonce {filtreJeu} [filtreTitre]\n\n"
                     + "## Communautés Twitch (Annoncer TOUS les lives dans la communauté)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community nomCommunauté #canalAnnonce\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community nomCommunauté #salonAnnonce\n\n"
                     + "## Jeux Twitch (Annoncer TOUS les lives de ce jeu)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game nomJeu #canalAnnonce\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game nomJeu #salonAnnonce\n\n"
                     + "## Equipes Twitch (Annoncer TOUS les lives de l'équipe)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team nomEquipe #canalAnnonce\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team nomEquipe #salonAnnonce\n\n"
                     + "## Filtres de jeu Twitch (Global)\n"
                     + "* NOTE : Cela affecte toutes les annonces de streams pour Twitch\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gamefilter {nomJeu|nomJeu} #canalAnnonce\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gamefilter {nomJeu|nomJeu} #salonAnnonce\n\n"
                     + "## Filtres de titre Twitch (Global)\n"
                     + "* NOTE : Cela affecte toutes les annonces de streams pour Twitch\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch titlefilter nomJeu #canalAnnonce\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch titlefilter nomJeu #salonAnnonce\n\n"
                     + "* Exemples :\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (ajoute une chaîne à annoncer dans un certain canal et des filtres de jeu)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (ajoute un jeu au canal d'annonce global)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (ajoute la communauté avec un canal d'annonce spécifique)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (ajoute une équipe avec un canal d'annonce particulier)\n\n"
+                    + "Warcraft} (ajoute une chaîne à annoncer dans un certain salon et des filtres de jeu)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (ajoute un jeu au salon d'annonce global)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (ajoute la communauté avec un salon d'annonce spécifique)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (ajoute une équipe dans le salon d'annonce #the-kingdom-streamers)\n\n"
                     + "```"},
             {"twitchTeams", "Equipes Twitch"},
             {"typeOnce", "Gné, tu n'as besoin de taper cette partie qu'une seule fois."},
