@@ -8,7 +8,7 @@
 
 ## Supported Platforms
 * Twitch
-* Beam (Currently disabled due to performance concerns)
+* Beam
 
 ## Planned Platforms
 * YouTube
