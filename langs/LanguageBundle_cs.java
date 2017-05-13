@@ -31,34 +31,50 @@ public class LanguageBundle_cs extends ListResourceBundle {
     private Object[][] contents = {
             {"added", "Přidáno "},
             {"addFail", "Nepodařilo se přidat "},
-            {"addHelp", "```Markdown\n# ADD\n* Používá se k přidání něčeho.\n\n## USAGE:  "
+            {"addHelp", "# ADD\n* Používá se k přidání něčeho.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " add <volba> <obsah>"
                     + "\n\t<option> <content>"
                     + "\n\tmanager - Zmínka o uživateli znakem @ kterého chcete přidat jako manažera"
-                    + "\n\n## EXAMPLE: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague```"},
+                    + "\n\n## EXAMPLE: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague"},
             {"adminOverride", "*Oprávnění tohoto příkazu byla přepsána vývojářem.*"},
             {"alreadyExists", "Vypadá to že toto jsi již do mé databáze přidal. ¯\\_(ツ)_/¯"},
             {"alreadyManager", "Vypadá to, že jsem tohoto uživatele již přidala jako správce!"},
-            {"announceHelp", "```Markdown\n# ANNOUNCE\n* Shhh...  Jsem tajemství...\n\n## USAGE:  "
+            {"announceHelp", "# ANNOUNCE\n* Shhh...  Jsem tajemství...\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " announce <obsah>\n\tTento příkaz je pouze dostupný pro vývojáře.```"},
-            {"beamHelp", "```Markdown\n# BEAM\n* Přidat a odebrat věci které jsou spojené s Beam.pro.\n\n## USAGE:  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam <pod-příkaz> <volba> <argument>\n"
-                    + "\t<pod-příkaz> <volba> <argument>\n"
-                    + "\tadd          channel <název-kanálu>\n"
-                    + "\tremove       channel <název-kanálu>\n\n"
-                    + "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " beam add channel Ague" + "```"},
+                    + " announce <obsah>\n\tTento příkaz je pouze dostupný pro vývojáře."},
+            {"beamChannelNotFound", "\n# Channel(s) not found on Beam: %s."},
+            {"beamHelp", "# BEAM\n* Add and remove things that are Beam.pro related.\n"
+                    + "* Notes:\n\t"
+                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
+                    + "Do NOT use the full Beam URL. It will not work!! Use only the channel name (www.beam.pro/channelName)\n\t"
+                    + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
+                    + "The only required options are: channelName/teamName\n\n"
+                    + "## Beam Channels\n"
+                    + "Note: Adding an announcement channel, game and title filters are optional."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
+                    + "## Beam Teams (Announce ALL live streams in the team)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team teamName #announcementChannel\n\n"
+                    + "## Beam Game Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {gameName|gameName} #announcementChannel\n\n"
+                    + "## Beam Title Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Examples:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
+                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
             {"beamUserNoExist", "Tento uživatel Beamu neexistuje! Zkontroluj si pravopis a zkus to znovu."},
             {"botLangFail", "Něco se nepovedlo a můj jazyk je stále stejný."},
-            {"botLangHelp", "```Markdown\n# BOTLANG\n* Používá se se ke změně jazyku.\n\n## USAGE: "
+            {"botLangHelp", "# BOTLANG\n* Používá se se ke změně jazyku.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " botlang jazyk"
                     + "\n\tVlož buďto anglický pravopis, nebo tvůj vrozený pravopis který chcete přidat."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish" + "```"},
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish"},
             {"botLangSuccess", "Úspěšně jsi změnil můj jazyk."},
             {"botLangUnsupported", "Tento jazyk není momentálně podporován."},
             {"botStatistics", "%s Statistics"},
@@ -96,8 +112,8 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "* defaultOnlineMessage - Navrátí původní oznamovací zprávu (použito ve všech oznámeních)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Set the default announcement channel " +
-                    "(where it announces when you don't include a specific channel in the Twitch command)\n" +
+                    "* setDefaultAnnounceChannel help - Set the default announcement channel\n" +
+                    "\t(Where it announces when you don't include a specific channel in the Twitch command)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
                     "* setOfflineMessage - Nastaví vlastní offline zprávu (použito v upravovaných oznámeních)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
@@ -242,6 +258,34 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "Flexolite ping pong pálkou."},
             {"pingHelp", "```Markdown\n# PING\n* Používá se aby jsi mě mohl pingnout. Pokud správně funguji, pošlu ti zpětnou zprávu.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ping```"},
+            {"platformAnnounceUpdate", "\n# Změnil jsem kanál pro upozornění pro %s na: %s."},
+            {"platformAnnounceUpdateFail", "\n! Selhala změna kanálu pro %s na: %s."},
+            {"platformChannelAdd", "\n# Přidán(y) kanál(y): %s."},
+            {"platformChannelAddFail", "\n# Nepodařilo se přidat kanál(y): %s."},
+            {"platformChannelAnnounce", "\n# Budou oznamovány v: #%s."},
+            {"platformChannelGameFilter", "\n# Budou oznamovány pouze pokud budou hrát: %s."},
+            {"platformChannelRemove", "\n# Odebrané kanály: %s."},
+            {"platformChannelRemoveFail", "\n! Nepodařilo se odbrat kanál(y): %s."},
+            {"platformChannelTitleFilter", "\n# Budou oznámeny pouze pokud v názvu budou tato slova: %s."},
+            {"platformGameAdd", "\n# Přidány hry: %s."},
+            {"platformGameAddFail", "\n# Nepodařilo se přidat hru(y): %s."},
+            {"platformGameAnnounce", "\n# Hra bude oznamována v: #%s."},
+            {"platformGameFilterAdd", "\n# Přidány filtry her: %s."},
+            {"platformGameFilterAddFail", "\n# Nepodařilo se přidat filtry pro hry: %s."},
+            {"platformGameFilterRemove", "\n# Odebrané filtry pro hry: %s."},
+            {"platformGameFilterRemoveFail", "\n# Nepodařilo se odebrat filtry pro hry: %s."},
+            {"platformGameRemove", "\n# Odebrané hry: %s."},
+            {"platformGameRemoveFail", "\n# Nepodařilo se odebrat hry: %s."},
+            {"platformTeamAdd", "\n# Přidány týmy: %s."},
+            {"platformTeamAddFail", "\n# Nepodařilo se přidat týmy: %s."},
+            {"platformTeamAnnounce", "\n# Týmy budou oznámeny v: #%s."},
+            {"platformTeamNotFound", "\n# Týmy nenalezeny na Twitch: %s."},
+            {"platformTeamRemove", "\n# Odebrané týmy: %s."},
+            {"platformTeamRemoveFail", "\n# Nepodařilo se odebrat týmy: %s."},
+            {"platformTitleFilterAdd", "\n# Přidány filtry názvu: %s."},
+            {"platformTitleFilterAddFail", "\n# Nepodařilo se přidat filtry názvu: %s."},
+            {"platformTitleFilterRemove", "\n# Odebrané filtry názvu: %s."},
+            {"platformTitleFilterRemoveFail", "\n# Nepodařilo se odebrat filtry názvu: %s."},
             {"privateMessageReply", "Omlouvám se, ale bot ke kterému se snažíte dostat nemá ještě nastavenou " +
                     "hlasovou schránku.  Prosím zkus odeslat svojí PM později."},
             {"removed", "Odebráno "},
@@ -308,32 +352,14 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"totalViewsEmbed", "Počet zhlédnutí"},
             {"trello", "Pro nahlášení chyb nebo pro návrh na vylepšení bota použij prosím naše Trello. https://trello.com/b/kcWshbIU"},
             {"trelloHelp", "Vrací odkaz na naši Trello stránku"},
-            {"twitchCommunities", "Twitch komunity"},
-            {"twitchAnnounceUpdate", "\n# Změnil jsem kanál pro upozornění pro %s na: %s."},
-            {"twitchAnnounceUpdateFail", "\n! Selhala změna kanálu pro %s na: %s."},
-            {"twitchChannelAdd", "\n# Přidán(y) kanál(y): %s."},
-            {"twitchChannelAddFail", "\n# Nepodařilo se přidat kanál(y): %s."},
-            {"twitchChannelAnnounce", "\n# Budou oznamovány v: #%s."},
-            {"twitchChannelGameFilter", "\n# Budou oznamovány pouze pokud budou hrát: %s."},
             {"twitchChannelNotFound", "\n# Kanál(y) které se nepodařilo najít na twitch: %s."},
-            {"twitchChannelRemove", "\n# Odebrané kanály: %s."},
-            {"twitchChannelRemoveFail", "\n! Nepodařilo se odbrat kanál(y): %s."},
-            {"twitchChannelTitleFilter", "\n# Budou oznámeny pouze pokud v názvu budou tato slova: %s."},
+            {"twitchCommunities", "Twitch komunity"},
             {"twitchCommunityAdd", "\n# Přidána(y) komunita(y): %s."},
             {"twitchCommunityAddFail", "\n# Nepodařilo se přidat komunitu(y): %s."},
             {"twitchCommunityAnnounce", "\n# Komunita bude oznamována v: #%s."},
             {"twitchCommunityNotFound", "\n# Komunita(y) která nebyla nalezena na twitch: %s."},
             {"twitchCommunityRemove", "\n# Odebráné komunity: %s."},
             {"twitchCommunityRemoveFail", "\n# Nepodařilo se odebrat komunitu(y): %s."},
-            {"twitchGameAdd", "\n# Přidány hry: %s."},
-            {"twitchGameAddFail", "\n# Nepodařilo se přidat hru(y): %s."},
-            {"twitchGameAnnounce", "\n# Hra bude oznamována v: #%s."},
-            {"twitchGameFilterAdd", "\n# Přidány filtry her: %s."},
-            {"twitchGameFilterAddFail", "\n# Nepodařilo se přidat filtry pro hry: %s."},
-            {"twitchGameFilterRemove", "\n# Odebrané filtry pro hry: %s."},
-            {"twitchGameFilterRemoveFail", "\n# Nepodařilo se odebrat filtry pro hry: %s."},
-            {"twitchGameRemove", "\n# Odebrané hry: %s."},
-            {"twitchGameRemoveFail", "\n# Nepodařilo se odebrat hry: %s."},
             {"twitchHelp", "```Markdown\n# TWITCH\n* Přidává a odebírá věci které jsou spojené s Twitch.tv.\n"
                     + "* Poznámky:\n\t"
                     + "Pokud chceš přidat filtry pro hry a názvy, MUSÍ obsahovat závorky.\n\t"
@@ -363,17 +389,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (přidává komunitu se specifickým oznamovacím kanálem)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (přidává tým se specifickým oznamovacím kanálem)\n\n"
                     + "```"},
-            {"twitchTeamAdd", "\n# Přidány týmy: %s."},
-            {"twitchTeamAddFail", "\n# Nepodařilo se přidat týmy: %s."},
-            {"twitchTeamAnnounce", "\n# Týmy budou oznámeny v: #%s."},
-            {"twitchTeamNotFound", "\n# Týmy nenalezeny na Twitch: %s."},
-            {"twitchTeamRemove", "\n# Odebrané týmy: %s."},
-            {"twitchTeamRemoveFail", "\n# Nepodařilo se odebrat týmy: %s."},
             {"twitchTeams", "Twitch týmy"},
-            {"twitchTitleFilterAdd", "\n# Přidány filtry názvu: %s."},
-            {"twitchTitleFilterAddFail", "\n# Nepodařilo se přidat filtry názvu: %s."},
-            {"twitchTitleFilterRemove", "\n# Odebrané filtry názvu: %s."},
-            {"twitchTitleFilterRemoveFail", "\n# Nepodařilo se odebrat filtry názvu: %s."},
             {"typeOnce", "Stačí když tuto část napíšeš pouze jednou, hlupáku."},
             {"uniqueChannels", "Unikátní kanály %s"},
             {"uniqueGames", "Unikátní hry %s"},

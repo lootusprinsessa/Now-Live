@@ -31,34 +31,50 @@ public class LanguageBundle_sv extends ListResourceBundle {
     private Object[][] contents = {
             {"added", "tillagd "},
             {"addFail", "Det gick inte att lägga till"},
-            {"addHelp", "``` Markdown \n # ADD \n * Används för att lägga till chefer för din server \n\n ## ANVÄNDNING."
+            {"addHelp", "# ADD \n * Används för att lägga till chefer för din server \n\n ## ANVÄNDNING."
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + "add <option> <content>"
                     + "\n\t<option> <innehåll>"
                     + "\n\tmanager - The @ omnämnandet av användaren för att lägga till som en manager"
-                    + "\n\n## EXEMPEL:" + Const.COMMAND_PREFIX + Const.COMMAND + "add manager @Ague```"},
+                    + "\n\n## EXEMPEL:" + Const.COMMAND_PREFIX + Const.COMMAND + "add manager @Ague"},
             {"adminOverride", "* Tillstånd av detta kommando har åsidosätts av en utvecklare. *"},
             {"alreadyExists", "Det ser ut som du redan har lagt det till min databas. ¯ \\ _ (?) _ / ¯"},
             {"alreadyManager", "Det verkar som jag har redan anställt användaren som chef. Hitta moar humanz!"},
-            {"announceHelp", "```Markdown\n# tillkännage\n* Shhh ... Jag är en hemlighet ...\n\n## ANVÄNDNING"
+            {"announceHelp", "# tillkännage\n* Shhh ... Jag är en hemlighet ...\n\n## ANVÄNDNING"
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " announce <content>\n\tdDetta kommandot är endast tillgänglig för developers.```"},
-            {"beamHelp", "```Markdown\n# BEAM\n* Lägga till och ta bort saker som Beam.pro är relaterade\n\n## ANVÄNDNING"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + "balk <sub-kommando> <option> <argument>\n"
-                    + "\t<sub-kommando> <option> <argument>\n"
-                    + "\tadd channel <CHANNEL>\n"
-                    + "\tremove kanal <kanalnamn>\n\n"
-                    + "## EXEMPEL:" + Const.COMMAND_PREFIX + Const.COMMAND + "stråle lägga kanal Ague" + "'' '"},
+                    + " announce <content>\n\tdDetta kommandot är endast tillgänglig för developers."},
+            {"beamChannelNotFound", "\n# Channel(s) not found on Beam: %s."},
+            {"beamHelp", "# BEAM\n* Add and remove things that are Beam.pro related.\n"
+                    + "* Notes:\n\t"
+                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
+                    + "Do NOT use the full Beam URL. It will not work!! Use only the channel name (www.beam.pro/channelName)\n\t"
+                    + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
+                    + "The only required options are: channelName/teamName\n\n"
+                    + "## Beam Channels\n"
+                    + "Note: Adding an announcement channel, game and title filters are optional."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
+                    + "## Beam Teams (Announce ALL live streams in the team)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team teamName #announcementChannel\n\n"
+                    + "## Beam Game Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {gameName|gameName} #announcementChannel\n\n"
+                    + "## Beam Title Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Examples:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
+                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
             {"beamUserNoExist", "Det Beam användaren inte existerar! Kontrollera din stavning och försök igen!"},
             {"botLangFail", "Något gick fel och mitt språk är fortfarande densamma."},
-            {"botLangHelp", "```Markdown\n# BOTLANG\n* Används för att ändra språket i mina svar\n\n## ANVÄNDNING."
+            {"botLangHelp", "# BOTLANG\n* Används för att ändra språket i mina svar\n\n## ANVÄNDNING."
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + "botlang språk"
                     + "\n\tRetur antingen engelska stavningen eller infödda stavningen av det språk du vill ställa in."
-                    + "\n\n## EXEMPEL:" + Const.COMMAND_PREFIX + Const.COMMAND + "botlang spanska" + "'' '"
+                    + "\n\n## EXEMPEL:" + Const.COMMAND_PREFIX + Const.COMMAND + "botlang spanska"
                     + "\n\tOm du behöver ytterligare hjälp med detta kommando eller andra utanför vad våra hjälp kommandon gör och du vill ställa frågor på ett språk som tillhörande"
                     + "Med boten gärna nå ut till våra översättare i vår oenighet om hjälp. Disharmoni är" + Const.COMMAND_PREFIX + Const.COMMAND + "oenighet"},
             {"botLangSuccess", "Du har ändrat mitt språk."},
@@ -97,8 +113,8 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "* defaultOnlineMessage - Returns the announcement message to the default (used in all announcements)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Set the default announcement channel " +
-                    "(where it announces when you don't include a specific channel in the Twitch command)\n" +
+                    "* setDefaultAnnounceChannel help - Set the default announcement channel\n" +
+                    "\t(Where it announces when you don't include a specific channel in the Twitch command)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
                     "* setOfflineMessage - Set a custom offline message (used in edited announcements)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
@@ -247,6 +263,34 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     "Flexolite ping pong paddel."},
             {"pingHelp", "` `` Wiki\n # PING\n * Används för att pinga mig om jag har fungerar, skickar jag dig en pong\n\n ## ANVÄNDNING."
                     + Const.COMMAND_PREFIX + Const.COMMAND + "ping```"},
+            {"platformAnnounceUpdate", "\n # Uppdaterade Twitch meddelandekanalen för%s till: %s"},
+            {"platformAnnounceUpdateFail", "!\n Misslyckades att ändra tillkännage kanal för%s till: %s"},
+            {"platformChannelAdd", "\n # tillagd kanal (er):%s."},
+            {"platformChannelAddFail", "\n # Det gick inte att lägga till kanaler: %s"},
+            {"platformChannelAnnounce", "\n # De kommer att tillkännages i: #%s"},
+            {"platformChannelGameFilter", "\n # De kommer bara att meddelas när de spelar: %s"},
+            {"platformChannelRemove", "\n # Bort kanaler: %s"},
+            {"platformChannelRemoveFail", "!\n gick inte att radera kanaler: %s"},
+            {"platformChannelTitleFilter", "\n # De kommer bara att meddelas när dessa ord är i titeln.%s"},
+            {"platformGameAdd", "\n # tillagd spel (s): %s."},
+            {"platformGameAddFail", "\n # inte lägga spel (s): %s"},
+            {"platformGameAnnounce", "\n # Spelet kommer tillkännage i. #%s"},
+            {"platformGameFilterAdd", "\n # Added spel filter (s):%s."},
+            {"platformGameFilterAddFail", "\n # inte lägga spelfilter (ar): %s"},
+            {"platformGameFilterRemove", "\n # Bort spel filter (s):%s."},
+            {"platformGameFilterRemoveFail", "\n # Misslyckades att avlägsna spel filtret (n): %s"},
+            {"platformGameRemove", "\n # Bort spel (s):%s "},
+            {"platformGameRemoveFail", "\n # Misslyckades att avlägsna spel (s): %s"},
+            {"platformTeamAdd", "\n # tillagd laget (er): %s."},
+            {"platformTeamAddFail", "\n # inte lägga laget (er): %s"},
+            {"platformTeamAnnounce", "\n # Laget (er) kommer att tillkännage i: #%s."},
+            {"platformTeamNotFound", "\n # Team (er) som inte finns på Twitch: %s"},
+            {"platformTeamRemove", "\n # Bort laget (er): %s."},
+            {"platformTeamRemoveFail", "\n # Det gick inte att ta bort lag (ar): %s"},
+            {"platformTitleFilterAdd", "\n # Added titel filter (s): %s."},
+            {"platformTitleFilterAddFail", "\n # inte lägga titelfiltret (n): %s"},
+            {"platformTitleFilterRemove", "\n # Borttitel filter (s): %s."},
+            {"platformTitleFilterRemoveFail", "\n # Det gick inte att ta bort titelfiltret (n): %s"},
             {"privateMessageReply", "Jag är ledsen, men boten du försöker nå har en röstbrevlåda som inte har" +
                     "Ställts in ännu. Försök din PM igen senare."},
             {"removed", " bort %s %s."},
@@ -312,32 +356,14 @@ public class LanguageBundle_sv extends ListResourceBundle {
             {"totalViewsEmbed", "Total Views"},
             {"trello", "För att rapportera buggar eller begära funktioner som ska läggas till bot använd vår Trello. Https://trello.com/b/kcWshbIU"},
             {"trelloHelp", "Ger länken till Trello för bot"},
-            {"twitchCommunities", "Twitch Communities"},
-            {"twitchAnnounceUpdate", "\n # Uppdaterade Twitch meddelandekanalen för%s till: %s"},
-            {"twitchAnnounceUpdateFail", "!\n Misslyckades att ändra Twitch tillkännage kanal för%s till: %s"},
-            {"twitchChannelAdd", "\n # tillagd kanal (er):%s."},
-            {"twitchChannelAddFail", "\n # Det gick inte att lägga till kanaler: %s"},
-            {"twitchChannelAnnounce", "\n # De kommer att tillkännages i: #%s"},
-            {"twitchChannelGameFilter", "\n # De kommer bara att meddelas när de spelar: %s"},
             {"twitchChannelNotFound", "\n# Channel(s) not found on Twitch: %s."},
-            {"twitchChannelRemove", "\n # Bort kanaler: %s"},
-            {"twitchChannelRemoveFail", "!\n gick inte att radera kanaler: %s"},
-            {"twitchChannelTitleFilter", "\n # De kommer bara att meddelas när dessa ord är i titeln.%s"},
+            {"twitchCommunities", "Twitch Communities"},
             {"twitchCommunityAdd", "\n # tillagd gemenskap (er): %s."},
             {"twitchCommunityAddFail", "\n # inte lägga gemenskap (er): %s"},
             {"twitchCommunityAnnounce", "\n # Samhället (er) kommer att tillkännage i: #%s."},
             {"twitchCommunityNotFound", "\n # gemenskapen (s) inte finns på Twitch %s"},
             {"twitchCommunityRemove", "\n # Bort gemenskap (er): %s."},
             {"twitchCommunityRemoveFail", "\n # Misslyckades att avlägsna gemenskap (er): %s"},
-            {"twitchGameAdd", "\n # tillagd spel (s): %s."},
-            {"twitchGameAddFail", "\n # inte lägga spel (s): %s"},
-            {"twitchGameAnnounce", "\n # Spelet kommer tillkännage i. #%s"},
-            {"twitchGameFilterAdd", "\n # Added spel filter (s):%s."},
-            {"twitchGameFilterAddFail", "\n # inte lägga spelfilter (ar): %s"},
-            {"twitchGameFilterRemove", "\n # Bort spel filter (s):%s."},
-            {"twitchGameFilterRemoveFail", "\n # Misslyckades att avlägsna spel filtret (n): %s"},
-            {"twitchGameRemove", "\n # Bort spel (s):%s "},
-            {"twitchGameRemoveFail", "\n # Misslyckades att avlägsna spel (s): %s"},
             {"twitchHelp", "```Markdown\n# TWITCH\n* Add and remove things that are Twitch.tv related.\n"
                     + "* Notes:\n\t"
                     + "To add game filters and title filters, you MUST include the brackets.\n\t"
@@ -367,17 +393,7 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (adds the community with a specified announcement channel)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (adds a team with a specific announcement channel)\n\n"
                     + "```"},
-            {"twitchTeamAdd", "\n # tillagd laget (er): %s."},
-            {"twitchTeamAddFail", "\n # inte lägga laget (er): %s"},
-            {"twitchTeamAnnounce", "\n # Laget (er) kommer att tillkännage i: #%s."},
-            {"twitchTeamNotFound", "\n # Team (er) som inte finns på Twitch: %s"},
-            {"twitchTeamRemove", "\n # Bort laget (er): %s."},
-            {"twitchTeamRemoveFail", "\n # Det gick inte att ta bort lag (ar): %s"},
             {"twitchTeams", "Twitch Lag"},
-            {"twitchTitleFilterAdd", "\n # Added titel filter (s): %s."},
-            {"twitchTitleFilterAddFail", "\n # inte lägga titelfiltret (n): %s"},
-            {"twitchTitleFilterRemove", "\n # Borttitel filter (s): %s."},
-            {"twitchTitleFilterRemoveFail", "\n # Det gick inte att ta bort titelfiltret (n): %s"},
             {"typeOnce", "Du behöver bara skriva den delen en gång, dumt."},
             {"uniqueChannels", "unika kanaler %s"},
             {"uniqueGames", "Unika Spel %s"},
