@@ -233,8 +233,8 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "\n* Format der jetzigen Offline-Benachrichtigung ist: %s.```"},
             {"needOneManager", "Wenn du das tust, wer managet mich dann?"},
             {"noBotManager", "Bots als Manager hinzufügen verstößt gegen die Discord Bot Union By-Laws. Sorry, versuche einen " +
-                    "geeignet Menschen für diesen Job zu finden. :thumbsup:"},
-            {"noneOnline", "Sorry %s, aktuell ist niemanden, dem dieser Server folgt, online."},
+                    "geeigneten Menschen für diesen Job zu finden. :thumbsup:"},
+            {"noneOnline", "Sorry %s, aktuell ist niemand, dem dieser Server folgt, online."},
             {"notAManager", "Entschuldige, aber nur meine Manager dürfen das. Schreibe `" + Const.COMMAND_PREFIX + Const.COMMAND +
                     " list manager` für eine Liste von Leuten, die das dürfen."},
             {"notAnAdmin", "Ich mag zwar dein Diener sein, aber du bist nicht mein Meister."},
