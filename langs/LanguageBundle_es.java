@@ -31,35 +31,50 @@ public class LanguageBundle_es extends ListResourceBundle {
     private Object[][] contents = {
             {"added", "Añadido "},
             {"addFail", "No se pudo añadir "},
-            {"addHelp", "```Markdown\n# ADD\n* Se usa para añadir gestores al servidor.\n\n## USAGE:  "
+            {"addHelp", "# ADD\n* Se usa para añadir gestores al servidor.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " add <option> <content>"
                     + "\n\t<option> <content>"
                     + "\n\tmanager - Menciona con un @ para añadir al gerente"
-                    + "\n\n## Ejemplo: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague```"},
+                    + "\n\n## Ejemplo: " + Const.COMMAND_PREFIX + Const.COMMAND + " add manager @Ague"},
             {"adminOverride", "*El permiso de este comando se ha reemplazado por un desarollador del bot.*"},
             {"alreadyExists", "Parece que esto ya estaba en mi base de datos. ¯\\_(?)_/¯"},
             {"alreadyManager", "Parece que ese usuario ya es gerente. Encuentra más humanos! "},
-            {"announceHelp", "```Markdown\nANNOUNCE:  Shhh...  Soy un secreto...\nUSAGE:  "
+            {"announceHelp", "ANNOUNCE:  Shhh...  Soy un secreto...\nUSAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " announce <content>\n\tEste comando solo puede ser usado por desarrolladores.```"},
-            {"beamHelp", "```Ruby\nBEAM:  Añade y quita cosas relacionadas con el Beam.pro\nUSAGE:  "
-                    + Const.COMMAND_PREFIX
-                    + Const.COMMAND
-                    + " beam <sub-comando> <opción> <argumento>"
-                    + "\n\t<sub-comando> <opción> <argumento>"
-                    + "\n\tadd channel <nombre-de-el-canal>"
-                    + "\n\tremove channel <nombre-de-el-canal>```"},
+                    + " announce <content>\n\tEste comando solo puede ser usado por desarrolladores."},
+            {"beamChannelNotFound", "\n# Channel(s) not found on Beam: %s."},
+            {"beamHelp", "# BEAM\n* Add and remove things that are Beam.pro related.\n"
+                    + "* Notes:\n\t"
+                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
+                    + "Do NOT use the full Beam URL. It will not work!! Use only the channel name (www.beam.pro/channelName)\n\t"
+                    + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
+                    + "The only required options are: channelName/teamName\n\n"
+                    + "## Beam Channels\n"
+                    + "Note: Adding an announcement channel, game and title filters are optional."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
+                    + "## Beam Teams (Announce ALL live streams in the team)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team teamName #announcementChannel\n\n"
+                    + "## Beam Game Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {gameName|gameName} #announcementChannel\n\n"
+                    + "## Beam Title Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Examples:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
+                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
             {"beamUserNoExist", "Este usuario Beam no existe, revisa como lo has escrito e intentalo de nuevo."},
             {"botLangFail", "Something went wrong and my language is still the same."},
-            {"botLangHelp", "```Markdown\n# BOTLANG\n* Used to change the language of my responses.\n\n## USAGE: "
+            {"botLangHelp", "# BOTLANG\n* Used to change the language of my responses.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " botlang language"
                     + "\n\tIntroduce la otrografía correcta o la nativa del idioma del idioma que quieras."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish" + "```"
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish"
                     + "\n\tSi necesitas ayuda con este comandos u otros fuera de lo que estes mensajes de ayuda y quieres preguntar en un leguaje asociado"
                     + "a este bot, tómate la libertad de hablarle a nuestros traductores en nuestro servidor de Discord . El servidor está en " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
             {"botLangSuccess", "Has cambiado mi idioma correctamente!."},
@@ -100,8 +115,8 @@ public class LanguageBundle_es extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "* defaultOnlineMessage - Returns the announcement message to the default (used in all announcements)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Set the default announcement channel " +
-                    "(where it announces when you don't include a specific channel in the Twitch command)\n" +
+                    "* setDefaultAnnounceChannel help - Set the default announcement channel\n" +
+                    "\t(Where it announces when you don't include a specific channel in the Twitch command)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
                     "* setOfflineMessage - Set a custom offline message (used in edited announcements)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
@@ -248,6 +263,35 @@ public class LanguageBundle_es extends ListResourceBundle {
                     "mi raqueta Flexolite. Viejos tiempos."},
             {"pingHelp", "```Ruby\nPING:  Se usa para pingearme. Si funciono bien, te enviaré un pong.\nUSAGE: "
                     + Const.COMMAND_PREFIX + "ping```"},
+            {"platformAnnounceUpdate", "\n# Se cambió el canal de notificación de %s a: %s."},
+            {"platformAnnounceUpdateFail", "\n! No se pudo cambiar el canal de %s a: %s."},
+            {"platformChannelAdd", "\n# Se añadió(eron) canal(es): %s."},
+            {"platformChannelAddFail", "\n# No se pudieron añadir el(los) canal(es): %s."},
+            {"platformChannelAnnounce", "\n# Serán anunciados en: #%s."},
+            {"platformChannelGameFilter", "\n# Solo serán anunciados mientras juegen: %s."},
+            {"platformChannelNotFound", "\n# Canal(es) no encontrados: %s."},
+            {"platformChannelRemove", "\n# Canales eliminados: %s."},
+            {"platformChannelRemoveFail", "\n! No se pudieron eliminar los canales: %s."},
+            {"platformChannelTitleFilter", "\n# Solo se anunciarán cuando estas palabras estén en el titulo: %s."},
+            {"platformGameAdd", "\n# Juego(s) añadido(s): %s."},
+            {"platformGameAddFail", "\n# No se pudieron añadir los juego(s): %s."},
+            {"platformGameAnnounce", "\n# El juego se anunciará en: #%s."},
+            {"platformGameFilterAdd", "\n# Se añadieron los filtros: %s."},
+            {"platformGameFilterAddFail", "\n# No se pudieron añadir los filtros: %s."},
+            {"platformGameFilterRemove", "\n# Eliminados los filtros: %s."},
+            {"platformGameFilterRemoveFail", "\n# No se pudo eliminar el filtro: %s."},
+            {"platformGameRemove", "\n# Eliminado(s) juego(s): %s."},
+            {"platformGameRemoveFail", "\n# No se pudo eliminar el juego: %s."},
+            {"platformTeamAdd", "\n# Equipo añadido(s): %s."},
+            {"platformTeamAddFail", "\n# No se pudo añadir el equipo: %s."},
+            {"platformTeamAnnounce", "\n# El equipo se anunciará en: #%s."},
+            {"platformTeamNotFound", "\n# Equipo no encontrado: %s."},
+            {"platformTeamRemove", "\n# Equipo eliminado: %s."},
+            {"platformTeamRemoveFail", "\n# No se pudo eliminar el equipo: %s."},
+            {"platformTitleFilterAdd", "\n# Se añadieron los filtros: %s."},
+            {"platformTitleFilterAddFail", "\n# No se pudieron añadir los títulos de filtro: %s."},
+            {"platformTitleFilterRemove", "\n# Eliminado filtro(s) de título(s): %s."},
+            {"platformTitleFilterRemoveFail", "\n# No se pudo eliminar el filtro: %s."},
             {"privateMessageReply", "Lo siento, pero el bot al que estás intentando contactar no tiene el mailobx " +
                     "configurado aún.  Porfavor, intentelo más tarde."},
             {"removed", "Eliminado %s %s."},
@@ -314,30 +358,11 @@ public class LanguageBundle_es extends ListResourceBundle {
             {"trello", "Para reportar bug o si tienes alguna caracteristica para añadir al bot usa nuestro Trello. https://trello.com/b/kcWshbIU"},
             {"trelloHelp", "Da el link directo al Trello del bot"},
             {"twitchCommunities", "Comunidades de Twitch "},
-            {"twitchAnnounceUpdate", "\n# Se cambió el canal de notificación de %s a: %s."},
-            {"twitchAnnounceUpdateFail", "\n! No se pudo cambiar el canal de %s a: %s."},
-            {"twitchChannelAdd", "\n# Se añadió(eron) canal(es): %s."},
-            {"twitchChannelAddFail", "\n# No se pudieron añadir el(los) canal(es): %s."},
-            {"twitchChannelAnnounce", "\n# Serán anunciados en: #%s."},
-            {"twitchChannelGameFilter", "\n# Solo serán anunciados mientras juegen: %s."},
-            {"twitchChannelNotFound", "\n# Canal(es) no encontrados: %s."},
-            {"twitchChannelRemove", "\n# Canales eliminados: %s."},
-            {"twitchChannelRemoveFail", "\n! No se pudieron eliminar los canales: %s."},
-            {"twitchChannelTitleFilter", "\n# Solo se anunciarán cuando estas palabras estén en el titulo: %s."},
             {"twitchCommunityAdd", "\n# Añadida comunidad(es): %s."},
             {"twitchCommunityAddFail", "\n# No se pudieron añadir la(s) comunidad(es): %s."},
             {"twitchCommunityNotFound", "\n# Comunidad(es) no encontradas: %s."},
             {"twitchCommunityRemove", "\n# Elimindada communidad(es): %s."},
             {"twitchCommunityRemoveFail", "\n# No se pudieron eliminar las commundad(es): %s."},
-            {"twitchGameAdd", "\n# Juego(s) añadido(s): %s."},
-            {"twitchGameAddFail", "\n# No se pudieron añadir los juego(s): %s."},
-            {"twitchGameAnnounce", "\n# El juego se anunciará en: #%s."},
-            {"twitchGameFilterAdd", "\n# Se añadieron los filtros: %s."},
-            {"twitchGameFilterAddFail", "\n# No se pudieron añadir los filtros: %s."},
-            {"twitchGameFilterRemove", "\n# Eliminados los filtros: %s."},
-            {"twitchGameFilterRemoveFail", "\n# No se pudo eliminar el filtro: %s."},
-            {"twitchGameRemove", "\n# Eliminado(s) juego(s): %s."},
-            {"twitchGameRemoveFail", "\n# No se pudo eliminar el juego: %s."},
             {"twitchHelp", "```Markdown\n# TWITCH\n* Añade y elimina cosas relaccionadas con Twitch.tv.\n"
                     + "* Notes:\n\t"
                     + "Para añadir filtros de juegos y de títulos,debes incluir los corchetes.\n\t"
@@ -367,17 +392,7 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (Añade una comunidad para anunciar en un canal específico)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (añade un equipo con un canal específico para anunciar)\n\n"
                     + "```"},
-            {"twitchTeamAdd", "\n# Equipo añadido(s): %s."},
-            {"twitchTeamAddFail", "\n# No se pudo añadir el equipo: %s."},
-            {"twitchTeamAnnounce", "\n# El equipo se anunciará en: #%s."},
-            {"twitchTeamNotFound", "\n# Equipo no encontrado: %s."},
-            {"twitchTeamRemove", "\n# Equipo eliminado: %s."},
-            {"twitchTeamRemoveFail", "\n# No se pudo eliminar el equipo: %s."},
             {"twitchTeams", "Equipo de Twitch"},
-            {"twitchTitleFilterAdd", "\n# Se añadieron los filtros: %s."},
-            {"twitchTitleFilterAddFail", "\n# No se pudieron añadir los títulos de filtro: %s."},
-            {"twitchTitleFilterRemove", "\n# Eliminado filtro(s) de título(s): %s."},
-            {"twitchTitleFilterRemoveFail", "\n# No se pudo eliminar el filtro: %s."},
             {"typeOnce", "Solo necesitas escribirlo una vez, tontito."},
             {"uniqueChannels", "Canales únicos %s"},
             {"uniqueGames", "Juegos únicos %s"},
