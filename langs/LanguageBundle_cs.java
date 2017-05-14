@@ -199,7 +199,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     '.'},
             {"invite", "Hej kamaráde! Pozvy mě na svůj server!\n\n\t"
                     + "**Klikni zde:** https://discordapp.com/oauth2/authorize?&client_id="
-                    + Config.DISCORD_CLIENT_ID.token() + "&scope=bot&permissions=8"},
+                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8"},
             {"inviteHelp", "```Markdown\n# INVITE\n* Používá se k zobrazení mého invite linku.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
@@ -381,7 +381,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gfilter {názevHry|názevHry} #oznamovacíKanál\n\n"
                     + "## Twitch filtry názvů (Globální)\n"
                     + "* Poznámka: Toto ovlivňuje všechna oznámení z Twtiche\n"
-                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter názevHry #oznamovacíKanál\n\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [word|different words|more words] #oznamovacíKanál\n\n"
                     + "* Příklady:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (přidává kanál aby byl oznámen v #live-streams a také přidává filter her)\n\t"

@@ -202,7 +202,7 @@ public class LanguageBundle_sv extends ListResourceBundle {
             {"incorrectArgs", "You passed incorrect or missing arguments to me.  Check the help command for more info."},
             {"invite", "Hey %s! Invite me to your server!\n\n\t"
                     + "**Click here:** https://discordapp.com/oauth2/authorize?&client_id="
-                    + Config.DISCORD_CLIENT_ID.token() + "&scope=bot&permissions=8"},
+                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8"},
             {"inviteHelp", "```Markdown\n# INVITE\n* Used to display my invite link.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND

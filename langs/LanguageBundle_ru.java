@@ -203,7 +203,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"incorrectArgs", "Вы передали мне неверные или отсутствующие значения.  Проверьте команду help для получения дополнительной информации.."},
             {"invite", "Привет %s! Вы можете пригласить меня на свой сервер!\n\n\t"
                     + "**Кликабельно:** https://discordapp.com/oauth2/authorize?&client_id="
-                    + Config.DISCORD_CLIENT_ID.token() + "&scope=bot&permissions=8"},
+                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8"},
             {"inviteHelp", "```Markdown\n# ПРИГЛАШЕНИЕ\n* Используется для показа моей ссылки приглашения.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
@@ -386,7 +386,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gfilter {gameName|gameName} #announcementChannel\n\n"
                     + "## Twitch фильтры описания (Глобальные)\n"
                     + "* Примечание: Это влияет на все потоковые объявления для Twitch\n"
-                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter gameName #announcementChannel\n\n"
+                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [word|different words|more words] #announcementChannel\n\n"
                     + "* Примеры:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (добавляет twitch канал в заданный канал Discord с игровыми фильтрами)\n\t"

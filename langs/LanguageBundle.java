@@ -203,7 +203,7 @@ public class LanguageBundle extends ListResourceBundle {
             {"incorrectArgs", "You passed incorrect or missing arguments to me.  Check the help command for more info."},
             {"invite", "Hey %s! Invite me to your server!\n\n\t"
                     + "**Click here:** https://discordapp.com/oauth2/authorize?&client_id="
-                    + Config.DISCORD_CLIENT_ID.token() + "&scope=bot&permissions=8"},
+                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8"},
             {"inviteHelp", "```Markdown\n# INVITE\n* Used to display my invite link.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
@@ -386,7 +386,7 @@ public class LanguageBundle extends ListResourceBundle {
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gfilter {gameName|gameName} #announcementChannel\n\n"
                     + "## Twitch Title Filters (Global)\n"
                     + "* NOTE: This affects all stream announcements for Twitch\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter gameName #announcementChannel\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [word|different words|more words] #announcementChannel\n\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"

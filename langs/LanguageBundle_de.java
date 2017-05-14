@@ -206,7 +206,7 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"incorrectArgs", "Argument(e) fehlen oder sind fehlerhaft.  Benutze die *help* Option für mehr Details."},
             {"invite", "Hey %s! Lade mich zu deinem Server ein!\n\n\t"
                     + "**Klicke hier:** https://discordapp.com/oauth2/authorize?&client_id="
-                    + Config.DISCORD_CLIENT_ID.token() + "&scope=bot&permissions=8"},
+                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8"},
             {"inviteHelp", "```Markdown\n# INVITE\n* Postet meinen Einladelink.\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND

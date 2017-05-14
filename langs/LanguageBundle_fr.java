@@ -202,7 +202,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"incorrectArgs", "Tu m'as transmis des arguments incorrects ou il en manque.  Regarde la commande d'aide pour plus d'infos."},
             {"invite", "Hey %s ! Invite-moi dans ton serveur !\n\n\t"
                     + "**Clique ici :** https://discordapp.com/oauth2/authorize?&client_id="
-                    + Config.DISCORD_CLIENT_ID.token() + "&scope=bot&permissions=8"},
+                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8"},
             {"inviteHelp", "```Markdown\n# INVITE\n* Utilisé pour afficher mon lien d'invitation.\n\n## UTILISATION :  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
@@ -389,10 +389,10 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team nomEquipe #salonAnnonce\n\n"
                     + "## Filtres de jeu Twitch (Global)\n"
                     + "* NOTE : Cela affecte toutes les annonces de streams pour Twitch\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gamefilter {nomJeu|nomJeu} #salonAnnonce\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gfilter {nomJeu|nomJeu} #salonAnnonce\n\n"
                     + "## Filtres de titre Twitch (Global)\n"
                     + "* NOTE : Cela affecte toutes les annonces de streams pour Twitch\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch titlefilter nomJeu #salonAnnonce\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [word|different words|more words] #salonAnnonce\n\n"
                     + "* Exemples :\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (ajoute une chaîne à annoncer dans un certain salon et des filtres de jeu)\n\t"
