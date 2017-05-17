@@ -67,7 +67,6 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (Добавляет Beam канал для объявления в определенном Discord канале c игровыми фильтрами)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (Добавляет Beam team с определенным Discord каналом объявлений)\n\n"},
-            {"beamUserNoExist", "Указанного пользователя Beam не существует! Проверьте правильность написания и повторите попытку!"},
             {"botLangFail", "Что-то пошло не так. Мой язык все тот же."},
             {"botLangHelp", "# ЯЗЫКБОТА\n* Используется для изменения языка моих ответов.\n\n## ПРИМЕНЕНИЕ: "
                     + Const.COMMAND_PREFIX
