@@ -67,7 +67,6 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
-            {"beamUserNoExist", "Este usuario Beam no existe, revisa como lo has escrito e intentalo de nuevo."},
             {"botLangFail", "Something went wrong and my language is still the same."},
             {"botLangHelp", "# BOTLANG\n* Used to change the language of my responses.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX

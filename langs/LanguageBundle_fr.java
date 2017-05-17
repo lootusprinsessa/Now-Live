@@ -45,29 +45,28 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <contenu>\n\tCette commande est uniquement disponible aux développeurs."},
-            {"beamChannelNotFound", "\n# Channel(s) not found on Beam: %s."},
-            {"beamHelp", "# BEAM\n* Add and remove things that are Beam.pro related.\n"
+            {"beamChannelNotFound", "\n# Chaîne(s) introuvable sur Beam : %s."},
+            {"beamHelp", "# BEAM\n* Modifier des paramètres spécifiques à Beam.pro.\n"
                     + "* Notes:\n\t"
-                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Beam URL. It will not work!! Use only the channel name (www.beam.pro/channelName)\n\t"
-                    + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/teamName\n\n"
-                    + "## Beam Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Beam Teams (Announce ALL live streams in the team)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team teamName #announcementChannel\n\n"
-                    + "## Beam Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Beam\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Beam Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Beam\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "* Examples:\n\t"
+                    + "Pour ajouter des filtres de jeu et des filtres de titre, vous DEVEZ inclure respectivement les accolades et les crochets.\n\t"
+                    + "N'utilisez PAS l'adresse Twitch entière, ça ne marchera pas !! Utilisez uniquement le nom de la chaîne (beam.pro/nomChaine)\n\t"
+                    + "Vous pouvez ajouter plusieurs chaînes, équipes, jeux, communautés, filtres de jeu/titre en utilisant la barre verticale | entre eux.\n\t"
+                    + "Les seules options requises sont nomChaine/nomEquipe\n\n"
+                    + "## Chaînes Beam\n"
+                    + "Note : En ajoutant un salon pour les annonces (salonAnnonce), les filtres de jeu/titre sont optionnels."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel nomChaine #salonAnnonce {filtreJeu} [filtreTitre]\n\n"
+                    + "## Equipes Beam (Annoncer TOUS les lives de l'équipe)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team nomEquipe #salonAnnonce\n\n"
+                    + "## Filtres de jeu Beam (Global)\n"
+                    + "* NOTE : Cela affecte toutes les annonces de streams pour Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {nomJeu|nomJeu} #salonAnnonce\n\n"
+                    + "## Filtres de titre Beam (Global)\n"
+                    + "* NOTE : Cela affecte toutes les annonces de streams pour Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [mot|plusieurs mots|plus de mots] #salonAnnonce\n\n"
+                    + "* Exemples :\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
-            {"beamUserNoExist", "Cet utilisateur Beam n'existe pas ! Vérifiez son écriture et réessayez."},
+                    + "Warcraft} (ajoute une chaîne à annoncer dans un certain salon et des filtres de jeu)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (ajoute une équipe dans le salon d'annonce #outpost-streamers)\n\n"},
             {"botLangFail", "Quelque chose s'est mal passé donc je garde la même langue."},
             {"botLangHelp", "# BOTLANG\n* Utilisé pour changer ma langue.\n\n## UTILISATION : "
                     + Const.COMMAND_PREFIX
@@ -102,9 +101,9 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
-                    + "\n\tnoEmbed     - Removes the large embed and only uses a short sentence."
-                    + "\n\tsmallEmbed  - Announces with an embed with no large banner image."
-                    + "\n\tfullEmbed   - The full announcement with large banner image."
+                    + "\n\tnoEmbed     - Annonce composée d'une petite phrase."
+                    + "\n\tsmallEmbed  - Annonce dans un format compact."
+                    + "\n\tfullEmbed   - Annonce en grand format."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
             {"compactFullEmbed", " :compression: Les annonces seront faites en grand format."},
             {"compactSmallEmbed", " :compression: Les annonces seront faites dans un format compact."},
@@ -143,7 +142,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"guildJoinSuccess", "Hey, salut ! Je suis Now Live, le bot qui annonce les streams ! Tape `" +
                     Const.COMMAND_PREFIX + Const.COMMAND +
                     " help` pour avoir une liste de mes commandes.\n\nSi tu as besoin d'aide pour m'installer, rejoins " +
-                    "mon Discord ici : " + Const.DISCORD_URL + " et regarde les canaux how-to-setup et command-list " +
+                    "mon Discord ici : " + Const.DISCORD_URL + " et regarde les salons how-to-setup et command-list " +
                     "pour avoir toutes les infos !\n\nN'oublie pas de dire bonjour !"},
             {"helpPm", "Hey salut, %s ! Alors comme ça on a besoin d'aide ? Voici une liste de mes commandes.\n\n" +
                     "```Markdown\n" +
@@ -371,14 +370,14 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"twitchCommunityNotFound", "\n# Communautés non trouvées sur Twitch : %s."},
             {"twitchCommunityRemove", "\n# Communauté(s) supprimées : %s."},
             {"twitchCommunityRemoveFail", "\n# Echec de la suppression des communautés : %s."},
-            {"twitchHelp", "```Markdown\n# TWITCH\n* Add and remove things that are Twitch.tv related.\n"
+            {"twitchHelp", "```Markdown\n# TWITCH\n* Modifier des paramètres spécifiques à Twitch.tv.\n"
                     + "* Notes :\n\t"
-                    + "Pour ajouter des filtres de jeu et des filtres de titre, vous DEVEZ inclure respectivement les accolades et les crochets.\n\t"
+                    + "Pour ajouter des filtres de jeu et des filtres de titre, vous DEVEZ inclure les crochets.\n\t"
                     + "N'utilisez PAS l'adresse Twitch entière, ça ne marchera pas !! Utilisez uniquement le nom de la chaîne (www.twitch.tv/nomChaine)\n\t"
-                    + "Le nom d'équipe doit être celui de l'adresse, non celui d'affichage. (www.twitch.tv/team/nomEquipe)\n\t"
+                    + "Le nom d'équipe doit être celui de l'adresse, et non pas le nom d'affichage. (www.twitch.tv/team/nomEquipe)\n\t"
                     + "Vous pouvez ajouter plusieurs chaînes, équipes, jeux, communautés, filtres de jeu/titre en utilisant la barre verticale | entre eux.\n\t"
                     + "Les seules options requises sont nomChaine/nomCommunauté/nomEquipe/nomJeu \n\n"
-                    + "## Twitch Channels\n"
+                    + "## Chaînes Twitch\n"
                     + "Note : En ajoutant un salon pour les annonces (salonAnnonce), les filtres de jeu/titre sont optionnels."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel nomChaine #salonAnnonce {filtreJeu} [filtreTitre]\n\n"
                     + "## Communautés Twitch (Annoncer TOUS les lives dans la communauté)\n"
