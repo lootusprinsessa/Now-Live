@@ -120,7 +120,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
                     "* setOnlineMessage - Настраиваемое online сообщение (используется во всех объявлениях)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
-            {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
+            {"customMessageNotNull", "# Пользовательское сообщение не может быть пустым.  Извините...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% начал стрим! Подробнее здесь (кликабельно): %URL%"},
             {"defaultOfflineHelp", "# КОНФИГУРАЦИЯ OFFLINE СООБЩЕНИЯ В ОБЪЯВЛЕНИИ ПО УМОЛЧАНИЮ\n* Сбрасывает моё offline сообщение до значения по умолчанию.\n\n" +
                     "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
@@ -129,7 +129,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Сообщение от " + Const.BOT_NAME + " разработчиков:*\n\n\t"},
             {"discordChannelNoExist", "Данный текстовый канал отсутствует на вашем сервере.."},
-            {"discordChannelNotNull", "# I can't find that Discord text channel. Stream will be announced in the default channel."},
+            {"discordChannelNotNull", "# Я не могу найти текстовый канал Discord. Поток будет объявлен в канале по умолчанию."},
             {"discordLink", "Хотите присоединиться к серверу Now Live Discord? Если у вас возникли проблемы, то там есть много " +
                     "тех, кто поможет! Перейдите по ссылке:\n" + Const.DISCORD_URL},
             {"discordLinkHelp", "Показывает ссылку для подключения к серверу Now Live Discord."},
@@ -395,7 +395,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (добавляет сообщество с заданный канал объявлений)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (добавляет команду с заданным каналом объявлений).\n\n"
                     + "```"},
-            {"twitchTeams", "Twitch Команды"},
+            {"twitchTeams", "Twitch Teams"},
             {"typeOnce", "Вам нужно всего лишь ввести эту часть."},
             {"uniqueChannels", "Уникальные каналы %s"},
             {"uniqueGames", "Уникальные игры %s"},
@@ -407,7 +407,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` для получения дополнительной информации."},
             {"watchThemHere", "Подробнее: "},
             {"wrongCommand", " :thinking: Я не знаю эту команду."},
-            {"youtubeGamingChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."}
+            {"youtubeGamingChannelNotFound", "\n# Канал(ы) не найденые на YouTube Gaming: %s."}
     };
 
     @Override
