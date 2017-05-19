@@ -16,10 +16,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package langs;
+package com.nowlive.bot.langs;
 
-import core.Config;
-import util.Const;
+import com.nowlive.bot.core.Config;
+import com.nowlive.bot.util.Const;
 
 import java.util.ListResourceBundle;
 
@@ -120,6 +120,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
                     "* setOnlineMessage - Utiliser un message d'annonce personnalisé (utilisé dans toutes les annonces)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
+            {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% est en live ! Regarde le stream ici : %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Réinitialiser le message hors-ligne.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
@@ -128,6 +129,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Message des développeurs " + Const.BOT_NAME + " :*\n\n\t"},
             {"discordChannelNoExist", "Ce salon n'existe pas sur ton serveur."},
+            {"discordChannelNotNull", "# I can't find that Discord text channel. Stream will be announced in the default channel."},
             {"discordLink", "Tu souhaites rejoindre le serveur Discord Now Live ? Il est rempli de gens utiles si tu as " +
                     "besoin d'aide ! Clique ici :\n" + Const.DISCORD_URL},
             {"discordLinkHelp", "Afficher le lien d'invitation pour rejoindre le serveur Discord Now Live."},
@@ -200,8 +202,8 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     "Si tu as encore besoin d'aide, rejoins mon serveur Discord.  Il y a plein de gens utiles là-bas :  " + Const.DISCORD_URL},
             {"incorrectArgs", "Tu m'as transmis des arguments incorrects ou il en manque.  Regarde la commande d'aide pour plus d'infos."},
             {"invite", "Hey %s ! Invite-moi dans ton serveur !\n\n\t"
-                    + "**Clique ici :** https://discordapp.com/oauth2/authorize?&client_id="
-                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8"},
+                    + "**Clique ici :** <https://discordapp.com/oauth2/authorize?&client_id="
+                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8>"},
             {"inviteHelp", "```Markdown\n# INVITE\n* Utilisé pour afficher mon lien d'invitation.\n\n## UTILISATION :  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
@@ -410,7 +412,8 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"usePlatform", "Raté ! C'est la vieille méthode ! Utilise les commandes spécifiques aux plateformes ! Tape `" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` pour plus d'infos."},
             {"watchThemHere", "Regarde le live ici : "},
-            {"wrongCommand", " :thinking: Je ne connais pas cette commande."}
+            {"wrongCommand", " :thinking: Je ne connais pas cette commande."},
+            {"youtubeGamingChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."}
     };
 
     @Override

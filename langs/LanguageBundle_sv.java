@@ -16,10 +16,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package langs;
+package com.nowlive.bot.langs;
 
-import core.Config;
-import util.Const;
+import com.nowlive.bot.core.Config;
+import com.nowlive.bot.util.Const;
 
 import java.util.ListResourceBundle;
 
@@ -119,6 +119,7 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
                     "* setOnlineMessage - Set a custom announcement message (used in all announcements)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
+            {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% has just gone live! Watch their stream here: %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Reset my offline message to the default.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
@@ -127,6 +128,7 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Meddelande från" + Const.BOT_NAME + "utvecklare:*\n\n\t"},
             {"discordChannelNoExist", "Det text kanal existerar inte på servern."},
+            {"discordChannelNotNull", "# I can't find that Discord text channel. Stream will be announced in the default channel."},
             {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
                     "having problems! Click this link:\n" + Const.DISCORD_URL},
             {"discordLinkHelp", "Display's the link to join the Now Live Discord server."},
@@ -403,7 +405,8 @@ public class LanguageBundle_sv extends ListResourceBundle {
             {"usePlatform", "Oj! Det är det gamla sättet att göra saker! Använda plattformen specifikt kommando Typ '" +
                     Const.COMMAND_PREFIX + Const.COMMAND + "help` för mer info."},
             {"watchThemHere", "Titta på dem här:"},
-            {"wrongCommand", "tänkande: Jag vet inte det kommandot."}
+            {"wrongCommand", "tänkande: Jag vet inte det kommandot."},
+            {"youtubeGamingChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."}
     };
 
     @Override

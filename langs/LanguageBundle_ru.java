@@ -16,10 +16,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package langs;
+package com.nowlive.bot.langs;
 
-import core.Config;
-import util.Const;
+import com.nowlive.bot.core.Config;
+import com.nowlive.bot.util.Const;
 
 import java.util.ListResourceBundle;
 
@@ -120,6 +120,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
                     "* setOnlineMessage - Настраиваемое online сообщение (используется во всех объявлениях)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
+            {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% начал стрим! Подробнее здесь (кликабельно): %URL%"},
             {"defaultOfflineHelp", "# КОНФИГУРАЦИЯ OFFLINE СООБЩЕНИЯ В ОБЪЯВЛЕНИИ ПО УМОЛЧАНИЮ\n* Сбрасывает моё offline сообщение до значения по умолчанию.\n\n" +
                     "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
@@ -128,6 +129,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Сообщение от " + Const.BOT_NAME + " разработчиков:*\n\n\t"},
             {"discordChannelNoExist", "Данный текстовый канал отсутствует на вашем сервере.."},
+            {"discordChannelNotNull", "# I can't find that Discord text channel. Stream will be announced in the default channel."},
             {"discordLink", "Хотите присоединиться к серверу Now Live Discord? Если у вас возникли проблемы, то там есть много " +
                     "тех, кто поможет! Перейдите по ссылке:\n" + Const.DISCORD_URL},
             {"discordLinkHelp", "Показывает ссылку для подключения к серверу Now Live Discord."},
@@ -190,19 +192,19 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "* Добавление и удаление связанных с Twitch.tv вещей. Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n" +
                     "# PATREON/ПОЖЕРТВОВАНИЕ\n" +
-                    "Команды для просмотра ссылки на Patreon бота:\n"+
+                    "Команды для просмотра ссылки на Patreon бота:\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " donate\n\n" +
                     "# TRELLO/ОШИБКА/ЗАПРОС\n" +
                     "Команды для просмотра ссылки на наш Trello, который используется для сообщений об ошибках и для запроса функций:\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " request```"+
+                    Const.COMMAND_PREFIX + Const.COMMAND + " request```" +
                     "Если вам нужна дополнительная помощь, присоединяйтесь к моему серверу в Discord.  Там много пользователей, которые будут полезны вам:  " + Const.DISCORD_URL},
             {"incorrectArgs", "Вы передали мне неверные или отсутствующие значения.  Проверьте команду help для получения дополнительной информации.."},
             {"invite", "Привет %s! Вы можете пригласить меня на свой сервер!\n\n\t"
-                    + "**Кликабельно:** https://discordapp.com/oauth2/authorize?&client_id="
-                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8"},
+                    + "**Кликабельно:** <https://discordapp.com/oauth2/authorize?&client_id="
+                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8>"},
             {"inviteHelp", "```Markdown\n# ПРИГЛАШЕНИЕ\n* Используется для показа моей ссылки приглашения.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
@@ -258,7 +260,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "их: \n\n"},
             {"oops", "Упс!  Что-то пошло не так. Ничего не изменилось! Попробуем снова."},
             {"patreon", "Если вы желаете пожертвовать для бота, перейдите в Patreon. https://www.patreon.com/nowlive"},
-            {"patreonHelp" , "Дает ссылку на нашу страницу patreon."},
+            {"patreonHelp", "Дает ссылку на нашу страницу patreon."},
             {"ping", "Когда я был в Китае от Американской сборной по пинг-понгу ,  я очень любил играть моей " +
                     "Flexolite ракеткой."},
             {"pingHelp", "```Markdown\n# ПИНГ\n* Используйте для проверки моего времени отклика. Если я правильно работаю, я пришлю вам pong.\n\n## ПРИМЕНЕНИЕ: "
@@ -404,7 +406,8 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"usePlatform", "Это старый способ! Используйте команду для конкретной платформы!  Введите `" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` для получения дополнительной информации."},
             {"watchThemHere", "Подробнее: "},
-            {"wrongCommand", " :thinking: Я не знаю эту команду."}
+            {"wrongCommand", " :thinking: Я не знаю эту команду."},
+            {"youtubeGamingChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."}
     };
 
     @Override

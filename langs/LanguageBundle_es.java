@@ -16,10 +16,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package langs;
+package com.nowlive.bot.langs;
 
-import core.Config;
-import util.Const;
+import com.nowlive.bot.core.Config;
+import com.nowlive.bot.util.Const;
 
 import java.util.ListResourceBundle;
 
@@ -121,6 +121,7 @@ public class LanguageBundle_es extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
                     "* setOnlineMessage - Set a custom announcement message (used in all announcements)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
+            {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% has just gone live! Watch their stream here: %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Reset my offline message to the default.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
@@ -129,6 +130,7 @@ public class LanguageBundle_es extends ListResourceBundle {
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Mensaje de los desarrolladores de:" + Const.BOT_NAME + "\n\n\t"},
             {"discordChannelNoExist", "Este canal de texto no existe en el servidor."},
+            {"discordChannelNotNull", "# I can't find that Discord text channel. Stream will be announced in the default channel."},
             {"discordLink", "Quieres unnirte al servidor de Now Live? Hay mucha gente dispuesta a ayudar " +
                     "si tienes problemas! Clica este enlace:\n" + Const.DISCORD_URL},
             {"discordLinkHelp", "Aparece el enlace para unirte al servidor de Now Live."},
@@ -190,19 +192,19 @@ public class LanguageBundle_es extends ListResourceBundle {
                     "* Para obtener más información, escriba: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
                     "# PATREON/DONATE\n" +
-                    "Da el enlace para el Patreon del bot. Los comandos son:\n"+
+                    "Da el enlace para el Patreon del bot. Los comandos son:\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " donate\n\n" +
                     "# TRELLO/BUG/REQUEST\n" +
                     "Da el enlace a Trello que se usa para reportar bugs y para recomendar características. Los comandos son:\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " request```"+
+                    Const.COMMAND_PREFIX + Const.COMMAND + " request```" +
                     "Si necesitas más ayuda, únete a mi server de Discord.  Hay mucha gente dispuesta a ayudar:  " + Const.DISCORD_URL},
             {"incorrectArgs", "Has escrito algo mal.  Revisa la ayuda para más información."},
             {"invite", "Hola amigo! Invitame a tu server!\n\n\t"
-                    + "**Click aquí:** https://discordapp.com/oauth2/authorize?&client_id="
-                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8"},
+                    + "**Click aquí:** <https://discordapp.com/oauth2/authorize?&client_id="
+                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8>"},
             {"inviteHelp", "```Markdown\nINVITE:  Ya puse mi link de invitaación.\nUSAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
@@ -257,7 +259,7 @@ public class LanguageBundle_es extends ListResourceBundle {
             {"onlineStreamPm2", " streamers en linea que te pueden interesar! Miralos y puede que te gusten! \n\n"},
             {"oops", "Oops!  Algo ha salido mal, pero no se ha cambiado nada!  intentemoslo de nuevo."},
             {"patreon", "Si quieres donar considera unirte a mi Patreon. https://www.patreon.com/nowlive"},
-            {"patreonHelp" , "Da el enlace a la página de Patreon."},
+            {"patreonHelp", "Da el enlace a la página de Patreon."},
             {"ping", "Cuando estaba en china, en el equipo \"All-American Ping Pong\", me encantaba jugar al ping-pong con " +
                     "mi raqueta Flexolite. Viejos tiempos."},
             {"pingHelp", "```Ruby\nPING:  Se usa para pingearme. Si funciono bien, te enviaré un pong.\nUSAGE: "
@@ -402,7 +404,8 @@ public class LanguageBundle_es extends ListResourceBundle {
             {"usePlatform", "Uups!  Eso es como se hacía antes!  Usa el comando específico!  Escribe`" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` para más info."},
             {"watchThemHere", "Miralos aquí: "},
-            {"wrongCommand", " :thinking: No conozco ese comando."}
+            {"wrongCommand", " :thinking: No conozco ese comando."},
+            {"youtubeGamingChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."}
     };
 
     @Override

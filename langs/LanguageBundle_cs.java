@@ -16,10 +16,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package langs;
+package com.nowlive.bot.langs;
 
-import core.Config;
-import util.Const;
+import com.nowlive.bot.core.Config;
+import com.nowlive.bot.util.Const;
 
 import java.util.ListResourceBundle;
 
@@ -118,6 +118,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
                     "* setOnlineMessage - Nastaví vlastní oznamovací zprávu (použito ve všech oznámeních)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
+            {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% je nyní živě! Sledujte jeho stream zde: %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Resetuje mojí offline zprávu na původní.\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
@@ -126,6 +127,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Zpráva od " + Const.BOT_NAME + " vývojářů:*\n\n\t"},
             {"discordChannelNoExist", "Tento textový kanál na tvém serveru neexistuje."},
+            {"discordChannelNotNull", "# I can't find that Discord text channel. Stream will be announced in the default channel."},
             {"discordLink", "Máš zájem se připojit na Now Live discord server? Je tam spoustu lidí kteří ti rádi pomohou " +
                     "pokud máš problémy! Klikni na tento odkaz:\n" + Const.DISCORD_URL},
             {"discordLinkHelp", "Zobrazí odkaz na Now Live discord server."},
@@ -185,20 +187,20 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
                     "# PATREON/DONATE\n" +
-                    "Pošle ti odkaz na náš Patreon. Příkazy jsou :\n"+
+                    "Pošle ti odkaz na náš Patreon. Příkazy jsou :\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " donate\n\n" +
                     "# TRELLO/BUG/REQUEST\n" +
                     "Pošle ti odkaz na náše Trello, kde můžeš nahlašovat chyby/bugy. Příkazy jsou :\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " request```"+
+                    Const.COMMAND_PREFIX + Const.COMMAND + " request```" +
                     "Pokud potřebuješ další pomoc, připoj se na můj Discord server.  Je tam mnoho lidí co ti rádi pomůžou:  " + Const.DISCORD_URL},
             {"incorrectArgs", "Předal jsi mi nesprávné argumenty.  Zkoukni help pro více informací." +
                     '.'},
             {"invite", "Hej kamaráde! Pozvy mě na svůj server!\n\n\t"
-                    + "**Klikni zde:** https://discordapp.com/oauth2/authorize?&client_id="
-                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8"},
+                    + "**Klikni zde:** <https://discordapp.com/oauth2/authorize?&client_id="
+                    + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8>"},
             {"inviteHelp", "```Markdown\n# INVITE\n* Používá se k zobrazení mého invite linku.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
@@ -252,7 +254,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "zkouknout: \n\n"},
             {"oops", "Oops!  Něco se nepovedlo a nic se nezměnilo!  Pojďme to zkusit znovu."},
             {"patreon", "Pokud chceš přispět na vývoj bota, zkus navštívit náš Patreon. https://www.patreon.com/nowlive"},
-            {"patreonHelp" , "Pošle ti link na naši Patreon stránku."},
+            {"patreonHelp", "Pošle ti link na naši Patreon stránku."},
             {"ping", "Když jsem byl v Číně v All-American Ping Pong teamu, miloval jsem hrát ping-pong s mojí " +
                     "Flexolite ping pong pálkou."},
             {"pingHelp", "```Markdown\n# PING\n* Používá se aby jsi mě mohl pingnout. Pokud správně funguji, pošlu ti zpětnou zprávu.\n\n## USAGE: "
@@ -399,7 +401,8 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"usePlatform", "Oops!  To je starý způsob, jak dělat věci!  Použij specifický příkaz pro danou platformu!  Napiš `" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` pro více informací."},
             {"watchThemHere", "Sledujte jej zde: "},
-            {"wrongCommand", " :thinking: Neznám tento příkaz."}
+            {"wrongCommand", " :thinking: Neznám tento příkaz."},
+            {"youtubeGamingChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."}
     };
 
     @Override
