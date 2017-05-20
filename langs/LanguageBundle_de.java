@@ -121,7 +121,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
                     "* setOnlineMessage - Lege eine eigene Benachrichtigung fest. (Für alle Benachrichtigungen zuständig.)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
-            {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
+            {"customMessageNotNull", "# Die eigene Nachricht kann nicht leer sein.  Entschuldigung...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% ist gerade live! Siehe den Stream hier: %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Setzt die Offline-Nachricht zurück.\n\n" +
                     "## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
@@ -130,7 +130,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Nachricht der " + Const.BOT_NAME + " Entwickler:*\n\n\t"},
             {"discordChannelNoExist", "Dieser Textchannel existiert auf diesem Server nicht."},
-            {"discordChannelNotNull", "# I can't find that Discord text channel. Stream will be announced in the default channel."},
+            {"discordChannelNotNull", "# Ich konnte diesen Discord-Text-channel nicht finden. Die Streams werden also im Standardchannel gepostet."},
             {"discordLink", "Interessiert unserem Server beizutreten? Dort gibt es eine menge hilfbereiter Menschen " +
                     "wenn du Probleme hast! Klicke auf diesen Link:\n" + Const.DISCORD_URL},
             {"discordLinkHelp", "Zeigt den Link um den Now Live Discord Server beizutreten."},
@@ -416,7 +416,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` für weitere Informationen"},
             {"watchThemHere", "Jetzt zuschauen: "},
             {"wrongCommand", " :thinking: Den Befehl kenne ich nicht."},
-            {"youtubeGamingChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."}
+            {"youtubeGamingChannelNotFound", "\n# Kanäle nicht auf YouTube Gaming gefunden: %s."}
     };
 
     @Override
