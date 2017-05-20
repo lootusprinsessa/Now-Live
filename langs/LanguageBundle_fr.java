@@ -45,7 +45,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <contenu>\n\tCette commande est uniquement disponible aux développeurs."},
-            {"beamChannelNotFound", "\n# Chaîne(s) introuvable sur Beam : %s."},
+            {"beamChannelNotFound", "\n# Chaîne Beam introuvable : %s."},
             {"beamHelp", "# BEAM\n* Modifier des paramètres spécifiques à Beam.pro.\n"
                     + "* Notes:\n\t"
                     + "Pour ajouter des filtres de jeu et des filtres de titre, vous DEVEZ inclure respectivement les accolades et les crochets.\n\t"
@@ -364,7 +364,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"twitchChannelAddFail", "\n# Echec de l'ajout des chaînes suivantes : %s."},
             {"twitchChannelAnnounce", "\n# Elles seront annoncées dans : #%s."},
             {"twitchChannelGameFilter", "\n# Elles ne seront annoncées uniquement lorsqu'elles joueront à : %s."},
-            {"twitchChannelNotFound", "\n# Chaîne introuvable sur Twitch : %s."},
+            {"twitchChannelNotFound", "\n# Chaîne Twitch introuvable : %s."},
             {"twitchCommunities", "Communautés Twitch"},
             {"twitchCommunityAdd", "\n# Communauté(s) ajoutée(s) : %s."},
             {"twitchCommunityAddFail", "\n# Echec de l'ajout des communautés suivantes : %s."},
@@ -413,7 +413,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` pour plus d'infos."},
             {"watchThemHere", "Regarde le live ici : "},
             {"wrongCommand", " :thinking: Je ne connais pas cette commande."},
-            {"youtubeGamingChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."}
+            {"youtubeGamingChannelNotFound", "\n# Chaîne YouTube Gaming introuvable : %s."}
     };
 
     @Override
