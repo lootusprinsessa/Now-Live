@@ -196,6 +196,9 @@ public class LanguageBundle_es extends ListResourceBundle {
                     "# TWITCH\n" +
                     "* Para obtener más información, escriba: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
+                    "# YOUTUBE GAMING\n" +
+                    "* For more information, type: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " ytg help\n\n" +
                     "# PATREON/DONATE\n" +
                     "Da el enlace para el Patreon del bot. Los comandos son:\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +
@@ -418,7 +421,7 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + "* Notes:\n\t"
                     + "To add title filters, you MUST include the brackets.\n\t"
                     + "Do NOT use the full YouTube Gaming URL. It will not work!! Only use the channel's display name (as shows under their live stream)\n\t"
-                    + "You may add multiple channels, teams, and title filters by using the pipe character | between them.\n\t"
+                    + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
                     + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands."
                     + "Game filters are NOT a thing with YouTube.  See the above note about the API."
                     + "The only required options is: channelName\n\n"

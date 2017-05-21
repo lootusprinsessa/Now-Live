@@ -196,6 +196,9 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "# TWITCH\n" +
                     "* Добавление и удаление связанных с Twitch.tv вещей. Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n" +
+                    "# YOUTUBE GAMING\n" +
+                    "* For more information, type: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " ytg help\n\n" +
                     "# PATREON/ПОЖЕРТВОВАНИЕ\n" +
                     "Команды для просмотра ссылки на Patreon бота:\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +
@@ -273,8 +276,8 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "Flexolite ракеткой."},
             {"pingHelp", "```Markdown\n# ПИНГ\n* Используйте для проверки моего времени отклика. Если я правильно работаю, я пришлю вам pong.\n\n## ПРИМЕНЕНИЕ: "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ping```"},
-            {"platformAnnounceUpdate", "\n# Обновлен канал объявлений Twitch %s на: %s."},
-            {"platformAnnounceUpdateFail", "\n! Не удалось изменить канал объявления Twitch с %s на: %s."},
+            {"platformAnnounceUpdate", "\n# Обновлен канал объявлений %s на: %s."},
+            {"platformAnnounceUpdateFail", "\n! Не удалось изменить канал объявления с %s на: %s."},
             {"platformChannelAdd", "\n# Добавлен(ы) канал(ы): %s."},
             {"platformChannelAddFail", "\n# Не удалось добавить канал(ы): %s."},
             {"platformChannelAnnounce", "\n# Он(и) будут объявлен(ы) в: #%s."},
@@ -294,7 +297,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"platformTeamAdd", "\n# Команда(ы) добавлена(ы): %s."},
             {"platformTeamAddFail", "\n# Не удалось добавить команду(ы): %s."},
             {"platformTeamAnnounce", "\n# Команда(ы) будут объявляться в: #%s."},
-            {"platformTeamNotFound", "\n# Команда(ы) не найдена(ы) на Twitch: %s."},
+            {"platformTeamNotFound", "\n# Команда(ы) не найдена(ы) на: %s."},
             {"platformTeamRemove", "\n# Команда(ы) удалена(ы): %s."},
             {"platformTeamRemoveFail", "\n# Не удалось удалить команду(ы): %s."},
             {"platformTitleFilterAdd", "\n# Добавлен(ы) фильтр(ы) описания: %s."},
@@ -420,7 +423,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "* Примечание:\n\t"
                     + "Чтобы добавить фильтры заголовков, вы ДОЛЖНЫ включить скобки.\n\t"
                     + "НЕ ИСПОЛЬЗУЙТЕ полный URL YouTube Gaming. Это не будет работать!! Используйте только отображаемое имя канала (как показано под трансляцией)\n\t"
-                    + "Вы можете добавить несколько каналов, Teams и фильтров заголовков с помощью символа | между ними.\n\t"
+                    + "Вы можете добавить несколько каналов и фильтров заголовков с помощью символа | между ними.\n\t"
                     + "На данный момент поддерживаются только каналы.  API YouTube не показывает правильное имя игры, которое будет использоваться в других командах."
                     + "Игровые фильтры НЕ ПОДДЕРЖИВАЮТСЯ в YouTube. Смотрите приведенную выше заметку об API."
                     + "Единственный необходимый параметр: channelName\n\n"

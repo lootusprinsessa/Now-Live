@@ -198,6 +198,9 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "# TWITCH\n" +
                     "* Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
+                    "# YOUTUBE GAMING\n" +
+                    "* For more information, type: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " ytg help\n\n" +
                     "# PATREON/DONATE\n" +
                     "Gibt den Link zur Bots Patreon Seite. Befehle sind :\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +

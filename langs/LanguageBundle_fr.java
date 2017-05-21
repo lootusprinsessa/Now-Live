@@ -45,7 +45,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <contenu>\n\tCette commande est uniquement disponible aux développeurs."},
-            {"beamChannelNotFound", "\n# Chaîne(s) introuvable sur Beam : %s."},
+            {"beamChannelNotFound", "\n# Chaîne Beam introuvable : %s."},
             {"beamHelp", "# BEAM\n* Modifier des paramètres spécifiques à Beam.pro.\n"
                     + "* Notes:\n\t"
                     + "Pour ajouter des filtres de jeu et des filtres de titre, vous DEVEZ inclure respectivement les accolades et les crochets.\n\t"
@@ -194,7 +194,10 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " streams help\n\n" +
                     "# TWITCH\n" +
                     "* Pour plus d'informations, tape : " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n```\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n```" +
+                    "# YOUTUBE GAMING\n" +
+                    "* For more information, type: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " ytg help\n\n" +
                     "# PATREON/DONATE\n" +
                     "Retourne le lien menant au Patreon du bot. Les commandes sont :\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +
@@ -270,8 +273,8 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"patreonHelp", "Retourne le lien vers notre Patreon."},
             {"ping", "Quand j'étais en Chine dans l'équipe d'Amérique de ping-pong, j'adorais jouer avec ma " +
                     "raquette de ping-pong Flexolite."},
-            {"platformAnnounceUpdate", "\n# Le canal des annonces Twitch passe de %s à : %s."},
-            {"platformAnnounceUpdateFail", "\n! Echec du changement du canal des annonces Twitch de %s à : %s."},
+            {"platformAnnounceUpdate", "\n# Le canal des annonces passe de %s à : %s."},
+            {"platformAnnounceUpdateFail", "\n! Echec du changement du canal des annonces de %s à : %s."},
             {"platformChannelAdd", "\n# Chaîne(s) ajoutée(s) : %s."},
             {"platformChannelAddFail", "\n# Echec de l'ajout des chaînes suivantes : %s."},
             {"platformChannelAnnounce", "\n# Elles seront annoncées dans : #%s."},
@@ -291,7 +294,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"platformTeamAdd", "\n# Equipes ajoutée(s) : %s."},
             {"platformTeamAddFail", "\n# Echec de l'ajout des équipes suivantes : %s."},
             {"platformTeamAnnounce", "\n# Les équipes annonceront dans : #%s."},
-            {"platformTeamNotFound", "\n# Equipe(s) non trouvées sur Twitch : %s."},
+            {"platformTeamNotFound", "\n# Equipe(s) non trouvées sur : %s."},
             {"platformTeamRemove", "\n# Equipe(s) supprimée(s) : %s."},
             {"platformTeamRemoveFail", "\n# Echec de la suppression des équipes : %s."},
             {"platformTitleFilterAdd", "\n# Filtre(s) de titre ajouté(s) : %s."},
@@ -372,7 +375,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"twitchChannelAddFail", "\n# Echec de l'ajout des chaînes suivantes : %s."},
             {"twitchChannelAnnounce", "\n# Elles seront annoncées dans : #%s."},
             {"twitchChannelGameFilter", "\n# Elles ne seront annoncées uniquement lorsqu'elles joueront à : %s."},
-            {"twitchChannelNotFound", "\n# Chaîne introuvable sur Twitch : %s."},
+            {"twitchChannelNotFound", "\n# Chaîne Twitch introuvable : %s."},
             {"twitchCommunities", "Communautés Twitch"},
             {"twitchCommunityAdd", "\n# Communauté(s) ajoutée(s) : %s."},
             {"twitchCommunityAddFail", "\n# Echec de l'ajout des communautés suivantes : %s."},
@@ -421,12 +424,12 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` pour plus d'infos."},
             {"watchThemHere", "Regarde le live ici : "},
             {"wrongCommand", " :thinking: Je ne connais pas cette commande."},
-            {"ytgChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."},
+            {"youtubeGamingChannelNotFound", "\n# Chaîne YouTube Gaming introuvable : %s."},
             {"ytgHelp", "# YTG\n* Add and remove things that are YouTube Gaming channels.\n"
                     + "* Notes:\n\t"
                     + "To add title filters, you MUST include the brackets.\n\t"
                     + "Do NOT use the full YouTube Gaming URL. It will not work!! Only use the channel's display name (as shows under their live stream)\n\t"
-                    + "You may add multiple channels, teams, and title filters by using the pipe character | between them.\n\t"
+                    + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
                     + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands."
                     + "Game filters are NOT a thing with YouTube.  See the above note about the API."
                     + "The only required options is: channelName\n\n"
