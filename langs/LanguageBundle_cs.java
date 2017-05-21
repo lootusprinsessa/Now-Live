@@ -424,7 +424,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + "Note: Adding an announcement channel and title filters are optional."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
                     + "## YouTube Gaming Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* NOTE: This affects all stream announcements for YouTube Gaming\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"}
