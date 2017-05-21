@@ -197,13 +197,13 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "* Добавление и удаление связанных с Twitch.tv вещей. Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n" +
                     "# YOUTUBE GAMING\n" +
-                    "* For more information, type: " +
+                    "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ytg help\n\n" +
                     "# PATREON/ПОЖЕРТВОВАНИЕ\n" +
                     "Команды для просмотра ссылки на Patreon бота:\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " donate\n\n" +
-                    "# TRELLO/ОШИБКА/ЗАПРОС\n" +
+                    "# TRELLO/ОШИБКИ/ЗАПРОСЫ\n" +
                     "Команды для просмотра ссылки на наш Trello, который используется для сообщений об ошибках и для запроса функций:\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" +
@@ -294,14 +294,14 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"platformGameFilterRemoveFail", "\n# Не удалось удалить игровой(ые) фильтр(ы): %s."},
             {"platformGameRemove", "\n# Удалена(ы) игра(ы): %s."},
             {"platformGameRemoveFail", "\n# Не удалось удалить игру(ы): %s."},
-            {"platformTeamAdd", "\n# Команда(ы) добавлена(ы): %s."},
-            {"platformTeamAddFail", "\n# Не удалось добавить команду(ы): %s."},
-            {"platformTeamAnnounce", "\n# Команда(ы) будут объявляться в: #%s."},
-            {"platformTeamNotFound", "\n# Команда(ы) не найдена(ы) на: %s."},
-            {"platformTeamRemove", "\n# Команда(ы) удалена(ы): %s."},
-            {"platformTeamRemoveFail", "\n# Не удалось удалить команду(ы): %s."},
+            {"platformTeamAdd", "\n# Team(s) добавлена(ы): %s."},
+            {"platformTeamAddFail", "\n# Не удалось добавить Team(s): %s."},
+            {"platformTeamAnnounce", "\n# Team(s) будет(ут) объявляться в: #%s."},
+            {"platformTeamNotFound", "\n# Team(s) не найдена(ы) на: %s."},
+            {"platformTeamRemove", "\n# Team(s) удалена(ы): %s."},
+            {"platformTeamRemoveFail", "\n# Не удалось удалить Team(s): %s."},
             {"platformTitleFilterAdd", "\n# Добавлен(ы) фильтр(ы) описания: %s."},
-            {"platformTitleFilterAddFail", "\n# Не удалось добавить фильтр(ы)описания: %s."},
+            {"platformTitleFilterAddFail", "\n# Не удалось добавить фильтр(ы) описания: %s."},
             {"platformTitleFilterRemove", "\n# Фильтр(ы) описания удален(ы): %s."},
             {"platformTitleFilterRemoveFail", "\n# Не удалось удалить фильтр(ы) описания: %s."},
             {"privateMessageReply", "Я извиняюсь, но бот, которого вы пытаетесь достать, имеет автоответчик, который " +
