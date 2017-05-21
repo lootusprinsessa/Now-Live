@@ -45,7 +45,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <contenu>\n\tCette commande est uniquement disponible aux développeurs."},
-            {"beamChannelNotFound", "\n# Chaîne Beam introuvable : %s."},
+            {"beamChannelNotFound", "\n# Chaîne(s) introuvable sur Beam : %s."},
             {"beamHelp", "# BEAM\n* Modifier des paramètres spécifiques à Beam.pro.\n"
                     + "* Notes:\n\t"
                     + "Pour ajouter des filtres de jeu et des filtres de titre, vous DEVEZ inclure respectivement les accolades et les crochets.\n\t"
@@ -101,13 +101,17 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
-                    + "\n\tnoEmbed     - Annonce composée d'une petite phrase."
-                    + "\n\tsmallEmbed  - Annonce dans un format compact."
-                    + "\n\tfullEmbed   - Annonce en grand format."
+                    + "\n\tnoEmbed    - Annonce composée d'une petite phrase."
+                    + "\n\tsmallEmbed - Annonce dans un format compact."
+                    + "\n\tfullEmbed  - Annonce en grand format."
+                    + "\n\tvideoEmbed - No rich embed. Announcement will be a small code block and an embedded video " +
+                    "you can watch in Discord."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
             {"compactFullEmbed", " :compression: Les annonces seront faites en grand format."},
             {"compactSmallEmbed", " :compression: Les annonces seront faites dans un format compact."},
             {"compactNoEmbed", " :compression: Les annonces ne seront plus qu'une petite phrase."},
+            {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
+                    "Videos will be able to be played from Discord."},
             {"configHelp", "# CONFIG\n* La commande à utiliser pour me paramétrer. Regarde l'aide de chaque paramètre pour comprendre son fonctionnement.\n\n" +
                     "* defaultOfflineMessage - Réinitialise le message hors-ligne (utilisé dans les annonces modifiées)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
@@ -141,6 +145,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"emptyArgs", "Je crois que tu as oublié une partie de la commande. Regarde la commande \"help\" pour plus d'infos."},
             {"emptyCommand", "La prochaine fois que tu me réveilles, envoie-moi aussi une commande."},
             {"followersEmbed", "Abonnés"},
+            {"followersEmbedYtg", "Subscribers"},
             {"guildJoinSuccess", "Hey, salut ! Je suis Now Live, le bot qui annonce les streams ! Tape `" +
                     Const.COMMAND_PREFIX + Const.COMMAND +
                     " help` pour avoir une liste de mes commandes.\n\nSi tu as besoin d'aide pour m'installer, rejoins " +
@@ -209,16 +214,19 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + Const.COMMAND
                     + " invite\n\tInviter le bot NowLive dans votre serveur Discord.```"},
             {"listHelp", "```Markdown\n# LIST\n* Cette commande liste des choses de ma base de données.\n\n## UTILISATION :  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " list *option*"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
+                    + "\n\tbeamChannel     - Lists the Beam Channels you follow"
+                    + "\n\tbeamTeam        - Lists the Beam Teams you follow"
+                    + "\n\tgfilter         - Liste tous les filtres de jeux mis en place"
+                    + "\n\tmanager         - Liste les managers du serveur"
+                    + "\n\tsetting         - Liste les paramètres communs du bot"
+                    + "\n\ttfilter         - Liste tous les filtres de titre mis en place"
                     + "\n\ttwitchChannel   - Liste les chaînes Twitch suivies"
                     + "\n\ttwitchCommunity - Liste les communautés Twitch suivies"
-                    + "\n\tgfilter         - Liste tous les filtres de jeux mis en place"
                     + "\n\ttwitchGame      - Liste les jeux sur Twitch que je surveille"
-                    + "\n\tmanager         - Liste les managers du serveur"
-                    + "\n\ttfilter         - Liste tous les filtres de titre mis en place"
                     + "\n\ttwitchTeam      - Liste les équipes Twitch suivies"
-                    + "\n\tsetting         - Liste les paramètres communs du bot"
-                    + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " list channel" + "```"},
+                    + "\n\tytgChannel      - Lists the YouTube Gaming Channels you follow"
+                    + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel```"},
             {"listSettings", "```Markdown\n" +
                     "# Paramètres du bot sur le serveur" +
                     "\n* Le mode compact est %s." +
@@ -364,7 +372,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"twitchChannelAddFail", "\n# Echec de l'ajout des chaînes suivantes : %s."},
             {"twitchChannelAnnounce", "\n# Elles seront annoncées dans : #%s."},
             {"twitchChannelGameFilter", "\n# Elles ne seront annoncées uniquement lorsqu'elles joueront à : %s."},
-            {"twitchChannelNotFound", "\n# Chaîne Twitch introuvable : %s."},
+            {"twitchChannelNotFound", "\n# Chaîne introuvable sur Twitch : %s."},
             {"twitchCommunities", "Communautés Twitch"},
             {"twitchCommunityAdd", "\n# Communauté(s) ajoutée(s) : %s."},
             {"twitchCommunityAddFail", "\n# Echec de l'ajout des communautés suivantes : %s."},
@@ -413,7 +421,23 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` pour plus d'infos."},
             {"watchThemHere", "Regarde le live ici : "},
             {"wrongCommand", " :thinking: Je ne connais pas cette commande."},
-            {"youtubeGamingChannelNotFound", "\n# Chaîne YouTube Gaming introuvable : %s."}
+            {"ytgChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."},
+            {"ytgHelp", "# YTG\n* Add and remove things that are YouTube Gaming channels.\n"
+                    + "* Notes:\n\t"
+                    + "To add title filters, you MUST include the brackets.\n\t"
+                    + "Do NOT use the full YouTube Gaming URL. It will not work!! Only use the channel's display name (as shows under their live stream)\n\t"
+                    + "You may add multiple channels, teams, and title filters by using the pipe character | between them.\n\t"
+                    + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands."
+                    + "Game filters are NOT a thing with YouTube.  See the above note about the API."
+                    + "The only required options is: channelName\n\n"
+                    + "## YouTube Gaming Channels\n"
+                    + "Note: Adding an announcement channel and title filters are optional."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
+                    + "## YouTube Gaming Title Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Examples:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"}
     };
 
     @Override

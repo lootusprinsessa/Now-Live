@@ -102,13 +102,17 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + Const.COMMAND
                     + " compact <opción>"
                     + "\n<opción>"
-                    + "\n\tnoEmbed     - Cambia los mensajes largos por los cortos."
-                    + "\n\tsmallEmbed  - Anuncia los mensajes SIN el banner del canal.."
-                    + "\n\tfullEmbed   - Anuncia el stream CON el banner del canal."
+                    + "\n\tnoEmbed    - Cambia los mensajes largos por los cortos."
+                    + "\n\tsmallEmbed - Anuncia los mensajes SIN el banner del canal.."
+                    + "\n\tfullEmbed  - Anuncia el stream CON el banner del canal."
+                    + "\n\tvideoEmbed - No rich embed. Announcement will be a small code block and an embedded video " +
+                    "you can watch in Discord."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
             {"compactFullEmbed", " :compression: Las notificaciones serán enteros a partir de ahora."},
             {"compactSmallEmbed", " :compression: Tendrás las notificaciones un pequeño embed."},
             {"compactNoEmbed", " :compression: A partir de ahora las notificaciones serán una pequeña frase."},
+            {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
+                    "Videos will be able to be played from Discord."},
             {"configHelp", "# CONFIG\n* The base command to set my various settings. Check each specific settings help for more info.\n\n" +
                     "* defaultOfflineMessage - Returns the offline message to the default (used in edited announcements)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
@@ -142,6 +146,7 @@ public class LanguageBundle_es extends ListResourceBundle {
             {"emptyArgs", "Creo que te has olvidado de algún comando. Revisa la ayuda para más info."},
             {"emptyCommand", "La próxima vez que me despiertes, pon un comando."},
             {"followersEmbed", "Seguidores"},
+            {"followersEmbedYtg", "Subscribers"},
             {"guildJoinSuccess", "Hola!  Soy Now Live, el bot  de streams! Escribe `" + Const.COMMAND_PREFIX
                     + Const.COMMAND + " help` para una lista de comandos.\n\nSi necesitas ayuda configurandome, ven, " +
                     "únete a mi discord " + Const.DISCORD_URL + " y revisa how-to-setup y commands-list " +
@@ -211,15 +216,18 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + " invite\n\tInvita a NowLive a tu servidor de Discord.```"},
             {"listHelp", "```Markdown\n# LIST\n* Este comando lista cosas de la base de datos.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\ttwitchChannel   - Lista los canales de Twitch que sigues"
-                    + "\n\ttwitchCommunity - Lista las comunidades de Twitch que sigues"
+                    + "\n\tbeamChannel     - Lists the Beam Channels you follow"
+                    + "\n\tbeamTeam        - Lists the Beam Teams you follow"
                     + "\n\tgfilter         - Lista los filtros que has configurados"
-                    + "\n\ttwitchGame      - Lista los juegos de twitch que has configurado"
                     + "\n\tmanager         - Lista los gerentes de este servidor"
                     + "\n\ttfilter         - Lista los filtros de título que tienes puesto"
-                    + "\n\ttwitchTeam      - Lista los equipos de Twitch que sigues."
                     + "\n\tsetting         - Lista las configuraciones básicas del bot"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel" + "```"},
+                    + "\n\ttwitchChannel   - Lista los canales de Twitch que sigues"
+                    + "\n\ttwitchCommunity - Lista las comunidades de Twitch que sigues"
+                    + "\n\ttwitchGame      - Lista los juegos de twitch que has configurado"
+                    + "\n\ttwitchTeam      - Lista los equipos de Twitch que sigues."
+                    + "\n\tytgChannel      - Lists the YouTube Gaming Channels you follow"
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel```"},
             {"listSettings", "```Markdown\n" +
                     "# Configuraciones del bot en este server" +
                     "\n* Modo compacto: %s." +
@@ -405,7 +413,23 @@ public class LanguageBundle_es extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` para más info."},
             {"watchThemHere", "Miralos aquí: "},
             {"wrongCommand", " :thinking: No conozco ese comando."},
-            {"youtubeGamingChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."}
+            {"ytgChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."},
+            {"ytgHelp", "# YTG\n* Add and remove things that are YouTube Gaming channels.\n"
+                    + "* Notes:\n\t"
+                    + "To add title filters, you MUST include the brackets.\n\t"
+                    + "Do NOT use the full YouTube Gaming URL. It will not work!! Only use the channel's display name (as shows under their live stream)\n\t"
+                    + "You may add multiple channels, teams, and title filters by using the pipe character | between them.\n\t"
+                    + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands."
+                    + "Game filters are NOT a thing with YouTube.  See the above note about the API."
+                    + "The only required options is: channelName\n\n"
+                    + "## YouTube Gaming Channels\n"
+                    + "Note: Adding an announcement channel and title filters are optional."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
+                    + "## YouTube Gaming Title Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Examples:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"}
     };
 
     @Override

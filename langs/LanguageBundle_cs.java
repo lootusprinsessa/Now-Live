@@ -99,13 +99,17 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <volba>"
-                    + "\n\tnoEmbed     - Odstraní velké vložení a použije pouze krátkou větu."
-                    + "\n\tsmallEmbed  - Oznamuje se vložením bez velkého bannerového obrázku."
-                    + "\n\tfullEmbed   - Celé oznámení s velkým bannerovým obrázkem."
+                    + "\n\tnoEmbed    - Odstraní velké vložení a použije pouze krátkou větu."
+                    + "\n\tsmallEmbed - Oznamuje se vložením bez velkého bannerového obrázku."
+                    + "\n\tfullEmbed  - Celé oznámení s velkým bannerovým obrázkem."
+                    + "\n\tvideoEmbed - No rich embed. Announcement will be a small code block and an embedded video " +
+                    "you can watch in Discord."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
             {"compactFullEmbed", " :compression: Od teď budeš dostávat celé upozornení."},
             {"compactSmallEmbed", " :compression: Od teď budeš dostávát upozornění s malým vložením."},
             {"compactNoEmbed", " :compression: Od teď bude tvoje oznámení jen krátká věta."},
+            {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
+                    "Videos will be able to be played from Discord."},
             {"configHelp", "# CONFIG\n* Základní příkaz pro upravení mých nastavení. Zkontroluj si nápovědu pro každé nastavení pro více informací.\n\n" +
                     "* defaultOfflineMessage - Navrátí původní offline zprávu (použito v upravovaných oznámeních)\n" +
                     "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
@@ -139,6 +143,7 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"emptyArgs", "Myslím si že jsi zapoměl nějaký příkaz.  Ověř si to pomocí help příkazu a zkus to znovu."},
             {"emptyCommand", "Příště až mě probudíš, tak také použij nějaký příkaz."},
             {"followersEmbed", "Sledující"},
+            {"followersEmbedYtg", "Subscribers"},
             {"guildJoinSuccess", "Ahoj!  Jsem Now Live, bot který oznamuje streamy!  Napiš `" + Const.COMMAND_PREFIX
                     + Const.COMMAND + " help` pro list mých příkazů.\n\nPokud potřebuješ pomoc s nastavením " +
                     "připoj se na můj Discord " + Const.DISCORD_URL + " a podívej se do how-to-setup a command-list " +
@@ -206,15 +211,19 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + Const.COMMAND
                     + " invite\n\tPozvy NowLive bota na svůj server.```"},
             {"listHelp", "```Markdown\n# LIST\n* Používá se k zobrazení věcí z mé databáze.\n\n## USAGE:  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " list *option*"
-                    + "\n\tchannel     - Zobrazí Vám všechny streamy které chcete abych sledoval"
-                    + "\n\tgfilter     - Zobrazí Vám všechny filtry her které jste nastavil"
-                    + "\n\tgame        - Zobrazí Vám všechny hry které chete abych sledoval"
-                    + "\n\tmanager     - Zobrazí Vám všechny moje manažery"
-                    + "\n\ttfilter     - Zobrazí Vám všechny filtry názvů které jste nastavil"
-                    + "\n\tteam        - Zobrazí Vám všechny teamy které chcete abych sledoval"
-                    + "\n\tsetting     - Zobrazí Vám všechna ostatní nastavení"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list channel" + "```"},
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
+                    + "\n\tbeamChannel     - Lists the Beam Channels you follow"
+                    + "\n\tbeamTeam        - Lists the Beam Teams you follow"
+                    + "\n\tgfilter         - Zobrazí Vám všechny filtry her které jste nastavil"
+                    + "\n\tmanager         - Zobrazí Vám všechny moje manažery"
+                    + "\n\tsetting         - Zobrazí Vám všechna ostatní nastavení"
+                    + "\n\ttfilter         - Zobrazí Vám všechny filtry názvů které jste nastavil"
+                    + "\n\ttwitchChannel   - Zobrazí Vám všechny streamy které chcete abych sledoval"
+                    + "\n\ttwitchCommunity - List the Twitch Communities you follow"
+                    + "\n\ttwitchGame      - Zobrazí Vám všechny hry které chete abych sledoval"
+                    + "\n\ttwitchTeam      - Zobrazí Vám všechny teamy které chcete abych sledoval"
+                    + "\n\tytgChannel      - Lists the YouTube Gaming Channels you follow"
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel```"},
             {"listSettings", "```Markdown\n" +
                     "# Vaše nastavení na tomto serveru" +
                     "\n* Kompaktní mód je %s." +
@@ -402,7 +411,23 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` pro více informací."},
             {"watchThemHere", "Sledujte jej zde: "},
             {"wrongCommand", " :thinking: Neznám tento příkaz."},
-            {"youtubeGamingChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."}
+            {"ytgChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."},
+            {"ytgHelp", "# YTG\n* Add and remove things that are YouTube Gaming channels.\n"
+                    + "* Notes:\n\t"
+                    + "To add title filters, you MUST include the brackets.\n\t"
+                    + "Do NOT use the full YouTube Gaming URL. It will not work!! Only use the channel's display name (as shows under their live stream)\n\t"
+                    + "You may add multiple channels, teams, and title filters by using the pipe character | between them.\n\t"
+                    + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands."
+                    + "Game filters are NOT a thing with YouTube.  See the above note about the API."
+                    + "The only required options is: channelName\n\n"
+                    + "## YouTube Gaming Channels\n"
+                    + "Note: Adding an announcement channel and title filters are optional."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
+                    + "## YouTube Gaming Title Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Beam\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Examples:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"}
     };
 
     @Override
