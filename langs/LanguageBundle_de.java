@@ -163,43 +163,43 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "# BOTLANG\n" +
                     "* Befehl zum ändern der Sprache.\n" +
                     "* Aktuell unterstützte Sprachen: Englisch(English), Tschechisch(Czech), Deutsch(German), Französisch(French), Spanisch(Spanish)" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " botlang help\n\n" +
                     "# CLEANUP\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " cleanup help\n\n" +
                     "# COMPACT\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " compact help\n\n" +
                     "# CONFIG\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config help\n\n" +
                     "# INVITE\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " invite help\n\n" +
                     "# LIST\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " list help\n\n" +
                     "# NOTIFY\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
                     "# PING\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
                     "# REMOVE\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " remove help\n\n" +
                     "# STREAMLANG\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " streamlang help\n\n" +
                     "# STREAMS\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " streams help\n\n" +
                     "# TWITCH\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
                     "# YOUTUBE GAMING\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ytg help\n\n" +
                     "# PATREON/DONATE\n" +
                     "Gibt den Link zur Bots Patreon Seite. Befehle sind :\n" +
