@@ -218,8 +218,8 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + " invite\n\tInviter le bot NowLive dans votre serveur Discord.```"},
             {"listHelp", "```Markdown\n# LIST\n* Cette commande liste des choses de ma base de données.\n\n## UTILISATION :  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\tbeamChannel     - Lists the Beam Channels you follow"
-                    + "\n\tbeamTeam        - Lists the Beam Teams you follow"
+                    + "\n\tbeamChannel     - Liste les chaînes Beam suivies"
+                    + "\n\tbeamTeam        - Liste les équipes Beam suivies"
                     + "\n\tgfilter         - Liste tous les filtres de jeux mis en place"
                     + "\n\tmanager         - Liste les managers du serveur"
                     + "\n\tsetting         - Liste les paramètres communs du bot"
@@ -228,7 +228,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "\n\ttwitchCommunity - Liste les communautés Twitch suivies"
                     + "\n\ttwitchGame      - Liste les jeux sur Twitch que je surveille"
                     + "\n\ttwitchTeam      - Liste les équipes Twitch suivies"
-                    + "\n\tytgChannel      - Lists the YouTube Gaming Channels you follow"
+                    + "\n\tytgChannel      - Liste les chaînes YouTube Gaming suivies"
                     + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel```"},
             {"listSettings", "```Markdown\n" +
                     "# Paramètres du bot sur le serveur" +
@@ -424,23 +424,23 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` pour plus d'infos."},
             {"watchThemHere", "Regarde le live ici : "},
             {"wrongCommand", " :thinking: Je ne connais pas cette commande."},
-            {"youtubeGamingChannelNotFound", "\n# Chaîne YouTube Gaming introuvable : %s."},
-            {"ytgHelp", "# YTG\n* Add and remove things that are YouTube Gaming channels.\n"
-                    + "* Notes:\n\t"
-                    + "To add title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full YouTube Gaming URL. It will not work!! Only use the channel's display name (as shows under their live stream)\n\t"
-                    + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
-                    + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands."
-                    + "Game filters are NOT a thing with YouTube.  See the above note about the API."
-                    + "The only required options is: channelName\n\n"
-                    + "## YouTube Gaming Channels\n"
-                    + "Note: Adding an announcement channel and title filters are optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
-                    + "## YouTube Gaming Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for YouTube Gaming\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "* Examples:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"}
+            {"ytgChannelNotFound", "\n# Chaîne YouTube Gaming introuvable : %s."},
+            {"ytgHelp", "# YTG\n* Modifier des paramètres spécifiques à YouTube Gaming.\n"
+                    + "* Notes :\n\t"
+                    + "Pour ajouter des filtres de titre, vous devez IMPÉRATIVEMENT inclure les crochets.\n\t"
+                    + "N'utilisez PAS l'adresse Twitch entière, ça ne marchera pas !! Utilisez simplement le nom d'affichage de la chaîne (affiché sous le live)\n\t"
+                    + "Vous pouvez ajouter plusieurs chaînes, équipes, filtres de titre en utilisant la barre verticale | entre eux.\n\t"
+                    + "Seules les chaînes sont supportées, pour le moment. L'API YouTube n'affiche pas le nom de jeu qu'il faut, contrairement à dans d'autres commandes."
+                    + "Il n'y a pas de filtres de jeu sur YouTube.  Voir la note sur l'API au-dessus."
+                    + "La seule option requise est : nomChaine\n\n"
+                    + "## Chaînes YouTube Gaming Channels\n"
+                    + "Note : Ajouter un salon d'annonce et un filtre de titre est optionnel."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel nomChaine #salonAnnonce [filtreTitre]\n\n"
+                    + "## Filtres de titre YouTube Gaming (Global)\n"
+                    + "* NOTE : Cela affecte toutes les annonces YouTube Gaming.\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg filtreTitre [mot|plusieurs mots|plus de mots] #salonAnnonce\n\n"
+                    + "* Exemple :\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (ajoute une chaîne à annoncer dans un salon spécifique)\n\t"}
     };
 
     @Override
