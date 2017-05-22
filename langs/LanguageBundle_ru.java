@@ -45,24 +45,24 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <content>\n\tЭта команда доступна только для разработчиков."},
-            {"beamChannelNotFound", "\n# Channel(s) not found on Beam: %s."},
+            {"beamChannelNotFound", "\n# Канал(ы), не найденнй(ые) на Beam: %s."},
             {"beamHelp", "# BEAM\n* Добавление и удаление данных, связанных с Beam.pro.\n"
                     + "* Заметки:\n\t"
                     + "Чтобы добавить игровые фильтры и фильтры заголовков, вы ДОЛЖНЫ включить скобки.\n\t"
-                    + "НЕ ИСПОЛЬЗУЙТЕ полный URL-адрес Beam. Это не будет работать!! Используйте только название канала (www.beam.pro/channelName)\n\t"
+                    + "НЕ ИСПОЛЬЗУЙТЕ полный URL Beam. Это не будет работать!! Используйте только название канала (www.beam.pro/channelName)\n\t"
                     + "Вы можете добавить несколько каналов, групп, фильтров игр и заголовков, используя символ | между ними.\n\t"
-                    + "Единственные необходимые опции: channelName/teamName\n\n"
+                    + "Единственные необходимые опции: имяКанала/названиеTeam\n\n"
                     + "## Beam Каналы\n"
                     + "Примечание: Добавление канала объявлений, игр и фильтров заголовков необязательно."
-                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Beam Teams (Объявление ВСЕХ прямых трансляций команд)\n"
-                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team teamName #announcementChannel\n\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel имяКанала #каналОповещений {игровойФильтр} [фильтрОписания]\n\n"
+                    + "## Beam Teams (Объявление ВСЕХ прямых трансляций Teams)\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team teamName #каналОповещений\n\n"
                     + "## Beam Игровые Фильтры (Глобальные)\n"
                     + "* Заметка: Это влияет на все потоковые объявления для Beam\n"
-                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {gameName|gameName} #announcementChannel\n\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {названиеИгры|названиеИгры} #каналОповещений\n\n"
                     + "## Beam Фильтры Описания (Глобальные)\n"
                     + "* Заметка: Это влияет на все потоковые объявления для Beam\n"
-                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [слово|ещё слово|ещё слово] #каналОповещений\n\n"
                     + "* Примеры:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (Добавляет Beam канал для объявления в определенном Discord канале c игровыми фильтрами)\n\t"
@@ -81,7 +81,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"botStatistics", "%s Статистика"},
             {"broadcasterLangAllSuccess", " :ok_hand: Я буду искать трансляции на всех языках."},
             {"broadcasterLangFail", "Что-то пошло не так, и я по-прежнему ищу трансляции на всех языках."},
-            {"broadcasterLangSuccess", " :ok_hand: Я буду искать только те трансляции, которые находятся на этом языке!"},
+            {"broadcasterLangSuccess", " :ok_hand: Я буду искать только те трансляции, которые используют этот язык!"},
             {"canNotRemoveOwner", "Глупо. Вы не можете удалить владельца сервера из списка менеджеров. :laughing: " +
                     ":laughing:"},
             {"cleanupFail", "Хм... Что-то пошло не так... Лучше попробуйте это еще раз."},
@@ -323,7 +323,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + " config setDefaultAnnounceChannel <channel>\n\t"
                     + "<channel> - Имя канала, который вы хотите использовать по умолчанию (перед имененм ДОЛЖЕН быть знак #)\n"
                     + "Эта опция применяется, только если вы не установили определенный канал анонса в команде Twitch."
-                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #discordchannel"},
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel #discordКанал"},
             {"setDefaultAnnounceChannelSuccess", "# Канал объявления по умолчанию установлен на: %s."},
             {"setOfflineHelp", "# НАСТРОЙКА OFFLINE СООБЩЕНИЯ В ОБЪЯВЛЕНИИ\n* Детальная настройка offline сообщения для редактируемого offline объявления.\n\n" +
                     "## Доступные значения для использования в вашем сообщении:\n" +
@@ -386,19 +386,19 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "Единственные необходимые параметры: имя канала / имя сообщества / название команды / название игры\n\n"
                     + "## Twitch Каналы\n"
                     + "Добавление канала объявлений, игр и фильтров заголовков необязательно."
-                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
+                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel имяКанала #КаналОповещений {фильтрИгры} [фильтрОписания]\n\n"
                     + "## Twitch Сообщества (Объявление ВСЕХ трансляций сообщества)\n"
-                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community communityName #announcementChannel\n\n"
+                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community названиеСообщества #КаналОповещений\n\n"
                     + "## Twitch Игры (Объявление ВСЕХ трансляций игры)\n"
-                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game gameName #announcementChannel\n\n"
+                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game названиеИгры #КаналОповещений\n\n"
                     + "## Twitch Команды (Объявление ВСЕХ трансляций команды)\n"
-                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team teamName #announcementChannel\n\n"
+                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team имяTeam #КаналОповещений\n\n"
                     + "## Twitch Игровые фильтры (Глобальные)\n"
                     + "* Примечание: Это влияет на все потоковые объявления для Twitch\n"
-                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gfilter {gameName|gameName} #announcementChannel\n\n"
+                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gfilter {имяИгры|имяИгры} #КаналОповещений\n\n"
                     + "## Twitch фильтры описания (Глобальные)\n"
                     + "* Примечание: Это влияет на все потоковые объявления для Twitch\n"
-                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [слово|ещё слово|ещё слово] #КаналОповещений\n\n"
                     + "* Примеры:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (добавляет twitch канал в заданный канал Discord с игровыми фильтрами)\n\t"
@@ -429,12 +429,12 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "Единственный необходимый параметр: channelName\n\n"
                     + "## YouTube Gaming каналы\n"
                     + "Примечание: Добавление канала объявлений и фильтров заголовков необязательно."
-                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel названиеКанала #каналОповещений [фильтрОписания]\n\n"
                     + "## YouTube Gaming фильтр описания (Глобальный)\n"
                     + "* Примечание: Это влияет на все потоковые объявления для YouTube Gaming\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [слово|ещё слово|ещё слово] #каналОповещений\n\n"
                     + "* Examples:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"}
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (Добавляет ytg канал для анонса в определенном Discord канале)\n\t"}
     };
 
     @Override
