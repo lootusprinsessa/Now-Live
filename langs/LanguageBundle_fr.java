@@ -429,7 +429,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "* Notes :\n\t"
                     + "Pour ajouter des filtres de titre, vous devez IMPÉRATIVEMENT inclure les crochets.\n\t"
                     + "N'utilisez PAS l'adresse Twitch entière, ça ne marchera pas !! Utilisez simplement le nom d'affichage de la chaîne (affiché sous le live)\n\t"
-                    + "Vous pouvez ajouter plusieurs chaînes, équipes, filtres de titre en utilisant la barre verticale | entre eux.\n\t"
+                    + "Vous pouvez ajouter plusieurs chaînes et plusieurs filtres de titre en utilisant la barre verticale | entre eux.\n\t"
                     + "Seules les chaînes sont supportées, pour le moment. L'API YouTube n'affiche pas le nom de jeu qu'il faut, contrairement à dans d'autres commandes."
                     + "Il n'y a pas de filtres de jeu sur YouTube.  Voir la note sur l'API au-dessus."
                     + "La seule option requise est : nomChaine\n\n"
