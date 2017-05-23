@@ -279,11 +279,11 @@ public class LanguageBundle extends ListResourceBundle {
             {"platformAnnounceUpdate", "\n# Updated the announcement channel for %s to: %s."},
             {"platformAnnounceUpdateFail", "\n! Failed to change the announce channel for %s to: %s."},
             {"platformChannelAdd", "\n# Added channel(s): %s."},
-            {"platformChannelAddFail", "\n# Failed to add channels: %s."},
+            {"platformChannelAddFail", "\n# Failed to add channel(s): %s."},
             {"platformChannelAnnounce", "\n# They will be announced in: #%s."},
             {"platformChannelGameFilter", "\n# They will only be announced when they are playing: %s."},
-            {"platformChannelRemove", "\n# Removed channels: %s."},
-            {"platformChannelRemoveFail", "\n! Failed to delete channels: %s."},
+            {"platformChannelRemove", "\n# Removed channel(s): %s."},
+            {"platformChannelRemoveFail", "\n! Failed to delete channel(s): %s."},
             {"platformChannelTitleFilter", "\n# They will only be announced when these words are in the title: %s."},
             {"platformGameAdd", "\n# Added game(s): %s."},
             {"platformGameAddFail", "\n# Failed to add game(s): %s."},
@@ -426,14 +426,14 @@ public class LanguageBundle extends ListResourceBundle {
                     + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
                     + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands."
                     + "Game filters are NOT a thing with YouTube.  See the above note about the API."
-                    + "The only required options is: channelName\n\n"
+                    + "The only required option is: channelName\n\n"
                     + "## YouTube Gaming Channels\n"
                     + "Note: Adding an announcement channel and title filters are optional."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
                     + "## YouTube Gaming Title Filters (Global)\n"
                     + "* NOTE: This affects all stream announcements for YouTube Gaming\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "* Examples:\n\t"
+                    + "* Example:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"}
     };
 
