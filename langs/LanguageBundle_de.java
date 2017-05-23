@@ -44,7 +44,7 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"announceHelp", "# ANNOUNCE\n* Shhh...  Ich bin ein Geheimnis...\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " announce <content>\n\tDieser Befehl steht nur den Entwicklern zur Verfügung."},
+                    + " announce <inhalt>\n\tDieser Befehl steht nur den Entwicklern zur Verfügung."},
             {"beamChannelNotFound", "\n# Kanäle nicht auf Beam gefunden: %s."},
             {"beamHelp", "# BEAM\n* Hinzufügen und Entfernen von Beam.pro-Inhalten.\n"
                     + "* Hinweise:\n\t"
@@ -58,10 +58,10 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "## Beamteams (Postet ALLE Streams in diesem Team)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team TeamName #BenachrichtigungsKanal\n\n"
                     + "## Beam-Spielefilter (Global)\n"
-                    + "* HINWEIS: Gilt für alle Beambenachrichtigungen auf diesem Server\n"
+                    + "* HINWEIS: Gilt für alle Beam-Benachrichtigungen auf diesem Server\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {SpielName|SpielName} #BenachrichtigungsKanal\n\n"
                     + "## Beam-Titelfilter (Global\n"
-                    + "* HINWEIS: Gilt für alle Beambenachrichtigungen auf diesem Server\n"
+                    + "* HINWEIS: Gilt für alle Beam-Benachrichtigungen auf diesem Server\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
                     + "* Beispiele:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
@@ -431,7 +431,7 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"ytgHelp", "# YTG\n* Hinzufügen und Entfernen von YouTube Gaming-Channels.\n"
                     + "* Hinweise:\n\t"
                     + "Um Titelfilter hinzuzufügen, musst du die Klammern schreiben.\n\t"
-                    + "Benutze NICHT die komplette YouTube Gaming-URL. Das funktioniert nicht!! Benutze nur den display name des Kanals (wie unter den Livestreams zu sehen)\n\t"
+                    + "Benutze NICHT die komplette YouTube Gaming-URL. Das funktioniert nicht!! Benutze nur den angezeigten Namen des Kanals (wie unter den Livestreams zu sehen)\n\t"
                     + "Du kannst mehrere Kanäle und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
                     + "Bisher sind nur Kanalnamen unterstützt.  Die YouTube-API übergibt keinen Spielnamen, um ihn wie in den anderen Befehlen zu benutzen."
                     + "Spielefilter gibt es auf YouTube NICHT.  Siehe den obigen Hinweis über die API."
@@ -442,7 +442,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "## YouTube Gaming-Titelfilter (Global)\n"
                     + "* HINWEIS: Gilt für alle YouTube Gaming-Benachrichtigungen auf diesem Server\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [Word|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
-                    + "* Examples:\n\t"
+                    + "* Beispiel:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (Fügt einen Channel für einen bestimmten Kanal hinzu)\n\t"}
     };
 
