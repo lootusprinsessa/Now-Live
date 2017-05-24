@@ -141,7 +141,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"doesNotExist", "Это никогда не добавлялось в мою базу данных."},
             {"embedFull", "полноразмерное объявление"},
             {"embedSmall", "объявление с маленьким изображением"},
-            {"embedVideo", "announcement with a playable video"},
+            {"embedVideo", "объявление с воспроизводимым видео"},
             {"embedNone", "краткое объявление, без изображений"},
             {"emptyArgs", "Кажется вы забыли какую-то команду.  Изучите команды помощи для получения дополнительной информации.."},
             {"emptyCommand", "В следующий раз, когда ты меня разбудишь, пожалуйста отправьте также команду."},
@@ -189,7 +189,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " remove help\n\n" +
                     "# SMASHCAST\n" +
-                    "* For more information, type: " +
+                    "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " smashcast help\n\n" +
                     "# ЯЗЫКТРАНСЛЯЦИИ\n" +
                     "* Для получения дополнительной информации введите: " +
@@ -228,13 +228,13 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "\n\tgfilter          - Список всех, установленных вами, игровых фильтров"
                     + "\n\tmanager          - Список менеджеров на этом сервере"
                     + "\n\tsetting          - Список общих настроек бота"
-                    + "\n\tsmashcastChannel - Lists the Twitch Channels you follow"
-                    + "\n\tsmashcastGame    - List the Twitch Games that I'm tracking for you"
+                    + "\n\tsmashcastChannel - Список Smashcast каналов, которые вы назначали"
+                    + "\n\tsmashcastGame    - Список Smashcast игр, которые вы назначали"
                     + "\n\tsmashcastTeam    - Lists the Twitch teams you follow"
                     + "\n\ttfilter          - Выводит список всех фильтров заголовков, которые вы создали"
                     + "\n\ttwitchChannel    - Перечисляет Twitch каналы, которые вы назначили"
                     + "\n\ttwitchCommunity  - Список Twitch сообществ, которые вы назначили"
-                    + "\n\ttwitchGame       - Список всех условий ваших игровых фильтров"
+                    + "\n\ttwitchGame       - Список Twitch игровых фильтров, установленных вами"
                     + "\n\ttwitchTeam       - Перечисляет Twitch team, которые вы назначили"
                     + "\n\tytgChannel       - Список YouTube Gaming каналов, которые вы назначили"
                     + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel```"},
@@ -299,7 +299,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"platformGameFilterAddFail", "\n# Не удалось добавить игровой(ые) фильтр(ы): %s."},
             {"platformGameFilterRemove", "\n# Удален(ы) игровой(ые) фильтр(ы): %s."},
             {"platformGameFilterRemoveFail", "\n# Не удалось удалить игровой(ые) фильтр(ы): %s."},
-            {"platformGameNotFound", "\n #Game(s) not found: %s."},
+            {"platformGameNotFound", "\n #Игра(ы) не найдена(ы): %s."},
             {"platformGameRemove", "\n# Удалена(ы) игра(ы): %s."},
             {"platformGameRemoveFail", "\n# Не удалось удалить игру(ы): %s."},
             {"platformTeamAdd", "\n# Team(s) добавлена(ы): %s."},
@@ -357,31 +357,31 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "%CHANNEL% начал стрим! Подробнее здесь (кликабельно): %URL%"},// <--- Do not translate between the %
             {"shardsThis", "Shard Номер"},
             {"shardsTotal", "Количество Shards"},
-            {"smashcastChannelNotFound", "\n# Channel(s) not found on Smashcast: %s."},
-            {"smashcastHelp", "```Markdown\n# SMASHCAST\n* Add and remove things that are Smashcast.tv related.\n"
-                    + "* Notes:\n\t"
-                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Smashcast URL. It will not work!! Use only the channel name (www.smashcast.tv/channelName)\n\t"
-                    + "You may add multiple channels, teams, games, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/teamName/gameName\n\n"
-                    + "## Smashcast Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Smashcast Games (Announce ALL live streams for that game)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game gameName #announcementChannel\n\n"
-                    + "## Smashcast Teams (Announce ALL live streams in the team)\n"
+            {"smashcastChannelNotFound", "\n# Каналы(ы) не найденны(е) Smashcast: %s."},
+            {"smashcastHelp", "```Markdown\n# SMASHCAST\n* Добавление и удаление объектов, связанных с Smashcast.tv related.\n"
+                    + "* Заметки:\n\t"
+                    + "Чтобы добавить игровые фильтры и фильтры заголовков, вы ДОЛЖНЫ включить скобки.\n\t"
+                    + "НЕ ИСПОЛЬЗУЙТЕ полный URL Smashcast. Это не будет работать!! Используйте только название канала (www.smashcast.tv/channelName)\n\t"
+                    + "Вы можете добавить несколько каналов, teams, игр, игровых фильтров и фильтров заголовков, используя символ | между ними.\n\t"
+                    + "Единственные необходимые параметры: названиеКанала/названиеTeam/названиеИгры\n\n"
+                    + "## Smashcast Каналы\n"
+                    + "Заметка: Добавление канала объявлений, игровых фильтров и фильтров заголовков необязательно."
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel названиеКанала #каналОбъявления {gameFilters} [titleFilters]\n\n"
+                    + "## Smashcast Игры (Объявление ВСЕХ прямых трансляций для игры)\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game названиеИгры #каналОповещения\n\n"
+                    + "## Smashcast Teams (Объявление ВСЕХ прямых трансляций для team)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team teamName #announcementChannel\n\n"
-                    + "## Smashcast Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Smashcast\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Smashcast Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Smashcast\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "* Examples:\n\t"
+                    + "## Smashcast Игровые Фильтры (Глобальные)\n"
+                    + "* Заметка: Это влияет на все объявления о трансляциях для Smashcast\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast gfilter {названиеИгры|названиеИгры} #каналОбъявления\n\n"
+                    + "## Smashcast Фильтры Описания (Глобальные)\n"
+                    + "* Заметка: Это влияет на все объявления о трансляциях для Smashcast\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [слово|ещё слово|ещё слово] #каналОбъявления\n\n"
+                    + "* Примеры:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (adds a game to the global announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (adds a team with a specific announcement channel)\n\n"
+                    + "Warcraft} (Добавляет Smashcast канал с игровыми фильтрами для объявления в определенном Discord канале)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (Добавляет игру для объявления в Discord канале general)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (Добавляет team с определенным каналом объявлений.)\n\n"
                     + "```"},
             {"statusHelp", "```Markdown\n# СТАТУС\n* Показывает различную статистику бота.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},
@@ -426,19 +426,19 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "## Twitch Игры (Объявление ВСЕХ трансляций игры)\n"
                     + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game названиеИгры #КаналОповещений\n\n"
                     + "## Twitch Команды (Объявление ВСЕХ трансляций команды)\n"
-                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team имяTeam #КаналОповещений\n\n"
-                    + "## Twitch Игровые фильтры (Глобальные)\n"
+                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team названиеTeam #КаналОповещений\n\n"
+                    + "## Twitch Игровые Фильтры (Глобальные)\n"
                     + "* Примечание: Это влияет на все потоковые объявления для Twitch\n"
-                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gfilter {имяИгры|имяИгры} #КаналОповещений\n\n"
-                    + "## Twitch фильтры описания (Глобальные)\n"
+                    + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch gfilter {названиеИгры|названиеИгры} #КаналОповещений\n\n"
+                    + "## Twitch Фильтры Описания (Глобальные)\n"
                     + "* Примечание: Это влияет на все потоковые объявления для Twitch\n"
                     + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [слово|ещё слово|ещё слово] #КаналОповещений\n\n"
                     + "* Примеры:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (добавляет twitch канал в заданный канал Discord с игровыми фильтрами)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (добавляет игру с глобальным канал объявлений)\n\t"
+                    + "Warcraft} (добавляет twitch канал с игровыми фильтрами в заданный канал Discord)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (добавляет игру с объявлением в канале general)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (добавляет сообщество с заданный канал объявлений)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (добавляет команду с заданным каналом объявлений).\n\n"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (добавляет team с заданным каналом объявлений).\n\n"
                     + "```"},
             {"twitchTeams", "Twitch Teams"},
             {"typeOnce", "Вам нужно всего лишь ввести эту часть."},
