@@ -141,12 +141,12 @@ public class LanguageBundle_el extends ListResourceBundle {
             {"doesNotExist", "Αυτό δεν καταχωρήθηκε ποτέ στη βάση δεδομένων μου."},
             {"embedFull", "ανακοίνωση με παράθεση πλήρους μεγέθους"},
             {"embedSmall", "ανακοίνωση με μικρή παράθεση"},
-            {"embedFull", "announcement with a playable video"},
+            {"embedFull", "ανακοίνωση με video που είναι playable"},
             {"embedNone", "ανακοίνωση με μία μικρή πρόταση και χωρίς παράθεση"},
             {"emptyArgs", "Νομίζω ξέχασες κάποιο τμήμα της εντολής.  Δες την εντολή help για περισσότερες πληροφορίες."},
             {"emptyCommand", "Την επόμενη φορά που θα με ξυπνήσεις, δώσε μου και μία εντολή σε παρακαλώ."},
-            {"followersEmbed", "Followers"},
-            {"followersEmbedYtg", "Subscribers"},
+            {"followersEmbed", "Ακόλουθοι"},
+            {"followersEmbedYtg", "Συνδρομητές"},
             {"guildJoinSuccess", "Γεια σου!  Είμαι το Now Live, το bot που ανακοινώνει streams!  Πληκτρολόγησε `" +
                     Const.COMMAND_PREFIX + Const.COMMAND +
                     " help` για τη λίστα εντολών.\n\nΑν χρειάζεσαι βοήθεια στη ρύθμισή μου, έλα " +
@@ -189,7 +189,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " remove help\n\n" +
                     "# SMASHCAST\n" +
-                    "* For more information, type: " +
+                    "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " smashcast help\n\n" +
                     "# STREAMLANG\n" +
                     "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
@@ -223,20 +223,20 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + " invite\n\tΠροσκάλεσε το NowLive bot στο Discord Server σου.```"},
             {"listHelp", "```Markdown\n# LIST\n* Αυτή η εντολή επιστρέφει λίστες από τη βάση δεδομένων μου.\n\n## ΧΡΗΣΗ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\tbeamChannel     - Λίστα με τα κανάλια που ακολουθείς στο Beam"
-                    + "\n\tbeamTeam        - Λίστα με τις ομάδες που ακολουθείς στο Beam"
-                    + "\n\tgfilter         - Λίστα με όλα τα φίλτρα παιχνιδιών που έχεις ρυθμίσει"
-                    + "\n\tmanager         - Λίστα των διαχειριστών σε αυτόν το server"
-                    + "\n\tsetting         - Λίστα των κοινών ρυθμίσεων του bot"
-                    + "\n\tsmashcastChannel - Lists the Twitch Channels you follow"
-                    + "\n\tsmashcastGame    - List the Twitch Games that I'm tracking for you"
-                    + "\n\tsmashcastTeam    - Lists the Twitch teams you follow"
-                    + "\n\ttfilter         - Λίστα με όλα τα φίλτρα τίτλων που έχεις ρυθμίσει"
-                    + "\n\ttwitchChannel   - Λίστα με τα κανάλια που ακολουθείς στο Twitch"
-                    + "\n\ttwitchCommunity - Λίστα με τα Κοινότητες που ακολουθείς στο Twitch"
-                    + "\n\ttwitchGame      - Λίστα των παιχνιδιών που ακολουθώ για εσένα στο Twitch"
-                    + "\n\ttwitchTeam      - Λίστα με τις ομάδες που ακολουθείς στο Twitch"
-                    + "\n\tytgChannel      - Λίστα με τα Gaming κανάλια που ακολουθείς στο YouTube"
+                    + "\n\tbeamChannel      - Λίστα καναλιών που ακολουθείς στο Beam"
+                    + "\n\tbeamTeam         - Λίστα ομάδων που ακολουθείς στο Beam"
+                    + "\n\tgfilter          - Λίστα φίλτρων παιχνιδιών που έχεις ρυθμίσει"
+                    + "\n\tmanager          - Λίστα διαχειριστών σε αυτόν το server"
+                    + "\n\tsetting          - Λίστα κοινών ρυθμίσεων του bot"
+                    + "\n\tsmashcastChannel - Λίστα καναλιών που ακολουθείς στο Smashcast"
+                    + "\n\tsmashcastGame    - Λίστα παιχνιδιών που ακολουθείς στο Smashcast"
+                    + "\n\tsmashcastTeam    - Λίστα ομάδων που ακολουθείς στο Smashcast"
+                    + "\n\ttfilter          - Λίστα φίλτρων τίτλων που έχεις ρυθμίσει"
+                    + "\n\ttwitchChannel    - Λίστα καναλιών που ακολουθείς στο Twitch"
+                    + "\n\ttwitchCommunity  - Λίστα κοινοτήτων που ακολουθείς στο Twitch"
+                    + "\n\ttwitchGame       - Λίστα παιχνιδιών που ακολουθείς στο Twitch"
+                    + "\n\ttwitchTeam       - Λίστα ομάδων που ακολουθείς στο Twitch"
+                    + "\n\tytgChannel       - Λίστα gaming καναλιών που ακολουθείς στο YouTube"
                     + "\n\n## Π.Χ.:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel" + "```"},
             {"listSettings", "```Markdown\n" +
                     "# Ρυθμίσεις Bot στο Server σου" +
@@ -271,7 +271,7 @@ public class LanguageBundle_el extends ListResourceBundle {
             {"nowStreamingEmbed", " κάνει streaming τώρα!"},
             {"numUniqueMembers", "Αριθμός Μοναδικών Μελών"},
             {"offline", "OFFLINE!\n"},
-            {"offlineEmbed", " είναι πλέον ffline!"},
+            {"offlineEmbed", " είναι πλέον offline!"},
             {"on", " στο "},
             {"onlineStreamPm1", "Γεια σου!  Αυτή τη στιγμή είναι "},
             {"onlineStreamPm2", " streamers online για τους οποίους ίσως ενδιαφέρεσαι!  Ακολούθησε τα links για να τους " +
@@ -279,8 +279,8 @@ public class LanguageBundle_el extends ListResourceBundle {
             {"oops", "Ουπς!  Κάτι πήγε στραβά και δεν έγινε καμία αλλαγή!  Ας δοκιμάσουμε πάλι."},
             {"patreon", "Αν επιθυμείς να κάνεις δωρεά στο bot χρησιμοποίησε το Patreon μας. https://www.patreon.com/nowlive"},
             {"patreonHelp", "Δίνει το link για τη σελίδα μας στο patreon."},
-            {"ping", "When I was in China on the All-American Ping Pong team, I just loved playing ping-pong with my " +
-                    "Flexolite ping pong paddle."},
+            {"ping", "Όταν ήμουν στην Κίνα με την Αμερικάνικη ομάδα του Ping Pong , μου άρεσε να παίζω ping-pong με τη " +
+                    "ρακέτα Flexolite του ping pong."},
             {"pingHelp", "```Markdown\n# PING\n* Χρησιμεύει για να μου κάνεις ping. Αν λειτουργώ κανονικά, θα σου στείλω pong.\n\n## ΧΡΗΣΗ: "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ping```"},
             {"platformAnnounceUpdate", "\n# Το κάναλι ανακοινώσεων του %s άλλαξε σε: %s."},
@@ -299,7 +299,7 @@ public class LanguageBundle_el extends ListResourceBundle {
             {"platformGameFilterAddFail", "\n# Αποτυχία προσθήκης των φίλτρων παιχνιδιών: %s."},
             {"platformGameFilterRemove", "\n# Αφαιρέθηκαν τα φίλτρα παιχνιδιών: %s."},
             {"platformGameFilterRemoveFail", "\n# Αποτυχία αφαίρεσης των φίλτρων παιχνιδιών: %s."},
-            {"platformGameNotFound", "Game(s) not found: %s."},
+            {"platformGameNotFound", "Δε βρέθηκαν τα παιχνίδια: %s."},
             {"platformGameRemove", "\n# Αφαιρέθηκαν τα παιχνίδια: %s."},
             {"platformGameRemoveFail", "\n# Αποτυχία αφαίρεσης των παιχνιδών: %s."},
             {"platformTeamAdd", "\n# Προστέθηκαν οι ομάδες: %s."},
@@ -343,7 +343,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     "\t* %USER%      - Όνομα του χρήστη του καναλιού\n" +
                     "\t* %VIEWERS%   - Αριθμός των viewers αυτή τη στιγμή\n\n" +
                     "## Π.Χ.:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage " +
-                    "Το κανάλι %CHANNEL% σταμάτησε να κάνει stream!  Λυπάμει, αλλά δεν πρόλαβες αυτήν τη φορά."},// <--- Do not translate between the %
+                    "Το κανάλι %CHANNEL% σταμάτησε να κάνει stream!  Λυπάμαι, αλλά δεν πρόλαβες αυτήν τη φορά."},// <--- Do not translate between the %
             {"setOnlineHelp", "# CONFIG SET ONLINE MESSAGE\n* Ρυθμίζει ένα προσαρμοσμένο μήνυμα ανακοίνωσης.\n\n" +
                     "## Διαθέσιμες μεταβλητές που μπορείς να χρησιμοποιήσεις:\n" +
                     "\t* %CHANNEL%   - Όνομα του καναλιού\n" +
@@ -357,31 +357,31 @@ public class LanguageBundle_el extends ListResourceBundle {
                     "Το κανάλι %CHANNEL% μόλις ξεκίνησε το stream! Παρακολούθησε εδώ: %URL%"},// <--- Do not translate between the %
             {"shardsThis", "Αριθμός Shard"},
             {"shardsTotal", "Πλήθος Shards"},
-            {"smashcastChannelNotFound", "\n# Channel(s) not found on Smashcast: %s."},
-            {"smashcastHelp", "```Markdown\n# SMASHCAST\n* Add and remove things that are Smashcast.tv related.\n"
-                    + "* Notes:\n\t"
-                    + "To add game filters and title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Smashcast URL. It will not work!! Use only the channel name (www.smashcast.tv/channelName)\n\t"
-                    + "You may add multiple channels, teams, games, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/teamName/gameName\n\n"
-                    + "## Smashcast Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Smashcast Games (Announce ALL live streams for that game)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game gameName #announcementChannel\n\n"
-                    + "## Smashcast Teams (Announce ALL live streams in the team)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team teamName #announcementChannel\n\n"
-                    + "## Smashcast Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Smashcast\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Smashcast Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Smashcast\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "* Examples:\n\t"
+            {"smashcastChannelNotFound", "\n# Δε βρέθηκαν τα κανάλια στο Smashcast: %s."},
+            {"smashcastHelp", "```Markdown\n# SMASHCAST\n* Προσθαφαίρεση πραγμάτων σχετικά με το Smashcast.tv.\n"
+                    + "* Σημειώσεις:\n\t"
+                    + "Για να προσθέσεις φίλτρα παιχνιδιών και τίτλων, ΠΡΕΠΕΙ να συμπεριλάβεις τις παρενθέσεις.\n\t"
+                    + "ΜΗ χρησιμοποιήσεις ολόκληρο το URL του Smashcast. Δε θα λειτουργήσει!! Χρησιμοποίησε μόνο το όνομα του καναλιού (www.smashcast.tv/όνομαΚαναλιού)\n\t"
+                    + "Μπορείς να προσθέσεις πολλαπλά κανάλια, ομάδες, παιχνίδια και φίλτρα παιχνιδιών και τίτλων χρησιμοποιώντας το χαρακτήρα | ανάμεσά τους.\n\t"
+                    + "Οι μόνες αναγκαίες επιλογές είναι: όνομαΚαναλιού/όνομαΟμάδας/όνομαΠαιχνιδιού\n\n"
+                    + "## Κανάλια Smashcast\n"
+                    + "Σημείωση: Η προσθήκη καναλιού ανακοινώσεως και τα φίλτρα παιχνιδιών και τίτλων είναι προαιρετικά."
+                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel όνομαΚαναλιού #κανάλιΑνακοινώσεως {φίλτραΠαιχνιδιών} [φίλτραΤίτλων]\n\n"
+                    + "## Παιχνίδια Smashcast (Ανακοινώνει ΟΛΑ τα ζωντανά streams για αυτό το παιχνίδι)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game όνομαΠαιχνιδιού #κανάλιΑνακοινώσεως\n\n"
+                    + "## Ομάδες Smashcast (Ανακοινώνει ΟΛΑ τα ζωντανά streams της ομάδας)\n"
+                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team όνομαΟμάδας #κανάλιΑνακοινώσεως\n\n"
+                    + "## Φίλτρα Παιχνιδιών Smashcast (Global)\n"
+                    + "* ΣΗΜΕΙΩΣΗ: Επηρεάζει όλες τις ανακοινώσεις streams για το Smashcast\n"
+                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast gfilter {όνομαΠαιχνιδιού1|όνομαΠαιχνιδιού2} #κανάλιΑνακοινώσεως\n\n"
+                    + "## Φίλτρα Τίτλων Smashcast (Global)\n"
+                    + "* ΣΗΜΕΙΩΣΗ: Επηρεάζει όλες τις ανακοινώσεις streams για το Smashcast\n"
+                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter[λέξη|άλλες λέξεις|περισσότερες λέξεις] #κανάλιΑνακοινώσεως\n\n"
+                    + "* Παραδείγματα:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (adds a game to the global announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (adds a team with a specific announcement channel)\n\n"
+                    + "Warcraft} (προσθέτει ένα κανάλι προς ανακοίνωση σε συγκεκριμένο κανάλι και φίλτρα παιχνιδιών)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (προσθέτει ένα παιχνίδι στο κανάλι ανακοινώσεων)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (προσθέτει μία ομάδα με συγκεκριμένο κανάλι ανακοινώσεως)\n\n"
                     + "```"},
             {"statusHelp", "```Markdown\n# STATUS\n* Εμφανίζει διάφορα στατιστικά του.\n\n## ΧΡΗΣΗ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},
