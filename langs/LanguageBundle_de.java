@@ -45,28 +45,28 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <inhalt>\n\tDieser Befehl steht nur den Entwicklern zur Verfügung."},
-            {"beamChannelNotFound", "\n# Kanäle nicht auf Beam gefunden: %s."},
-            {"beamHelp", "# BEAM\n* Hinzufügen und Entfernen von Beam.pro-Inhalten.\n"
+            {"mixerChannelNotFound", "\n# Kanäle nicht auf Mixer gefunden: %s."},
+            {"mixerHelp", "# MIXER\n* Hinzufügen und Entfernen von Mixer.com-Inhalten.\n"
                     + "* Hinweise:\n\t"
                     + "Um Spielefilter und Titelfilter hinzuzufügen, musst du die Klammern schreiben.\n\t"
-                    + "Benutze NICHT die komplette Beam-URL. Das funktioniert nicht!! Benutze nur den Kanalnamen (www.beam.pro/KanalName)\n\t"
+                    + "Benutze NICHT die komplette Mixer-URL. Das funktioniert nicht!! Benutze nur den Kanalnamen (www.mixer.com/KanalName)\n\t"
                     + "Du kannst mehrere Kanäle, Teams, Spiele, Communities, Spiel- und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
                     + "Die einzigen zwingend nötigen Optionen sind: KanalName/TeamName\n\n"
-                    + "## Beam-Kanäle\n"
+                    + "## Mixer-Kanäle\n"
                     + "Hinweis: Benachrichtigungskanal, Spiel- und Titelfilter sind optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel KanalName #BenachrichtigungsKanal {SpielFilter} [TitelFilter]\n\n"
-                    + "## Beamteams (Postet ALLE Streams in diesem Team)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team TeamName #BenachrichtigungsKanal\n\n"
-                    + "## Beam-Spielefilter (Global)\n"
-                    + "* HINWEIS: Gilt für alle Beam-Benachrichtigungen auf diesem Server\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {SpielName|SpielName} #BenachrichtigungsKanal\n\n"
-                    + "## Beam-Titelfilter (Global\n"
-                    + "* HINWEIS: Gilt für alle Beam-Benachrichtigungen auf diesem Server\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel KanalName #BenachrichtigungsKanal {SpielFilter} [TitelFilter]\n\n"
+                    + "## Mixerteams (Postet ALLE Streams in diesem Team)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team TeamName #BenachrichtigungsKanal\n\n"
+                    + "## Mixer-Spielefilter (Global)\n"
+                    + "* HINWEIS: Gilt für alle Mixer-Benachrichtigungen auf diesem Server\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer gfilter {SpielName|SpielName} #BenachrichtigungsKanal\n\n"
+                    + "## Mixer-Titelfilter (Global\n"
+                    + "* HINWEIS: Gilt für alle Mixer-Benachrichtigungen auf diesem Server\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
                     + "* Beispiele:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (Fügt einen Twitchkanal für einen bestimmten Kanal und Spielfilter hinzu)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (Fügt ein Beamteam für einen bestimmten Benachrichtigungskanal hinzu)\n\n"},
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (Fügt ein Mixerteam für einen bestimmten Benachrichtigungskanal hinzu)\n\n"},
             {"botLangFail", "Irgendwas ging schief und meine Sprache ist immernoch die selbe."},
             {"botLangHelp", "# BOTLANG\n* Befehl zum ändern der Sprache.\n\n## VERWENDUNG: "
                     + Const.COMMAND_PREFIX
@@ -158,9 +158,9 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "# ADD\n" +
                     "* Befehl um Manager hinzuzufügen. Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " add help\n\n" +
-                    "# BEAM\n" +
-                    "* Hinzufügen und Entfernen von Beam.pro Inhalten. Für mehr Informantionen, schreibe: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " beam help\n\n" +
+                    "# MIXER\n" +
+                    "* Hinzufügen und Entfernen von Mixer.com Inhalten. Für mehr Informantionen, schreibe: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " mixer help\n\n" +
                     "# BOTLANG\n" +
                     "* Befehl zum ändern der Sprache.\n" +
                     "* Aktuell unterstützte Sprachen: Englisch(English), Tschechisch(Czech), Deutsch(German), Französisch(French), Spanisch(Spanish)" +
@@ -225,8 +225,8 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + " invite\n\tLade den NowLive-Bot zu deinem Discord Server ein.```"},
             {"listHelp", "```Markdown\n# LIST\n* Erstellt eine Liste von Dingen in meiner Datenbank.\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\tbeamChannel      - Listet die Beam-Channel, denen du folgst"
-                    + "\n\tbeamTeam         - Listet die Beamteams, denen du folgst"
+                    + "\n\tmixerChannel      - Listet die Mixer-Channel, denen du folgst"
+                    + "\n\tmixerTeam         - Listet die Mixerteams, denen du folgst"
                     + "\n\tgfilter          - Listet alle Spielerfilter"
                     + "\n\tmanager          - Listet die Manager dieses Servers"
                     + "\n\tsetting          - Listet diverse Bot-Einstellungen"
@@ -359,6 +359,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "%CHANNEL% ist gerade live! Siehe den Stream hier: %URL%"},
             {"shardsThis", "Shardnummer"},
             {"shardsTotal", "Nummer der Shards"},
+            {"smashcastChannelNotFound", "\n# Channel(s) not found on Smashcast: %s."},
             {"smashcastChannelNotFound", "\n# Kanäle nicht auf Smashcast gefunden: %s."},
             {"smashcastHelp", "```Markdown\n# SMASHCAST\n* Hinzufügen und Entfernen von Smashcast.tv-Inhalten.\n"
                     + "* Hinweise:\n\t"
@@ -381,9 +382,9 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
                     + "* Beispiele:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (Fügt einen Smashcastkanal für einen bestimmten Kanal und Spielfilter hinzu)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (Fügt ein Spiel für den Standardbenachrichtigungskanal hinzu)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (Fügt ein Smashcastteam für einen bestimmten Benachrichtigungskanal hinzu)\n\n"
+                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (adds a game to the global announcement channel)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (adds a team with a specific announcement channel)\n\n"
                     + "```"},
             {"statusHelp", "```Markdown\n# STATUS\n* Zeigt einige Statistiken über den Bot.\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},

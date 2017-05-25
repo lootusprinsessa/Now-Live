@@ -45,28 +45,28 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <contenu>\n\tCette commande est uniquement disponible aux développeurs."},
-            {"beamChannelNotFound", "\n# Chaîne Beam introuvable : %s."},
-            {"beamHelp", "# BEAM\n* Modifier des paramètres spécifiques à Beam.pro.\n"
+            {"mixerChannelNotFound", "\n# Chaîne Mixer introuvable : %s."},
+            {"mixerHelp", "# MIXER\n* Modifier des paramètres spécifiques à Mixer.com.\n"
                     + "* Notes:\n\t"
                     + "Pour ajouter des filtres de jeu et des filtres de titre, vous DEVEZ inclure respectivement les accolades et les crochets.\n\t"
-                    + "N'utilisez PAS l'adresse Twitch entière, ça ne marchera pas !! Utilisez uniquement le nom de la chaîne (beam.pro/nomChaine)\n\t"
+                    + "N'utilisez PAS l'adresse Twitch entière, ça ne marchera pas !! Utilisez uniquement le nom de la chaîne (mixer.com/nomChaine)\n\t"
                     + "Vous pouvez ajouter plusieurs chaînes, équipes, jeux, communautés, filtres de jeu/titre en utilisant la barre verticale | entre eux.\n\t"
                     + "Les seules options requises sont nomChaine/nomEquipe\n\n"
-                    + "## Chaînes Beam\n"
+                    + "## Chaînes Mixer\n"
                     + "Note : En ajoutant un salon pour les annonces (salonAnnonce), les filtres de jeu/titre sont optionnels."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel nomChaine #salonAnnonce {filtreJeu} [filtreTitre]\n\n"
-                    + "## Equipes Beam (Annoncer TOUS les lives de l'équipe)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team nomEquipe #salonAnnonce\n\n"
-                    + "## Filtres de jeu Beam (Global)\n"
-                    + "* NOTE : Cela affecte toutes les annonces de streams pour Beam\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {nomJeu|nomJeu} #salonAnnonce\n\n"
-                    + "## Filtres de titre Beam (Global)\n"
-                    + "* NOTE : Cela affecte toutes les annonces de streams pour Beam\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [mot|plusieurs mots|plus de mots] #salonAnnonce\n\n"
+                    + "## Equipes Mixer (Annoncer TOUS les lives de l'équipe)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team nomEquipe #salonAnnonce\n\n"
+                    + "## Filtres de jeu Mixer (Global)\n"
+                    + "* NOTE : Cela affecte toutes les annonces de streams pour Mixer\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer gfilter {nomJeu|nomJeu} #salonAnnonce\n\n"
+                    + "## Filtres de titre Mixer (Global)\n"
+                    + "* NOTE : Cela affecte toutes les annonces de streams pour Mixer\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [mot|plusieurs mots|plus de mots] #salonAnnonce\n\n"
                     + "* Exemples :\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (ajoute une chaîne à annoncer dans un certain salon et des filtres de jeu)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (ajoute une équipe dans le salon d'annonce #outpost-streamers)\n\n"},
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (ajoute une équipe dans le salon d'annonce #outpost-streamers)\n\n"},
             {"botLangFail", "Quelque chose s'est mal passé donc je garde la même langue."},
             {"botLangHelp", "# BOTLANG\n* Utilisé pour changer ma langue.\n\n## UTILISATION : "
                     + Const.COMMAND_PREFIX
@@ -157,9 +157,9 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     "# ADD\n" +
                     "* Pour plus d'informations, tape : " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " add help\n\n" +
-                    "# BEAM\n" +
+                    "# MIXER\n" +
                     "* Pour plus d'informations, tape : " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " beam help\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " mixer help\n\n" +
                     "# BOTLANG\n" +
                     "* Langues supportées actuellement : English, Czech, German, French, Spanish" +
                     "* Pour plus d'informations, tape : " +
@@ -222,8 +222,8 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + " invite\n\tInviter le bot NowLive dans votre serveur Discord.```"},
             {"listHelp", "```Markdown\n# LIST\n* Cette commande liste des choses de ma base de données.\n\n## UTILISATION :  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\tbeamChannel      - Liste les chaînes Beam suivies"
-                    + "\n\tbeamTeam         - Liste les équipes Beam suivies"
+                    + "\n\tmixerChannel     - Liste les chaînes Mixer suivies"
+                    + "\n\tmixerTeam        - Liste les équipes Mixer suivies"
                     + "\n\tgfilter          - Liste tous les filtres de jeux mis en place"
                     + "\n\tmanager          - Liste les managers du serveur"
                     + "\n\tsetting          - Liste les paramètres communs du bot"

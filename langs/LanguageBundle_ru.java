@@ -45,28 +45,28 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <content>\n\tЭта команда доступна только для разработчиков."},
-            {"beamChannelNotFound", "\n# Канал(ы), не найденнй(ые) на Beam: %s."},
-            {"beamHelp", "# BEAM\n* Добавление и удаление данных, связанных с Beam.pro.\n"
+            {"mixerChannelNotFound", "\n# Канал(ы), не найденнй(ые) на Mixer: %s."},
+            {"mixerHelp", "# MIXER\n* Добавление и удаление данных, связанных с Mixer.com.\n"
                     + "* Заметки:\n\t"
                     + "Чтобы добавить игровые фильтры и фильтры заголовков, вы ДОЛЖНЫ включить скобки.\n\t"
-                    + "НЕ ИСПОЛЬЗУЙТЕ полный URL Beam. Это не будет работать!! Используйте только название канала (www.beam.pro/channelName)\n\t"
+                    + "НЕ ИСПОЛЬЗУЙТЕ полный URL Mixer. Это не будет работать!! Используйте только название канала (www.mixer.com/channelName)\n\t"
                     + "Вы можете добавить несколько каналов, групп, фильтров игр и заголовков, используя символ | между ними.\n\t"
                     + "Единственные необходимые опции: имяКанала/названиеTeam\n\n"
-                    + "## Beam Каналы\n"
+                    + "## Mixer Каналы\n"
                     + "Примечание: Добавление канала объявлений, игр и фильтров заголовков необязательно."
-                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel имяКанала #каналОповещений {игровойФильтр} [фильтрОписания]\n\n"
-                    + "## Beam Teams (Объявление ВСЕХ прямых трансляций Teams)\n"
-                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team teamName #каналОповещений\n\n"
-                    + "## Beam Игровые Фильтры (Глобальные)\n"
-                    + "* Заметка: Это влияет на все потоковые объявления для Beam\n"
-                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {названиеИгры|названиеИгры} #каналОповещений\n\n"
-                    + "## Beam Фильтры Описания (Глобальные)\n"
-                    + "* Заметка: Это влияет на все потоковые объявления для Beam\n"
-                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [слово|ещё слово|ещё слово] #каналОповещений\n\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel имяКанала #каналОповещений {игровойФильтр} [фильтрОписания]\n\n"
+                    + "## Mixer Teams (Объявление ВСЕХ прямых трансляций Teams)\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team teamName #каналОповещений\n\n"
+                    + "## Mixer Игровые Фильтры (Глобальные)\n"
+                    + "* Заметка: Это влияет на все потоковые объявления для Mixer\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer gfilter {названиеИгры|названиеИгры} #каналОповещений\n\n"
+                    + "## Mixer Фильтры Описания (Глобальные)\n"
+                    + "* Заметка: Это влияет на все потоковые объявления для Mixer\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [слово|ещё слово|ещё слово] #каналОповещений\n\n"
                     + "* Примеры:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (Добавляет Beam канал для объявления в определенном Discord канале c игровыми фильтрами)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (Добавляет Beam team с определенным Discord каналом объявлений)\n\n"},
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
+                    + "Warcraft} (Добавляет Mixer канал для объявления в определенном Discord канале c игровыми фильтрами)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (Добавляет Mixer team с определенным Discord каналом объявлений)\n\n"},
             {"botLangFail", "Что-то пошло не так. Мой язык все тот же."},
             {"botLangHelp", "# ЯЗЫКБОТА\n* Используется для изменения языка моих ответов.\n\n## ПРИМЕНЕНИЕ: "
                     + Const.COMMAND_PREFIX
@@ -157,9 +157,9 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "# ДОБАВЛЕНИЕ\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " add help\n\n" +
-                    "# BEAM\n" +
+                    "# MIXER\n" +
                     "* Для получения дополнительной информации введите: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " beam help\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " mixer help\n\n" +
                     "# ЯЗЫКБОТА\n" +
                     "* Поддерживаемые языки: Английский, Чешский, Германский, Французский, Русский" +
                     "* Для получения дополнительной информации введите: " +
@@ -223,14 +223,14 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + " invite\n\tПриглашение бота NowLive на ваш сервер Discord.```"},
             {"listHelp", "```Markdown\n# СПИСОК\n* Эта команда показывает базу данных.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list *option*"
-                    + "\n\tbeamChannel      - Список Beam каналов, которые вы назначили"
-                    + "\n\tbeamTeam         - Список Beam Teams, которые вы назначили"
+                    + "\n\tmixerChannel      - Список Mixer каналов, которые вы назначили"
+                    + "\n\tmixerTeam         - Список Mixer Teams, которые вы назначили"
                     + "\n\tgfilter          - Список всех, установленных вами, игровых фильтров"
                     + "\n\tmanager          - Список менеджеров на этом сервере"
                     + "\n\tsetting          - Список общих настроек бота"
                     + "\n\tsmashcastChannel - Список Smashcast каналов, которые вы назначали"
                     + "\n\tsmashcastGame    - Список Smashcast игр, которые вы назначали"
-                    + "\n\tsmashcastTeam    - Lists the Twitch teams you follow"
+                    + "\n\tsmashcastTeam    - Lists the Smashcast teams you follow"
                     + "\n\ttfilter          - Выводит список всех фильтров заголовков, которые вы создали"
                     + "\n\ttwitchChannel    - Перечисляет Twitch каналы, которые вы назначили"
                     + "\n\ttwitchCommunity  - Список Twitch сообществ, которые вы назначили"

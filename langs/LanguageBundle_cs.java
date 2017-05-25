@@ -45,28 +45,28 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <obsah>\n\tTento příkaz je pouze dostupný pro vývojáře."},
-            {"beamChannelNotFound", "\n# Kanály nenalezeny na Beamu: %s."},
-            {"beamHelp", "# BEAM\n* Přidává a odebírá věci pro Beam.pro.\n"
+            {"mixerChannelNotFound", "\n# Kanály nenalezeny na Mixeru: %s."},
+            {"mixerHelp", "# MIXER\n* Přidává a odebírá věci pro Mixer.com.\n"
                     + "* Poznámky:\n\t"
                     + "Pokud chceš přidat filtry pro hry a názvy, MUSÍ obsahovat závorky.\n\t"
-                    + "Nepoužívej celý Beam odkaz. Nebude to fungovat!! Používej pouze název kanálu (www.beam.pro/channelName)\n\t"
+                    + "Nepoužívej celý Mixer odkaz. Nebude to fungovat!! Používej pouze název kanálu (www.mixer.com/channelName)\n\t"
                     + "Můžeš přidávat více kanálů, teamů, her, a názvů pokud mezi ně dáš tento znak |.\n\t"
                     + "Jediné požadované možnosti jsou: názevKanálu/názevTýmu\n\n"
-                    + "## Beam kanály\n"
+                    + "## Mixer kanály\n"
                     + "Poznámka: Přidání oznamovacího kanálu, filtrů her a názvů je volitelné."
-                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel názevKanálu #oznamovacíKanál {filtryHer} [filtryNázvu]\n\n"
-                    + "## Beam týmy (Oznamuje všechna živá vysílání z teamu)\n"
-                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team názevTýmu #oznamovacíKanál\n\n"
-                    + "## Beam filtry her (Globální)\n"
-                    + "* Poznámka: Toto ovlivňuje všechna oznámení pro Beam\n"
-                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {názevHry|názevHry} #oznamovacíKanál\n\n"
-                    + "## Beam filtry názvů (Globální)\n"
-                    + "* Poznámka: Toto ovlivňuje všechna oznámení pro Beam\n"
-                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [slovo|jiná slova|více slov] #oznamovacíKanál\n\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel názevKanálu #oznamovacíKanál {filtryHer} [filtryNázvu]\n\n"
+                    + "## Mixer týmy (Oznamuje všechna živá vysílání z teamu)\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team názevTýmu #oznamovacíKanál\n\n"
+                    + "## Mixer filtry her (Globální)\n"
+                    + "* Poznámka: Toto ovlivňuje všechna oznámení pro Mixer\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer gfilter {názevHry|názevHry} #oznamovacíKanál\n\n"
+                    + "## Mixer filtry názvů (Globální)\n"
+                    + "* Poznámka: Toto ovlivňuje všechna oznámení pro Mixer\n"
+                    + "* Formát: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [slovo|jiná slova|více slov] #oznamovacíKanál\n\n"
                     + "* Příklady:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (přidává kanál aby byl oznámen v #live-streams a také přidává filter her)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (přidává tým se specifickým oznamovacím kanálem)\n\n"},
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (přidává tým se specifickým oznamovacím kanálem)\n\n"},
             {"botLangFail", "Něco se nepovedlo a můj jazyk je stále stejný."},
             {"botLangHelp", "# BOTLANG\n* Používá se se ke změně jazyku.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
@@ -154,9 +154,9 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     "# ADD\n" +
                     "* Používá se k přidání něčeho. Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " add help\n\n" +
-                    "# BEAM\n" +
+                    "# MIXER\n" +
                     "* Pro více informací, napiš: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " beam help\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " mixer help\n\n" +
                     "# BOTLANG\n" +
                     "* Pro více informací, napiš: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " botlang help\n\n" +
@@ -219,14 +219,14 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + " invite\n\tPozvy NowLive bota na svůj server.```"},
             {"listHelp", "```Markdown\n# LIST\n* Používá se k zobrazení věcí z mé databáze.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\tbeamChannel      - Lists the Beam Channels you follow"
-                    + "\n\tbeamTeam         - Lists the Beam Teams you follow"
+                    + "\n\tmixerChannel      - Lists the Mixer Channels you follow"
+                    + "\n\tmixerTeam         - Lists the Mixer Teams you follow"
                     + "\n\tgfilter          - Zobrazí Vám všechny filtry her které jste nastavil"
                     + "\n\tmanager          - Zobrazí Vám všechny moje manažery"
                     + "\n\tsetting          - Zobrazí Vám všechna ostatní nastavení"
-                    + "\n\tsmashcastChannel - Lists the Twitch Channels you follow"
-                    + "\n\tsmashcastGame    - List the Twitch Games that I'm tracking for you"
-                    + "\n\tsmashcastTeam    - Lists the Twitch teams you follow"
+                    + "\n\tsmashcastChannel - Lists the Smashcast Channels you follow"
+                    + "\n\tsmashcastGame    - List the Smashcast Games that I'm tracking for you"
+                    + "\n\tsmashcastTeam    - Lists the Smashcast teams you follow"
                     + "\n\ttfilter          - Zobrazí Vám všechny filtry názvů které jste nastavil"
                     + "\n\ttwitchChannel    - Zobrazí Vám všechny streamy které chcete abych sledoval"
                     + "\n\ttwitchCommunity  - List the Twitch Communities you follow"

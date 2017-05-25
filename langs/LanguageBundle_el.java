@@ -45,28 +45,28 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <content>\n\tΑυτή η εντολή είναι διαθέσιμη μόνο στους προγραμματιστές."},
-            {"beamChannelNotFound", "\n# Το κανάλι(α) δε βρέθηκε στο Beam: %s."},
-            {"beamHelp", "# BEAM\n* Προσθαφαίρεση πραγμάτων που σχετίζονται με το Beam.pro.\n"
+            {"mixerChannelNotFound", "\n# Το κανάλι(α) δε βρέθηκε στο Mixer: %s."},
+            {"mixerHelp", "# MIXER\n* Προσθαφαίρεση πραγμάτων που σχετίζονται με το Mixer.com.\n"
                     + "* Σημειώσεις:\n\t"
                     + "Για να προσθέσεις φίλτρα παιχνιδιών και τίτλων, ΠΡΕΠΕΙ να συμπεριλάβεις τις παρενθέσεις.\n\t"
-                    + "ΜΗ χρησιμοποιείς ολόκληρο το URL του Beam. Δε θα δουλέψει!! Χρησιμοποίησε μόνο το όνομα του καναλιού (www.beam.pro/ΟΝΟΜΑ)\n\t"
+                    + "ΜΗ χρησιμοποιείς ολόκληρο το URL του Mixer. Δε θα δουλέψει!! Χρησιμοποίησε μόνο το όνομα του καναλιού (www.mixer.com/ΟΝΟΜΑ)\n\t"
                     + "Μπορείς να προσθέσεις πολλαπλά κανάλια, ομάδες, φίλτρα παιχνιδιών και φίλτρα τίτλων χρησιμοποιώντας το χαρακτήρα | μεταξύ τους.\n\t"
                     + "Οι μόνες επιλογές που απαιτούνται είναι: όνομαΚαναλιόυ/όνομαΟμάδας\n\n"
-                    + "## Κανάλια Beam\n"
+                    + "## Κανάλια Mixer\n"
                     + "Σημείωση: Η προσθήκη καναλιού ανακοίνωσης, καθώς και τα φίλτρα παιχνιδιών και τίτλων είναι προαιρετικά."
-                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel όνομαΚαναλιού #κανάλιΑνακοίνωσης {φίλτραΠαιχνιδιών} [φίλτραΤίτλων]\n\n"
-                    + "## Ομάδες Beam (Ανακοίνωση ΟΛΩΝ των live streams της ομάδας)\n"
-                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team όνομαΟμάδας #κανάλιΑνακοίνωσης\n\n"
-                    + "## Φίλτρα Παιχνιδιών Beam (Global)\n"
-                    + "* ΣΗΜΕΙΩΣΗ: Αυτό επηρεάζει όλες τις ανακοινώσεις streams του Beam\n"
-                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {όνομαΠαιχνιδιού|όνομαΠαιχνιδιού} #κανάλιΑνακοίνωσης\n\n"
-                    + "## Φίλτρα τίτλων Beam (Global)\n"
-                    + "* ΣΗΜΕΙΩΣΗ: Αυτό επηρεάζει όλες τις ανακοινώσεις streams του Beam\n"
-                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [λέξη|άλλες λέξεις|περισσότερες λέξεις] #κανάλιΑνακοίνωσης\n\n"
+                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel όνομαΚαναλιού #κανάλιΑνακοίνωσης {φίλτραΠαιχνιδιών} [φίλτραΤίτλων]\n\n"
+                    + "## Ομάδες Mixer (Ανακοίνωση ΟΛΩΝ των live streams της ομάδας)\n"
+                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team όνομαΟμάδας #κανάλιΑνακοίνωσης\n\n"
+                    + "## Φίλτρα Παιχνιδιών Mixer (Global)\n"
+                    + "* ΣΗΜΕΙΩΣΗ: Αυτό επηρεάζει όλες τις ανακοινώσεις streams του Mixer\n"
+                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer gfilter {όνομαΠαιχνιδιού|όνομαΠαιχνιδιού} #κανάλιΑνακοίνωσης\n\n"
+                    + "## Φίλτρα τίτλων Mixer (Global)\n"
+                    + "* ΣΗΜΕΙΩΣΗ: Αυτό επηρεάζει όλες τις ανακοινώσεις streams του Mixer\n"
+                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [λέξη|άλλες λέξεις|περισσότερες λέξεις] #κανάλιΑνακοίνωσης\n\n"
                     + "* Παραδείγματα:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (προσθέτει ένα κανάλι προς ανακοίνωση σε συγκεκριμένο κανάλι και φίλτρα παιχνιδιών)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (προσθέτει μία ομάδα με συγκεκριμένο κανάλι ανακοίνωσης)\n\n"},
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (προσθέτει μία ομάδα με συγκεκριμένο κανάλι ανακοίνωσης)\n\n"},
             {"botLangFail", "Κάτι πήγε στραβά και η γλώσσα που μιλάω είναι ακόμη η ίδια."},
             {"botLangHelp", "# BOTLANG\n* Χρησιμεύει για να αλλάξεις τη γλώσσα στην οποία απαντάω.\n\n## ΧΡΗΣΗ: "
                     + Const.COMMAND_PREFIX
@@ -157,9 +157,9 @@ public class LanguageBundle_el extends ListResourceBundle {
                     "# ADD\n" +
                     "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " add help\n\n" +
-                    "# BEAM\n" +
+                    "# MIXER\n" +
                     "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " beam help\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " mixer help\n\n" +
                     "# BOTLANG\n" +
                     "* Υποστηριζόμενες γλώσσες: English, Czech, German, French, Spanish, Greek\n" +
                     "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
@@ -223,8 +223,8 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + " invite\n\tΠροσκάλεσε το NowLive bot στο Discord Server σου.```"},
             {"listHelp", "```Markdown\n# LIST\n* Αυτή η εντολή επιστρέφει λίστες από τη βάση δεδομένων μου.\n\n## ΧΡΗΣΗ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\tbeamChannel      - Λίστα καναλιών που ακολουθείς στο Beam"
-                    + "\n\tbeamTeam         - Λίστα ομάδων που ακολουθείς στο Beam"
+                    + "\n\tmixerChannel     - Λίστα καναλιών που ακολουθείς στο Mixer"
+                    + "\n\tmixerTeam        - Λίστα ομάδων που ακολουθείς στο Mixer"
                     + "\n\tgfilter          - Λίστα φίλτρων παιχνιδιών που έχεις ρυθμίσει"
                     + "\n\tmanager          - Λίστα διαχειριστών σε αυτόν το server"
                     + "\n\tsetting          - Λίστα κοινών ρυθμίσεων του bot"

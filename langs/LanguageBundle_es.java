@@ -45,28 +45,28 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <content>\n\tEste comando solo puede ser usado por desarrolladores."},
-            {"beamChannelNotFound", "\n# Channel(s) not found on Beam: %s."},
-            {"beamHelp", "# BEAM\n* Add and remove things that are Beam.pro related.\n"
+            {"mixerChannelNotFound", "\n# Channel(s) not found on Mixer: %s."},
+            {"mixerHelp", "# MIXER\n* Add and remove things that are Mixer.com related.\n"
                     + "* Notes:\n\t"
                     + "To add game filters and title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Beam URL. It will not work!! Use only the channel name (www.beam.pro/channelName)\n\t"
+                    + "Do NOT use the full Mixer URL. It will not work!! Use only the channel name (www.mixer.com/channelName)\n\t"
                     + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
                     + "The only required options are: channelName/teamName\n\n"
-                    + "## Beam Channels\n"
+                    + "## Mixer Channels\n"
                     + "Note: Adding an announcement channel, game and title filters are optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Beam Teams (Announce ALL live streams in the team)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team teamName #announcementChannel\n\n"
-                    + "## Beam Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Beam\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Beam Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Beam\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
+                    + "## Mixer Teams (Announce ALL live streams in the team)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team teamName #announcementChannel\n\n"
+                    + "## Mixer Game Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Mixer\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer gfilter {gameName|gameName} #announcementChannel\n\n"
+                    + "## Mixer Title Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Mixer\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [word|different words|more words] #announcementChannel\n\n"
                     + "* Examples:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
             {"botLangFail", "Something went wrong and my language is still the same."},
             {"botLangHelp", "# BOTLANG\n* Used to change the language of my responses.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
@@ -157,9 +157,9 @@ public class LanguageBundle_es extends ListResourceBundle {
                     "# ADD\n" +
                     "* Para obtener más información, escriba: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " add help\n\n" +
-                    "# BEAM\n" +
+                    "# MIXER\n" +
                     "* Para obtener más información, escriba: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " beam help\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " mixer help\n\n" +
                     "# BOTLANG\n" +
                     "* Idiomas soportados: Inglés, Checo, Alemán, Frances, Español\n" +
                     "* Para obtener más información, escriba: " +
@@ -223,15 +223,15 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + " invite\n\tInvita a NowLive a tu servidor de Discord.```"},
             {"listHelp", "```Markdown\n# LIST\n* Este comando lista cosas de la base de datos.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\tbeamChannel      - Lists the Beam Channels you follow"
-                    + "\n\tbeamTeam         - Lists the Beam Teams you follow"
+                    + "\n\tmixerChannel      - Lists the Mixer Channels you follow"
+                    + "\n\tmixerTeam         - Lists the Mixer Teams you follow"
                     + "\n\tgfilter          - Lista los filtros que has configurados"
                     + "\n\tmanager          - Lista los gerentes de este servidor"
                     + "\n\ttfilter          - Lista los filtros de título que tienes puesto"
                     + "\n\tsetting          - Lista las configuraciones básicas del bot"
-                    + "\n\tsmashcastChannel - Lists the Twitch Channels you follow"
-                    + "\n\tsmashcastGame    - List the Twitch Games that I'm tracking for you"
-                    + "\n\tsmashcastTeam    - Lists the Twitch teams you follow"
+                    + "\n\tsmashcastChannel - Lists the Smashcast Channels you follow"
+                    + "\n\tsmashcastGame    - List the Smashcast Games that I'm tracking for you"
+                    + "\n\tsmashcastTeam    - Lists the Smashcast teams you follow"
                     + "\n\ttwitchChannel    - Lista los canales de Twitch que sigues"
                     + "\n\ttwitchCommunity  - Lista las comunidades de Twitch que sigues"
                     + "\n\ttwitchGame       - Lista los juegos de twitch que has configurado"

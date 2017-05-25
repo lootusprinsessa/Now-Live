@@ -45,28 +45,28 @@ public class LanguageBundle extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <content>\n\tThis command is only available to the developers."},
-            {"beamChannelNotFound", "\n# Channel(s) not found on Beam: %s."},
-            {"beamHelp", "# BEAM\n* Add and remove things that are Beam.pro related.\n"
+            {"mixerChannelNotFound", "\n# Channel(s) not found on Mixer: %s."},
+            {"mixerHelp", "# MIXER\n* Add and remove things that are Mixer.com related.\n"
                     + "* Notes:\n\t"
                     + "To add game filters and title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Beam URL. It will not work!! Use only the channel name (www.beam.pro/channelName)\n\t"
+                    + "Do NOT use the full Mixer URL. It will not work!! Use only the channel name (www.mixer.com/channelName)\n\t"
                     + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
                     + "The only required options are: channelName/teamName\n\n"
-                    + "## Beam Channels\n"
+                    + "## Mixer Channels\n"
                     + "Note: Adding an announcement channel, game and title filters are optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
-                    + "## Beam Teams (Announce ALL live streams in the team)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team teamName #announcementChannel\n\n"
-                    + "## Beam Game Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Beam\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {gameName|gameName} #announcementChannel\n\n"
-                    + "## Beam Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Beam\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
+                    + "## Mixer Teams (Announce ALL live streams in the team)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team teamName #announcementChannel\n\n"
+                    + "## Mixer Game Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Mixer\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer gfilter {gameName|gameName} #announcementChannel\n\n"
+                    + "## Mixer Title Filters (Global)\n"
+                    + "* NOTE: This affects all stream announcements for Mixer\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [word|different words|more words] #announcementChannel\n\n"
                     + "* Examples:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (adds a team with a specific announcement channel)\n\n"},
             {"botLangFail", "Something went wrong and my language is still the same."},
             {"botLangHelp", "# BOTLANG\n* Used to change the language of my responses.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
@@ -141,7 +141,7 @@ public class LanguageBundle extends ListResourceBundle {
             {"doesNotExist", "That was never added to my database."},
             {"embedFull", "announcement with a full size embed"},
             {"embedSmall", "announce with a small embed"},
-            {"embedVideo", "announcement with a playable video"},///////////////////////////////
+            {"embedVideo", "announcement with a playable video"},
             {"embedNone", "announce with a just a small statement and no embed"},
             {"emptyArgs", "I think you forgot some of the command.  Check the help command for more info."},
             {"emptyCommand", "Next time you wake me up, please send a command as well."},
@@ -157,9 +157,9 @@ public class LanguageBundle extends ListResourceBundle {
                     "# ADD\n" +
                     "* For more information, type: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " add help\n\n" +
-                    "# BEAM\n" +
+                    "# MIXER\n" +
                     "* For more information, type: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " beam help\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " mixer help\n\n" +
                     "# BOTLANG\n" +
                     "* Currently supported languages: English, Czech, German, French, Spanish\n" +
                     "* For more information, type: " +
@@ -190,7 +190,7 @@ public class LanguageBundle extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " remove help\n\n" +
                     "# SMASHCAST\n" +
                     "* For more information, type: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " smashcast help\n\n" +///////////////////////
+                    Const.COMMAND_PREFIX + Const.COMMAND + " smashcast help\n\n" +
                     "# STREAMLANG\n" +
                     "* For more information, type: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " streamlang help\n\n" +
@@ -223,14 +223,14 @@ public class LanguageBundle extends ListResourceBundle {
                     + " invite\n\tInvite NowLive bot to your Discord Server.```"},
             {"listHelp", "```Markdown\n# LIST\n* This command lists things from the database.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\tbeamChannel      - Lists the Beam Channels you follow"
-                    + "\n\tbeamTeam         - Lists the Beam Teams you follow"
+                    + "\n\tmixerChannel      - Lists the Mixer Channels you follow"
+                    + "\n\tmixerTeam         - Lists the Mixer Teams you follow"
                     + "\n\tgfilter          - Lists all game filters you have set up"
                     + "\n\tmanager          - Lists the managers on this server"
                     + "\n\tsetting          - Lists common bot settings"
-                    + "\n\tsmashcastChannel - Lists the Twitch Channels you follow"
-                    + "\n\tsmashcastGame    - List the Twitch Games that I'm tracking for you"
-                    + "\n\tsmashcastTeam    - Lists the Twitch teams you follow"////////////////////////////
+                    + "\n\tsmashcastChannel - Lists the Smashcast Channels you follow"
+                    + "\n\tsmashcastGame    - List the Smashcast Games that I'm tracking for you"
+                    + "\n\tsmashcastTeam    - Lists the Smashcast teams you follow"
                     + "\n\ttfilter          - Lists all title filters you have set up"
                     + "\n\ttwitchChannel    - Lists the Twitch Channels you follow"
                     + "\n\ttwitchCommunity  - List the Twitch Communities you follow"
@@ -299,7 +299,7 @@ public class LanguageBundle extends ListResourceBundle {
             {"platformGameFilterAddFail", "\n# Failed to add game filter(s): %s."},
             {"platformGameFilterRemove", "\n# Removed game filter(s): %s."},
             {"platformGameFilterRemoveFail", "\n# Failed to remove game filter(s): %s."},
-            {"platformGameNotFound", "\n #Game(s) not found: %s."},////////////////////
+            {"platformGameNotFound", "\n #Game(s) not found: %s."},
             {"platformGameRemove", "\n# Removed game(s): %s."},
             {"platformGameRemoveFail", "\n# Failed to remove game(s): %s."},
             {"platformTeamAdd", "\n# Added team(s): %s."},
