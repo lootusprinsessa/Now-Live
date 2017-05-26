@@ -45,7 +45,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " announce <content>\n\tЭта команда доступна только для разработчиков."},
-            {"mixerChannelNotFound", "\n# Канал(ы), не найденнй(ые) на Mixer: %s."},
+            {"mixerChannelNotFound", "\n# Канал(ы), не найденный(ые) на Mixer: %s."},
             {"mixerHelp", "# MIXER\n* Добавление и удаление данных, связанных с Mixer.com.\n"
                     + "* Заметки:\n\t"
                     + "Чтобы добавить игровые фильтры и фильтры заголовков, вы ДОЛЖНЫ включить скобки.\n\t"
@@ -129,7 +129,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"defaultOfflineHelp", "# КОНФИГУРАЦИЯ OFFLINE СООБЩЕНИЯ В ОБЪЯВЛЕНИИ ПО УМОЛЧАНИЮ\n* Сбрасывает моё offline сообщение до значения по умолчанию.\n\n" +
                     "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
             {"defaultOfflineMessage", "%CHANNEL% закончил трансляцию!"},
-            {"defaultOnlineHelp", "# КОНФИГУРАЦИЯ ONLINE СООБЩЕНИЯ В ОБЪЯВЛЕНИИ ПО УМОЛЧАНИЮ\n* Сбросывает мое online сообщение до значения по умолчанию.\n\n" +
+            {"defaultOnlineHelp", "# КОНФИГУРАЦИЯ ONLINE СООБЩЕНИЯ В ОБЪЯВЛЕНИИ ПО УМОЛЧАНИЮ\n* Сбрасывает моё online сообщение до значения по умолчанию.\n\n" +
                     "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Сообщение от " + Const.BOT_NAME + " разработчиков:*\n\n\t"},
             {"discordChannelNoExist", "Данный текстовый канал отсутствует на вашем сервере.."},
@@ -183,7 +183,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
                     "# PICARTO\n" +
-                    "* For more information, type: " +
+                    "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n" +
                     "# ПИНГ\n" +
                     "* Для получения дополнительной информации введите: " +
@@ -202,7 +202,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " streams help\n\n" +
                     "# TWITCH\n" +
                     "* Добавление и удаление связанных с Twitch.tv вещей. Для получения дополнительной информации введите: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
                     "# YOUTUBE GAMING\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ytg help\n\n" +
@@ -282,27 +282,27 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"oops", "Упс!  Что-то пошло не так. Ничего не изменилось! Попробуем снова."},
             {"patreon", "Если вы желаете пожертвовать для бота, перейдите в Patreon. https://www.patreon.com/nowlive"},
             {"patreonHelp", "Дает ссылку на нашу страницу patreon."},
-            {"picartoChannelNotFound", "\n# Channel(s) not found on Picarto: %s."},
-            {"picartoHelp", "# PICARTO\n* Add and remove things that are Picarto channels.\n"
-                    + "* Notes:\n\t"
-                    + "To add title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Picarto URL. It will not work!! Only use the channel name (the part after picarto.tv)\n\t"
-                    + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
-                    + "Only channels are supported for now.  Picarto categories are very limited and most are grouped in a small select few."
-                    + "The only required option is: channelName\n\n"
-                    + "## Picarto Channels\n"
-                    + "Note: Adding an announcement channel and title filters are optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel channelName #announcementChannel [titleFilters]\n\n"
-                    + "## Picarto Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Picarto\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "* Example:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"},
+            {"picartoChannelNotFound", "\n# Канал(ы), не найденные(ые) в Picarto: %s."},
+            {"picartoHelp", "# PICARTO\n* Добавление и удаление каналов Picarto.\n"
+                    + "* Заметки:\n\t"
+                    + "Чтобы добавить фильтры заголовков, вы ДОЛЖНЫ включить скобки.\n\t"
+                    + "НЕ ИСПОЛЬЗУЙТЕ полный URL Picarto. Это не будет работать!! Используйте только имя канала (часть после picarto.tv)\n\t"
+                    + "Вы можете добавить несколько каналов и фильтров заголовков, используя символ | между ними.\n\t"
+                    + "Пока что поддерживаются только каналы. Категории Picarto очень ограничены, и большинство из них сгруппированы в несколько небольших избранных."
+                    + "Единственный необходимый параметр: channelName\n\n"
+                    + "## Picarto Каналы\n"
+                    + "Заметка: Добавление канала объявлений и фильтров заголовков необязательно."
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel имяКанала #каналОбъявления [фильтрОписания]\n\n"
+                    + "## Picarto Фильтры Описания (Глобальные)\n"
+                    + "* Заметка: Это влияет на все объявления потоков для Picarto\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [слово|dещё слово|ещё слово] #каналОбъявления\n\n"
+                    + "* Пример:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (Добавляет Picarto канал для объявления в определенном Discord канале)\n\t"},
             {"ping", "Когда я был в Китае от Американской сборной по пинг-понгу ,  я очень любил играть моей " +
                     "Flexolite ракеткой."},
             {"pingHelp", "```Markdown\n# ПИНГ\n* Используйте для проверки моего времени отклика. Если я правильно работаю, я пришлю вам pong.\n\n## ПРИМЕНЕНИЕ: "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ping```"},
-            {"platformAnnounceUpdate", "\n# Обновлен канал объявлений %s на: %s."},
+            {"platformAnnounceUpdate", "\n# Обновлён канал объявлений %s на: %s."},
             {"platformAnnounceUpdateFail", "\n! Не удалось изменить канал объявления с %s на: %s."},
             {"platformChannelAdd", "\n# Добавлен(ы) канал(ы): %s."},
             {"platformChannelAddFail", "\n# Не удалось добавить канал(ы): %s."},
@@ -371,7 +371,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "\t* %STATUS%    - Статус (описание) трансляции\n" +
                     "\t* %URL%       - Ссылка на стрим\n" +
                     "\t* %USER%      - Название Twitch канала\n" +
-                    "\t* %VIEWERS%   - Количество текуших просмотров\n\n" +
+                    "\t* %VIEWERS%   - Количество текущих просмотров\n\n" +
                     "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage " +
                     "%CHANNEL% начал стрим! Подробнее здесь (кликабельно): %URL%"},// <--- Do not translate between the %
             {"shardsThis", "Shard Номер"},
@@ -385,7 +385,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "Единственные необходимые параметры: названиеКанала/названиеTeam/названиеИгры\n\n"
                     + "## Smashcast Каналы\n"
                     + "Заметка: Добавление канала объявлений, игровых фильтров и фильтров заголовков необязательно."
-                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel названиеКанала #каналОбъявления {gameFilters} [titleFilters]\n\n"
+                    + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel названиеКанала #каналОбъявления {игровойФильтр} [фильтрОписания]\n\n"
                     + "## Smashcast Игры (Объявление ВСЕХ прямых трансляций для игры)\n"
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game названиеИгры #каналОповещения\n\n"
                     + "## Smashcast Teams (Объявление ВСЕХ прямых трансляций для team)\n"
@@ -406,7 +406,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},
             {"streamlangHelp", "```Markdown\n# ЯЗЫКТРАНСЛЯЦИИ\n* Позволяет фильтровать потоки по тому языку, который транслируется " +
                     "in.  Это поддерживает английское правописание языка, или родное правописание. Должен быть поддержан " +
-                    "язык на Twitch, указынный в профиле.\n\n## ПРИМЕНЕНИЕ: "
+                    "язык на Twitch, указанный в профиле.\n\n## ПРИМЕНЕНИЕ: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND +
                     " streamlang <language>\n" +
@@ -421,7 +421,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + " streams```"},
             {"totalViewsEmbed", "Всего просмотров"},
             {"trello", "Чтобы сообщить об ошибке или запросить функции, которые будут добавлены к боту, пожалуйста, используйте наш Trello. https://trello.com/b/kcWshbIU"},
-            {"trelloHelp", "Выдаёт ссылку на Trello для бота"},
+            {"trelloHelp", "Выдает ссылку на Trello для бота"},
             {"twitchChannelNotFound", "\n# Канал(ы) не найден(ы): %s"},
             {"twitchCommunities", "Twitch Сообщества"},
             {"twitchCommunityAdd", "\n# Добавлена(ы) сообщество(а): %s."},
