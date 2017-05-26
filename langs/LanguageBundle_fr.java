@@ -424,7 +424,8 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + Const.COMMAND
                     + " streams"},
             {"totalViewsEmbed", "Vues Totales"},
-            {"trello", "Pour rapporter des bugs ou suggérer des fonctionnalités, veuillez utiliser notre Trello. https://trello.com/b/kcWshbIU"},
+            {"trello", "Pour rapporter des bugs ou suggérer des fonctionnalités, veuillez utiliser notre Trello. " +
+                    "https://trello.com/invite/b/kcWshbIU/a94c145e598be9f8dd734197ba07288e/now-live-bot"},
             {"trelloHelp", "# Retourne le lien vers le Trello du bot."},
             {"twitchCommunities", "Communautés Twitch"},
             {"twitchAnnounceUpdate", "\n# Le salon des annonces Twitch passe de %s à : %s."},

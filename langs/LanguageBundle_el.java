@@ -425,7 +425,8 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + Const.COMMAND
                     + " streams"},
             {"totalViewsEmbed", "Σύνολο Προβολών"},
-            {"trello", "Για να αναφέρετε bugs ή για να ζητήσετε νέα features χρησιμοποιείστε το Trello μας. https://trello.com/b/kcWshbIU"},
+            {"trello", "Για να αναφέρετε bugs ή για να ζητήσετε νέα features χρησιμοποιείστε το Trello μας. " +
+                    "https://trello.com/invite/b/kcWshbIU/a94c145e598be9f8dd734197ba07288e/now-live-bot"},
             {"trelloHelp", "# Εμφανίζει το link για το Trello του bot"},
             {"twitchChannelNotFound", "\n# Το(α) Κανάλι(α) δε βρέθηκε(α) στο Twitch: %s."},
             {"twitchCommunities", "Κοινότητες Twitch"},

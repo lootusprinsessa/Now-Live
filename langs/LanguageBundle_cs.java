@@ -422,7 +422,8 @@ public class LanguageBundle_cs extends ListResourceBundle {
                     + Const.COMMAND
                     + " streams"},
             {"totalViewsEmbed", "Počet zhlédnutí"},
-            {"trello", "Pro nahlášení chyb nebo pro návrh na vylepšení bota použij prosím naše Trello. https://trello.com/b/kcWshbIU"},
+            {"trello", "Pro nahlášení chyb nebo pro návrh na vylepšení bota použij prosím naše Trello. " +
+                    "https://trello.com/invite/b/kcWshbIU/a94c145e598be9f8dd734197ba07288e/now-live-bot"},
             {"trelloHelp", "# Vrací odkaz na naši Trello stránku"},
             {"twitchChannelNotFound", "\n# Kanál(y) které se nepodařilo najít na twitch: %s."},
             {"twitchCommunities", "Twitch komunity"},

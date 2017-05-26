@@ -425,7 +425,8 @@ public class LanguageBundle extends ListResourceBundle {
                     + Const.COMMAND
                     + " streams"},
             {"totalViewsEmbed", "Total Views"},
-            {"trello", "To report bugs or to request features to be added to the bot please use our Trello. https://trello.com/b/kcWshbIU"},
+            {"trello", "To report bugs or to request features to be added to the bot please use our Trello. " +
+                    "https://trello.com/invite/b/kcWshbIU/a94c145e598be9f8dd734197ba07288e/now-live-bot"},
             {"trelloHelp", "# Returns the link to the Trello for the bot"},
             {"twitchChannelNotFound", "\n# Channel(s) not found on Twitch: %s."},
             {"twitchCommunities", "Twitch Communities"},
