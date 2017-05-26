@@ -51,7 +51,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "Чтобы добавить игровые фильтры и фильтры заголовков, вы ДОЛЖНЫ включить скобки.\n\t"
                     + "НЕ ИСПОЛЬЗУЙТЕ полный URL Mixer. Это не будет работать!! Используйте только название канала (www.mixer.com/channelName)\n\t"
                     + "Вы можете добавить несколько каналов, групп, фильтров игр и заголовков, используя символ | между ними.\n\t"
-                    + "Единственные необходимые опции: имяКанала/названиеTeam\n\n"
+                    + "Единственные необходимые опции: имяКанала/названиеTeam\n\n\u200B"
                     + "## Mixer Каналы\n"
                     + "Примечание: Добавление канала объявлений, игр и фильтров заголовков необязательно.\n"
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel имяКанала #каналОповещений {игровойФильтр} [фильтрОписания]\n\n"
@@ -63,6 +63,8 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "## Mixer Фильтры Описания (Глобальные)\n"
                     + "* Заметка: Это влияет на все потоковые объявления для Mixer\n"
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [слово|ещё слово|ещё слово] #каналОповещений\n\n"
+                    + "## Mixer Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer stats\n\n"
                     + "* Примеры:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (Добавляет Mixer канал для объявления в определенном Discord канале c игровыми фильтрами)\n\t"
@@ -183,7 +185,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
                     "# PICARTO\n" +
                     "* Для получения информации введите: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n\u200B" +
                     "# ПИНГ\n" +
                     "* Для получения информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
@@ -289,13 +291,15 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "НЕ ИСПОЛЬЗУЙТЕ полный URL Picarto. Это не будет работать!! Используйте только имя канала (часть после picarto.tv)\n\t"
                     + "Вы можете добавить несколько каналов и фильтров заголовков, используя символ | между ними.\n\t"
                     + "Пока что поддерживаются только каналы. Категории Picarto очень ограничены, и большинство из них сгруппированы в несколько небольших избранных.\n\t"
-                    + "Единственный необходимый параметр: channelName\n\n"
+                    + "Единственный необходимый параметр: channelName\n\n\u200B"
                     + "## Picarto Каналы\n"
                     + "Заметка: Добавление канала объявлений и фильтров заголовков необязательно.\n"
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel имяКанала #каналОбъявления [фильтрОписания]\n\n"
                     + "## Picarto Фильтры Описания (Глобальные)\n"
                     + "* Заметка: Это влияет на все объявления потоков для Picarto\n"
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [слово|dещё слово|ещё слово] #каналОбъявления\n\n"
+                    + "## Picarto Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto stats\n\n"
                     + "* Пример:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (Добавляет Picarto канал для объявления в определенном Discord канале)\n\t"},
 
@@ -383,7 +387,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "Чтобы добавить игровые фильтры и фильтры заголовков, вы ДОЛЖНЫ включить скобки.\n\t"
                     + "НЕ ИСПОЛЬЗУЙТЕ полный URL Smashcast. Это не будет работать!! Используйте только название канала (www.smashcast.tv/channelName)\n\t"
                     + "Вы можете добавить несколько каналов, teams, игр, игровых фильтров и фильтров заголовков, используя символ | между ними.\n\t"
-                    + "Единственные необходимые параметры: названиеКанала/названиеTeam/названиеИгры\n\n"
+                    + "Единственные необходимые параметры: названиеКанала/названиеTeam/названиеИгры\n\n\u200B"
                     + "## Smashcast Каналы\n"
                     + "Заметка: Добавление канала объявлений, игровых фильтров и фильтров заголовков необязательно.\n"
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel названиеКанала #каналОбъявления {игровойФильтр} [фильтрОписания]\n\n"
@@ -397,6 +401,8 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "## Smashcast Фильтры Описания (Глобальные)\n"
                     + "* Заметка: Это влияет на все объявления о трансляциях для Smashcast\n"
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [слово|ещё слово|ещё слово] #каналОбъявления\n\n"
+                    + "## Smashcast Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast stats\n\n"
                     + "* Примеры:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (Добавляет Smashcast канал с игровыми фильтрами для объявления в определенном Discord канале)\n\t"
@@ -436,7 +442,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "НЕ ИСПОЛЬЗУЙТЕ полный URL Twitch. Это не будет работать! Используйте только название канала (www.twitch.tv/channelName)\n\t"
                     + "Имя команды должно быть взято из URL, а не с отображаемого имени команды. (www.twitch.tv/team/teamName)\n\t"
                     + "Вы можете добавить несколько каналов, команд, игр, сообществ, фильтров игр и заголовков, используя символ | между ними.\n\t"
-                    + "Единственные необходимые параметры: имя канала / имя сообщества / название команды / название игры\n\n"
+                    + "Единственные необходимые параметры: имя канала / имя сообщества / название команды / название игры\n\n\u200B"
                     + "## Twitch Каналы\n"
                     + "Добавление канала объявлений, игр и фильтров заголовков необязательно."
                     + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel имяКанала #КаналОповещений {фильтрИгры} [фильтрОписания]\n\n"
@@ -452,6 +458,8 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "## Twitch Фильтры Описания (Глобальные)\n"
                     + "* Примечание: Это влияет на все потоковые объявления для Twitch\n"
                     + "* Образец: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [слово|ещё слово|ещё слово] #КаналОповещений\n\n"
+                    + "## Twitch Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\n\u200B"
                     + "* Примеры:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (добавляет twitch канал с игровыми фильтрами в заданный канал Discord)\n\t"
@@ -476,15 +484,17 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "Чтобы добавить фильтры заголовков, вы ДОЛЖНЫ включить скобки.\n\t"
                     + "НЕ ИСПОЛЬЗУЙТЕ полный URL YouTube Gaming. Это не будет работать!! Используйте только отображаемое имя канала (как показано под трансляцией)\n\t"
                     + "Вы можете добавить несколько каналов и фильтров заголовков с помощью символа | между ними.\n\t"
-                    + "На данный момент поддерживаются только каналы.  API YouTube не показывает правильное имя игры, которое будет использоваться в других командах."
-                    + "Игровые фильтры НЕ ПОДДЕРЖИВАЮТСЯ в YouTube. Смотрите приведенную выше заметку об API."
-                    + "Единственный необходимый параметр: channelName\n\n"
+                    + "На данный момент поддерживаются только каналы.  API YouTube не показывает правильное имя игры, которое будет использоваться в других командах.\n\t"
+                    + "Игровые фильтры НЕ ПОДДЕРЖИВАЮТСЯ в YouTube. Смотрите приведенную выше заметку об API.\n\t"
+                    + "Единственный необходимый параметр: channelName\n\n\u200B"
                     + "## YouTube Gaming каналы\n"
                     + "Примечание: Добавление канала объявлений и фильтров заголовков необязательно."
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel названиеКанала #каналОповещений [фильтрОписания]\n\n"
                     + "## YouTube Gaming фильтр описания (Глобальный)\n"
                     + "* Примечание: Это влияет на все потоковые объявления для YouTube Gaming\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [слово|ещё слово|ещё слово] #каналОповещений\n\n"
+                    + "## YouTube Gaming Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg stats\n\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (Добавляет ytg канал для анонса в определенном Discord канале)\n\t"}
     };

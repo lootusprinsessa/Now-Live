@@ -51,7 +51,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "Um Spielefilter und Titelfilter hinzuzufügen, musst du die Klammern schreiben.\n\t"
                     + "Benutze NICHT die komplette Mixer-URL. Das funktioniert nicht!! Benutze nur den Kanalnamen (www.mixer.com/KanalName)\n\t"
                     + "Du kannst mehrere Kanäle, Teams, Spiele, Communities, Spiel- und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
-                    + "Die einzigen zwingend nötigen Optionen sind: KanalName/TeamName\n\n"
+                    + "Die einzigen zwingend nötigen Optionen sind: KanalName/TeamName\n\n\u200B"
                     + "## Mixer-Kanäle\n"
                     + "Hinweis: Benachrichtigungskanal, Spiel- und Titelfilter sind optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel KanalName #BenachrichtigungsKanal {SpielFilter} [TitelFilter]\n\n"
@@ -63,6 +63,8 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "## Mixer-Titelfilter (Global\n"
                     + "* HINWEIS: Gilt für alle Mixer-Benachrichtigungen auf diesem Server\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
+                    + "## Mixer Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer stats\n\n"
                     + "* Beispiele:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (Fügt einen Twitchkanal für einen bestimmten Kanal und Spielfilter hinzu)\n\t"
@@ -185,7 +187,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
                     "# PICARTO\n" +
                     "* Für mehr Informationen, schreibe: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n\u200B" +
                     "# PING\n" +
                     "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
@@ -291,13 +293,15 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "Benutze NICHT die komplette Picarto-URL.  Das funktioniert nicht!! Benutze nur den Kanalnamen (www.picarto.tv/KanalName)\n\t"
                     + "Du kannst mehrere Kanäle und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
                     + "Vorest sind nur Kanäle unterstützt.  Picarto-Kategorien sind sehr limitiert und es werden zum Großteil nur ein paar wenige benutzt.\n\t"
-                    + "Die einzig zwingend nötige Option ist: KanalName\n\n"
+                    + "Die einzig zwingend nötige Option ist: KanalName\n\n\u200B"
                     + "## Picarto-Kanäle\n"
                     + "Hinweis: Benachrichtigungskanal und Titelfilter sind optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel KanalName BenachrichtigungsKanal [TitelFilter]\n\n"
                     + "## Picarto-Titelfilter (Global)\n"
                     + "* HINWEIS: Gilt für alle Picartobenachrichtigungen auf diesem Server\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
+                    + "## Picarto Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto stats\n\n"
                     + "* Beispiel:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (fügt einen Kanal für einen bestimmten Benachrichtigungskanal hinzu)\n\t"},
             {"ping", "Als ich in China war, war ich in einem amerikanischen Ping-Pongteam. Ich liebte es mit meinem " +
@@ -384,7 +388,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "Um Spielefilter und Titelfilter hinzuzufügen, musst du die Klammern schreiben.\n\t"
                     + "Benutze NICHT die komplette Smashcast-URL. Das funktioniert nicht!! Benutze nur den Kanalnamen (www.smashcast.tv/KanalName)\n\t"
                     + "Du kannst mehrere Kanäle, Teams, Spiele, Spiel- und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
-                    + "Die einzigen zwingend nötigen Optionen sind: KanalName/TeamName/SpielName\n\n"
+                    + "Die einzigen zwingend nötigen Optionen sind: KanalName/TeamName/SpielName\n\n\u200B"
                     + "## Smashcast-Kanäle\n"
                     + "Hinweis: Benachrichtigungskanal, Spiel- und Titelfilter sind optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel KanalName #BenachrichtigungsKanal {Spielfilter} [Titelfilter]\n\n"
@@ -398,6 +402,8 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "## Smashcast-Titelfilter (Global)\n"
                     + "* HINWEIS: Gilt für alle Smashcastbenachrichtigungen auf diesem Server\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
+                    + "## Smashcast Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast stats\n\n"
                     + "* Beispiele:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (fügt einen Kanal in einen bestimmten Channel mit Spielefilter hinzu)\n\t"
@@ -444,7 +450,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "Benutze NICHT die komplette Twitch-URL. Das funktioniert nicht!! Benutze nur den Kanalnamen (www.twitch.tv/KanalName)\n\t"
                     + "Der Teamname muss der aus der URL sein! (www.twitch.tv/team/TeamName)\n\t"
                     + "Du kannst mehrere Kanäle, Teams, usw. hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
-                    + "Die einzigen zwingend nötigen Option ist der entsprechende Name\n\n"
+                    + "Die einzigen zwingend nötigen Option ist der entsprechende Name\n\n\u200B"
                     + "## Twitch-Kanäle\n"
                     + "Hinweis: Benachrichtigungskanal, Spiel- und Titelfilter sind optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel KanalName #BenachrichtigungsKanal {Spielfilter} [Titelfilter]\n\n"
@@ -460,6 +466,8 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "## Twitch-Titelfilter (Global)\n"
                     + "* HINWEIS: Gilt für alle Twitchbenachrichtigungen auf diesem Server\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
+                    + "## Twitch Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\n\u200B"
                     + "* Beispiel:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (Fügt einen Twitchkanal für einen bestimmten Kanal und Spielfilter hinzu)\n\t"
@@ -484,15 +492,17 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "Um Titelfilter hinzuzufügen, musst du die Klammern schreiben.\n\t"
                     + "Benutze NICHT die komplette YouTube Gaming-URL. Das funktioniert nicht!! Benutze nur den angezeigten Namen des Kanals (wie unter den Livestreams zu sehen)\n\t"
                     + "Du kannst mehrere Kanäle und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
-                    + "Bisher sind nur Kanalnamen unterstützt.  Die YouTube-API übergibt keinen Spielnamen, um ihn wie in den anderen Befehlen zu benutzen."
-                    + "Spielefilter gibt es auf YouTube NICHT.  Siehe den obigen Hinweis über die API."
-                    + "Die einzigen zwingend nötigen Optionen sind: KanalName\n\n"
+                    + "Bisher sind nur Kanalnamen unterstützt.  Die YouTube-API übergibt keinen Spielnamen, um ihn wie in den anderen Befehlen zu benutzen.\n\t"
+                    + "Spielefilter gibt es auf YouTube NICHT.  Siehe den obigen Hinweis über die API.\n\t"
+                    + "Die einzigen zwingend nötigen Optionen sind: KanalName\n\n\u200B"
                     + "## YouTube Gaming Channel\n"
                     + "Hinweis: Benachrichtigungskanal und Titelfilter sind optional."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel KanalName #BenachrichtigungsKanal [TitelFilter]\n\n"
                     + "## YouTube Gaming-Titelfilter (Global)\n"
                     + "* HINWEIS: Gilt für alle YouTube Gaming-Benachrichtigungen auf diesem Server\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [Word|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
+                    + "## YouTube Gaming Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg stats\n\n"
                     + "* Beispiel:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (Fügt einen Channel für einen bestimmten Kanal hinzu)\n\t"}
     };

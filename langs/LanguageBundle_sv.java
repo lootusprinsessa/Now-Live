@@ -51,7 +51,7 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     + "To add game filters and title filters, you MUST include the brackets.\n\t"
                     + "Do NOT use the full Mixer URL. It will not work!! Use only the channel name (www.mixer.com/channelName)\n\t"
                     + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/teamName\n\n"
+                    + "The only required options are: channelName/teamName\n\n\u200B"
                     + "## Mixer Channels\n"
                     + "Note: Adding an announcement channel, game and title filters are optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
@@ -63,6 +63,8 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     + "## Mixer Title Filters (Global)\n"
                     + "* NOTE: This affects all stream announcements for Mixer\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "## Mixer Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer stats\n\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
@@ -182,7 +184,7 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
                     "# PICARTO\n" +
                     "* For more information, type: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n\u200B" +
                     "# PING\n" +
                     "* För mer information, typ:" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
@@ -287,13 +289,15 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     + "Do NOT use the full Picarto URL. It will not work!! Only use the channel name (the part after picarto.tv)\n\t"
                     + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
                     + "Only channels are supported for now.  Picarto categories are very limited and most are grouped in a small select few.\n\t"
-                    + "The only required option is: channelName\n\n"
+                    + "The only required option is: channelName\n\n\u200B"
                     + "## Picarto Channels\n"
                     + "Note: Adding an announcement channel and title filters are optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel channelName #announcementChannel [titleFilters]\n\n"
                     + "## Picarto Title Filters (Global)\n"
                     + "* NOTE: This affects all stream announcements for Picarto\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "## Picarto Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto stats\n\n"
                     + "* Example:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"},
             {"ping", "När jag var i Kina på All-American Ping Pong laget, jag älskade bara spela ping-pong med min" +
@@ -380,7 +384,7 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     + "To add game filters and title filters, you MUST include the brackets.\n\t"
                     + "Do NOT use the full Smashcast URL. It will not work!! Use only the channel name (www.smashcast.tv/channelName)\n\t"
                     + "You may add multiple channels, teams, games, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/teamName/gameName\n\n"
+                    + "The only required options are: channelName/teamName/gameName\n\n\u200B"
                     + "## Smashcast Channels\n"
                     + "Note: Adding an announcement channel, game and title filters are optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
@@ -394,6 +398,8 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     + "## Smashcast Title Filters (Global)\n"
                     + "* NOTE: This affects all stream announcements for Smashcast\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "## Smashcast Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast stats\n\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
@@ -433,7 +439,7 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     + "Do NOT use the full Twitch URL. It will not work!! Use only the channel name (www.twitch.tv/channelName)\n\t"
                     + "The Team name must be from the URL, not the display name of the team. (www.twitch.tv/team/teamName)\n\t"
                     + "You may add multiple channels, teams, games, communities, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/communityName/teamName/gameName\n\n"
+                    + "The only required options are: channelName/communityName/teamName/gameName\n\n\u200B"
                     + "## Twitch Channels\n"
                     + "Note: Adding an announcement channel, game and title filters are optional."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
@@ -449,6 +455,8 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     + "## Twitch Title Filters (Global)\n"
                     + "* NOTE: This affects all stream announcements for Twitch\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter gameName #announcementChannel\n\n"
+                    + "## Twitch Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\n\u200B"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
@@ -473,15 +481,17 @@ public class LanguageBundle_sv extends ListResourceBundle {
                     + "To add title filters, you MUST include the brackets.\n\t"
                     + "Do NOT use the full YouTube Gaming URL. It will not work!! Only use the channel's display name (as shows under their live stream)\n\t"
                     + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
-                    + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands."
-                    + "Game filters are NOT a thing with YouTube.  See the above note about the API."
-                    + "The only required options is: channelName\n\n"
+                    + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands.\n\t"
+                    + "Game filters are NOT a thing with YouTube.  See the above note about the API.\n\t"
+                    + "The only required options is: channelName\n\n\u200B"
                     + "## YouTube Gaming Channels\n"
                     + "Note: Adding an announcement channel and title filters are optional."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
                     + "## YouTube Gaming Title Filters (Global)\n"
                     + "* NOTE: This affects all stream announcements for YouTube Gaming\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "## YouTube Gaming Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg stats\n\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"}
     };

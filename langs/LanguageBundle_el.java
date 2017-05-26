@@ -51,7 +51,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "Για να προσθέσεις φίλτρα παιχνιδιών και τίτλων, ΠΡΕΠΕΙ να συμπεριλάβεις τις παρενθέσεις.\n\t"
                     + "ΜΗ χρησιμοποιείς ολόκληρο το URL του Mixer. Δε θα δουλέψει!! Χρησιμοποίησε μόνο το όνομα του καναλιού (www.mixer.com/ΟΝΟΜΑ)\n\t"
                     + "Μπορείς να προσθέσεις πολλαπλά κανάλια, ομάδες, φίλτρα παιχνιδιών και φίλτρα τίτλων χρησιμοποιώντας το χαρακτήρα | μεταξύ τους.\n\t"
-                    + "Οι μόνες επιλογές που απαιτούνται είναι: όνομαΚαναλιόυ/όνομαΟμάδας\n\n"
+                    + "Οι μόνες επιλογές που απαιτούνται είναι: όνομαΚαναλιόυ/όνομαΟμάδας\n\n\u200B"
                     + "## Κανάλια Mixer\n"
                     + "Σημείωση: Η προσθήκη καναλιού ανακοίνωσης, καθώς και τα φίλτρα παιχνιδιών και τίτλων είναι προαιρετικά.\n"
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel όνομαΚαναλιού #κανάλιΑνακοίνωσης {φίλτραΠαιχνιδιών} [φίλτραΤίτλων]\n\n"
@@ -63,6 +63,8 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "## Φίλτρα τίτλων Mixer (Global)\n"
                     + "* ΣΗΜΕΙΩΣΗ: Αυτό επηρεάζει όλες τις ανακοινώσεις streams του Mixer\n"
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [λέξη|άλλες λέξεις|περισσότερες λέξεις] #κανάλιΑνακοίνωσης\n\n"
+                    + "## Mixer Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer stats\n\n"
                     + "* Παραδείγματα:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (προσθέτει ένα κανάλι προς ανακοίνωση σε συγκεκριμένο κανάλι και φίλτρα παιχνιδιών)\n\t"
@@ -183,7 +185,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
                     "# PICARTO\n" +
                     "* For more information, type: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n\u200B" +
                     "# PING\n" +
                     "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
@@ -289,13 +291,15 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "Do NOT use the full Picarto URL. It will not work!! Only use the channel name (the part after picarto.tv)\n\t"
                     + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
                     + "Only channels are supported for now.  Picarto categories are very limited and most are grouped in a small select few.\n\t"
-                    + "The only required option is: channelName\n\n"
+                    + "The only required option is: channelName\n\n\u200B"
                     + "## Picarto Channels\n"
                     + "Note: Adding an announcement channel and title filters are optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel channelName #announcementChannel [titleFilters]\n\n"
                     + "## Picarto Title Filters (Global)\n"
                     + "* NOTE: This affects all stream announcements for Picarto\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "## Picarto Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto stats\n\n"
                     + "* Example:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"},
             {"ping", "Όταν ήμουν στην Κίνα με την Αμερικάνικη ομάδα του Ping Pong , μου άρεσε να παίζω ping-pong με τη " +
@@ -382,7 +386,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "Για να προσθέσεις φίλτρα παιχνιδιών και τίτλων, ΠΡΕΠΕΙ να συμπεριλάβεις τις παρενθέσεις.\n\t"
                     + "ΜΗ χρησιμοποιήσεις ολόκληρο το URL του Smashcast. Δε θα λειτουργήσει!! Χρησιμοποίησε μόνο το όνομα του καναλιού (www.smashcast.tv/όνομαΚαναλιού)\n\t"
                     + "Μπορείς να προσθέσεις πολλαπλά κανάλια, ομάδες, παιχνίδια και φίλτρα παιχνιδιών και τίτλων χρησιμοποιώντας το χαρακτήρα | ανάμεσά τους.\n\t"
-                    + "Οι μόνες αναγκαίες επιλογές είναι: όνομαΚαναλιού/όνομαΟμάδας/όνομαΠαιχνιδιού\n\n"
+                    + "Οι μόνες αναγκαίες επιλογές είναι: όνομαΚαναλιού/όνομαΟμάδας/όνομαΠαιχνιδιού\n\n\u200B"
                     + "## Κανάλια Smashcast\n"
                     + "Σημείωση: Η προσθήκη καναλιού ανακοινώσεως και τα φίλτρα παιχνιδιών και τίτλων είναι προαιρετικά.\n"
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel όνομαΚαναλιού #κανάλιΑνακοινώσεως {φίλτραΠαιχνιδιών} [φίλτραΤίτλων]\n\n"
@@ -396,6 +400,8 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "## Φίλτρα Τίτλων Smashcast (Global)\n"
                     + "* ΣΗΜΕΙΩΣΗ: Επηρεάζει όλες τις ανακοινώσεις streams για το Smashcast\n"
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter[λέξη|άλλες λέξεις|περισσότερες λέξεις] #κανάλιΑνακοινώσεως\n\n"
+                    + "## Smashcast Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast stats\n\n"
                     + "* Παραδείγματα:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (προσθέτει ένα κανάλι προς ανακοίνωση σε συγκεκριμένο κανάλι και φίλτρα παιχνιδιών)\n\t"
@@ -435,7 +441,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "ΜΗ χρησιμοποιείς ολόκληρο το URL του Twitch. Δε θα λειτουργήσει!! Χρησιμοποίησε μόνο το όνομα του καναλιού (www.twitch.tv/όνομαΚαναλιού)\n\t"
                     + "Το όνομα της Ομάδας πρέπει να είναι από το URL, όχι το όνομα που εμφανίζεται. (www.twitch.tv/team/όνομαΟμάδας)\n\t"
                     + "Μπορείς να προσθέσεις πολλαπλά κανάλια, ομάδες, παιχνίδια, κοινότητες και φίλτρα παιχνιδιών και τίτλων χρησιμοποιώντας το χαρακτήρα | ανάμεσά τους.\n\t"
-                    + "Οι μόνες αναγκαίες επιλογές είναι: όνομαΚαναλιού/όνομαΚοινότητας/όνομαΟμάδας/όνομαΠαιχνιδιού\n\n"
+                    + "Οι μόνες αναγκαίες επιλογές είναι: όνομαΚαναλιού/όνομαΚοινότητας/όνομαΟμάδας/όνομαΠαιχνιδιού\n\n\u200B"
                     + "## Κανάλια Twitch\n"
                     + "Σημείωση: Η προσθήκη καναλιού ανακοινώσεως και τα φίλτρα παιχνιδιών και τίτλων είναι προαιρετικά."
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel όνομαΚαναλιού #κανάλιΑνακοινώσεως {φίλτραΠαιχνιδιών} [φίλτραΤίτλων]\n\n"
@@ -451,6 +457,8 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "## Φίλτρα Τίτλων Twitch (Global)\n"
                     + "* ΣΗΜΕΙΩΣΗ: Επηρεάζει όλες τις ανακοινώσεις streams για το Twitch\n"
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [λέξη|άλλες λέξεις|περισσότερες λέξεις] #κανάλιΑνακοινώσεως\n\n"
+                    + "## Twitch Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\n\u200B"
                     + "* Παραδείγματα:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (προσθέτει ένα κανάλι προς ανακοίνωση σε συγκεκριμένο κανάλι και φίλτρα παιχνιδιών)\n\t"
@@ -475,15 +483,17 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "Για να προσθέσεις φίλτρα τίτλων, ΠΡΕΠΕΙ να συμπεριλάβεις τις παρενθέσεις.\n\t"
                     + "ΜΗ χρησιμοποιήσεις ολόκλητο το YouTube Gaming URL. Δε θα λειτουργήσει!! Χρησιμοποίησε μόνο το όνομα με το οποίο εμφανίζεται το κανάλι (όπως φαίνεται κάτω από το live stream)\n\t"
                     + "Μπορείς να προσθέσεις πολλαπλά κανάλια και φίλτρα τίτλων με τη χρήση του χαρακτήρα | μεταξύ τους.\n\t"
-                    + "Για την ώρα υποστηρίζονται μόνο κανάλια.  Το YouTube API δεν εμφανίζει το όνομα του παιχνιδιού έτσι ώστε να λειτουργεί όπως οι υπόλοιπες εντολές."
-                    + "Φίλτρα παιχνιδιών ΔΕΝ υφίστανται στο YouTube.  Δες την παραπάνω σημείωση για το API."
-                    + "Η μοναδική επιλογή που απαιτείται είναι η: όνομαΚαναλιού\n\n"
+                    + "Για την ώρα υποστηρίζονται μόνο κανάλια.  Το YouTube API δεν εμφανίζει το όνομα του παιχνιδιού έτσι ώστε να λειτουργεί όπως οι υπόλοιπες εντολές.\n\t"
+                    + "Φίλτρα παιχνιδιών ΔΕΝ υφίστανται στο YouTube.  Δες την παραπάνω σημείωση για το API.\n\t"
+                    + "Η μοναδική επιλογή που απαιτείται είναι η: όνομαΚαναλιού\n\n\u200B"
                     + "## Κανάλια YouTube Gaming\n"
                     + "Σημείωση: Η προσθήκη καναλιού ανακοινώσεως και τα φίλτρα τίτλων είναι προαιρετικά."
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel όνομαΚαναλιού #κανάλιΑνακοινώσεως [φίλτραΤίτλων]\n\n"
                     + "## Φίλτρα Τίτλων YouTube Gaming (Global)\n"
                     + "* ΣΗΜΕΙΩΣΗ: Αυτό επηρεάζει όλες τις ανακοινώσεις streams για το YouTube Gaming\n"
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [λέξη|άλλες λέξεις|περισσότερες λέξεις] #κανάλιΑνακοινώσεως\n\n"
+                    + "## YouTube Gaming Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg stats\n\n"
                     + "* Π.Χ.:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (προσθέτει ένα κανάλι και συγκεκριμένο κανάλι ανακοινώσεως)\n\t"}
     };

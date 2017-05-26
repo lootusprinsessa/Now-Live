@@ -51,7 +51,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "Pour ajouter des filtres de jeu et des filtres de titre, vous DEVEZ inclure respectivement les accolades et les crochets.\n\t"
                     + "N'utilisez PAS l'adresse Twitch entière, ça ne marchera pas !! Utilisez uniquement le nom de la chaîne (mixer.com/nomChaine)\n\t"
                     + "Vous pouvez ajouter plusieurs chaînes, équipes, jeux, communautés, filtres de jeu/titre en utilisant la barre verticale | entre eux.\n\t"
-                    + "Les seules options requises sont nomChaine/nomEquipe\n\n"
+                    + "Les seules options requises sont nomChaine/nomEquipe\n\n\u200B"
                     + "## Chaînes Mixer\n"
                     + "Note : En ajoutant un salon pour les annonces (salonAnnonce), les filtres de jeu/titre sont optionnels.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel nomChaine #salonAnnonce {filtreJeu} [filtreTitre]\n\n"
@@ -63,6 +63,8 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "## Filtres de titre Mixer (Global)\n"
                     + "* NOTE : Cela affecte toutes les annonces de streams pour Mixer\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [mot|plusieurs mots|plus de mots] #salonAnnonce\n\n"
+                    + "## Mixer Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer stats\n\n"
                     + "* Exemples :\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (ajoute une chaîne à annoncer dans un certain salon et des filtres de jeu)\n\t"
@@ -183,7 +185,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
                     "# PICARTO\n" +
                     "* For more information, type: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n\u200B" +
                     "# PING\n" +
                     "* Pour plus d'informations, tape : " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
@@ -288,13 +290,15 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "Do NOT use the full Picarto URL. It will not work!! Only use the channel name (the part after picarto.tv)\n\t"
                     + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
                     + "Only channels are supported for now.  Picarto categories are very limited and most are grouped in a small select few.\n\t"
-                    + "The only required option is: channelName\n\n"
+                    + "The only required option is: channelName\n\n\u200B"
                     + "## Picarto Channels\n"
                     + "Note: Adding an announcement channel and title filters are optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel channelName #announcementChannel [titleFilters]\n\n"
                     + "## Picarto Title Filters (Global)\n"
                     + "* NOTE: This affects all stream announcements for Picarto\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [word|different words|more words] #announcementChannel\n\n"
+                    + "## Picarto Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto stats\n\n"
                     + "* Example:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"},
             {"ping", "Quand j'étais en Chine dans l'équipe d'Amérique de ping-pong, j'adorais jouer avec ma " +
@@ -381,7 +385,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "Pour ajouter des filtres de jeu et des filtres de titre, vous DEVEZ inclure les crochets.\n\t"
                     + "N'utilisez PAS l'adresse Smashcast entière, ça ne marchera pas !! Utilisez uniquement le nom de la chaîne (www.smashcast.tv/nomChaine)\n\t"
                     + "Vous pouvez ajouter plusieurs chaînes, équipes, jeux, filtres de jeu/titre en utilisant la barre verticale | entre eux.\n\t"
-                    + "Les seules options requises sont nomChaine/nomEquipe/nomJeu\n\n"
+                    + "Les seules options requises sont nomChaine/nomEquipe/nomJeu\n\n\u200B"
                     + "## Chaînes Smashcast\n"
                     + "Note : En ajoutant un salon pour les annonces (salonAnnonce), les filtres de jeu/titre sont optionnels.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel nomChaine #salonAnnonce {filtreJeu} [filtreTitre]\n\n"
@@ -395,6 +399,8 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "## Filtres de titre Smashcast (Global)\n"
                     + "* NOTE : Cela affecte toutes les annonces de streams pour Smashcast\n"
                     + "* Format : " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [mot|plusieurs mots|plus de mots] #salonAnnonce\n\n"
+                    + "## Smashcast Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast stats\n\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (ajoute une chaîne à annoncer dans un certain salon et des filtres de jeu)\n\t"
@@ -441,7 +447,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "N'utilisez PAS l'adresse Twitch entière, ça ne marchera pas !! Utilisez uniquement le nom de la chaîne (www.twitch.tv/nomChaine)\n\t"
                     + "Le nom d'équipe doit être celui de l'adresse, et non pas le nom d'affichage. (www.twitch.tv/team/nomEquipe)\n\t"
                     + "Vous pouvez ajouter plusieurs chaînes, équipes, jeux, communautés, filtres de jeu/titre en utilisant la barre verticale | entre eux.\n\t"
-                    + "Les seules options requises sont nomChaine/nomCommunauté/nomEquipe/nomJeu \n\n"
+                    + "Les seules options requises sont nomChaine/nomCommunauté/nomEquipe/nomJeu \n\n\u200B"
                     + "## Chaînes Twitch\n"
                     + "Note : En ajoutant un salon pour les annonces (salonAnnonce), les filtres de jeu/titre sont optionnels."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel nomChaine #salonAnnonce {filtreJeu} [filtreTitre]\n\n"
@@ -457,6 +463,8 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "## Filtres de titre Twitch (Global)\n"
                     + "* NOTE : Cela affecte toutes les annonces de streams pour Twitch\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [word|different words|more words] #salonAnnonce\n\n"
+                    + "## Twitch Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\n\u200B"
                     + "* Exemples :\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #streams {Overwatch|World of "
                     + "Warcraft} (ajoute une chaîne à annoncer dans un certain salon et des filtres de jeu)\n\t"
@@ -481,15 +489,17 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "Pour ajouter des filtres de titre, vous devez IMPÉRATIVEMENT inclure les crochets.\n\t"
                     + "N'utilisez PAS l'adresse Twitch entière, ça ne marchera pas !! Utilisez simplement le nom d'affichage de la chaîne (affiché sous le live)\n\t"
                     + "Vous pouvez ajouter plusieurs chaînes et plusieurs filtres de titre en utilisant la barre verticale | entre eux.\n\t"
-                    + "Seules les chaînes sont supportées, pour le moment. L'API YouTube n'affiche pas le nom de jeu qu'il faut, contrairement à dans d'autres commandes."
-                    + "Il n'y a pas de filtres de jeu sur YouTube.  Voir la note sur l'API au-dessus."
-                    + "La seule option requise est : nomChaine\n\n"
+                    + "Seules les chaînes sont supportées, pour le moment. L'API YouTube n'affiche pas le nom de jeu qu'il faut, contrairement à dans d'autres commandes.\n\t"
+                    + "Il n'y a pas de filtres de jeu sur YouTube.  Voir la note sur l'API au-dessus.\n\t"
+                    + "La seule option requise est : nomChaine\n\n\u200B"
                     + "## Chaînes YouTube Gaming Channels\n"
                     + "Note : Ajouter un salon d'annonce et un filtre de titre est optionnel."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel nomChaine #salonAnnonce [filtreTitre]\n\n"
                     + "## Filtres de titre YouTube Gaming (Global)\n"
                     + "* NOTE : Cela affecte toutes les annonces YouTube Gaming.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg filtreTitre [mot|plusieurs mots|plus de mots] #salonAnnonce\n\n"
+                    + "## YouTube Gaming Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg stats\n\n"
                     + "* Exemple :\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (ajoute une chaîne à annoncer dans un salon spécifique)\n\t"}
     };
