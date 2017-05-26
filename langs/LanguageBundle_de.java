@@ -184,7 +184,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
                     "# PICARTO\n" +
-                    "* For more information, type: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n" +
                     "# PING\n" +
                     "* Für mehr Informationen, schreibe: " +
@@ -285,21 +285,21 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"patreon", "Wenn du dem Bot etwas spenden möchtest, beachte unser Patreon zu benutzen. https://www.patreon.com/nowlive"},
             {"patreonHelp", "# Postet den Link zu unserer Patreon Seite."},
             {"picartoChannelNotFound", "\n# Channel(s) not found on Picarto: %s."},
-            {"picartoHelp", "# PICARTO\n* Add and remove things that are Picarto channels.\n"
-                    + "* Notes:\n\t"
-                    + "To add title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Picarto URL. It will not work!! Only use the channel name (the part after picarto.tv)\n\t"
-                    + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
-                    + "Only channels are supported for now.  Picarto categories are very limited and most are grouped in a small select few.\n\t"
-                    + "The only required option is: channelName\n\n"
-                    + "## Picarto Channels\n"
-                    + "Note: Adding an announcement channel and title filters are optional.\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel channelName #announcementChannel [titleFilters]\n\n"
-                    + "## Picarto Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Picarto\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "* Example:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"},
+            {"picartoHelp", "# PICARTO\n* Hinzufügen und Entfernen von Picarto-Kanälen und -Titelfiltern.\n"
+                    + "* Hinweise:\n\t"
+                    + "Um Titelfilter hinzuzufügen, musst du die Klammern schreiben.\n\t"
+                    + "Benutze NICHT die komplette Picarto-URL.  Das funktioniert nicht!! Benutze nur den Kanalnamen (www.picarto.tv/KanalName)\n\t"
+                    + "Du kannst mehrere Kanäle und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
+                    + "Vorest sind nur Kanäle unterstützt.  Picarto-Kategorien sind sehr limitiert und es werden zum Großteil nur ein paar wenige benutzt.\n\t"
+                    + "Die einzig zwinged nötige option ist: KanalName\n\n"
+                    + "## Picarto-Kanäle\n"
+                    + "Hinweis: Benachrichtigungskanal und Titelfilter sind optional.\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel KanalName BenachrichtigungsKanal [TitelFilter]\n\n"
+                    + "## Picarto-Titelfilter (Global)\n"
+                    + "* HINWEIS: Gilt für alle Picartobenachrichtigungen auf diesem Server\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
+                    + "* Beispiel:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (fügt einen Kanal für einen bestimmten Benachrichtigungskanal hinzu)\n\t"},
             {"ping", "Als ich in China war, war ich in einem amerikanischen Ping-Pongteam. Ich liebte es mit meinem " +
                     "Flexolite Ping-Pongsschläger zu spielen."},
             {"pingHelp", "```Markdown\n# PING\n* Pingbefehl - wenn ich online bin, werde ich antworten.\n\n## VERWENDUNG: "
