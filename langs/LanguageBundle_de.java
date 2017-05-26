@@ -378,7 +378,6 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "%CHANNEL% ist gerade live! Siehe den Stream hier: %URL%"},
             {"shardsThis", "Shardnummer"},
             {"shardsTotal", "Nummer der Shards"},
-            {"smashcastChannelNotFound", "\n# Channel(s) not found on Smashcast: %s."},
             {"smashcastChannelNotFound", "\n# Kanäle nicht auf Smashcast gefunden: %s."},
             {"smashcastHelp", "```Markdown\n# SMASHCAST\n* Hinzufügen und Entfernen von Smashcast.tv-Inhalten.\n"
                     + "* Hinweise:\n\t"
