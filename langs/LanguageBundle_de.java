@@ -291,7 +291,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "Benutze NICHT die komplette Picarto-URL.  Das funktioniert nicht!! Benutze nur den Kanalnamen (www.picarto.tv/KanalName)\n\t"
                     + "Du kannst mehrere Kanäle und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
                     + "Vorest sind nur Kanäle unterstützt.  Picarto-Kategorien sind sehr limitiert und es werden zum Großteil nur ein paar wenige benutzt.\n\t"
-                    + "Die einzig zwinged nötige Option ist: KanalName\n\n"
+                    + "Die einzig zwingend nötige Option ist: KanalName\n\n"
                     + "## Picarto-Kanäle\n"
                     + "Hinweis: Benachrichtigungskanal und Titelfilter sind optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel KanalName BenachrichtigungsKanal [TitelFilter]\n\n"
@@ -320,7 +320,7 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"platformGameFilterAddFail", "\n# Fehler beim Hinzufügen der Spielefilter: %s."},
             {"platformGameFilterRemove", "\n# Spielefilter entfernt: %s."},
             {"platformGameFilterRemoveFail", "\n# Fehler beim Entfernen der Spielefilter: %s."},
-            {"platformGameNotFound", "\n #Game(s) not found: %s."},
+            {"platformGameNotFound", "\n #Spiel(e) nicht gefunden: %s."},
             {"platformGameRemove", "\n# Spiele entfernt: %s."},
             {"platformGameRemoveFail", "\n# Fehler beim Entfernen der Spiele: %s."},
             {"platformTeamAdd", "\n# Teams hinzugefügt: %s."},
@@ -400,9 +400,9 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
                     + "* Beispiele:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
-                    + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (adds a game to the global announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (adds a team with a specific announcement channel)"},
+                    + "Warcraft} (fügt einen Kanal in einen bestimmten Channel mit Spielefilter hinzu)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (fügt einen Kanal zum allgemeinen Benachrichtigungskanal hinzu)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (fügt ein Team einen bestimmten Channel hinzu)"},
             {"statusHelp", "# STATUS\n* Zeigt einige Statistiken über den Bot.\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status"},
             {"streamlangHelp", "# STREAMLANG\n* Erlaubt das Filtern von Streams nach Sprache " +
@@ -410,7 +410,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "muss im Twitch Dashboard unterstützt werden.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND +
-                    " streamlang <language>\n" +
+                    " streamlang <Sprache>\n" +
                     "* Du kannst entweder den nativen oder den englischen Namen der Sprache verwenden."
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang german"},
             {"streamTitleEmbed", "Streamtitel"},
