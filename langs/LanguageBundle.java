@@ -53,7 +53,7 @@ public class LanguageBundle extends ListResourceBundle {
                     + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
                     + "The only required options are: channelName/teamName\n\n"
                     + "## Mixer Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional."
+                    + "Note: Adding an announcement channel, game and title filters are optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
                     + "## Mixer Teams (Announce ALL live streams in the team)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team teamName #announcementChannel\n\n"
@@ -85,19 +85,19 @@ public class LanguageBundle extends ListResourceBundle {
             {"canNotRemoveOwner", "Silly human, you can't remove the server owner from the manager list. :laughing: " +
                     ":laughing:"},
             {"cleanupFail", "Ah, man...  Something went wrong... Better try that again."},
-            {"cleanupHelp", "```Markdown\n# CLEANUP\n*  Change the way I clean up my stream announcements.\n\n## USAGE:"
+            {"cleanupHelp", "# CLEANUP\n*  Change the way I clean up my stream announcements.\n\n## USAGE:"
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " cleanup <option>"
                     + "\n\tnone   - I won't change a thing to my announcements! (default)"
                     + "\n\tedit   - I'll edit my announcements to say \"OFFLINE\" when the streamer goes offline"
                     + "\n\tdelete - I'll just delete the announcement when the streamer is no longer live"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " cleanup edit" + "```"},
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " cleanup edit"},
             {"cleanupSuccessDelete", "Sir, yes Sir!  I will delete all my announcements from now on!"},
             {"cleanupSuccessEdit", "Editing my announcements, it is."},
             {"cleanupSuccessNone", " :ok_hand: I won't do anything to my announcements."},
             {"compactFail", "Um, something went wrong.  My compact mode is unchanged."},
-            {"compactHelp", "```Markdown\n# COMPACT\n* Switch my announcements to a shorter version.\n\n## USAGE: "
+            {"compactHelp", "# COMPACT\n* Switch my announcements to a shorter version.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
@@ -106,7 +106,7 @@ public class LanguageBundle extends ListResourceBundle {
                     + "\n\tfullEmbed  - The full announcement with large banner image."
                     + "\n\tvideoEmbed - No rich embed. Announcement will be a small code block and an embedded video " +
                     "you can watch in Discord."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed"},
             {"compactFullEmbed", " :compression: You will get the full announcement from now on."},
             {"compactSmallEmbed", " :compression: You will get an announcement with a small embed from now on."},
             {"compactNoEmbed", " :compression: Your announcements will only be a short sentence from now on."},
@@ -136,7 +136,7 @@ public class LanguageBundle extends ListResourceBundle {
             {"discordChannelNotNull", "# I can't find that Discord text channel. Stream will be announced in the default channel."},
             {"discordLink", "Interested in joining the Now Live Discord server? Lots of helpful people there if you're " +
                     "having problems! Click this link:\n" + Const.DISCORD_URL},
-            {"discordLinkHelp", "Displays the link to join the Now Live Discord server."},
+            {"discordLinkHelp", "# Displays the link to join the Now Live Discord server."},
             {"discordUserNoExist", "That person isn't a Discord user!  Try again!"},
             {"doesNotExist", "That was never added to my database."},
             {"embedFull", "announcement with a full size embed"},
@@ -152,8 +152,7 @@ public class LanguageBundle extends ListResourceBundle {
                     " help` for a list of my commands.\n\nIf you need some help setting me up, come " +
                     "join my Discord at " + Const.DISCORD_URL + " and check out the how-to-setup and command-list " +
                     "channels for all the info!\n\nDon't forget to say hey!"},
-            {"helpPm", "Hey there, %s! So I hear you're looking for some help? Here is a list of my commands.\n\n" +
-                    "```Markdown\n" +
+            {"helpPm", "* Hey there, %s! So I hear you're looking for some help? Here is a list of my commands.\n\n" +
                     "# ADD\n" +
                     "* For more information, type: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " add help\n\n" +
@@ -214,22 +213,23 @@ public class LanguageBundle extends ListResourceBundle {
                     "Gives the link to our Trello which is used for bug reports and feature requests. Commands are :\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " request```" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " request\n" +
                     "If you need additional help, join my Discord.  Lots of helpful people there:  " + Const.DISCORD_URL},
             {"incorrectArgs", "You passed incorrect or missing arguments to me.  Check the help command for more info."},
             {"invite", "Hey %s! Invite me to your server!\n\n\t"
                     + "**Click here:** <https://discordapp.com/oauth2/authorize?&client_id="
                     + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8>"},
-            {"inviteHelp", "```Markdown\n# INVITE\n* Used to display my invite link.\n\n## USAGE:  "
+            {"inviteHelp", "# INVITE\n* Used to display my invite link.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " invite\n\tInvite NowLive bot to your Discord Server.```"},
-            {"listHelp", "```Markdown\n# LIST\n* This command lists things from the database.\n\n## USAGE:  "
+                    + " invite\n\tInvite NowLive bot to your Discord Server."},
+            {"listHelp", "# LIST\n* This command lists things from the database.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\tmixerChannel      - Lists the Mixer Channels you follow"
-                    + "\n\tmixerTeam         - Lists the Mixer Teams you follow"
+                    + "\n\tmixerChannel     - Lists the Mixer Channels you follow"
+                    + "\n\tmixerTeam        - Lists the Mixer Teams you follow"
                     + "\n\tgfilter          - Lists all game filters you have set up"
                     + "\n\tmanager          - Lists the managers on this server"
+                    + "\n\tpicartoChannel   - Lists the Picarto Channels you follow"
                     + "\n\tsetting          - Lists common bot settings"
                     + "\n\tsmashcastChannel - Lists the Smashcast Channels you follow"
                     + "\n\tsmashcastGame    - List the Smashcast Games that I'm tracking for you"
@@ -240,7 +240,7 @@ public class LanguageBundle extends ListResourceBundle {
                     + "\n\ttwitchGame       - List the Twitch Games that I'm tracking for you"
                     + "\n\ttwitchTeam       - Lists the Twitch teams you follow"
                     + "\n\tytgChannel       - Lists the YouTube Gaming Channels you follow"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel" + "```"},
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel"},
             {"listSettings", "```Markdown\n" +
                     "# Bot Settings on Your Server" +
                     "\n* Compact mode is set to: %s." +
@@ -260,12 +260,12 @@ public class LanguageBundle extends ListResourceBundle {
             {"notifyEveryone", ":tada: WHOA!!  **EVERYONE** that belongs to the server will get notified when I " +
                     "announce streams!  *(Are you sure?  I don't recommend this for large servers...  It can make " +
                     "people grumpy.)*"},
-            {"notifyHelp", "```Markdown\n# NOTIFY\n* Used to change the global notification option for this server.\n\n## USAGE:  "
+            {"notifyHelp", "# NOTIFY\n* Used to change the global notification option for this server.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " notify <option>"
                     + "\n\tnone     - No @ notifications of any kind (default)"
                     + "\n\there     - I will notify only those people that are online when I make the announcement"
                     + "\n\teveryone - I'll notify EVERYONE!!  Mwahahaha!!  (I don't recommend this on large servers)"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " notify everyone" + "```"},
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " notify everyone"},
             {"notifyHere", " :bellhop_bell: All who are online will get a mention when I announce streams."},
             {"notifyNone", " :ok_hand: I won't mention anyone in my announcements."},
             {"nowLive", "NOW LIVE!\n"},
@@ -281,17 +281,17 @@ public class LanguageBundle extends ListResourceBundle {
                     "out: \n\n"},
             {"oops", "Oops!  Something went wrong and nothing was changed!  Let's try that again."},
             {"patreon", "If you wish to donate to the bot consider using our Patreon. https://www.patreon.com/nowlive"},
-            {"patreonHelp", "Gives the link to our patreon page."},
+            {"patreonHelp", "# Gives the link to our patreon page."},
             {"picartoChannelNotFound", "\n# Channel(s) not found on Picarto: %s."},
             {"picartoHelp", "# PICARTO\n* Add and remove things that are Picarto channels.\n"
                     + "* Notes:\n\t"
                     + "To add title filters, you MUST include the brackets.\n\t"
                     + "Do NOT use the full Picarto URL. It will not work!! Only use the channel name (the part after picarto.tv)\n\t"
                     + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
-                    + "Only channels are supported for now.  Picarto categories are very limited and most are grouped in a small select few."
+                    + "Only channels are supported for now.  Picarto categories are very limited and most are grouped in a small select few.\n\t"
                     + "The only required option is: channelName\n\n"
                     + "## Picarto Channels\n"
-                    + "Note: Adding an announcement channel and title filters are optional."
+                    + "Note: Adding an announcement channel and title filters are optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel channelName #announcementChannel [titleFilters]\n\n"
                     + "## Picarto Title Filters (Global)\n"
                     + "* NOTE: This affects all stream announcements for Picarto\n"
@@ -335,10 +335,10 @@ public class LanguageBundle extends ListResourceBundle {
                     "been setup yet.  Please try your PM again later."},
             {"removed", "Removed %s %s."},
             {"removeManagerFail", "I can't remove %s because they are not in my database."},
-            {"removeHelp", "```Markdown\n# REMOVE\n* Used to remove managers from my database.\n\n## USAGE:  "
+            {"removeHelp", "# REMOVE\n* Used to remove managers from my database.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @userName"
                     + "\n\tmanager - The @ mention of the user to remove as a manager"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort"},
             {"servers", "Servers"},
             {"setDefaultAnnounceChannelDoNotOwnChannel", "# Hey now, I can't announce to a channel that doesn't exists on your " +
                     "server!"},
@@ -377,14 +377,14 @@ public class LanguageBundle extends ListResourceBundle {
             {"shardsThis", "Shard Number"},
             {"shardsTotal", "Number Shards"},
             {"smashcastChannelNotFound", "\n# Channel(s) not found on Smashcast: %s."},/////////////////
-            {"smashcastHelp", "```Markdown\n# SMASHCAST\n* Add and remove things that are Smashcast.tv related.\n"
+            {"smashcastHelp", "# SMASHCAST\n* Add and remove things that are Smashcast.tv related.\n"
                     + "* Notes:\n\t"
                     + "To add game filters and title filters, you MUST include the brackets.\n\t"
                     + "Do NOT use the full Smashcast URL. It will not work!! Use only the channel name (www.smashcast.tv/channelName)\n\t"
                     + "You may add multiple channels, teams, games, game and title filters by using the pipe character | between them.\n\t"
                     + "The only required options are: channelName/teamName/gameName\n\n"
                     + "## Smashcast Channels\n"
-                    + "Note: Adding an announcement channel, game and title filters are optional."
+                    + "Note: Adding an announcement channel, game and title filters are optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
                     + "## Smashcast Games (Announce ALL live streams for that game)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game gameName #announcementChannel\n\n"
@@ -400,28 +400,27 @@ public class LanguageBundle extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (adds a game to the global announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (adds a team with a specific announcement channel)\n\n"
-                    + "```"},///////////////////////////////////
-            {"statusHelp", "```Markdown\n# STATUS\n* Shows various statistics of the bot.\n\n## USAGE:  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},
-            {"streamlangHelp", "```Markdown\n# STREAMLANG\n* Allows you to filter streams by the language it is being broadcast " +
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (adds a team with a specific announcement channel)"},
+            {"statusHelp", "# STATUS\n* Shows various statistics of the bot.\n\n## USAGE:  "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " status"},
+            {"streamlangHelp", "# STREAMLANG\n* Allows you to filter streams by the language it is being broadcast " +
                     "in.  This supports the English spelling of the language, or the native spelling.  Must be a supported " +
                     "language on Twitch that is listed in the Dashboard.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND +
                     " streamlang <language>\n" +
                     "* You may use either the native spelling of the language or the English spelling of the language."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang german```"},
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang german"},
             {"streamTitleEmbed", "Stream Title"},
-            {"streamsHelp", "```Markdown\n# STREAMS\n* I'll send you a list of active streams as a PM.\n* (NOTE: You will likely " +
+            {"streamsHelp", "# STREAMS\n* I'll send you a list of active streams as a PM.\n* (NOTE: You will likely " +
                     "receive several private messages using this command, depending on how many streams your Discord " +
                     "monitors!)\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " streams```"},
+                    + " streams"},
             {"totalViewsEmbed", "Total Views"},
             {"trello", "To report bugs or to request features to be added to the bot please use our Trello. https://trello.com/b/kcWshbIU"},
-            {"trelloHelp", "Returns the link to the Trello for the bot"},
+            {"trelloHelp", "# Returns the link to the Trello for the bot"},
             {"twitchChannelNotFound", "\n# Channel(s) not found on Twitch: %s."},
             {"twitchCommunities", "Twitch Communities"},
             {"twitchCommunityAdd", "\n# Added community(s): %s."},
@@ -430,7 +429,7 @@ public class LanguageBundle extends ListResourceBundle {
             {"twitchCommunityNotFound", "\n# Community(s) not found on Twitch: %s."},
             {"twitchCommunityRemove", "\n# Removed community(s): %s."},
             {"twitchCommunityRemoveFail", "\n# Failed to remove community(s): %s."},
-            {"twitchHelp", "```Markdown\n# TWITCH\n* Add and remove things that are Twitch.tv related.\n"
+            {"twitchHelp", "# TWITCH\n* Add and remove things that are Twitch.tv related.\n"
                     + "* Notes:\n\t"
                     + "To add game filters and title filters, you MUST include the brackets.\n\t"
                     + "Do NOT use the full Twitch URL. It will not work!! Use only the channel name (www.twitch.tv/channelName)\n\t"
@@ -457,8 +456,7 @@ public class LanguageBundle extends ListResourceBundle {
                     + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (adds a game to the global announcement channel)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (adds the community with a specified announcement channel)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (adds a team with a specific announcement channel)\n\n"
-                    + "```"},
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (adds a team with a specific announcement channel)"},
             {"twitchTeams", "Twitch Teams"},
             {"typeOnce", "You only need to type that part once, silly."},
             {"uniqueChannels", "Unique Channels %s"},

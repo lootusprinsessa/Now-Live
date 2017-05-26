@@ -53,7 +53,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "Вы можете добавить несколько каналов, групп, фильтров игр и заголовков, используя символ | между ними.\n\t"
                     + "Единственные необходимые опции: имяКанала/названиеTeam\n\n"
                     + "## Mixer Каналы\n"
-                    + "Примечание: Добавление канала объявлений, игр и фильтров заголовков необязательно."
+                    + "Примечание: Добавление канала объявлений, игр и фильтров заголовков необязательно.\n"
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel имяКанала #каналОповещений {игровойФильтр} [фильтрОписания]\n\n"
                     + "## Mixer Teams (Объявление ВСЕХ прямых трансляций Teams)\n"
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team teamName #каналОповещений\n\n"
@@ -97,7 +97,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"cleanupSuccessEdit", "Я буду редактировать мои объявления, если трансляция началась или окончена."},
             {"cleanupSuccessNone", " :ok_hand: Я ничего не буду делать с моими объявлениями."},
             {"compactFail", "Эм... что-то пошло не так. Мой компактный режим не изменился."},
-            {"compactHelp", "```Markdown\n# КОМПАКТНОСТЬ\n* Мои объявления возможно изменить на более компактную версию.\n\n## ПРИМЕНЕНИЕ:  "
+            {"compactHelp", "# КОМПАКТНОСТЬ\n* Мои объявления возможно изменить на более компактную версию.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
@@ -106,7 +106,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "\n\tfullEmbed  - Полное объявление, с больщим изображением."
                     + "\n\tvideoEmbed - Без вставок. Объявление будет небольшим блоком кода и встроенным видео, которое " +
                     "вы можете посмотреть в Discord."
-                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed"},
             {"compactFullEmbed", " :compression: С этого момента вы будете получать полные объявления."},
             {"compactSmallEmbed", " :compression: С этого момента вы будете получать объявления с маленькими изображениями."},
             {"compactNoEmbed", " :compression: Теперь ваши объявления будут в виде коротких предложений."},
@@ -136,7 +136,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"discordChannelNotNull", "# Я не могу найти текстовый канал Discord. Поток будет объявлен в канале по умолчанию."},
             {"discordLink", "Хотите присоединиться к серверу Now Live Discord? Если у вас возникли проблемы, то там есть много " +
                     "тех, кто поможет! Перейдите по ссылке:\n" + Const.DISCORD_URL},
-            {"discordLinkHelp", "Показывает ссылку для подключения к серверу Now Live Discord."},
+            {"discordLinkHelp", "# Показывает ссылку для подключения к серверу Now Live Discord."},
             {"discordUserNoExist", "Данного пользователя Discord не существует! Попробуй еще раз!"},
             {"doesNotExist", "Это никогда не добавлялось в мою базу данных."},
             {"embedFull", "полноразмерное объявление"},
@@ -152,8 +152,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     " help` для списка моих команд.\n\nЕсли вам нужна помощь в настройке, приходите " +
                     "присоединяйтесь к моему Discord на " + Const.DISCORD_URL + " и ознакомьтесь с инструкциями по настройке и списком команд " +
                     "каналы для всей информации!\n\nНе забудьте поздороваться!"},
-            {"helpPm", "Привет %s! Итак, я слышал, что вам нужна помощь? Ниже приведен список моих команд.\n\n" +
-                    "```Markdown\n" +
+            {"helpPm", "* Привет %s! Итак, я слышал, что вам нужна помощь? Ниже приведен список моих команд.\n\n" +
                     "# ДОБАВЛЕНИЕ\n" +
                     "* Для получения дополнительной информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " add help\n\n" +
@@ -214,22 +213,23 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "Команды для просмотра ссылки на наш Trello, который используется для сообщений об ошибках и для запроса функций:\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " request```" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " request\n" +
                     "Если вам нужна дополнительная помощь, присоединяйтесь к моему серверу в Discord.  Там много пользователей, которые будут полезны вам:  " + Const.DISCORD_URL},
             {"incorrectArgs", "Вы передали мне неверные или отсутствующие значения.  Проверьте команду help для получения дополнительной информации.."},
             {"invite", "Привет %s! Вы можете пригласить меня на свой сервер!\n\n\t"
                     + "**Кликабельно:** <https://discordapp.com/oauth2/authorize?&client_id="
                     + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8>"},
-            {"inviteHelp", "```Markdown\n# ПРИГЛАШЕНИЕ\n* Используется для показа моей ссылки приглашения.\n\n## ПРИМЕНЕНИЕ:  "
+            {"inviteHelp", "# ПРИГЛАШЕНИЕ\n* Используется для показа моей ссылки приглашения.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " invite\n\tПриглашение бота NowLive на ваш сервер Discord.```"},
-            {"listHelp", "```Markdown\n# СПИСОК\n* Эта команда показывает базу данных.\n\n## ПРИМЕНЕНИЕ:  "
+                    + " invite\n\tПриглашение бота NowLive на ваш сервер Discord."},
+            {"listHelp", "# СПИСОК\n* Эта команда показывает базу данных.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list *option*"
-                    + "\n\tmixerChannel      - Список Mixer каналов, которые вы назначили"
-                    + "\n\tmixerTeam         - Список Mixer Teams, которые вы назначили"
+                    + "\n\tmixerChannel     - Список Mixer каналов, которые вы назначили"
+                    + "\n\tmixerTeam        - Список Mixer Teams, которые вы назначили"
                     + "\n\tgfilter          - Список всех, установленных вами, игровых фильтров"
                     + "\n\tmanager          - Список менеджеров на этом сервере"
+                    + "\n\tpicartoChannel   - Lists the Picarto Channels you follow"
                     + "\n\tsetting          - Список общих настроек бота"
                     + "\n\tsmashcastChannel - Список Smashcast каналов, которые вы назначали"
                     + "\n\tsmashcastGame    - Список Smashcast игр, которые вы назначали"
@@ -240,7 +240,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "\n\ttwitchGame       - Список Twitch игровых фильтров, установленных вами"
                     + "\n\ttwitchTeam       - Перечисляет Twitch team, которые вы назначили"
                     + "\n\tytgChannel       - Список YouTube Gaming каналов, которые вы назначили"
-                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel```"},
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel"},
             {"listSettings", "```Markdown\n" +
                     "# Параметры бота на вашем сервере" +
                     "\n* Компактный режим: %s:" +
@@ -260,12 +260,12 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"notifyEveryone", ":tada: ВАУ!!  **ВСЕ** на сервере уведомляются, когда я " +
                     "объявляю о трансляциях!  *(Ты уверен?  Я не рекомендую это для больших серверов...  Это может " +
                     "рассердить людей.)*"},
-            {"notifyHelp", "```Markdown\n# УВЕДОМЛЕНИЕ\n* Используется для изменения опции глобального уведомления для этого сервера.\n\n## ПРИМЕНЕНИЕ:  "
+            {"notifyHelp", "# УВЕДОМЛЕНИЕ\n* Используется для изменения опции глобального уведомления для этого сервера.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " notify <option>"
                     + "\n\tnone     - Нет @ упоминаний любого вида (по умолчанию)"
                     + "\n\there     - Я буду уведомлять только тех людей, которые находятся в сети, когда я делаю объявление"
                     + "\n\teveryone - Я сообщу ВСЕМ!!  Ахаха!!  (Я не рекомендую это на больших серверах)"
-                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " notify everyone" + "```"},
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " notify everyone"},
             {"notifyHere", " :bellhop_bell: Все, кто онлайн, получат упоминание, когда я анонсирую трансляции."},
             {"notifyNone", " :ok_hand: Я не буду упоминать никого в моих объявлениях."},
             {"nowLive", "НАЧАЛ(А) ТРАНСЛЯЦИЮ!\\\n"},
@@ -281,23 +281,24 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "их: \n\n"},
             {"oops", "Упс!  Что-то пошло не так. Ничего не изменилось! Попробуем снова."},
             {"patreon", "Если вы желаете пожертвовать для бота, перейдите в Patreon. https://www.patreon.com/nowlive"},
-            {"patreonHelp", "Дает ссылку на нашу страницу patreon."},
+            {"patreonHelp", "# Дает ссылку на нашу страницу patreon."},
             {"picartoChannelNotFound", "\n# Канал(ы), не найденные(ые) в Picarto: %s."},
             {"picartoHelp", "# PICARTO\n* Добавление и удаление каналов Picarto.\n"
                     + "* Заметки:\n\t"
                     + "Чтобы добавить фильтры заголовков, вы ДОЛЖНЫ включить скобки.\n\t"
                     + "НЕ ИСПОЛЬЗУЙТЕ полный URL Picarto. Это не будет работать!! Используйте только имя канала (часть после picarto.tv)\n\t"
                     + "Вы можете добавить несколько каналов и фильтров заголовков, используя символ | между ними.\n\t"
-                    + "Пока что поддерживаются только каналы. Категории Picarto очень ограничены, и большинство из них сгруппированы в несколько небольших избранных."
+                    + "Пока что поддерживаются только каналы. Категории Picarto очень ограничены, и большинство из них сгруппированы в несколько небольших избранных.\n\t"
                     + "Единственный необходимый параметр: channelName\n\n"
                     + "## Picarto Каналы\n"
-                    + "Заметка: Добавление канала объявлений и фильтров заголовков необязательно."
+                    + "Заметка: Добавление канала объявлений и фильтров заголовков необязательно.\n"
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel имяКанала #каналОбъявления [фильтрОписания]\n\n"
                     + "## Picarto Фильтры Описания (Глобальные)\n"
                     + "* Заметка: Это влияет на все объявления потоков для Picarto\n"
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [слово|dещё слово|ещё слово] #каналОбъявления\n\n"
                     + "* Пример:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (Добавляет Picarto канал для объявления в определенном Discord канале)\n\t"},
+
             {"ping", "Когда я был в Китае от Американской сборной по пинг-понгу ,  я очень любил играть моей " +
                     "Flexolite ракеткой."},
             {"pingHelp", "```Markdown\n# ПИНГ\n* Используйте для проверки моего времени отклика. Если я правильно работаю, я пришлю вам pong.\n\n## ПРИМЕНЕНИЕ: "
@@ -335,10 +336,10 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "еще не настроен. Повторите попытку позже.."},
             {"removed", "Удалено %s %s."},
             {"removeManagerFail", "Я не могу удалить %s , так как их нет в моей базе данных."},
-            {"removeHelp", "```Markdown\n# УДАЛЕНИЕ\n* Используется для удаления менеджеров из моей базы данных.\n\n## ПРИМЕНЕНИЕ:  "
+            {"removeHelp", "# УДАЛЕНИЕ\n* Используется для удаления менеджеров из моей базы данных.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @userName"
                     + "\n\tmanager - @ Упомяните пользователя для удалении из менеджеров"
-                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort"},
             {"servers", "Сервера"},
             {"setDefaultAnnounceChannelDoNotOwnChannel", "# Я не могу объявить канал, которого нет на вашем " +
                     "сервере!"},
@@ -371,20 +372,20 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "\t* %STATUS%    - Статус (описание) трансляции\n" +
                     "\t* %URL%       - Ссылка на стрим\n" +
                     "\t* %USER%      - Название Twitch канала\n" +
-                    "\t* %VIEWERS%   - Количество текущих просмотров\n\n" +
+                    "\t* %VIEWERS%   - Количество текуших просмотров\n\n" +
                     "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage " +
                     "%CHANNEL% начал стрим! Подробнее здесь (кликабельно): %URL%"},// <--- Do not translate between the %
             {"shardsThis", "Shard Номер"},
             {"shardsTotal", "Количество Shards"},
             {"smashcastChannelNotFound", "\n# Каналы(ы) не найденны(е) Smashcast: %s."},
-            {"smashcastHelp", "```Markdown\n# SMASHCAST\n* Добавление и удаление объектов, связанных с Smashcast.tv related.\n"
+            {"smashcastHelp", "# SMASHCAST\n* Добавление и удаление объектов, связанных с Smashcast.tv related.\n"
                     + "* Заметки:\n\t"
                     + "Чтобы добавить игровые фильтры и фильтры заголовков, вы ДОЛЖНЫ включить скобки.\n\t"
                     + "НЕ ИСПОЛЬЗУЙТЕ полный URL Smashcast. Это не будет работать!! Используйте только название канала (www.smashcast.tv/channelName)\n\t"
                     + "Вы можете добавить несколько каналов, teams, игр, игровых фильтров и фильтров заголовков, используя символ | между ними.\n\t"
                     + "Единственные необходимые параметры: названиеКанала/названиеTeam/названиеИгры\n\n"
                     + "## Smashcast Каналы\n"
-                    + "Заметка: Добавление канала объявлений, игровых фильтров и фильтров заголовков необязательно."
+                    + "Заметка: Добавление канала объявлений, игровых фильтров и фильтров заголовков необязательно.\n"
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel названиеКанала #каналОбъявления {игровойФильтр} [фильтрОписания]\n\n"
                     + "## Smashcast Игры (Объявление ВСЕХ прямых трансляций для игры)\n"
                     + "* Формат: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game названиеИгры #каналОповещения\n\n"
@@ -400,18 +401,17 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (Добавляет Smashcast канал с игровыми фильтрами для объявления в определенном Discord канале)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (Добавляет игру для объявления в Discord канале general)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (Добавляет team с определенным каналом объявлений.)\n\n"
-                    + "```"},
-            {"statusHelp", "```Markdown\n# СТАТУС\n* Показывает различную статистику бота.\n\n## ПРИМЕНЕНИЕ:  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},
-            {"streamlangHelp", "```Markdown\n# ЯЗЫКТРАНСЛЯЦИИ\n* Позволяет фильтровать потоки по тому языку, который транслируется " +
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (Добавляет team с определенным каналом объявлений.)"},
+            {"statusHelp", "# СТАТУС\n* Показывает различную статистику бота.\n\n## ПРИМЕНЕНИЕ:  "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " status"},
+            {"streamlangHelp", "# ЯЗЫКТРАНСЛЯЦИИ\n* Позволяет фильтровать потоки по тому языку, который транслируется " +
                     "in.  Это поддерживает английское правописание языка, или родное правописание. Должен быть поддержан " +
                     "язык на Twitch, указанный в профиле.\n\n## ПРИМЕНЕНИЕ: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND +
                     " streamlang <language>\n" +
                     "* Вы можете ввести слово на Английском, либо на родном языке."
-                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang german```"},
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang german"},
             {"streamTitleEmbed", "Описание"},
             {"streamsHelp", "```Markdown\n# ТРАНСЛЯЦИИ\n* Я вышлю вам список активных трансляций в личные сообщения.\n* (ПРИМЕЧАНИЕ: вы скорее всего " +
                     "получите несколько личных сообщений, используя эту команду, в зависимости от того, сколько трансляций " +
@@ -430,7 +430,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"twitchCommunityNotFound", "\n# Сообщество(а) не найдены на Twitch: %s."},
             {"twitchCommunityRemove", "\n# Сообщество(а) удалено(ы): %s."},
             {"twitchCommunityRemoveFail", "\n# Добавлена(ы) сообщество(ва): %s."},
-            {"twitchHelp", "```Markdown\n# TWITCH\n* Добавление и удаление объектов, связанных с Twitch.tv.\n"
+            {"twitchHelp", "# TWITCH\n* Добавление и удаление объектов, связанных с Twitch.tv.\n"
                     + "* Примечания:\n\t"
                     + "Чтобы добавить игровые фильтры и фильтры заголовков, вы ДОЛЖНЫ включить скобки.\n\t"
                     + "НЕ ИСПОЛЬЗУЙТЕ полный URL Twitch. Это не будет работать! Используйте только название канала (www.twitch.tv/channelName)\n\t"
@@ -457,8 +457,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "Warcraft} (добавляет twitch канал с игровыми фильтрами в заданный канал Discord)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (добавляет игру с объявлением в канале general)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (добавляет сообщество с заданный канал объявлений)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (добавляет team с заданным каналом объявлений).\n\n"
-                    + "```"},
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (добавляет team с заданным каналом объявлений)"},
             {"twitchTeams", "Twitch Teams"},
             {"typeOnce", "Вам нужно всего лишь ввести эту часть."},
             {"uniqueChannels", "Уникальные каналы %s"},
