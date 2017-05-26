@@ -291,7 +291,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "Benutze NICHT die komplette Picarto-URL.  Das funktioniert nicht!! Benutze nur den Kanalnamen (www.picarto.tv/KanalName)\n\t"
                     + "Du kannst mehrere Kanäle und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
                     + "Vorest sind nur Kanäle unterstützt.  Picarto-Kategorien sind sehr limitiert und es werden zum Großteil nur ein paar wenige benutzt.\n\t"
-                    + "Die einzig zwinged nötige option ist: KanalName\n\n"
+                    + "Die einzig zwinged nötige Option ist: KanalName\n\n"
                     + "## Picarto-Kanäle\n"
                     + "Hinweis: Benachrichtigungskanal und Titelfilter sind optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel KanalName BenachrichtigungsKanal [TitelFilter]\n\n"
