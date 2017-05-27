@@ -184,7 +184,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
                     "# PICARTO\n" +
-                    "* For more information, type: " +
+                    "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n\u200B" +
                     "# PING\n" +
                     "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
@@ -231,7 +231,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "\n\tmixerTeam        - Λίστα ομάδων που ακολουθείς στο Mixer"
                     + "\n\tgfilter          - Λίστα φίλτρων παιχνιδιών που έχεις ρυθμίσει"
                     + "\n\tmanager          - Λίστα διαχειριστών σε αυτόν το server"
-                    + "\n\tpicartoChannel   - Lists the Picarto Channels you follow"
+                    + "\n\tpicartoChannel   - Λίστα καναλιών που ακολουθείς στο Picarto"
                     + "\n\tsetting          - Λίστα κοινών ρυθμίσεων του bot"
                     + "\n\tsmashcastChannel - Λίστα καναλιών που ακολουθείς στο Smashcast"
                     + "\n\tsmashcastGame    - Λίστα παιχνιδιών που ακολουθείς στο Smashcast"
@@ -285,23 +285,23 @@ public class LanguageBundle_el extends ListResourceBundle {
             {"patreon", "Αν επιθυμείς να κάνεις δωρεά στο bot χρησιμοποίησε το Patreon μας. https://www.patreon.com/nowlive"},
             {"patreonHelp", "# Δίνει το link για τη σελίδα μας στο patreon."},
             {"picartoChannelNotFound", "\n# Channel(s) not found on Picarto: %s."},
-            {"picartoHelp", "# PICARTO\n* Add and remove things that are Picarto channels.\n"
-                    + "* Notes:\n\t"
-                    + "To add title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full Picarto URL. It will not work!! Only use the channel name (the part after picarto.tv)\n\t"
-                    + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
-                    + "Only channels are supported for now.  Picarto categories are very limited and most are grouped in a small select few.\n\t"
-                    + "The only required option is: channelName\n\n\u200B"
-                    + "## Picarto Channels\n"
-                    + "Note: Adding an announcement channel and title filters are optional.\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel channelName #announcementChannel [titleFilters]\n\n"
-                    + "## Picarto Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for Picarto\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "## Picarto Stream Stats\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto stats\n\n"
-                    + "* Example:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"},
+            {"picartoHelp", "# PICARTO\n* Προσθαφαίρεση πραγμάτων σχετικά με το Picarto.\n"
+                    + "* Σημειώσεις:\n\t"
+                    + "Για προσθήκη φίλτρων τίτλων, ΠΡΕΠΕΙ να συμπεριλάβεις τις παρενθέσεις.\n\t"
+                    + "Μη χρησιμοποιείς ολόκληρο το URL του Picarto. Δε θα λειτουργήσει!! Χρησιμοποίησε μόνο το όνομα του καναλιού (το κομμάτι μετά το picarto.tv)\n\t"
+                    + "Μπορείς να προσθέσεις πολλαπλά κανάλια και φίλτρα τίτλων χρησιμοποιώντας το χαρακτήρα | μεταξύ τους.\n\t"
+                    + "Για την ώρα υποστηρίζονται μόνο κανάλια.  Οι κατηγορίες στο Picarto είναι πολύ περιορισμένες.\n\t"
+                    + "Η μόνη αναγκαία επιλογή είναι η: όνομαΚαναλιού\n\n\u200B"
+                    + "## Κανάλια Picarto\n"
+                    + "Σημείωση: Η προσθήκη ενός καναλιού ανακοινώσεως και τα φίλτρα τίτλων είναι προαιρετικά.\n"
+                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel όνομαΚαναλιού #κανάλιΑνακοινώσεως [φίλτραΤίτλων]\n\n"
+                    + "## Φίλτρα Τίτλων Picarto (Global)\n"
+                    + "* ΣΗΜΕΙΩΣΗ: Αυτό επηρεάζει όλες τις ανακοινώσεις streams του Picarto\n"
+                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [λέξη|διαφορετικές λέξεις|περισσότερες λέξεις] #κανάλιΑνακοινώσεως\n\n"
+                    + "## Στατιστικά Stream του Picarto\n"
+                    + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto stats\n\n"
+                    + "* Παράδειγμα:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (προσθέτει ένα κανάλι προς ανακοίνωση σε συγκεκριμένο κανάλι)\n\t"},
             {"ping", "Όταν ήμουν στην Κίνα με την Αμερικάνικη ομάδα του Ping Pong , μου άρεσε να παίζω ping-pong με τη " +
                     "ρακέτα Flexolite του ping pong."},
             {"pingHelp", "```Markdown\n# PING\n* Χρησιμεύει για να μου κάνεις ping. Αν λειτουργώ κανονικά, θα σου στείλω pong.\n\n## ΧΡΗΣΗ: "
