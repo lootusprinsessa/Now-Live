@@ -113,17 +113,19 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
                     "Videos will be able to be played from Discord."},
             {"configHelp", "# CONFIG\n* Základní příkaz pro upravení mých nastavení. Zkontroluj si nápovědu pro každé nastavení pro více informací.\n\n" +
-                    "* defaultOfflineMessage - Navrátí původní offline zprávu (použito v upravovaných oznámeních)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
-                    "* defaultOnlineMessage - Navrátí původní oznamovací zprávu (použito ve všech oznámeních)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Nastaví globální oznamovací kanál\n" +
-                    "\t(Kanál, do kterého budou posílány oznámení pokud neuvedeš jiný v příkazu)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
-                    "* setOfflineMessage - Nastaví vlastní offline zprávu (použito v upravovaných oznámeních)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
-                    "* setOnlineMessage - Nastaví vlastní oznamovací zprávu (použito ve všech oznámeních)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
+                    "# defaultOfflineMessage\n\tNavrátí původní offline zprávu (použito v upravovaných oznámeních)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
+                    "# defaultOnlineMessage\n\tNavrátí původní oznamovací zprávu (použito ve všech oznámeních)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
+                    "# setDefaultAnnounceChannel\n\tNastaví globální oznamovací kanál\n\t" +
+                    "(Kanál, do kterého budou posílány oznámení pokud neuvedeš jiný v příkazu)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
+                    "# setOfflineMessage\n\tNastaví vlastní offline zprávu (použito v upravovaných oznámeních)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
+                    "# setOnlineMessage\n\tNastaví vlastní oznamovací zprávu (použito ve všech oznámeních)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help\n" +
+                    "# notify\n\tPoužívá se ke globálnímu nastavení oznámení na tomto serveru\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config notify help"},
             {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% je nyní živě! Sledujte jeho stream zde: %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Resetuje mojí offline zprávu na původní.\n\n" +
@@ -258,13 +260,19 @@ public class LanguageBundle_cs extends ListResourceBundle {
             {"notifyEveryone", ":tada: WHOA!!  **EVERYONE** to patří před oznámení které bude na tomto serveru " +
                     "oznamovat streamy!  *(Jsi si jistý?  Nedoporučuji toto na velkých serverech...  Může to lidi " +
                     "rozčílit.)*"},
+            {"notifyDeprecated", "# -nl notify is deprecated no longer being used.  Please use: -nl config notify"},
             {"notifyHelp", "# NOTIFY\n* Používá se ke globálnímu nastavení oznámení na tomto serveru.\n\n## USAGE:  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " notify <volba>"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " config notify <volba>"
                     + "\n\tnone     - Žádné @ notifikace! (základní)"
                     + "\n\there     - Upozorním pouze uživatele co jsou zrovna online na tomto serveru"
                     + "\n\teveryone - Upozorním VŠECHNY!!  Mwahahaha!!  (Nedoporučuji toto na velkých serverech)"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " notify everyone"},
+                    + "\n\t@<role>  - I will send an @ mention for the role of your choice"
+                    + "\n\t@<user>  - Want to notify a single user?  This is the option for you!"
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config notify everyone"},
             {"notifyHere", " :bellhop_bell: Všichni kdo jsou zrovna online na serveu dostanou upozornění."},
+            {"notifyRoleUser", "# I will @ mention %s with every announcement"},
+            {"notifyTooMany", "# You can only notify one %s at a time!"},
+            {"notifyMultipleUsers", " If you want multiple users notified, create a role and have it notified."},
             {"notifyNone", " :ok_hand: Nebudu nikoho upozorňovat."},
             {"nowLive", "NYNÍ ŽIVĚ!\n"},
             {"nowPlayingEmbed", "Nyní hraje"},

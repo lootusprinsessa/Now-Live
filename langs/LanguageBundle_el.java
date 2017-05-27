@@ -115,17 +115,19 @@ public class LanguageBundle_el extends ListResourceBundle {
             {"compactVideoEmbed", " :compression: Δεν θα έχεις ανακοινώσεις με πλούσιο κείμενο από εδώ και στο εξής.  " +
                     "Θα είναι δυνατό να παιχτούν τα videos από το Discord."},
             {"configHelp", "# CONFIG\n* Η βασική εντολή για τις διάφορες ρυθμίσεις. Τσέκαρε το help κάθε ρύθμισης για περισσότερες πληροφορίες.\n\n" +
-                    "* defaultOfflineMessage - Επαναφέρει το προεπιλεγμένο μήνυμα offline στην προεπιλογή (χρησιμοποιείται στις επεξεργασμένες ανακοινώσεις)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
-                    "* defaultOnlineMessage - Επαναφέρει το προεπιλεγμένο μήνυμα ανακοινώσεων (χρησιμοποιείται σε όλες τις ανακοινώσεις)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Ρυθμίζει το προεπιλεγμένο κανάλι ανακοινώσεων\n" +
-                    "\t(Που θα γίνεται η ανακοίνωση αν δεν συμπεριλαμβάνεις συγκεκριμένο κανάλι στην εντολή Twitch)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
-                    "* setOfflineMessage - Ρυθμίζει ένα προσαρμοσμένο μήνυμα offline (χρησιμοποιείται στις επεξεργασμένες ανακοινώσεις)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
-                    "* setOnlineMessage - Ρυθμίζει ένα προσαρμοσμένο μήνυμα ανακοίνωσης (χρησιμοποιείται σε όλες τις ανακοινώσεις)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
+                    "# defaultOfflineMessage\n\tΕπαναφέρει το προεπιλεγμένο μήνυμα offline στην προεπιλογή (χρησιμοποιείται στις επεξεργασμένες ανακοινώσεις)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
+                    "# defaultOnlineMessage\n\tΕπαναφέρει το προεπιλεγμένο μήνυμα ανακοινώσεων (χρησιμοποιείται σε όλες τις ανακοινώσεις)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
+                    "# setDefaultAnnounceChannel\n\tΡυθμίζει το προεπιλεγμένο κανάλι ανακοινώσεων\n\t" +
+                    "(Που θα γίνεται η ανακοίνωση αν δεν συμπεριλαμβάνεις συγκεκριμένο κανάλι στην εντολή Twitch)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
+                    "# setOfflineMessage\n\tΡυθμίζει ένα προσαρμοσμένο μήνυμα offline (χρησιμοποιείται στις επεξεργασμένες ανακοινώσεις)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
+                    "# setOnlineMessage\n\tΡυθμίζει ένα προσαρμοσμένο μήνυμα ανακοίνωσης (χρησιμοποιείται σε όλες τις ανακοινώσεις)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help\n" +
+                    "# notify\n\tΧρησιμοποιείται για να αλλάξει τη global ρύθμιση ειδοποιήσεων σε αυτόν το server.\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config notify help"},
             {"customMessageNotNull", "# Το προσαρμοσμένο μήνυμα δε μπορεί να είναι κενό.  Λυπάμαι...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "Το κανάλι %CHANNEL% μόλις ξεκίνησε το streaming! Δείτε το stream εδώ: %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Επαναφέρει το προεπιλεγμένο μήνυμα offline.\n\n" +
@@ -262,13 +264,19 @@ public class LanguageBundle_el extends ListResourceBundle {
             {"notifyEveryone", ":tada: ΩΠΑ!!  **ΟΛΟΙ** στο server θα ειδοποιηθούν όταν θα " +
                     "ανακοινώνω streams!  *(Είσαι σίγουρος;  Δεν το προτείνω αυτό για μεγάλους servers...  Μπορεί να " +
                     "ενοχλήσει τον κόσμο.)*"},
+            {"notifyDeprecated", "# -nl notify is deprecated no longer being used.  Please use: -nl config notify"},
             {"notifyHelp", "# NOTIFY\n* Χρησιμοποιείται για να αλλάξει τη global ρύθμιση ειδοποιήσεων σε αυτόν το server.\n\n## USAGE:  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " notify <option>"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " config notify <option>"
                     + "\n\tnone     - Καμία ειδοποιήση @ (προεπιλογή)"
                     + "\n\there     - Θα ειδοποιώ μόνο αυτούς που είναι online όταν κάνω την ανακοίνωση"
                     + "\n\teveryone - Θα ειδοποιώ τους ΠΑΝΤΕΣ!!  Μουαχαχαχά!!  (Δεν το προτείνω για μεγάλους servers)"
-                    + "\n\n## Π.Χ.:  " + Const.COMMAND_PREFIX + Const.COMMAND + " notify everyone"},
+                    + "\n\t@<role>  - I will send an @ mention for the role of your choice"
+                    + "\n\t@<user>  - Want to notify a single user?  This is the option for you!"
+                    + "\n\n## Π.Χ.:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config notify everyone"},
             {"notifyHere", " :bellhop_bell: Όσοι είναι online θα λαμβάνουν ειδοποίηση όταν ανακοινώνω streams."},
+            {"notifyRoleUser", "# I will @ mention %s with every announcement"},
+            {"notifyTooMany", "# You can only notify one %s at a time!"},
+            {"notifyMultipleUsers", " If you want multiple users notified, create a role and have it notified."},
             {"notifyNone", " :ok_hand: Δεν θα ειδοποιώ κανέναν όταν κάνω ανακοινώσεις."},
             {"nowLive", "ΖΩΝΤΑΝΑ!\n"},
             {"nowPlayingEmbed", "Παίζει"},

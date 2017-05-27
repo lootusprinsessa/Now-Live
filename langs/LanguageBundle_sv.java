@@ -114,17 +114,19 @@ public class LanguageBundle_sv extends ListResourceBundle {
             {"compactVideoEmbed", " :compression: You will no longer get rich embedded announcements.  " +
                     "Videos will be able to be played from Discord."},
             {"configHelp", "# CONFIG\n* The base command to set my various settings. Check each specific settings help for more info.\n\n" +
-                    "* defaultOfflineMessage - Returns the offline message to the default (used in edited announcements)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
-                    "* defaultOnlineMessage - Returns the announcement message to the default (used in all announcements)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Set the default announcement channel\n" +
-                    "\t(Where it announces when you don't include a specific channel in the Twitch command)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
-                    "* setOfflineMessage - Set a custom offline message (used in edited announcements)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
-                    "* setOnlineMessage - Set a custom announcement message (used in all announcements)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
+                    "# defaultOfflineMessage\n\tReturns the offline message to the default (used in edited announcements)\n\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
+                    "# defaultOnlineMessage\n\tReturns the announcement message to the default (used in all announcements)\n\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
+                    "# setDefaultAnnounceChannel\n\tSet the default announcement channel\n\t" +
+                    "(Where it announces when you don't include a specific channel in the Twitch command)\n\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
+                    "# setOfflineMessage\n\tSet a custom offline message (used in edited announcements)\n\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
+                    "# setOnlineMessage\n\tSet a custom announcement message (used in all announcements)\n\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"+
+                    "# notify\n\tSet a custom announcement message (used in all announcements)\n" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
             {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% has just gone live! Watch their stream here: %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Reset my offline message to the default.\n\n" +
@@ -260,13 +262,19 @@ public class LanguageBundle_sv extends ListResourceBundle {
             {"notifyEveryone", ":tada: WHOA!!  **EVERYONE** that belongs to the server will get notified when I " +
                     "announce streams!  *(Are you sure?  I don't recommend this for large servers...  It can make " +
                     "people grumpy.)*"},
+            {"notifyDeprecated", "# -nl notify is deprecated no longer being used.  Please use: -nl config notify"},
             {"notifyHelp", "# NOTIFY\n* Used to change the global notification option for this server.\n\n## USAGE:  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " notify <option>"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " config notify <option>"
                     + "\n\tnone     - No @ notifications of any kind (default)"
                     + "\n\there     - I will notify only those people that are online when I make the announcement"
                     + "\n\teveryone - I'll notify EVERYONE!!  Mwahahaha!!  (I don't recommend this on large servers)"
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " notify everyone"},
+                    + "\n\t@<role>  - I will send an @ mention for the role of your choice"
+                    + "\n\t@<user>  - Want to notify a single user?  This is the option for you!"
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config notify everyone"},
             {"notifyHere", "bellhop_bell: Alla som är online kommer att få ett omnämnande när jag tillkännager strömmar."},
+            {"notifyRoleUser", "# I will @ mention %s with every announcement"},
+            {"notifyTooMany", "# You can only notify one %s at a time!"},
+            {"notifyMultipleUsers", " If you want multiple users notified, create a role and have it notified."},
             {"notifyNone", "ok_hand. Jag kommer inte att nämna någon i mina meddelanden"},
             {"nowLive", "NU LIVE!\n"},
             {"nowPlayingEmbed", "Now Playing"},

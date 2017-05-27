@@ -116,17 +116,19 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
                     "Videos will be able to be played from Discord."},
             {"configHelp", "# CONFIG\n* Der Grundbefehl um einiges meiner Einstellungen zu ändern. Für mehr Infos, prüfe jede spezifische Einstellungs-Help.\n\n" +
-                    "* defaultOfflineMessage - Setzt die Einstellungen der Offline-Nachrichten zurück. (Für bearbeitete Benachrichtigungen zuständig.)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
-                    "* defaultOnlineMessage - Setzt die Einstellungen der Offline-Nachrichten zurück. (Für alle Benachrichtigungen zuständig.)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Legt den Standardchannel für die Benachrichtigungen fest. " +
-                    "(wo es dann benachrichtigt, wenn du keinen spezifischen Channel im Befehl angibst)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
-                    "* setOfflineMessage - Lege eine eigene Offline-Nachricht fest. (Für bearbeitete Benachrichtigungen zuständig.)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
-                    "* setOnlineMessage - Lege eine eigene Benachrichtigung fest. (Für alle Benachrichtigungen zuständig.)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
+                    "# defaultOfflineMessage\n\tSetzt die Einstellungen der Offline-Nachrichten zurück. (Für bearbeitete Benachrichtigungen zuständig.)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
+                    "# defaultOnlineMessage\n\tSetzt die Einstellungen der Offline-Nachrichten zurück. (Für alle Benachrichtigungen zuständig.)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
+                    "# setDefaultAnnounceChannel\n\tLegt den Standardchannel für die Benachrichtigungen fest.\n\t" +
+                    "(wo es dann benachrichtigt, wenn du keinen spezifischen Channel im Befehl angibst)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
+                    "# setOfflineMessage\n\tLege eine eigene Offline-Nachricht fest. (Für bearbeitete Benachrichtigungen zuständig.)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
+                    "# setOnlineMessage\n\tLege eine eigene Offline-Nachricht fest. (Für bearbeitete Benachrichtigungen zuständig.)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help\n" +
+                    "# notify\n\tÄndert die globablen Benachrichtigunseinstellungen.\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config notify help"},
             {"customMessageNotNull", "# Die eigene Nachricht kann nicht leer sein.  Entschuldigung...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% ist gerade live! Siehe den Stream hier: %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Setzt die Offline-Nachricht zurück.\n\n" +
@@ -264,13 +266,19 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"notifyEveryone", ":tada: WOW!!  **JEDER** in diesem Server wird benachrichtigt, wenn ich " +
                     "einen Stream poste!  *(Bist du sicher? In größeren Server könnte es  " +
                     "Leute nerven...)*"},
+            {"notifyDeprecated", "# -nl notify is deprecated no longer being used.  Please use: -nl config notify"},
             {"notifyHelp", "# NOTIFY\n* Ändert die globablen Benachrichtigunseinstellungen.\n\n## VERWENDUNG:  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " notify <option>"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " config notify <option>"
                     + "\n\tnone     - Keine @ Mitteilungen (Standardeinstellung)"
                     + "\n\there - Ich benachrichtige alle, die online sind (via ``@here``)"
                     + "\n\teveryone - Ich benachrichtige ALLE!!  Muhahaha!!  (Nicht für größere Server empfohlen!)"
-                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " notify everyone"},
+                    + "\n\t@<role>  - I will send an @ mention for the role of your choice"
+                    + "\n\t@<user>  - Want to notify a single user?  This is the option for you!"
+                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config notify everyone"},
             {"notifyHere", " :bellhop_bell: Alle, die online sind, werden benachrichtigt."},
+            {"notifyRoleUser", "# I will @ mention %s with every announcement"},
+            {"notifyTooMany", "# You can only notify one %s at a time!"},
+            {"notifyMultipleUsers", " If you want multiple users notified, create a role and have it notified."},
             {"notifyNone", " :ok_hand: Ich werde keine @ Mitteilungen mehr benutzen."},
             {"nowLive", "NOW LIVE!\n"},
             {"nowPlayingEmbed", "Spielt gerade"},

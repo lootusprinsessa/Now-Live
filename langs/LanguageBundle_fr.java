@@ -115,17 +115,19 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
                     "Videos will be able to be played from Discord."},
             {"configHelp", "# CONFIG\n* La commande à utiliser pour me paramétrer. Regarde l'aide de chaque paramètre pour comprendre son fonctionnement.\n\n" +
-                    "* defaultOfflineMessage - Réinitialise le message hors-ligne (utilisé dans les annonces modifiées)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
-                    "* defaultOnlineMessage - Réinitialise le message d'annonce (utilisé dans toutes les annonces)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Choisir un salon d'annonce par défaut " +
-                    "(où le bot annonce quand tu n'inclus pas un salon dans la commande Twitch)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
-                    "* setOfflineMessage - Utiliser un message \"hors-ligne\" personnalisé (utilisé dans les annonce modifiées)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
-                    "* setOnlineMessage - Utiliser un message d'annonce personnalisé (utilisé dans toutes les annonces)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
+                    "# defaultOfflineMessage\n\tRéinitialise le message hors-ligne (utilisé dans les annonces modifiées)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
+                    "# defaultOnlineMessage\n\tRéinitialise le message d'annonce (utilisé dans toutes les annonces)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
+                    "# setDefaultAnnounceChannel\n\tChoisir un salon d'annonce par défaut\n\t" +
+                    "(où le bot annonce quand tu n'inclus pas un salon dans la commande Twitch)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
+                    "# setOfflineMessage\n\tUtiliser un message \"hors-ligne\" personnalisé (utilisé dans les annonce modifiées)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
+                    "# setOnlineMessage\n\tUtiliser un message d'annonce personnalisé (utilisé dans toutes les annonces)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help\n" +
+                    "# notify\n\tUtilisé pour changer les options de notifications globales du serveur.\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config notify help"},
             {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% est en live ! Regarde le stream ici : %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Réinitialiser le message hors-ligne.\n\n" +
@@ -261,13 +263,19 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"notifyEveryone", ":tada: WOW !!  **TOUT LE MONDE** sur le serveur sera notifié quand j'annoncerai " +
                     "des streams !  *(Es-tu sûr ? Je ne le recommande pas aux grands serveurs... Cela peut " +
                     "énerver les gens.)*"},
+            {"notifyDeprecated", "# -nl notify is deprecated no longer being used.  Please use: -nl config notify"},
             {"notifyHelp", "# NOTIFY:\n*  Utilisé pour changer les options de notifications globales du serveur.\n\n## UTILISATION :  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " notify <option>"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " config notify <option>"
                     + "\n\tnone - Aucune mention @ de quelque sorte que ce soit. (par défaut)"
                     + "\n\there - Je préviendrai uniquement les personnes qui sont en ligne au moment de l'annonce"
                     + "\n\teveryone - Je préviendrai TOUT LE MONDE !! Mouahahaha !! (Je ne le recommande pas aux grands serveurs)"
-                    + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " notify everyone"},
+                    + "\n\t@<role>  - I will send an @ mention for the role of your choice"
+                    + "\n\t@<user>  - Want to notify a single user?  This is the option for you!"
+                    + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " config notify everyone"},
             {"notifyHere", " :bellhop_bell: Tous ceux qui sont en ligne recevront une notification quand j'annoncerai un stream."},
+            {"notifyRoleUser", "# I will @ mention %s with every announcement"},
+            {"notifyTooMany", "# You can only notify one %s at a time!"},
+            {"notifyMultipleUsers", " If you want multiple users notified, create a role and have it notified."},
             {"notifyNone", " :ok_hand: Je ne mentionnerai plus personne dans mes annonces."},
             {"nowLive", "EN LIVE !\n"},
             {"nowPlayingEmbed", "Joue à"},
