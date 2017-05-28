@@ -264,19 +264,19 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"notifyEveryone", ":tada: ВАУ!!  **ВСЕ** на сервере уведомляются, когда я " +
                     "объявляю о трансляциях!  *(Ты уверен?  Я не рекомендую это для больших серверов...  Это может " +
                     "рассердить людей.)*"},
-            {"notifyDeprecated", "# -nl notify is deprecated no longer being used.  Please use: -nl config notify"},
+            {"notifyDeprecated", "# -nl notify больше не используется.  Пожалуйста используйте: -nl config notify"},
             {"notifyHelp", "# УВЕДОМЛЕНИЕ\n* Используется для изменения опции глобального уведомления для этого сервера.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " config notify <option>"
                     + "\n\tnone     - Нет @ упоминаний любого вида (по умолчанию)"
                     + "\n\there     - Я буду уведомлять только тех людей, которые находятся в сети, когда я делаю объявление"
                     + "\n\teveryone - Я сообщу ВСЕМ!!  Ахаха!!  (Я не рекомендую это на больших серверах)"
-                    + "\n\t@<role>  - I will send an @ mention for the role of your choice"
-                    + "\n\t@<user>  - Want to notify a single user?  This is the option for you!"
+                    + "\n\t@<role>  - Я буду @ упоминать роль выбранную вами"
+                    + "\n\t@<user>  - Хотите уведомить одного пользователя? Это вариант для вас!"
                     + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config notify everyone"},
             {"notifyHere", " :bellhop_bell: Все, кто онлайн, получат упоминание, когда я анонсирую трансляции."},
-            {"notifyRoleUser", "# I will @ mention %s with every announcement"},
-            {"notifyTooMany", "# You can only notify one %s at a time!"},
-            {"notifyMultipleUsers", " If you want multiple users notified, create a role and have it notified."},
+            {"notifyRoleUser", "# Я буду @ упоминать %s в каждом объявлении"},
+            {"notifyTooMany", "# Вы можете уведомлять только одного %s за раз!"},
+            {"notifyMultipleUsers", " Если вы хотите, чтобы несколько пользователей уведомлялись, создайте роль для этого."},
             {"notifyNone", " :ok_hand: Я не буду упоминать никого в моих объявлениях."},
             {"nowLive", "НАЧАЛ(А) ТРАНСЛЯЦИЮ!\\\n"},
             {"nowPlayingEmbed", "Сейчас играет в"},
