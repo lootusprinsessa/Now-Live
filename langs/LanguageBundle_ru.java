@@ -87,14 +87,14 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"canNotRemoveOwner", "Глупо. Вы не можете удалить владельца сервера из списка менеджеров. :laughing: " +
                     ":laughing:"},
             {"cleanupFail", "Хм... Что-то пошло не так... Лучше попробуйте это еще раз."},
-            {"cleanupHelp", "```Markdown\n# ОЧИСТКА\n*  Изменение способа очистки моих уведомлений о трансляциях.\n\n## ПРИМЕНЕНИЕ:"
+            {"cleanupHelp", "# ОЧИСТКА\n*  Изменение способа очистки моих уведомлений о трансляциях.\n\n## ПРИМЕНЕНИЕ:"
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " cleanup <option>"
                     + "\n\tnone   - Я ничего не буду менять в своих объявлениях! (по умолчанию)"
                     + "\n\tedit   - Я отредактирую свои объявления, чтобы сказать \"OFFLINE\" , когда стрим окончен"
                     + "\n\tdelete - Я удалю объявление, когда стрим окончен"
-                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " cleanup edit" + "```"},
+                    + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " cleanup edit"},
             {"cleanupSuccessDelete", "Как скажете!  Теперь я буду удалять мои объявления, если трансляция окончена!"},
             {"cleanupSuccessEdit", "Я буду редактировать мои объявления, если трансляция началась или окончена."},
             {"cleanupSuccessNone", " :ok_hand: Я ничего не буду делать с моими объявлениями."},
@@ -427,12 +427,12 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "* Вы можете ввести слово на Английском, либо на родном языке."
                     + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang german"},
             {"streamTitleEmbed", "Описание"},
-            {"streamsHelp", "```Markdown\n# ТРАНСЛЯЦИИ\n* Я вышлю вам список активных трансляций в личные сообщения.\n* (ПРИМЕЧАНИЕ: вы скорее всего " +
+            {"streamsHelp", "# ТРАНСЛЯЦИИ\n* Я вышлю вам список активных трансляций в личные сообщения.\n* (ПРИМЕЧАНИЕ: вы скорее всего " +
                     "получите несколько личных сообщений, используя эту команду, в зависимости от того, сколько трансляций " +
                     "отслеживается!)\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " streams```"},
+                    + " streams"},
             {"totalViewsEmbed", "Всего просмотров"},
             {"trello", "Чтобы сообщить об ошибке или запросить функции, которые будут добавлены к боту, пожалуйста, используйте наш Trello. " +
                     "https://trello.com/invite/b/kcWshbIU/a94c145e598be9f8dd734197ba07288e/now-live-bot"},
