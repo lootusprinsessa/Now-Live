@@ -51,7 +51,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "Pour ajouter des filtres de jeu et des filtres de titre, vous DEVEZ inclure respectivement les accolades et les crochets.\n\t"
                     + "N'utilisez PAS l'adresse Mixer entière, ça ne marchera pas !! Utilisez uniquement le nom de la chaîne (mixer.com/nomChaine)\n\t"
                     + "Vous pouvez ajouter plusieurs chaînes, équipes, jeux, communautés, filtres de jeu/titre en utilisant la barre verticale | entre eux.\n\t"
-                    + "Les seules options requises sont nomChaine/nomEquipe\n\n\u200B"
+                    + "Les seules options requises sont nomChaine/nomEquipe\n\u200B\n"
                     + "## Chaînes Mixer\n"
                     + "Note : En ajoutant un salon pour les annonces (salonAnnonce), les filtres de jeu/titre sont optionnels.\n"
                     + "* Format : " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel nomChaine #salonAnnonce {filtreJeu} [filtreTitre]\n\n"
@@ -115,6 +115,8 @@ public class LanguageBundle_fr extends ListResourceBundle {
             {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
                     "Videos will be able to be played from Discord."},
             {"configHelp", "# CONFIG\n* La commande à utiliser pour me paramétrer. Regarde l'aide de chaque paramètre pour comprendre son fonctionnement.\n\n" +
+                    "# checkPerms\n\tCheck the permissions the bot needs in a particular text channel (#discordChannel is optional)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordChannel\n" +
                     "# defaultOfflineMessage\n\tRéinitialise le message hors-ligne (utilisé dans les annonces modifiées)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "# defaultOnlineMessage\n\tRéinitialise le message d'annonce (utilisé dans toutes les annonces)\n*\t" +
@@ -182,12 +184,9 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     "# LIST\n" +
                     "* Pour plus d'informations, tape : " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " list help\n\n" +
-                    "# NOTIFY\n" +
-                    "* Pour plus d'informations, tape : " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
                     "# PICARTO\n" +
                     "* Pour plus d'informations, tape : " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n\u200B" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\u200B\n" +
                     "# PING\n" +
                     "* Pour plus d'informations, tape : " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
@@ -244,15 +243,25 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "\n\ttwitchTeam       - Liste les équipes Twitch suivies"
                     + "\n\tytgChannel       - Liste les chaînes YouTube Gaming suivies"
                     + "\n\n## EXEMPLE :  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel"},
-            {"listSettings", "```Markdown\n" +
-                    "# Paramètres du bot sur le serveur" +
+            /* Please order listSettings like this then remove this comment.  NEW > Default announcement channel is: %s.
+            REMOVE THE ENGLISH listSettings AND REMOVE THE COMMENT TAGS WHEN DONE :)
+            {"listSettings", "# Bot Settings on Your Server" +
+                    "\n* Bot language is set to: %s." +
+                    "\n* Broadcaster language is set to: %s." +
+                    "\n* Cleanup is set to: %s." +
+                    "\n* Compact mode is set to: %s." +
+                    "\n* Current online announcement message format is: %s." +
+                    "\n* Current offline announcement message format is: %s." +
+                    "\n* Default announcement channel is: %s" +
+                    "\n* Notification is set to: %s."},
+            {"listSettings", "# Paramètres du bot sur le serveur" +
                     "\n* Le mode compact est %s." +
                     "\n* Les notifications sont sur %s." +
                     "\n* Le nettoyage est en mode %s." +
                     "\n* La langue de diffusion est sur %s." +
                     "\n* La langue du bot est %s." +
                     "\n* Le format des annonces est actuellement : %s." +
-                    "\n* Le format du message hors-ligne est actuellement : %s.```"},
+                    "\n* Le format du message hors-ligne est actuellement : %s."},*/
             {"needOneManager", "Si tu supprimes celui-là, qui va me gérer ?"},
             {"noBotManager", "C'est contre les lois de l'union des bots de Discord de laisser des bots me gérer. Désolé, essaie de trouver un " +
                     "humain approprié pour ce travail. :thumbsup:"},
@@ -298,7 +307,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "N'utilisez PAS l'adresse Picarto entière, ça ne marchera pas !! Utilisez uniquement le nom de la chaîne (www.picarto.tv/nomChaine)\n\t"
                     + "Vous pouvez ajouter plusieurs chaînes/filtres de titre en utilisant la barre verticale | entre eux.\n\t"
                     + "Now Live supporte uniquement les chaînes, pour le moment.  Les catégories Picarto sont très limitées et les chaînes sont groupées en grandes catégories.\n\t"
-                    + "La seule option requise est nomChaine.\n\n\u200B"
+                    + "La seule option requise est nomChaine.\n\u200B\n"
                     + "## Chaînes Picarto\n"
                     + "* NOTE : L'ajout d'un salon d'annonce et de filtres de titre est optionnel.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel nomChaine #salonAnnonce [filtresTitre]\n\n"
@@ -393,7 +402,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "Pour ajouter des filtres de jeu et des filtres de titre, vous DEVEZ inclure les crochets.\n\t"
                     + "N'utilisez PAS l'adresse Smashcast entière, ça ne marchera pas !! Utilisez uniquement le nom de la chaîne (www.smashcast.tv/nomChaine)\n\t"
                     + "Vous pouvez ajouter plusieurs chaînes, équipes, jeux, filtres de jeu/titre en utilisant la barre verticale | entre eux.\n\t"
-                    + "Les seules options requises sont nomChaine/nomEquipe/nomJeu\n\n\u200B"
+                    + "Les seules options requises sont nomChaine/nomEquipe/nomJeu\n\u200B\n"
                     + "## Chaînes Smashcast\n"
                     + "Note : En ajoutant un salon pour les annonces (salonAnnonce), les filtres de jeu/titre sont optionnels.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel nomChaine #salonAnnonce {filtreJeu} [filtreTitre]\n\n"
@@ -414,6 +423,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "Warcraft} (ajoute une chaîne à annoncer dans un certain salon et des filtres de jeu)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (ajoute un jeu au salon d'annonce global)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (ajoute une équipe dans le salon d'annonce #instinct-streamers)"},
+            {"staffOverride", "*Permission of this command have been overridden by a member of the bot staff.*"},
             {"statusHelp", "# STATUS\n* Affiche diverses statistiques du bot.\n\n## UTILISATION :  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status"},
             {"streamlangHelp", "# STREAMLANG\n* Permet de filtrer les streams par la langue dans laquelle ils sont " +
@@ -456,9 +466,9 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "N'utilisez PAS l'adresse Twitch entière, ça ne marchera pas !! Utilisez uniquement le nom de la chaîne (www.twitch.tv/nomChaine)\n\t"
                     + "Le nom d'équipe doit être celui de l'adresse, et non pas le nom d'affichage. (www.twitch.tv/team/nomEquipe)\n\t"
                     + "Vous pouvez ajouter plusieurs chaînes, équipes, jeux, communautés, filtres de jeu/titre en utilisant la barre verticale | entre eux.\n\t"
-                    + "Les seules options requises sont nomChaine/nomCommunauté/nomEquipe/nomJeu \n\n\u200B"
+                    + "Les seules options requises sont nomChaine/nomCommunauté/nomEquipe/nomJeu \n\u200B\n"
                     + "## Chaînes Twitch\n"
-                    + "Note : En ajoutant un salon pour les annonces (salonAnnonce), les filtres de jeu/titre sont optionnels."
+                    + "Note : En ajoutant un salon pour les annonces (salonAnnonce), les filtres de jeu/titre sont optionnels.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel nomChaine #salonAnnonce {filtreJeu} [filtreTitre]\n\n"
                     + "## Communautés Twitch (Annoncer TOUS les lives dans la communauté)\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community nomCommunauté #salonAnnonce\n\n"
@@ -473,7 +483,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "* NOTE : Cela affecte toutes les annonces de streams pour Twitch\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [word|different words|more words] #salonAnnonce\n\n"
                     + "## Statistiques Twitch\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\n\u200B"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\u200B\n"
                     + "* Exemples :\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #streams {Overwatch|World of "
                     + "Warcraft} (ajoute une chaîne à annoncer dans un certain salon et des filtres de jeu)\n\t"
@@ -500,7 +510,7 @@ public class LanguageBundle_fr extends ListResourceBundle {
                     + "Vous pouvez ajouter plusieurs chaînes et plusieurs filtres de titre en utilisant la barre verticale | entre eux.\n\t"
                     + "Seules les chaînes sont supportées, pour le moment. L'API YouTube n'affiche pas le nom de jeu qu'il faut, contrairement à dans d'autres commandes.\n\t"
                     + "Il n'y a pas de filtres de jeu sur YouTube.  Voir la note sur l'API au-dessus.\n\t"
-                    + "La seule option requise est : nomChaine\n\n\u200B"
+                    + "La seule option requise est : nomChaine\n\u200B\n"
                     + "## Chaînes YouTube Gaming Channels\n"
                     + "Note : Ajouter un salon d'annonce et un filtre de titre est optionnel."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel nomChaine #salonAnnonce [filtreTitre]\n\n"

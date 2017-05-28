@@ -51,7 +51,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "Για να προσθέσεις φίλτρα παιχνιδιών και τίτλων, ΠΡΕΠΕΙ να συμπεριλάβεις τις παρενθέσεις.\n\t"
                     + "ΜΗ χρησιμοποιείς ολόκληρο το URL του Mixer. Δε θα δουλέψει!! Χρησιμοποίησε μόνο το όνομα του καναλιού (www.mixer.com/ΟΝΟΜΑ)\n\t"
                     + "Μπορείς να προσθέσεις πολλαπλά κανάλια, ομάδες, φίλτρα παιχνιδιών και φίλτρα τίτλων χρησιμοποιώντας το χαρακτήρα | μεταξύ τους.\n\t"
-                    + "Οι μόνες επιλογές που απαιτούνται είναι: όνομαΚαναλιόυ/όνομαΟμάδας\n\n\u200B"
+                    + "Οι μόνες επιλογές που απαιτούνται είναι: όνομαΚαναλιόυ/όνομαΟμάδας\n\u200B\n"
                     + "## Κανάλια Mixer\n"
                     + "Σημείωση: Η προσθήκη καναλιού ανακοίνωσης, καθώς και τα φίλτρα παιχνιδιών και τίτλων είναι προαιρετικά.\n"
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel όνομαΚαναλιού #κανάλιΑνακοίνωσης {φίλτραΠαιχνιδιών} [φίλτραΤίτλων]\n\n"
@@ -115,6 +115,8 @@ public class LanguageBundle_el extends ListResourceBundle {
             {"compactVideoEmbed", " :compression: Δεν θα έχεις ανακοινώσεις με πλούσιο κείμενο από εδώ και στο εξής.  " +
                     "Θα είναι δυνατό να παιχτούν τα videos από το Discord."},
             {"configHelp", "# CONFIG\n* Η βασική εντολή για τις διάφορες ρυθμίσεις. Τσέκαρε το help κάθε ρύθμισης για περισσότερες πληροφορίες.\n\n" +
+                    "# checkPerms\n\tCheck the permissions the bot needs in a particular text channel (#discordChannel is optional)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordChannel\n" +
                     "# defaultOfflineMessage\n\tΕπαναφέρει το προεπιλεγμένο μήνυμα offline στην προεπιλογή (χρησιμοποιείται στις επεξεργασμένες ανακοινώσεις)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "# defaultOnlineMessage\n\tΕπαναφέρει το προεπιλεγμένο μήνυμα ανακοινώσεων (χρησιμοποιείται σε όλες τις ανακοινώσεις)\n*\t" +
@@ -182,12 +184,9 @@ public class LanguageBundle_el extends ListResourceBundle {
                     "# LIST\n" +
                     "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " list help\n\n" +
-                    "# NOTIFY\n" +
-                    "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
                     "# PICARTO\n" +
                     "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n\u200B" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\u200B\n" +
                     "# PING\n" +
                     "* Για περισσότερες πληροφορίες, πληκτρολόγησε: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
@@ -245,15 +244,25 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "\n\ttwitchTeam       - Λίστα ομάδων που ακολουθείς στο Twitch"
                     + "\n\tytgChannel       - Λίστα gaming καναλιών που ακολουθείς στο YouTube"
                     + "\n\n## Π.Χ.:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel"},
-            {"listSettings", "```Markdown\n" +
-                    "# Ρυθμίσεις Bot στο Server σου" +
+            /* Please order listSettings like this then remove this comment.  NEW > Default announcement channel is: %s.
+            REMOVE THE ENGLISH listSettings AND REMOVE THE COMMENT TAGS WHEN DONE :)
+            {"listSettings", "# Bot Settings on Your Server" +
+                    "\n* Bot language is set to: %s." +
+                    "\n* Broadcaster language is set to: %s." +
+                    "\n* Cleanup is set to: %s." +
+                    "\n* Compact mode is set to: %s." +
+                    "\n* Current online announcement message format is: %s." +
+                    "\n* Current offline announcement message format is: %s." +
+                    "\n* Default announcement channel is: %s" +
+                    "\n* Notification is set to: %s."},
+            {"listSettings", "# Ρυθμίσεις Bot στο Server σου" +
                     "\n* Η λειτουργία Compact είναι ρυθμισμένη στο: %s." +
                     "\n* Οι ειδοποιήσεις είναι ρυθμισμένες στο: %s." +
                     "\n* Το Cleanup είναι ρυθμισμένο στο: %s." +
                     "\n* Η γλώσσα του Broadcaster είναι ρυθμισμένη στο: %s." +
                     "\n* Η γλώσσα του Bot είναι ρυθμισμένη στα: %s." +
                     "\n* Η μορφή της ανακοίνωσης όταν κάποιο stream είναι online είναι: %s." +
-                    "\n* Η μορφή της ανακοίνωσης όταν κάποιο stream γίνεται offline είναι: %s.```"},
+                    "\n* Η μορφή της ανακοίνωσης όταν κάποιο stream γίνεται offline είναι: %s."},*/
             {"needOneManager", "Αν αφαιρέσεις αυτόν το διαχειριστή, ποιος θα με διαχειρίζεται;"},
             {"noBotManager", "Είναι ενάντια στο Σωματίο των Bot του Discord να με διαχειριστείς. Λυπάμαι, προσπάθησε να βρεις εναν " +
                     "κατάλληλο άνθρωπο για αυτή τη δουλειά. :thumbsup:"},
@@ -299,7 +308,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "Μη χρησιμοποιείς ολόκληρο το URL του Picarto. Δε θα λειτουργήσει!! Χρησιμοποίησε μόνο το όνομα του καναλιού (το κομμάτι μετά το picarto.tv)\n\t"
                     + "Μπορείς να προσθέσεις πολλαπλά κανάλια και φίλτρα τίτλων χρησιμοποιώντας το χαρακτήρα | μεταξύ τους.\n\t"
                     + "Για την ώρα υποστηρίζονται μόνο κανάλια.  Οι κατηγορίες στο Picarto είναι πολύ περιορισμένες.\n\t"
-                    + "Η μόνη αναγκαία επιλογή είναι η: όνομαΚαναλιού\n\n\u200B"
+                    + "Η μόνη αναγκαία επιλογή είναι η: όνομαΚαναλιού\n\u200B\n"
                     + "## Κανάλια Picarto\n"
                     + "Σημείωση: Η προσθήκη ενός καναλιού ανακοινώσεως και τα φίλτρα τίτλων είναι προαιρετικά.\n"
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel όνομαΚαναλιού #κανάλιΑνακοινώσεως [φίλτραΤίτλων]\n\n"
@@ -394,7 +403,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "Για να προσθέσεις φίλτρα παιχνιδιών και τίτλων, ΠΡΕΠΕΙ να συμπεριλάβεις τις παρενθέσεις.\n\t"
                     + "ΜΗ χρησιμοποιήσεις ολόκληρο το URL του Smashcast. Δε θα λειτουργήσει!! Χρησιμοποίησε μόνο το όνομα του καναλιού (www.smashcast.tv/όνομαΚαναλιού)\n\t"
                     + "Μπορείς να προσθέσεις πολλαπλά κανάλια, ομάδες, παιχνίδια και φίλτρα παιχνιδιών και τίτλων χρησιμοποιώντας το χαρακτήρα | ανάμεσά τους.\n\t"
-                    + "Οι μόνες αναγκαίες επιλογές είναι: όνομαΚαναλιού/όνομαΟμάδας/όνομαΠαιχνιδιού\n\n\u200B"
+                    + "Οι μόνες αναγκαίες επιλογές είναι: όνομαΚαναλιού/όνομαΟμάδας/όνομαΠαιχνιδιού\n\u200B\n"
                     + "## Κανάλια Smashcast\n"
                     + "Σημείωση: Η προσθήκη καναλιού ανακοινώσεως και τα φίλτρα παιχνιδιών και τίτλων είναι προαιρετικά.\n"
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel όνομαΚαναλιού #κανάλιΑνακοινώσεως {φίλτραΠαιχνιδιών} [φίλτραΤίτλων]\n\n"
@@ -415,6 +424,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "Warcraft} (προσθέτει ένα κανάλι προς ανακοίνωση σε συγκεκριμένο κανάλι και φίλτρα παιχνιδιών)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (προσθέτει ένα παιχνίδι στο κανάλι ανακοινώσεων)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (προσθέτει μία ομάδα με συγκεκριμένο κανάλι ανακοινώσεως)"},
+            {"staffOverride", "*Permission of this command have been overridden by a member of the bot staff.*"},
             {"statusHelp", "# STATUS\n* Εμφανίζει διάφορα στατιστικά του.\n\n## ΧΡΗΣΗ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status"},
             {"streamlangHelp", "# STREAMLANG\n* Επιτρέπει το φιλτράρισμα των streams βάσει γλώσσας.  " +
@@ -450,9 +460,9 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "ΜΗ χρησιμοποιείς ολόκληρο το URL του Twitch. Δε θα λειτουργήσει!! Χρησιμοποίησε μόνο το όνομα του καναλιού (www.twitch.tv/όνομαΚαναλιού)\n\t"
                     + "Το όνομα της Ομάδας πρέπει να είναι από το URL, όχι το όνομα που εμφανίζεται. (www.twitch.tv/team/όνομαΟμάδας)\n\t"
                     + "Μπορείς να προσθέσεις πολλαπλά κανάλια, ομάδες, παιχνίδια, κοινότητες και φίλτρα παιχνιδιών και τίτλων χρησιμοποιώντας το χαρακτήρα | ανάμεσά τους.\n\t"
-                    + "Οι μόνες αναγκαίες επιλογές είναι: όνομαΚαναλιού/όνομαΚοινότητας/όνομαΟμάδας/όνομαΠαιχνιδιού\n\n\u200B"
+                    + "Οι μόνες αναγκαίες επιλογές είναι: όνομαΚαναλιού/όνομαΚοινότητας/όνομαΟμάδας/όνομαΠαιχνιδιού\n\u200B\n"
                     + "## Κανάλια Twitch\n"
-                    + "Σημείωση: Η προσθήκη καναλιού ανακοινώσεως και τα φίλτρα παιχνιδιών και τίτλων είναι προαιρετικά."
+                    + "Σημείωση: Η προσθήκη καναλιού ανακοινώσεως και τα φίλτρα παιχνιδιών και τίτλων είναι προαιρετικά.\n"
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel όνομαΚαναλιού #κανάλιΑνακοινώσεως {φίλτραΠαιχνιδιών} [φίλτραΤίτλων]\n\n"
                     + "## Κοινότητες Twitch (Ανακοινώνει ΟΛΑ τα ζωντανά streams στην κοινότητα)\n"
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community όνομαΚοινότητας #κανάλιΑνακοινώσεως\n\n"
@@ -467,7 +477,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "* ΣΗΜΕΙΩΣΗ: Επηρεάζει όλες τις ανακοινώσεις streams για το Twitch\n"
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [λέξη|άλλες λέξεις|περισσότερες λέξεις] #κανάλιΑνακοινώσεως\n\n"
                     + "## Twitch Stream Stats\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\n\u200B"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\u200B\n"
                     + "* Παραδείγματα:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (προσθέτει ένα κανάλι προς ανακοίνωση σε συγκεκριμένο κανάλι και φίλτρα παιχνιδιών)\n\t"
@@ -494,7 +504,7 @@ public class LanguageBundle_el extends ListResourceBundle {
                     + "Μπορείς να προσθέσεις πολλαπλά κανάλια και φίλτρα τίτλων με τη χρήση του χαρακτήρα | μεταξύ τους.\n\t"
                     + "Για την ώρα υποστηρίζονται μόνο κανάλια.  Το YouTube API δεν εμφανίζει το όνομα του παιχνιδιού έτσι ώστε να λειτουργεί όπως οι υπόλοιπες εντολές.\n\t"
                     + "Φίλτρα παιχνιδιών ΔΕΝ υφίστανται στο YouTube.  Δες την παραπάνω σημείωση για το API.\n\t"
-                    + "Η μοναδική επιλογή που απαιτείται είναι η: όνομαΚαναλιού\n\n\u200B"
+                    + "Η μοναδική επιλογή που απαιτείται είναι η: όνομαΚαναλιού\n\u200B\n"
                     + "## Κανάλια YouTube Gaming\n"
                     + "Σημείωση: Η προσθήκη καναλιού ανακοινώσεως και τα φίλτρα τίτλων είναι προαιρετικά."
                     + "* Σύνταξη: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel όνομαΚαναλιού #κανάλιΑνακοινώσεως [φίλτραΤίτλων]\n\n"

@@ -51,7 +51,7 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + "To add game filters and title filters, you MUST include the brackets.\n\t"
                     + "Do NOT use the full Mixer URL. It will not work!! Use only the channel name (www.mixer.com/channelName)\n\t"
                     + "You may add multiple channels, teams, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/teamName\n\n\u200B"
+                    + "The only required options are: channelName/teamName\n\u200B\n"
                     + "## Mixer Channels\n"
                     + "Note: Adding an announcement channel, game and title filters are optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
@@ -116,6 +116,8 @@ public class LanguageBundle_es extends ListResourceBundle {
             {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
                     "Videos will be able to be played from Discord."},
             {"configHelp", "# CONFIG\n* The base command to set my various settings. Check each specific settings help for more info.\n\n" +
+                    "# checkPerms\n\tCheck the permissions the bot needs in a particular text channel (#discordChannel is optional)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordChannel\n" +
                     "# defaultOfflineMessage\n\tReturns the offline message to the default (used in edited announcements)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "# defaultOnlineMessage\n\tReturns the announcement message to the default (used in all announcements)\n*\t" +
@@ -182,12 +184,9 @@ public class LanguageBundle_es extends ListResourceBundle {
                     "# LIST\n" +
                     "* Para obtener más información, escriba: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " list help\n\n" +
-                    "# NOTIFY\n" +
-                    "* Para obtener más información, escriba: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
                     "# PICARTO\n" +
                     "* For more information, type: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\n\u200B" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\u200B\n" +
                     "# PING\n" +
                     "* Para obtener más información, escriba: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
@@ -245,15 +244,25 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + "\n\ttwitchTeam       - Lista los equipos de Twitch que sigues."
                     + "\n\tytgChannel       - Lists the YouTube Gaming Channels you follow"
                     + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel"},
-            {"listSettings", "```Markdown\n" +
-                    "# Configuraciones del bot en este server" +
+            /* Please order listSettings like this then remove this comment.  NEW > Default announcement channel is: %s.
+            REMOVE THE ENGLISH listSettings AND REMOVE THE COMMENT TAGS WHEN DONE :)
+            {"listSettings", "# Bot Settings on Your Server" +
+                    "\n* Bot language is set to: %s." +
+                    "\n* Broadcaster language is set to: %s." +
+                    "\n* Cleanup is set to: %s." +
+                    "\n* Compact mode is set to: %s." +
+                    "\n* Current online announcement message format is: %s." +
+                    "\n* Current offline announcement message format is: %s." +
+                    "\n* Default announcement channel is: %s" +
+                    "\n* Notification is set to: %s."},
+            {"listSettings", "# Configuraciones del bot en este server" +
                     "\n* Modo compacto: %s." +
                     "\n* Modo notificiaciones: %s." +
                     "\n* Modo limpieza de notificaciones: %s." +
                     "\n* Lenguaje del streamer: %s." +
                     "\n* Lenguaje del bot: %s." +
                     "\n* Current online announcement message format is: %s." +
-                    "\n* Current offline announcement message format is: %s.```"},
+                    "\n* Current offline announcement message format is: %s."},*/
             {"needOneManager", "Si lo eliminas... Quien me mandará cosas?"},
             {"noBotManager", "Eso vá en contra de las leyes de la unión de los bots de discord. Lo siento " +
                     "Encuentra a un buen humano para ese trabajo. :thumbsup:"},
@@ -299,7 +308,7 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + "Do NOT use the full Picarto URL. It will not work!! Only use the channel name (the part after picarto.tv)\n\t"
                     + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
                     + "Only channels are supported for now.  Picarto categories are very limited and most are grouped in a small select few.\n\t"
-                    + "The only required option is: channelName\n\n\u200B"
+                    + "The only required option is: channelName\n\u200B\n"
                     + "## Picarto Channels\n"
                     + "Note: Adding an announcement channel and title filters are optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel channelName #announcementChannel [titleFilters]\n\n"
@@ -395,7 +404,7 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + "To add game filters and title filters, you MUST include the brackets.\n\t"
                     + "Do NOT use the full Smashcast URL. It will not work!! Use only the channel name (www.smashcast.tv/channelName)\n\t"
                     + "You may add multiple channels, teams, games, game and title filters by using the pipe character | between them.\n\t"
-                    + "The only required options are: channelName/teamName/gameName\n\n\u200B"
+                    + "The only required options are: channelName/teamName/gameName\n\u200B\n"
                     + "## Smashcast Channels\n"
                     + "Note: Adding an announcement channel, game and title filters are optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel channelName #announcementChannel {gameFilters} [titleFilters]\n\n"
@@ -416,6 +425,7 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + "Warcraft} (adds a channel to announce in a certain channel and game filters)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (adds a game to the global announcement channel)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (adds a team with a specific announcement channel)"},
+            {"staffOverride", "*Permission of this command have been overridden by a member of the bot staff.*"},
             {"statusHelp", "# STATUS\n* Muestra varias estadisticas del bot.\n\n## USAGE:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status"},
             {"streamlangHelp", "# STREAMLANG\n* Permite filtrar los streams por el lenguaje en el que se " +
@@ -449,9 +459,9 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + "NO usar el enlace completo, no va a funcionar!!Usa solo el nombre del canal (www.twitch.tv/**__channelName__**)\n\t"
                     + "El nombre del equipo debe ser la url completa, no el nombre del equipo. (www.twitch.tv/team/teamName)\n\t"
                     + "Para añadir múltiples canales, equipos, juegos, comunidades y filtros de título y juegos usa el caracter | entre ellos.\n\t"
-                    + "Las unicas opciones son: channelName/communityName/teamName/gameName\n\n\u200B"
+                    + "Las unicas opciones son: channelName/communityName/teamName/gameName\n\u200B\n"
                     + "## Canales de Twitch\n"
-                    + "Nota: añadir un canal de notificación, y filtros de título o juego es opcional."
+                    + "Nota: añadir un canal de notificación, y filtros de título o juego es opcional.\n"
                     + "* Formato: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel channelName #canaldenotificacion {FiltroDeJuego} [FiltroDeTítulo]\n\n"
                     + "## Comunidades de Twitch (Anuncia TODOS los streams en la comunidad)\n"
                     + "* Formato: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community NombreComunidad #canaldenotificacion\n\n"
@@ -466,7 +476,7 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + "* NOTA: Esto afecta a todas las notificaciones\n"
                     + "* Formato: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [word|different words|more words] #canaldenotificación\n\n"
                     + "## Twitch Stream Stats\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\n\u200B"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\u200B\n"
                     + "* Examples:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (añade un canal para anunciar a traves de ciertos filtros)\n\t"
@@ -493,7 +503,7 @@ public class LanguageBundle_es extends ListResourceBundle {
                     + "You may add multiple channels and title filters by using the pipe character | between them.\n\t"
                     + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands.\n\t"
                     + "Game filters are NOT a thing with YouTube.  See the above note about the API.\n\t"
-                    + "The only required options is: channelName\n\n\u200B"
+                    + "The only required options is: channelName\n\u200B\n"
                     + "## YouTube Gaming Channels\n"
                     + "Note: Adding an announcement channel and title filters are optional."
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
