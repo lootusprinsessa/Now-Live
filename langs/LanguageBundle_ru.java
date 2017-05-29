@@ -80,7 +80,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "с ботом? Пожалуйста, не стесняйтесь обратиться к переводчикам на нашем сервере для получения помощи. Введите " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
             {"botLangSuccess", "Вы успешно изменили мой язык."},
             {"botLangUnsupported", "Этот язык в настоящее время не поддерживается."},
-            {"botStatistics", "%s Статистика"},
+            {"botStatistics", "%s статистика"},
             {"broadcasterLangAllSuccess", " :ok_hand: Я буду искать трансляции на всех языках."},
             {"broadcasterLangFail", "Что-то пошло не так, и я по-прежнему ищу трансляции на всех языках."},
             {"broadcasterLangSuccess", " :ok_hand: Я буду искать только те трансляции, которые используют этот язык!"},
@@ -115,8 +115,8 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"compactVideoEmbed", " :compression: Вы больше не будете получать вставки в объявлениях.  " +
                     "Видео будут воспроизводиться прямо в Discord."},
             {"configHelp", "# КОНФИГУРАЦИЯ\n* Базовая команда для установки моих различных параметров. Проверьте каждую специальную справку по настройкам для получения дополнительной информации.\n\n" +
-                    "# checkPerms\n\tCheck the permissions the bot needs in a particular text channel (#discordChannel is optional)\n*\t" +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordChannel\n" +
+                    "# checkPerms\n\tПроверка разрешений, которые необходимы боту в определенном текстовом канале (#discordКанал является необязательным)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordКанал\n" +
                     "# defaultOfflineMessage\n\tOffline сообщение по умолчанию (используется в отредактированных объявлениях)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
                     "# defaultOnlineMessage\n\tОnline сообщение по умолчанию (используется во всех объявлениях)\n*\t" +
@@ -203,7 +203,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "* Для получения информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " streams help\n\n" +
                     "# TWITCH\n" +
-                    "* Добавление и удаление связанных с Twitch.tv вещей. Для получения дополнительной информации введите: " +
+                    "* Для получения информации введите: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
                     "# YOUTUBE GAMING\n" +
                     "* Для получения информации введите: " +
@@ -244,25 +244,15 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "\n\ttwitchTeam       - Перечисляет Twitch team, которые вы назначили"
                     + "\n\tytgChannel       - Список YouTube Gaming каналов, которые вы назначили"
                     + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel"},
-            /* Please order listSettings like this then remove this comment.  NEW > Default announcement channel is: %s.
-            REMOVE THE ENGLISH listSettings AND REMOVE THE COMMENT TAGS WHEN DONE :)
-            {"listSettings", "# Bot Settings on Your Server" +
-                    "\n* Bot language is set to: %s." +
-                    "\n* Broadcaster language is set to: %s." +
-                    "\n* Cleanup is set to: %s." +
-                    "\n* Compact mode is set to: %s." +
-                    "\n* Current online announcement message format is: %s." +
-                    "\n* Current offline announcement message format is: %s." +
-                    "\n* Default announcement channel is: %s" +
-                    "\n* Notification is set to: %s."},
-            {"listSettings", "# Параметры бота на вашем сервере" +
-                    "\n* Компактный режим: %s:" +
-                    "\n* Уведомление настроено для %s:" +
-                    "\n* Очистка установлена на %s." +
-                    "\n* Язык объявлений о стриме: %s." +
+            {"listSettings", "# Настройки бота на вашем сервере" +
                     "\n* Язык бота: %s." +
+                    "\n* Язык трансляций: %s." +
+                    "\n* Очистка установлена на %s." +
+                    "\n* Компактный режим: %s." +
                     "\n* Текущий формат online сообщения в объявлении: %s." +
-                    "\n* Текущий формат offline сообщения в объявлении: %s."},*/
+                    "\n* Текущий формат offline сообщения в объявлении: %s." +
+                    "\n* Канал объявления о трансляции по умолчанию: %s" +
+                    "\n* Уведомления настроены для: %s."},
             {"needOneManager", "Если вы удалите этого менеджера, кто будет управлять мной?"},
             {"noBotManager", "Это противоречит Уставу Союза Discord Бота, чтобы боты управляли мной. Извините, попробуйте найти " +
                     "подходящего человека для работы. :thumbsup:"},
@@ -291,10 +281,10 @@ public class LanguageBundle_ru extends ListResourceBundle {
             {"nowPlayingEmbed", "Сейчас играет в"},
             {"nowPlayingLower", " сейчас играет в "},
             {"nowStreamingEmbed", " сейчас в сети!"},
-            {"numUniqueMembers", "Количество Уникальных Участников"},
+            {"numUniqueMembers", "Уникальных Участников"},
             {"offline", "НЕ В СЕТИ!\n"},
             {"offlineEmbed", " отключился!"},
-            {"on", " on "},
+            {"on", " включено "},
             {"onlineStreamPm1", "Всем привет!  Сейчас есть "},
             {"onlineStreamPm2", " трансляция(и) онлайн, которая(ые) могут вас заинтересовать!  Переходите по ссылке(ам), чтобы проверить " +
                     "их: \n\n"},
@@ -361,7 +351,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @userName"
                     + "\n\tmanager - @ Упомяните пользователя для удалении из менеджеров"
                     + "\n\n## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort"},
-            {"servers", "Сервера"},
+            {"servers", "Количество серверов"},
             {"setDefaultAnnounceChannelDoNotOwnChannel", "# Я не могу объявить канал, которого нет на вашем " +
                     "сервере!"},
             {"setDefaultAnnounceChannelFail", "# Я не могу отправлять объявления там. Убедитесь, что у меня есть соответствующие разрешения " +
@@ -396,8 +386,8 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     "\t* %VIEWERS%   - Количество текуших просмотров\n\n" +
                     "## ПРИМЕР:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage " +
                     "%CHANNEL% начал стрим! Подробнее здесь (кликабельно): %URL%"},// <--- Do not translate between the %
-            {"shardsThis", "Shard Номер"},
-            {"shardsTotal", "Количество Shards"},
+            {"shardsThis", "Номер части бота"},
+            {"shardsTotal", "Количество частей бота"},
             {"smashcastChannelNotFound", "\n# Каналы(ы) не найденны(е) Smashcast: %s."},
             {"smashcastHelp", "# SMASHCAST\n* Добавление и удаление объектов, связанных с Smashcast.tv.\n"
                     + "* Заметки:\n\t"
@@ -425,11 +415,11 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + "Warcraft} (Добавляет Smashcast канал с игровыми фильтрами для объявления в определенном Discord канале)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (Добавляет игру для объявления в Discord канале general)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (Добавляет team с определенным каналом объявлений.)"},
-            {"staffOverride", "*Permission of this command have been overridden by a member of the bot staff.*"},
+            {"staffOverride", "*Разрешение этой команды было отменено членом бот штаба.*"},
             {"statusHelp", "# СТАТУС\n* Показывает различную статистику бота.\n\n## ПРИМЕНЕНИЕ:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status"},
             {"streamlangHelp", "# ЯЗЫКТРАНСЛЯЦИИ\n* Позволяет фильтровать потоки по тому языку, который транслируется " +
-                    "in.  Это поддерживает английское правописание языка, или родное правописание. Должен быть поддержан " +
+                    "Это поддерживает английское правописание языка, или родное правописание. Должен быть поддержан " +
                     "язык на Twitch, указанный в профиле.\n\n## ПРИМЕНЕНИЕ: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND +
@@ -443,7 +433,7 @@ public class LanguageBundle_ru extends ListResourceBundle {
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " streams"},
-            {"totalViewsEmbed", "Всего просмотров"},
+            {"totalViewsEmbed", "Просмотров"},
             {"trello", "Чтобы сообщить об ошибке или запросить функции, которые будут добавлены к боту, пожалуйста, используйте наш Trello. " +
                     "https://trello.com/invite/b/kcWshbIU/a94c145e598be9f8dd734197ba07288e/now-live-bot"},
             {"trelloHelp", "Выдает ссылку на Trello для бота"},
