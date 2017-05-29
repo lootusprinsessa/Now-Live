@@ -116,7 +116,7 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
                     "Videos will be able to be played from Discord."},
             {"configHelp", "# CONFIG\n* Der Grundbefehl um einiges meiner Einstellungen zu ändern. Für mehr Infos, prüfe jede spezifische Einstellungs-Help.\n\n" +
-                    "# checkPerms\n\tCheck the permissions the bot needs in a particular text channel (#discordChannel is optional)\n*\t" +
+                    "# checkPerms\n\tÜberprüfe die Berechtigungen des Bots in einem bestimmten Textchannel (#discordChannel ist optional)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordChannel\n" +
                     "# defaultOfflineMessage\n\tSetzt die Einstellungen der Offline-Nachrichten zurück. (Für bearbeitete Benachrichtigungen zuständig.)\n*\t" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
@@ -246,25 +246,15 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "\n\ttwitchTeam       - Listet die Twitchteams, denen du folgst"
                     + "\n\tytgChannel       - Listet die YouTube Gaming-Channel, denen du folgst"
                     + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel"},
-            /* Please order listSettings like this then remove this comment.  NEW > Default announcement channel is: %s.
-            REMOVE THE ENGLISH listSettings AND REMOVE THE COMMENT TAGS WHEN DONE :)
-            {"listSettings", "# Bot Settings on Your Server" +
-                    "\n* Bot language is set to: %s." +
-                    "\n* Broadcaster language is set to: %s." +
-                    "\n* Cleanup is set to: %s." +
-                    "\n* Compact mode is set to: %s." +
-                    "\n* Current online announcement message format is: %s." +
-                    "\n* Current offline announcement message format is: %s." +
-                    "\n* Default announcement channel is: %s" +
-                    "\n* Notification is set to: %s."},
             {"listSettings", "# Bot-Einstellungen dieses Servers" +
-                    "\n* Compact mode ist %s." +
-                    "\n* Benachrichtigungsmodus ist %s." +
-                    "\n* Cleanup-Modus ist %s." +
-                    "\n* Streamsprache ist %s." +
                     "\n* Botsprache ist %s." +
+                    "\n* Streamsprache ist %s." +
+                    "\n* Cleanup-Modus ist %s." +
+                    "\n* Compact mode ist %s." +
                     "\n* Format der jetzigen Online-Benachrichtigung ist: %s." +
-                    "\n* Format der jetzigen Offline-Benachrichtigung ist: %s."},*/
+                    "\n* Format der jetzigen Offline-Benachrichtigung ist: %s." +
+                    "\n* Standardbenachrichtigungskanal ist: %s" +
+                    "\n* Benachrichtigungsmodus ist %s."},
             {"needOneManager", "Wenn du das tust, wer managet mich dann?"},
             {"noBotManager", "Bots als Manager hinzufügen verstößt gegen die Discord Bot Union By-Laws. Sorry, versuche einen " +
                     "geeigneten Menschen für diesen Job zu finden. :thumbsup:"},
@@ -279,15 +269,15 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"notifyHelp", "# NOTIFY\n* Ändert die globablen Benachrichtigunseinstellungen.\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " config notify <option>"
                     + "\n\tnone     - Keine @ Mitteilungen (Standardeinstellung)"
-                    + "\n\there - Ich benachrichtige alle, die online sind (via ``@here``)"
+                    + "\n\there     - Ich benachrichtige alle, die online sind (via ``@here``)"
                     + "\n\teveryone - Ich benachrichtige ALLE!!  Muhahaha!!  (Nicht für größere Server empfohlen!)"
-                    + "\n\t@<role>  - I will send an @ mention for the role of your choice"
-                    + "\n\t@<user>  - Want to notify a single user?  This is the option for you!"
+                    + "\n\t@<role>  - Ich benachrichtige eine Serverrolle deiner Wahl via @-Benachrichtigung"
+                    + "\n\t@<user>  - Du möchtest einen einzigen User benachrichtigen?  Dies ist die Option für dich!"
                     + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config notify everyone"},
             {"notifyHere", " :bellhop_bell: Alle, die online sind, werden benachrichtigt."},
-            {"notifyRoleUser", "# I will @ mention %s with every announcement"},
-            {"notifyTooMany", "# You can only notify one %s at a time!"},
-            {"notifyMultipleUsers", " If you want multiple users notified, create a role and have it notified."},
+            {"notifyRoleUser", "# Ich werde %s mit jeder Benachrichtung @-benachrichtigen."},
+            {"notifyTooMany", "# Du kannst immer nur ein(e) %s benachrichtigen lassen!"},
+            {"notifyMultipleUsers", " Möchtest du mehrere Benutzer benachrichtigt haben, erstelle eine Rolle und lasse diese benachrichtigen."},
             {"notifyNone", " :ok_hand: Ich werde keine @ Mitteilungen mehr benutzen."},
             {"nowLive", "NOW LIVE!\n"},
             {"nowPlayingEmbed", "Spielt gerade"},
@@ -426,7 +416,7 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "Warcraft} (fügt einen Kanal in einen bestimmten Channel mit Spielefilter hinzu)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (fügt einen Kanal zum allgemeinen Benachrichtigungskanal hinzu)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (fügt ein Team einen bestimmten Channel hinzu)"},
-            {"staffOverride", "*Permission of this command have been overridden by a member of the bot staff.*"},
+            {"staffOverride", "*Die Berechtigung dieses Befehls wurden einem Mitglied des Botpersonals überschrieben.*"},
             {"statusHelp", "# STATUS\n* Zeigt einige Statistiken über den Bot.\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " status"},
             {"streamlangHelp", "# STREAMLANG\n* Erlaubt das Filtern von Streams nach Sprache " +
