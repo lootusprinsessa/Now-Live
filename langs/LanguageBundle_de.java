@@ -44,29 +44,31 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"announceHelp", "# ANNOUNCE\n* Shhh...  Ich bin ein Geheimnis...\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " announce <content>\n\tDieser Befehl steht nur den Entwicklern zur Verfügung."},
-            {"beamChannelNotFound", "\n# Kanäle nicht auf Beam gefunden: %s."},
-            {"beamHelp", "# BEAM\n* Hinzufügen und Entfernen von Beam.pro-Inhalten.\n"
+                    + " announce <inhalt>\n\tDieser Befehl steht nur den Entwicklern zur Verfügung."},
+            {"mixerChannelNotFound", "\n# Kanäle nicht auf Mixer gefunden: %s."},
+            {"mixerHelp", "# MIXER\n* Hinzufügen und Entfernen von Mixer.com-Inhalten.\n"
                     + "* Hinweise:\n\t"
                     + "Um Spielefilter und Titelfilter hinzuzufügen, musst du die Klammern schreiben.\n\t"
-                    + "Benutze NICHT die komplette Beam-URL. Das funktioniert nicht!! Benutze nur den Kanalnamen (www.beam.pro/channelName)\n\t"
+                    + "Benutze NICHT die komplette Mixer-URL. Das funktioniert nicht!! Benutze nur den Kanalnamen (www.mixer.com/KanalName)\n\t"
                     + "Du kannst mehrere Kanäle, Teams, Spiele, Communities, Spiel- und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
-                    + "Die einzigen zwingend nötigen Optionen sind: channelName/teamName\n\n"
-                    + "## Beam-Kanäle\n"
-                    + "Hinweis: Benachrichtigungskanal, Spiel- und Titelfilter sind optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel KanalName #BenachrichtigungsKanal {SpielFilter} [TitelFilter]\n\n"
-                    + "## Beamteams (Postet ALLE Streams in diesem Team)\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam team TeamName #BenachrichtigungsKanal\n\n"
-                    + "## Beam-Spielefilter (Global)\n"
-                    + "* HINWEIS: Gilt für alle Beambenachrichtigungen auf diesem Server\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam gfilter {SpielName|SpielName} #BenachrichtigungsKanal\n\n"
-                    + "## Beam-Titelfilter (Global\n"
-                    + "* HINWEIS: Gilt für alle Beambenachrichtigungen auf diesem Server\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " beam tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
+                    + "Die einzigen zwingend nötigen Optionen sind: KanalName/TeamName\n\u200B\n"
+                    + "## Mixer-Kanäle\n"
+                    + "Hinweis: Benachrichtigungskanal, Spiel- und Titelfilter sind optional.\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel KanalName #BenachrichtigungsKanal {SpielFilter} [TitelFilter]\n\n"
+                    + "## Mixerteams (Postet ALLE Streams in diesem Team)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team TeamName #BenachrichtigungsKanal\n\n"
+                    + "## Mixer-Spielefilter (Global)\n"
+                    + "* HINWEIS: Gilt für alle Mixer-Benachrichtigungen auf diesem Server\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer gfilter {SpielName|SpielName} #BenachrichtigungsKanal\n\n"
+                    + "## Mixer-Titelfilter (Global\n"
+                    + "* HINWEIS: Gilt für alle Mixer-Benachrichtigungen auf diesem Server\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
+                    + "## Mixer Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " mixer stats\n\n"
                     + "* Beispiele:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam channel AgueMort #live-streams {Overwatch|World of "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (Fügt einen Twitchkanal für einen bestimmten Kanal und Spielfilter hinzu)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " beam team outpost #outpost-streamers (Fügt ein Beamteam für einen bestimmten Benachrichtigungskanal hinzu)\n\n"},
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " mixer team outpost #outpost-streamers (Fügt ein Mixerteam für einen bestimmten Benachrichtigungskanal hinzu)\n\n"},
             {"botLangFail", "Irgendwas ging schief und meine Sprache ist immernoch die selbe."},
             {"botLangHelp", "# BOTLANG\n* Befehl zum ändern der Sprache.\n\n## VERWENDUNG: "
                     + Const.COMMAND_PREFIX
@@ -76,7 +78,7 @@ public class LanguageBundle_de extends ListResourceBundle {
 
                     + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " botlang spanish" + "```"
                     + "\n\tWenn du Hilfe bei diesem Befehl brauchst oder andere Sachen zu den Help-Befehlen hast und fragen in deiner Sprache hast "
-                    + "welche mit dem BOt zutun haben, komm gern zu unseren Übersetzern in unserem Discord. Der Server " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
+                    + "welche mit dem Bot zutun haben, komm gern zu unseren Übersetzern in unserem Discord. Der Server " + Const.COMMAND_PREFIX + Const.COMMAND + " discord"},
             {"botLangSuccess", "Du hast erfolgreich meine Sprache geändert."},
             {"botLangUnsupported", "Diese Sprache wird aktuell noch nicht unterstützt."},
             {"botStatistics", "%s Statistiken"},
@@ -86,46 +88,50 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"canNotRemoveOwner", "Haha, du kannst nicht den Serverbesitzer von der Managerliste löschen. :laughing: " +
                     ":laughing:"},
             {"cleanupFail", "Ach, Mensch...  Da hat was nicht funktioniert... am besten nochmal versuchen."},
-            {"cleanupHelp", "```Markdown\n# CLEANUP\n*  Ändert wie ich Stream Benachrichtigungen aufräume.\n\n## VERWENDUNG:"
+            {"cleanupHelp", "# CLEANUP\n*  Ändert wie ich Stream Benachrichtigungen aufräume.\n\n## VERWENDUNG:"
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " cleanup <option>"
                     + "\n\tnone - Ich ändere nichts! (Standardeinstellung)"
                     + "\n\tedit - Ich editiere die Benachrichtung und markiere Streams als \"OFFLINE\""
                     + "\n\tdelete - Ich lösche Benachrichtungen, wenn die entsprechenden Streamer offline gehen```"
-                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " cleanup edit" + "```"},
+                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " cleanup edit"},
             {"cleanupSuccessDelete", "Sir, ja Sir!  Ich lösche meine Benachrichtigungen ab jetzt!"},
             {"cleanupSuccessEdit", "Benachrichtigungen editieren, alles klar."},
             {"cleanupSuccessNone", " :ok_hand: Ich lasse alle Benachrichtungen unverändert."},
             {"compactFail", "Uhm, irgendwas ging schief.  Mein Compact Mode ist nicht geändert worden."},
-            {"compactHelp", "```Markdown\n# COMPACT\n* Im Compact Mode sind meine Benachrichtigungen kompakter.\n\n## VERWENDUNG:  "
+            {"compactHelp", "# COMPACT\n* Im Compact Mode sind meine Benachrichtigungen kompakter.\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
                     + " compact <option>"
                     + "\n\tnoEmbed    - Entfernt die Einbettung und benutzt nur einen kurzen Satz."
                     + "\n\tsmallEmbed - Benutzt eine Einbettung ohne große Banner-Bilder."
                     + "\n\tfullEmbed  - Benutzt die komplette Einbettung."
-                    + "\n\tvideoEmbed - No rich embed. Announcement will be a small code block and an embedded video " +
-                    "you can watch in Discord."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed" + "```"},
+                    + "\n\tvideoEmbed - Keine besondere Einbettung. Benachrichtigungen werden ein kleiner Codeblock und ein eingebettetes Video, " +
+                    "das man in Discord ansehen kann."
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " compact smallEmbed"},
             {"compactFullEmbed", " :compression: Du bekommst nun die komplette Benachrichtigung."},
             {"compactSmallEmbed", " :compression: Du bekommst nun die kleinere Einbettung."},
             {"compactNoEmbed", " :compression: Deine Benachrichtigungen sind ab nun nurnoch ein kurzer Satz."},
             {"compactVideoEmbed", " :compression: You will no longer get rich embed announcements.  " +
                     "Videos will be able to be played from Discord."},
             {"configHelp", "# CONFIG\n* Der Grundbefehl um einiges meiner Einstellungen zu ändern. Für mehr Infos, prüfe jede spezifische Einstellungs-Help.\n\n" +
-                    "* defaultOfflineMessage - Setzt die Einstellungen der Offline-Nachrichten zurück. (Für bearbeitete Benachrichtigungen zuständig.)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
-                    "* defaultOnlineMessage - Setzt die Einstellungen der Offline-Nachrichten zurück. (Für alle Benachrichtigungen zuständig.)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
-                    "* setDefaultAnnounceChannel help - Legt den Standardchannel für die Benachrichtigungen fest. " +
-                    "(wo es dann benachrichtigt, wenn du keinen spezifischen Channel im Befehl angibst)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
-                    "* setOfflineMessage - Lege eine eigene Offline-Nachricht fest. (Für bearbeitete Benachrichtigungen zuständig.)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
-                    "* setOnlineMessage - Lege eine eigene Benachrichtigung fest. (Für alle Benachrichtigungen zuständig.)\n" +
-                    "\t" + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help"},
-            {"customMessageNotNull", "# The custom message can't be empty.  Sorry...  ¯\\_(ツ)_/¯"},
+                    "# checkPerms\n\tÜberprüfe die Berechtigungen des Bots in einem bestimmten Textchannel (#discordChannel ist optional)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config checkPerms #discordChannel\n" +
+                    "# defaultOfflineMessage\n\tSetzt die Einstellungen der Offline-Nachrichten zurück. (Für bearbeitete Benachrichtigungen zuständig.)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage help\n" +
+                    "# defaultOnlineMessage\n\tSetzt die Einstellungen der Offline-Nachrichten zurück. (Für alle Benachrichtigungen zuständig.)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage help\n" +
+                    "# setDefaultAnnounceChannel\n\tLegt den Standardchannel für die Benachrichtigungen fest.\n\t" +
+                    "(wo es dann benachrichtigt, wenn du keinen spezifischen Channel im Befehl angibst)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setDefaultAnnounceChannel help\n" +
+                    "# setOfflineMessage\n\tLege eine eigene Offline-Nachricht fest. (Für bearbeitete Benachrichtigungen zuständig.)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setOfflineMessage help\n" +
+                    "# setOnlineMessage\n\tLege eine eigene Offline-Nachricht fest. (Für bearbeitete Benachrichtigungen zuständig.)\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage help\n" +
+                    "# notify\n\tÄndert die globablen Benachrichtigunseinstellungen.\n*\t" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " config notify help"},
+            {"customMessageNotNull", "# Die eigene Nachricht kann nicht leer sein.  Entschuldigung...  ¯\\_(ツ)_/¯"},
             {"defaultAnnounceMessage", "%CHANNEL% ist gerade live! Siehe den Stream hier: %URL%"},
             {"defaultOfflineHelp", "# CONFIG DEFAULT OFFLINE MESSAGE\n* Setzt die Offline-Nachricht zurück.\n\n" +
                     "## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOfflineMessage"},
@@ -134,14 +140,15 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config defaultOnlineMessage"},
             {"devMessage", "*Nachricht der " + Const.BOT_NAME + " Entwickler:*\n\n\t"},
             {"discordChannelNoExist", "Dieser Textchannel existiert auf diesem Server nicht."},
-            {"discordChannelNotNull", "# I can't find that Discord text channel. Stream will be announced in the default channel."},
+            {"discordChannelNotNull", "# Ich konnte diesen Discord-Text-channel nicht finden. Die Streams werden also im Standardchannel gepostet."},
             {"discordLink", "Interessiert unserem Server beizutreten? Dort gibt es eine menge hilfbereiter Menschen " +
                     "wenn du Probleme hast! Klicke auf diesen Link:\n" + Const.DISCORD_URL},
-            {"discordLinkHelp", "Zeigt den Link um den Now Live Discord Server beizutreten."},
+            {"discordLinkHelp", "# Zeigt den Link um den Now Live Discord Server beizutreten."},
             {"discordUserNoExist", "Diese Person ist kein Discord Benutzer!  Versuche es nochmal!"},
             {"doesNotExist", "Das wurde nie meiner Datenbank hinzugefügt."},
             {"embedFull", "Benachrichtigung mit einer ganzen Einbettung."},
             {"embedSmall", "Benachrichtigung mit einer kleinen Einbettung."},
+            {"embedVideo", "Benachrichtung mit abspielbarem Video."},
             {"embedNone", "Benachrichtigung mit einem kleinen Satz und keiner Einbettung."},
             {"emptyArgs", "Ich glaube du hast da einen Teil des Befehls vergessen.  Mit der Option *help* erkläre ich dir den Befehl gerne."},
             {"emptyCommand", "Wenn du mich nächstes mal weckst, gib mir bitte auch etwas zu tun."},
@@ -151,53 +158,58 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + Const.COMMAND + " help` für eine Liste meiner Befehle.\n\nSolltest zu Hilfe beim Einrichten brauchen," +
                     "tritt meinem Server (" + Const.DISCORD_URL + ") bei und sieh dir die How-To-Setup und Command-List " +
                     "Channel für weitere Informationen an!\n\nNicht vergessen hallo zu sagen!"},
-            {"helpPm", "Hey %s!\n\n" +
+            {"helpPm", "* Hey %s!\n\n" +
                     "Ich hab gehört du suchst Hilfe?  Hier ist eine Liste meiner Befehle.\n\n" +
-                    "```Markdown\n" +
                     "# ADD\n" +
                     "* Befehl um Manager hinzuzufügen. Für mehr Informantionen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " add help\n\n" +
-                    "# BEAM\n" +
-                    "* Hinzufügen und Entfernen von Beam.pro Inhalten. Für mehr Informantionen, schreibe: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " beam help\n\n" +
+                    "# MIXER\n" +
+                    "* Hinzufügen und Entfernen von Mixer.com Inhalten. Für mehr Informantionen, schreibe: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " mixer help\n\n" +
                     "# BOTLANG\n" +
                     "* Befehl zum ändern der Sprache.\n" +
                     "* Aktuell unterstützte Sprachen: Englisch(English), Tschechisch(Czech), Deutsch(German), Französisch(French), Spanisch(Spanish)" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " botlang help\n\n" +
                     "# CLEANUP\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " cleanup help\n\n" +
                     "# COMPACT\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " compact help\n\n" +
                     "# CONFIG\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " config help\n\n" +
                     "# INVITE\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " invite help\n\n" +
                     "# LIST\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " list help\n\n" +
-                    "# NOTIFY\n" +
-                    "* Für mehr Informantionen, schreibe: " +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " notify help\n\n" +
+                    "# PICARTO\n" +
+                    "* Für mehr Informationen, schreibe: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " picarto help\n\u200B\n" +
                     "# PING\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " ping help\n\n" +
                     "# REMOVE\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " remove help\n\n" +
+                    "# SMASHCAST\n" +
+                    "* For more information, type: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " smashcast help\n\n" +
                     "# STREAMLANG\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " streamlang help\n\n" +
                     "# STREAMS\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " streams help\n\n" +
                     "# TWITCH\n" +
-                    "* Für mehr Informantionen, schreibe: " +
+                    "* Für mehr Informationen, schreibe: " +
                     Const.COMMAND_PREFIX + Const.COMMAND + " twitch help\n\n" +
+                    "# YOUTUBE GAMING\n" +
+                    "* Für mehr Informationen, schreibe: " +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " ytg help\n\n" +
                     "# PATREON/DONATE\n" +
                     "Gibt den Link zur Bots Patreon Seite. Befehle sind :\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " patreon\n" +
@@ -206,39 +218,43 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "Gibt den Link zu unserem Trello welches benutzt wird für Bug Reports und Feature Requests. Befehle sind :\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " trello\n" +
                     Const.COMMAND_PREFIX + Const.COMMAND + " bug\n" +
-                    Const.COMMAND_PREFIX + Const.COMMAND + " request```" +
+                    Const.COMMAND_PREFIX + Const.COMMAND + " request\n" +
                     "Wenn du weitere Hilfe brauchst, trete meinem Discord bei.  Es gibt dort viele hilfreiche Personen:  " + Const.DISCORD_URL},
             {"incorrectArgs", "Argument(e) fehlen oder sind fehlerhaft.  Benutze die *help* Option für mehr Details."},
             {"invite", "Hey %s! Lade mich zu deinem Server ein!\n\n\t"
                     + "**Klicke hier:** <https://discordapp.com/oauth2/authorize?&client_id="
                     + Config.DISCORD_CLIENT_ID.token()[0] + "&scope=bot&permissions=8>"},
-            {"inviteHelp", "```Markdown\n# INVITE\n* Postet meinen Einladelink.\n\n## VERWENDUNG:  "
+            {"inviteHelp", "# INVITE\n* Postet meinen Einladelink.\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " invite\n\tLade den NowLive-Bot zu deinem Discord Server ein.```"},
-            {"listHelp", "```Markdown\n# LIST\n* Erstellt eine Liste von Dingen in meiner Datenbank.\n\n## VERWENDUNG:  "
+                    + " invite\n\tLade den NowLive-Bot zu deinem Discord Server ein."},
+            {"listHelp", "# LIST\n* Erstellt eine Liste von Dingen in meiner Datenbank.\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " list <option>"
-                    + "\n\tbeamChannel     - Lists the Beam Channels you follow"
-                    + "\n\tbeamTeam        - Lists the Beam Teams you follow"
-                    + "\n\tgfilter         - Listet alle Spieler Filter"
-                    + "\n\tmanager         - Listet die Manager dieses Servers"
-                    + "\n\tsetting         - Listet diverse Bot-Einstellungen"
-                    + "\n\ttfilter         - Listet alle Titelfilter, die du erstellt hast"
-                    + "\n\ttwitchChannel   - Listet die Twitch Channels, denen du folgst"
-                    + "\n\ttwitchCommunity - Listet die Twitch Communities, denen du folgst"
-                    + "\n\ttwitchGame      - Listet die Twitch Spiele, die ich für dich verfolge"
-                    + "\n\ttwitchTeam      - Listet die Twitch Teams, denen du folgst"
-                    + "\n\tytgChannel      - Lists the YouTube Gaming Channels you follow"
-                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel```"},
-            {"listSettings", "```Markdown\n" +
-                    "# Bot-Einstellungen dieses Servers" +
-                    "\n* Compact mode ist %s." +
-                    "\n* Benachrichtigungsmodus ist %s." +
-                    "\n* Cleanup-Modus ist %s." +
-                    "\n* Streamsprache ist %s." +
+                    + "\n\tmixerChannel     - Listet die Mixer-Channel, denen du folgst"
+                    + "\n\tmixerTeam        - Listet die Mixerteams, denen du folgst"
+                    + "\n\tgfilter          - Listet alle Spielerfilter"
+                    + "\n\tmanager          - Listet die Manager dieses Servers"
+                    + "\n\tpicartoChannel   - Lists the Picarto Channels you follow"
+                    + "\n\tsetting          - Listet diverse Bot-Einstellungen"
+                    + "\n\tsmashcastChannel - Listet die Smashcast-Channel, denen du folgst"
+                    + "\n\tsmashcastGame    - Listet die Smashcastspiele, die ich für dich verfolge"
+                    + "\n\tsmashcastTeam    - Listet die Smashcastteams, denen du folgst"
+                    + "\n\ttfilter          - Listet alle Titelfilter, die du erstellt hast"
+                    + "\n\ttwitchChannel    - Listet die Twitch-Channel, denen du folgst"
+                    + "\n\ttwitchCommunity  - Listet die Twitch-Communities, denen du folgst"
+                    + "\n\ttwitchGame       - Listet die Twitchspiele, die ich für dich verfolge"
+                    + "\n\ttwitchTeam       - Listet die Twitchteams, denen du folgst"
+                    + "\n\tytgChannel       - Listet die YouTube Gaming-Channel, denen du folgst"
+                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " list twitchChannel"},
+            {"listSettings", "# Bot-Einstellungen dieses Servers" +
                     "\n* Botsprache ist %s." +
+                    "\n* Streamsprache ist %s." +
+                    "\n* Cleanup-Modus ist %s." +
+                    "\n* Compact mode ist %s." +
                     "\n* Format der jetzigen Online-Benachrichtigung ist: %s." +
-                    "\n* Format der jetzigen Offline-Benachrichtigung ist: %s.```"},
+                    "\n* Format der jetzigen Offline-Benachrichtigung ist: %s." +
+                    "\n* Standardbenachrichtigungskanal ist: %s" +
+                    "\n* Benachrichtigungsmodus ist %s."},
             {"needOneManager", "Wenn du das tust, wer managet mich dann?"},
             {"noBotManager", "Bots als Manager hinzufügen verstößt gegen die Discord Bot Union By-Laws. Sorry, versuche einen " +
                     "geeigneten Menschen für diesen Job zu finden. :thumbsup:"},
@@ -249,13 +265,19 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"notifyEveryone", ":tada: WOW!!  **JEDER** in diesem Server wird benachrichtigt, wenn ich " +
                     "einen Stream poste!  *(Bist du sicher? In größeren Server könnte es  " +
                     "Leute nerven...)*"},
-            {"notifyHelp", "```Markdown\n# NOTIFY\n* Ändert die globablen Benachrichtigunseinstellungen.\n\n## VERWENDUNG:  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " notify <option>"
+            {"notifyDeprecated", "# -nl notify is deprecated no longer being used.  Please use: -nl config notify"},
+            {"notifyHelp", "# NOTIFY\n* Ändert die globablen Benachrichtigunseinstellungen.\n\n## VERWENDUNG:  "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " config notify <option>"
                     + "\n\tnone     - Keine @ Mitteilungen (Standardeinstellung)"
-                    + "\n\there - Ich benachrichtige alle, die online sind (via ``@here``)"
+                    + "\n\there     - Ich benachrichtige alle, die online sind (via ``@here``)"
                     + "\n\teveryone - Ich benachrichtige ALLE!!  Muhahaha!!  (Nicht für größere Server empfohlen!)"
-                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " notify everyone" + "```"},
+                    + "\n\t@<role>  - Ich benachrichtige eine Serverrolle deiner Wahl via @-Benachrichtigung"
+                    + "\n\t@<user>  - Du möchtest einen einzigen User benachrichtigen?  Dies ist die Option für dich!"
+                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config notify everyone"},
             {"notifyHere", " :bellhop_bell: Alle, die online sind, werden benachrichtigt."},
+            {"notifyRoleUser", "# Ich werde %s mit jeder Benachrichtung @-benachrichtigen."},
+            {"notifyTooMany", "# Du kannst immer nur ein(e) %s benachrichtigen lassen!"},
+            {"notifyMultipleUsers", " Möchtest du mehrere Benutzer benachrichtigt haben, erstelle eine Rolle und lasse diese benachrichtigen."},
             {"notifyNone", " :ok_hand: Ich werde keine @ Mitteilungen mehr benutzen."},
             {"nowLive", "NOW LIVE!\n"},
             {"nowPlayingEmbed", "Spielt gerade"},
@@ -270,7 +292,25 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "auszuchecken: \n\n"},
             {"oops", "Ups! Irgendwas ist schiefgelaufen! Lass uns das nochmal versuchen."},
             {"patreon", "Wenn du dem Bot etwas spenden möchtest, beachte unser Patreon zu benutzen. https://www.patreon.com/nowlive"},
-            {"patreonHelp", "Postet den Link zu unserer Patreon Seite."},
+            {"patreonHelp", "# Postet den Link zu unserer Patreon Seite."},
+            {"picartoChannelNotFound", "\n# Channel(s) not found on Picarto: %s."},
+            {"picartoHelp", "# PICARTO\n* Hinzufügen und Entfernen von Picarto-Kanälen und -Titelfiltern.\n"
+                    + "* Hinweise:\n\t"
+                    + "Um Titelfilter hinzuzufügen, musst du die Klammern schreiben.\n\t"
+                    + "Benutze NICHT die komplette Picarto-URL.  Das funktioniert nicht!! Benutze nur den Kanalnamen (www.picarto.tv/KanalName)\n\t"
+                    + "Du kannst mehrere Kanäle und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
+                    + "Vorest sind nur Kanäle unterstützt.  Picarto-Kategorien sind sehr limitiert und es werden zum Großteil nur ein paar wenige benutzt.\n\t"
+                    + "Die einzig zwingend nötige Option ist: KanalName\n\u200B\n"
+                    + "## Picarto-Kanäle\n"
+                    + "Hinweis: Benachrichtigungskanal und Titelfilter sind optional.\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel KanalName BenachrichtigungsKanal [TitelFilter]\n\n"
+                    + "## Picarto-Titelfilter (Global)\n"
+                    + "* HINWEIS: Gilt für alle Picartobenachrichtigungen auf diesem Server\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
+                    + "## Picarto Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " picarto stats\n\n"
+                    + "* Beispiel:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " picarto channel AgueMort #live-streams (fügt einen Kanal für einen bestimmten Benachrichtigungskanal hinzu)\n\t"},
             {"ping", "Als ich in China war, war ich in einem amerikanischen Ping-Pongteam. Ich liebte es mit meinem " +
                     "Flexolite Ping-Pongsschläger zu spielen."},
             {"pingHelp", "```Markdown\n# PING\n* Pingbefehl - wenn ich online bin, werde ich antworten.\n\n## VERWENDUNG: "
@@ -291,6 +331,7 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"platformGameFilterAddFail", "\n# Fehler beim Hinzufügen der Spielefilter: %s."},
             {"platformGameFilterRemove", "\n# Spielefilter entfernt: %s."},
             {"platformGameFilterRemoveFail", "\n# Fehler beim Entfernen der Spielefilter: %s."},
+            {"platformGameNotFound", "\n #Spiel(e) nicht gefunden: %s."},
             {"platformGameRemove", "\n# Spiele entfernt: %s."},
             {"platformGameRemoveFail", "\n# Fehler beim Entfernen der Spiele: %s."},
             {"platformTeamAdd", "\n# Teams hinzugefügt: %s."},
@@ -307,10 +348,10 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "auf private Nachrichten.  Versuchen Sie es später nocheinmal."},
             {"removed", "Entfernt: %s %s."},
             {"removeManagerFail", "Ich kann %s nicht entfernen, da kein solcher Eintrag in meiner Datenbank existiert."},
-            {"removeHelp", "```Markdown\n# REMOVE\n* Befehl um Manager zu entfernen.\n\n## VERWENDUNG:  "
+            {"removeHelp", "# REMOVE\n* Befehl um Manager zu entfernen.\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @userName"
                     + "\n\tmanager - Der @ Name des Benutzers, den du als Manager hinzufügen möchtest"
-                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort```"},
+                    + "\n\n## BEISPIEL:  " + Const.COMMAND_PREFIX + Const.COMMAND + " remove manager @AgueMort"},
             {"servers", "Server"},
             {"setDefaultAnnounceChannelDoNotOwnChannel", "# Hey, nun ich kann nicht in einem Channel benachrichtigen, der nicht " +
                     "deinem Server existiert!"},
@@ -346,28 +387,57 @@ public class LanguageBundle_de extends ListResourceBundle {
                     "\t* %VIEWERS%   - Die Nummer der jetzigen Zuschauer\n\n" +
                     "## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " config setOnlineMessage " +
                     "%CHANNEL% ist gerade live! Siehe den Stream hier: %URL%"},
-            {"shardsThis", "Shard Nummer"},
+            {"shardsThis", "Shardnummer"},
             {"shardsTotal", "Nummer der Shards"},
-            {"statusHelp", "```Markdown\n# STATUS\n* Zeigt einige Statistiken über den Bot.\n\n## VERWENDUNG:  "
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " status```"},
-            {"streamlangHelp", "```Markdown\n# STREAMLANG\n* Erlaubt das Filtern von Streams nach Sprache " +
+            {"smashcastChannelNotFound", "\n# Kanäle nicht auf Smashcast gefunden: %s."},
+            {"smashcastHelp", "# SMASHCAST\n* Hinzufügen und Entfernen von Smashcast.tv-Inhalten.\n"
+                    + "* Hinweise:\n\t"
+                    + "Um Spielefilter und Titelfilter hinzuzufügen, musst du die Klammern schreiben.\n\t"
+                    + "Benutze NICHT die komplette Smashcast-URL. Das funktioniert nicht!! Benutze nur den Kanalnamen (www.smashcast.tv/KanalName)\n\t"
+                    + "Du kannst mehrere Kanäle, Teams, Spiele, Spiel- und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
+                    + "Die einzigen zwingend nötigen Optionen sind: KanalName/TeamName/SpielName\n\u200B\n"
+                    + "## Smashcast-Kanäle\n"
+                    + "Hinweis: Benachrichtigungskanal, Spiel- und Titelfilter sind optional.\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel KanalName #BenachrichtigungsKanal {Spielfilter} [Titelfilter]\n\n"
+                    + "## Smashcastspiele (Postet ALLE Streams dieses Spiels)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game SpielName #BenachrichtigungsKanal\n\n"
+                    + "## Smashcastteams (Postet ALLE Streams in diesem Team)\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team TeamName #BenachrichtigungsKanal\n\n"
+                    + "## Smashcast-Spielefilter (Global)\n"
+                    + "* HINWEIS: Gilt für alle Smashcastbenachrichtigungen auf diesem Server\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast gfilter {SpielName|SpielName} #BenachrichtigungsKanal\n\n"
+                    + "## Smashcast-Titelfilter (Global)\n"
+                    + "* HINWEIS: Gilt für alle Smashcastbenachrichtigungen auf diesem Server\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
+                    + "## Smashcast Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast stats\n\n"
+                    + "* Beispiele:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast channel AgueMort #live-streams {Overwatch|World of "
+                    + "Warcraft} (fügt einen Kanal in einen bestimmten Channel mit Spielefilter hinzu)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast game Overwatch (fügt einen Kanal zum allgemeinen Benachrichtigungskanal hinzu)\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " smashcast team instinct family #instinct-streamers (fügt ein Team einen bestimmten Channel hinzu)"},
+            {"staffOverride", "*Die Berechtigung dieses Befehls wurden einem Mitglied des Botpersonals überschrieben.*"},
+            {"statusHelp", "# STATUS\n* Zeigt einige Statistiken über den Bot.\n\n## VERWENDUNG:  "
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " status"},
+            {"streamlangHelp", "# STREAMLANG\n* Erlaubt das Filtern von Streams nach Sprache " +
                     "Unterstützt entweder den englischen oder nativen Namen der Sprache. Die Sprache " +
                     "muss im Twitch Dashboard unterstützt werden.\n\n## USAGE: "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND +
-                    " streamlang <language>\n" +
+                    " streamlang <Sprache>\n" +
                     "* Du kannst entweder den nativen oder den englischen Namen der Sprache verwenden."
-                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang german```"},
+                    + "\n\n## EXAMPLE:  " + Const.COMMAND_PREFIX + Const.COMMAND + " streamlang german"},
             {"streamTitleEmbed", "Streamtitel"},
-            {"streamsHelp", "```Markdown\n# STREAMS\n* Ich schicke dir alle aktuell aktiven Streams als private Nachricht. (HINWEIS: Du wirst wahrscheinlich " +
+            {"streamsHelp", "# STREAMS\n* Ich schicke dir alle aktuell aktiven Streams als private Nachricht. (HINWEIS: Du wirst wahrscheinlich " +
                     "mehrere private Nachrichten durch diesen Befehl erhalten, je nachdem wie viele Streams dein Discord Server " +
                     "beobachtet!)\n\n## VERWENDUNG:  "
                     + Const.COMMAND_PREFIX
                     + Const.COMMAND
-                    + " streams```"},
+                    + " streams"},
             {"totalViewsEmbed", "Alle Aufrufe"},
-            {"trello", "Um Bugs zu reporten oder etwas zu requesten nutze bitte unseren Trello. https://trello.com/b/kcWshbIU"},
-            {"trelloHelp", "Gibt den Link zum Trello des Bots"},
+            {"trello", "Um Bugs zu reporten oder etwas zu requesten nutze bitte unseren Trello. " +
+                    "https://trello.com/invite/b/kcWshbIU/a94c145e598be9f8dd734197ba07288e/now-live-bot"},
+            {"trelloHelp", "# Gibt den Link zum Trello des Bots"},
             {"twitchCommunities", "Twitch Communities"},
             {"twitchAnnounceUpdate", "\n# Standardbenachrichtigungskanal von %s zu %s geändert."},
             {"twitchAnnounceUpdateFail", "\n! Fehler beim Ändern des Standardbenachrichtigungskanal von %s zu %s."},
@@ -383,13 +453,13 @@ public class LanguageBundle_de extends ListResourceBundle {
             {"twitchCommunityNotFound", "\n# Community(s) nicht auf Twitch gefunden: %s."},
             {"twitchCommunityRemove", "\n# Entfernte Community(s): %s."},
             {"twitchCommunityRemoveFail", "\n# Fehler beim Entfernen der Community(s): %s."},
-            {"twitchHelp", "```Markdown\n# TWITCH\n* Hinzufügen und Entfernen von Twitch.tv-Inhalten.\n"
-                    + "* ^Hinweise:\n\t"
+            {"twitchHelp", "# TWITCH\n* Hinzufügen und Entfernen von Twitch.tv-Inhalten.\n"
+                    + "* Hinweise:\n\t"
                     + "Um Spielefilter und Titelfilter hinzuzufügen, musst du die Klammern schreiben.\n\t"
-                    + "Benutze NICHT die komplette Twitch-URL. Das funktioniert nicht!! Benutze nur den Kanalnamen (www.twitch.tv/channelName)\n\t"
-                    + "Der Teamname muss der aus der URL sein, nicht der auf der Seite sichtbare. (www.twitch.tv/team/teamName)\n\t"
+                    + "Benutze NICHT die komplette Twitch-URL. Das funktioniert nicht!! Benutze nur den Kanalnamen (www.twitch.tv/KanalName)\n\t"
+                    + "Der Teamname muss der aus der URL sein, nicht der auf der Seite sichtbare. (www.twitch.tv/team/TeamName)\n\t"
                     + "Du kannst mehrere Kanäle, Teams, Spiele, Communities, Spiel- und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
-                    + "Die einzigen zwingend nötigen Optionen sind: kanalName/communityName/teamName/spielName\n\n"
+                    + "Die einzigen zwingend nötigen Optionen sind: KanalName/CommunityName/TeamName/SpielName\n\u200B\n"
                     + "## Twitch-Kanäle\n"
                     + "Hinweis: Benachrichtigungskanal, Spiel- und Titelfilter sind optional.\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel KanalName #BenachrichtigungsKanal {Spielfilter} [Titelfilter]\n\n"
@@ -405,13 +475,14 @@ public class LanguageBundle_de extends ListResourceBundle {
                     + "## Twitch-Titelfilter (Global)\n"
                     + "* HINWEIS: Gilt für alle Twitchbenachrichtigungen auf diesem Server\n"
                     + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch tfilter [Wort|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
+                    + "## Twitch Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " twitch stats\n\u200B\n"
                     + "* Beispiel:\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch channel AgueMort #live-streams {Overwatch|World of "
                     + "Warcraft} (Fügt einen Twitchkanal für einen bestimmten Kanal und Spielfilter hinzu)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch game Overwatch (Fügt ein Spiel für den Standardbenachrichtigungskanal hinzu)\n\t"
                     + Const.COMMAND_PREFIX + Const.COMMAND + " twitch community MMORPG #live-streams (Fügt eine Twitch-Community für einen bestimmten Benachrichtigungskanal hinzu)\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (Fügt ein Twitchteam für einen bestimmten Benachrichtigungskanal hinzu)\n\n"
-                    + "```"},
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " twitch team thekingdom #the-kingdom-streamers (Fügt ein Twitchteam für einen bestimmten Benachrichtigungskanal hinzu)"},
             {"twitchTeams", "Twitchteams"},
             {"typeOnce", "Das musst du nicht doppelt schreiben, Dussel."},
             {"uniqueChannels", "Verschiedene Kanäle %s"},
@@ -424,23 +495,25 @@ public class LanguageBundle_de extends ListResourceBundle {
                     Const.COMMAND_PREFIX + Const.COMMAND + " help` für weitere Informationen"},
             {"watchThemHere", "Jetzt zuschauen: "},
             {"wrongCommand", " :thinking: Den Befehl kenne ich nicht."},
-            {"ytgChannelNotFound", "\n# Channel(s) not found on YouTube Gaming: %s."},
-            {"ytgHelp", "# YTG\n* Add and remove things that are YouTube Gaming channels.\n"
-                    + "* Notes:\n\t"
-                    + "To add title filters, you MUST include the brackets.\n\t"
-                    + "Do NOT use the full YouTube Gaming URL. It will not work!! Only use the channel's display name (as shows under their live stream)\n\t"
-                    + "You may add multiple channels, teams, and title filters by using the pipe character | between them.\n\t"
-                    + "Only channels are supported for now.  The YouTube API does not show the proper game name to be used like in other commands."
-                    + "Game filters are NOT a thing with YouTube.  See the above note about the API."
-                    + "The only required options is: channelName\n\n"
-                    + "## YouTube Gaming Channels\n"
-                    + "Note: Adding an announcement channel and title filters are optional."
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel channelName #announcementChannel [titleFilters]\n\n"
-                    + "## YouTube Gaming Title Filters (Global)\n"
-                    + "* NOTE: This affects all stream announcements for YouTube Gaming\n"
-                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [word|different words|more words] #announcementChannel\n\n"
-                    + "* Examples:\n\t"
-                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (adds a channel to announce in a certain channel)\n\t"}
+            {"ytgChannelNotFound", "\n# Kanäle nicht auf YouTube Gaming gefunden: %s."},
+            {"ytgHelp", "# YTG\n* Hinzufügen und Entfernen von YouTube Gaming-Channels.\n"
+                    + "* Hinweise:\n\t"
+                    + "Um Titelfilter hinzuzufügen, musst du die Klammern schreiben.\n\t"
+                    + "Benutze NICHT die komplette YouTube Gaming-URL. Das funktioniert nicht!! Benutze nur den angezeigten Namen des Kanals (wie unter den Livestreams zu sehen)\n\t"
+                    + "Du kannst mehrere Kanäle und Titelfilter hinzufügen indem du das Pipe-Zeichen | als Trennzeichen benutzt.\n\t"
+                    + "Bisher sind nur Kanalnamen unterstützt.  Die YouTube-API übergibt keinen Spielnamen, um ihn wie in den anderen Befehlen zu benutzen.\n\t"
+                    + "Spielefilter gibt es auf YouTube NICHT.  Siehe den obigen Hinweis über die API.\n\t"
+                    + "Die einzigen zwingend nötigen Optionen sind: KanalName\n\u200B\n"
+                    + "## YouTube Gaming Channel\n"
+                    + "Hinweis: Benachrichtigungskanal und Titelfilter sind optional."
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel KanalName #BenachrichtigungsKanal [TitelFilter]\n\n"
+                    + "## YouTube Gaming-Titelfilter (Global)\n"
+                    + "* HINWEIS: Gilt für alle YouTube Gaming-Benachrichtigungen auf diesem Server\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg tfilter [Word|Anderes Wort|Noch Ein Wort] #BenachrichtigungsKanal\n\n"
+                    + "## YouTube Gaming Stream Stats\n"
+                    + "* Format: " + Const.COMMAND_PREFIX + Const.COMMAND + " ytg stats\n\n"
+                    + "* Beispiel:\n\t"
+                    + Const.COMMAND_PREFIX + Const.COMMAND + " ytg channel AgueMort #live-streams (Fügt einen Channel für einen bestimmten Kanal hinzu)\n\t"}
     };
 
     @Override

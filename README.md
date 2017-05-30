@@ -6,10 +6,12 @@
 ## Supported Platforms
 * Twitch
 * Beam
+* YouTube Gaming
+* SmashCast (formerly HitBox)
+* Picarto
 
 ## Planned Platforms
-* YouTube
-* SmashCast (formerly HitBox)
+* none currently (requests on trello please)
 
 ---
 ## Want to help translate?
@@ -25,6 +27,10 @@ Now Live is currently available in:
 
 Now Live has the following translations in progress:
 * Dutch (NL)
+* Finnish
+* Greek
+* Italian
+* Slovak
 
 Now Live has a partial translation in:
 * Swedish (not live, needs to be finished first)
